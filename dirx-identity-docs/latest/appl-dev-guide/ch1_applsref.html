@@ -125,6 +125,18 @@
   </li>
 </ul>
   </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_defappls.html#using_default_connectivity_application">Using the Default Connectivity Applications</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch4_defappls.html#working_with_default_connectivity_application_objects">Working with Default Connectivity Application Objects</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch4_defappls.html#working_with_default_connectivity_scenario">Working with the Default Connectivity Scenario</a>
+  </li>
+</ul>
+  </li>
 </ul>
   </li>
 </ul>
@@ -1901,49 +1913,68 @@ dxmSecurePort - this port number is used if SSL is enabled.</p>
 <div class="paragraph">
 <p>Here is an example that shows how the mechanism works within e-mails:</p>
 </div>
-<div class="listingblock">
+<div class="exampleblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">User '${workflow.initiatorEntry.cn}' launched the workflow '${workflow.name}' for '${workflow.subject.cn}'.
-This request was rejected.
-
-Please contact the persons that rejected the request:
-
-&lt;? for activity in ${workflow.activities} ?&gt;
-&lt;? if ${activity.applicationState} == "REJECTED" ?&gt;
-&lt;? for participant in ${activity.approvers} ?&gt;
-- User ${participant.givenName} ${participant.sn} rejected with reason: ${workflow.activity.reason}
-&lt;? endfor ?&gt;
-&lt;? endif ?&gt;
-&lt;? endfor ?&gt;
-
-This is an automatically generated mail. Please do not reply.</code></pre>
+<div class="paragraph">
+<p>User <code>'${workflow.initiatorEntry.cn}'</code> launched the workflow <code>'${workflow.name}'</code> for <code>'${workflow.subject.cn}'</code>.
+This request was rejected.</p>
+</div>
+<div class="paragraph">
+<p>Please contact the persons that rejected the request:</p>
+</div>
+<div class="paragraph">
+<p><code>&lt;? for activity in ${workflow.activities} ?&gt;</code><br>
+<code>&lt;? if ${activity.applicationState} == "REJECTED" ?&gt;</code><br>
+<code>&lt;? for participant in ${activity.approvers} ?&gt;</code><br>
+- User <code>${participant.givenName} ${participant.sn}</code> rejected with reason: <code>${workflow.activity.reason}</code><br>
+<code>&lt;? endfor ?&gt;</code><br>
+<code>&lt;? endif ?&gt;</code><br>
+<code>&lt;? endfor ?&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>This is an automatically generated mail. Please do not reply.</p>
+</div>
 </div>
 </div>
 <div class="paragraph">
 <p>At runtime, this template is expanded to:</p>
 </div>
-<div class="listingblock">
+<div class="exampleblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">User 'Donegan Mark 1234' launched the workflow 'Create User' for 'Sober Marietta 9876'.
-This request was rejected.
-
-Please contact the persons that rejected the request:
-
-- User Fred Strober rejected with reason: Not the right person.
-- User Donald Duck rejected with reason: Do not like him.
-
-This is an automatically generated mail. Please do not reply.
-
-Read the next sections for details about e-mail text variables.
-
-Here are several examples that apply to participant calculation:
-
-${workflow.subject.manager} - retrieves the manager(s) of the subject (uses the manager link to look up the manager DNs)
-${workflow.subject.owner} - retrieves all owner of the subject (uses the owner link to look up the owner DNs)
-${workflow.subject.manager.manager} - retrieves the manager of the subject's manager (useful for escalation)
-${workflow.subject.dxrLocationLink.manager} - retrieves the manager of the location the subject is assigned to
-${previousParticipants.manager} - retrieves the manager(s) of the previous activity during an escalation</code></pre>
+<div class="paragraph">
+<p>User 'Donegan Mark 1234' launched the workflow 'Create User' for 'Sober Marietta 9876'.
+This request was rejected.</p>
 </div>
+<div class="paragraph">
+<p>Please contact the persons that rejected the request:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>User Fred Strober rejected with reason: Not the right person.</p>
+</li>
+<li>
+<p>User Donald Duck rejected with reason: Do not like him.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This is an automatically generated mail. Please do not reply.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Read the next sections for details about e-mail text variables.</p>
+</div>
+<div class="paragraph">
+<p>Here are several examples that apply to participant calculation:</p>
+</div>
+<div class="paragraph">
+<p>${workflow.subject.manager} - retrieves the manager(s) of the subject (uses the manager link to look up the manager DNs)
+${workflow.subject.owner} - retrieves all owner of the subject (uses the owner link to look up the owner DNs)
+${workflow.subject.manager.manager} - retrieves the manager of the subject&#8217;s manager (useful for escalation)
+${workflow.subject.dxrLocationLink.manager} - retrieves the manager of the location the subject is assigned to
+${previousParticipants.manager} - retrieves the manager(s) of the previous activity during an escalation</p>
 </div>
 <div class="paragraph">
 <p>Use the static selection of the Participants tab of an approval definition to setup such definitions. For a detailed description see the section Participant Calculation below.</p>
@@ -1953,9 +1984,9 @@ ${previousParticipants.manager} - retrieves the manager(s) of the previous activ
 <div class="paragraph">
 <p>A variable definition looks like this:</p>
 </div>
-<div class="listingblock">
+<div class="exampleblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">${root.object.object...object.attribute}</code></pre>
+<code>${root.object.object&#8230;&#8203;object.attribute}</code>
 </div>
 </div>
 <div class="paragraph">
@@ -1979,17 +2010,17 @@ ${previousParticipants.manager} - retrieves the manager(s) of the previous activ
 <div class="paragraph">
 <p>Examples:</p>
 </div>
-<div class="listingblock">
+<div class="exampleblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">$(workflow.subject.mail)</code></pre>
+<code>$(workflow.subject.mail)</code>
 </div>
 </div>
 <div class="paragraph">
 <p>This statement retrieves the mail attribute of the subject this workflow handles.</p>
 </div>
-<div class="listingblock">
+<div class="exampleblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">$(workflow.subject.manager.mail)</code></pre>
+<code>$(workflow.subject.manager.mail)</code>
 </div>
 </div>
 <div class="paragraph">
@@ -9882,15 +9913,19 @@ uh::GenerateTombstoneDN</p>
 <div class="paragraph">
 <p><strong>Info Items:</strong> the list of delta information in the format number, time, delta_value which keeps the results of all delta runs in the configuration database. You cannot see this list from the DirX Identity Manager. Examples are:</p>
 </div>
-<div class="paragraph">
-<p>USN delta Example: 2;20010503123400Z=1234<br>
+<div class="exampleblock">
+<div class="content">
+USN delta Example: 2;20010503123400Z=1234<br>
 DATE delta Example: 7;20010503123400Z=20010503123400Z<br>
-FILE delta Example: 5;20010503123400Z=delta1.txt</p>
+FILE delta Example: 5;20010503123400Z=delta1.txt
 </div>
-<div class="paragraph">
-<p>USN full Example: 1;FULL=1<br>
+</div>
+<div class="exampleblock">
+<div class="content">
+USN full Example: 1;FULL=1<br>
 DATE full Example: 1;FULL=19800101000000Z<br>
-FILE full Example: 1;FULL=</p>
+FILE full Example: 1;FULL=
+</div>
 </div>
 <div class="paragraph">
 <p><strong>Selected:</strong> the value from the <strong>Info Items</strong> list to start the next delta run:<br>
