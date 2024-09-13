@@ -1,0 +1,3287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Using the Source Workflows :: DirX Identity Documentation</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../..">DirX Identity Documentation</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dirx-identity-docs" data-version="9.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">DirX Identity</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Overview</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Title</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Application Development Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1_applsref.html#understanding_the_default_application_workflow_technology">Understanding the Default Application Workflow Technology</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1_applsref.html#understanding_request_workflows">Understanding Request Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1_applsref.html#understanding_java_based_workflows">Understanding Java-based Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1_applsref.html#understanding_tcl_based_workflows">Understanding Tcl-based Workflows</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch2_reqWFs.html#using_request_workflows">Using Request Workflows</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_reqWFs.html#understanding_creation_workflows">Understanding Creation Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_reqWFs.html#understanding_modification_workflows">Understanding Modification Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_reqWFs.html#understanding_assignment_workflows">Understanding Assignment Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_reqWFs.html#understanding_deletion_workflows">Understanding Deletion Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_reqWFs.html#understanding_certification_workflows">Understanding Certification Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_reqWFs.html#understanding_service_management_workflows">Understanding Service Management Workflows</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch3_configScen.html#configuring_custom_scenarios">Configuring Custom Scenarios</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_configScen.html#creating_the_new_scenario">Creating the New Scenario</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_configScen.html#refining_the_scenario">Refining the Scenario</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_configScen.html#creating_the_identity_creation_workflows">Creating the Identity Creation Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_configScen.html#creating_cluster_target_systems">Creating Cluster Target Systems</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_defappls.html#using_default_connectivity_application">Using the Default Connectivity Applications</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch4_defappls.html#working_with_default_connectivity_application_objects">Working with Default Connectivity Application Objects</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch4_defappls.html#working_with_default_connectivity_scenario">Working with the Default Connectivity Scenario</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#using_the_source_workflows">Using the Source Workflows</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#understanding_the_java_based_source_workflows">Understanding the Java-based Source Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#understanding-the-tcl-based-source-workflows">Understanding the Tcl-based Source Workflows</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">DirX Identity</span>
+    <span class="version">9.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">DirX Identity</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">9.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">DirX Identity</a></li>
+    <li>Application Development Guide</li>
+    <li><a href="#using_the_source_workflows">Using the Source Workflows</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Using the Source Workflows</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Identity source workflows synchronize information from existing sources to the Identity Store. This chapter provides detailed information about source workflow features, configuration, and user hooks. The sections in this chapter describe:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Java-based source workflows</p>
+</li>
+<li>
+<p>Tcl-based source workflows</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="understanding_the_java_based_source_workflows"><a class="anchor" href="#understanding_the_java_based_source_workflows"></a>Understanding the Java-based Source Workflows</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>DirX Identity&#8217;s Java-based source real-time workflows provided with the default Connectivity scenario include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Creation workflows - workflows that extract user information from existing identity sources (for example, an HR or a CRM database, an Active Directory system or a file system) and populate the Identity Store with user information. The workflows either use the <strong>Full-Import</strong> controller, which works in "Replace" mode and deletes those users in DirX Identity that do not exist in the source system, or the <strong>SyncOneWay2Identity</strong> controller, which works in "Merge" mode and does not delete DirX Identity user entries that do not exist in the source.</p>
+</li>
+<li>
+<p>Update workflows - workflows that transfer specific information from the Identity Store to the identity sources (for example, e-mail addresses or telephone numbers) to enable them to use the joined, high-quality information in the Identity Store. These workflows use the SyncOneWay2TS controller.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>DirX Identity provides the following pre-configured creation and update workflows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Import Users from Active Directory</strong> - imports Active Directory users to the Identity Store.</p>
+</li>
+<li>
+<p>Import Users from Database - imports users from a relational database to the Identity Store.</p>
+</li>
+<li>
+<p><strong>Import Roles From Database</strong> - imports role data from a database to the role catalog of the Identity Store.</p>
+</li>
+<li>
+<p><strong>Import Users from LDIF</strong> - imports users from an LDIF content file to the Identity Store.</p>
+</li>
+<li>
+<p><strong>Export Users to LDIF</strong> - exports users from the Identity Store to an LDIF content file.</p>
+</li>
+<li>
+<p><strong>Import Users from CSV</strong> - imports users from a CSV file to the Identity Store.</p>
+</li>
+<li>
+<p><strong>Export Users from CSV</strong> - exports users from the Identity Store to a CSV file.</p>
+</li>
+<li>
+<p><strong>Import of External LDAP Users</strong> - imports users from an external LDAP to the Identity Store.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>DirX Identity also provides the Remote AD workflow, which is intended for deployment with Atos Cloud Service Identity Management as a Service (IDMaaS).</p>
+</div>
+<div class="sect2">
+<h3 id="_active_directory_ads_user_import_workflow"><a class="anchor" href="#_active_directory_ads_user_import_workflow"></a>Active Directory (ADS) User Import Workflow</h3>
+<div class="paragraph">
+<p>The Active Directory (ADS) user import workflow operates between the users folder in the Identity Store and an Active Directory connected system. It uses the same APIs and component deployment as the Java-based Active Directory (ADS) Provisioning workflows. See the section "Active Directory (ADS) Workflows" in the chapter "Using the Target System (Provisioning) Workflows" in this guide for more details.</p>
+</div>
+<div class="paragraph">
+<p>The workflow is based on Java real-time technology, with the ADS connector accessing an Active Directory via native LDAP protocol and the LDAP connector accessing a DirX Identity domain. The Full-Import controller is configured as the join engine. The controller exports all AD users from the source system and then imports them into the Identity domain user tree.</p>
+</div>
+<div class="paragraph">
+<p>This workflow can also be used as a template for other Java-based source workflows for user objects. Other user data sources instead of ADS can be connected.</p>
+</div>
+<div class="paragraph">
+<p>The connected directory UserADS represents the Active Directory containing the users and the connected directory Identity Store represents the Identity domain.</p>
+</div>
+<div class="paragraph">
+<p>The next sections describe</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Workflow prerequisites</p>
+</li>
+<li>
+<p>How to configure the workflow</p>
+</li>
+<li>
+<p>The workflow and its activities</p>
+</li>
+<li>
+<p>Ports</p>
+</li>
+<li>
+<p>Channels</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The workflow allows you to import Identity users from source ADS user entries. The workflow needs only one channel for users and a set of attributes to be imported.</p>
+</div>
+<div class="paragraph">
+<p>The workflow handles these common objects:</p>
+</div>
+<div class="paragraph">
+<p>Users - the user represents in this workflow a common account in an ADS connected system. It typically holds the demographic data and ADS account control attributes.</p>
+</div>
+<div class="paragraph">
+<p>The delivered workflow is:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Import Users from ADS</strong> - the source Java-based workflow exports all specified ADS users and then imports them into Identity Store.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_ads_user_import_workflow_prerequisites"><a class="anchor" href="#_ads_user_import_workflow_prerequisites"></a>ADS User Import Workflow Prerequisites</h4>
+<div class="paragraph">
+<p>The workflow can be used only with supported versions of Active Directory server.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ads_user_import_workflow_configuration"><a class="anchor" href="#_ads_user_import_workflow_configuration"></a>ADS User Import Workflow Configuration</h4>
+<div class="paragraph">
+<p>The ADS User Import workflow configuration on the Connectivity side is described in detail in "Active Directory (ADS) Workflows" in the section "Using the Target System (Provisioning) Workflows".</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ads_user_import_workflow_and_activities"><a class="anchor" href="#_ads_user_import_workflow_and_activities"></a>ADS User Import Workflow and Activities</h4>
+<div class="paragraph">
+<p>The workflow <strong>Import Users from ADS</strong> is a Java-based source workflow with two activities:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Join activity - implements the user import</p>
+</li>
+<li>
+<p>Error activity - receives update requests that failed despite retries and issues notifications</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The join activity is controlled by the Full-Import controller. It exports ADS user entries via the connector configured in the TS port and performs updates via the connector configured in the IdentityDomain port, as illustrated in the following figure:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch5_sourceWFs/image1.png" alt="ADS User Import Workflow Ports and Channels">
+</div>
+<div class="title">Figure 1. ADS User Import Workflow Ports and Channels</div>
+</div>
+<div class="paragraph">
+<p>You can start the workflow either manually or via a schedule.</p>
+</div>
+<div class="paragraph">
+<p>There are no global user hooks and no filters necessary.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ads_user_import_workflow_ports"><a class="anchor" href="#_ads_user_import_workflow_ports"></a>ADS User Import Workflow Ports</h4>
+<div class="paragraph">
+<p>The workflow supports the following ports:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>TS port - represents the ADS that contains the users (accounts). The ADS connector is used to access the Active Directory.</p>
+</li>
+<li>
+<p>IdentityDomain port - represents the DirX Identity domain and is accessed via the LDAP connector.</p>
+</li>
+<li>
+<p>Event - used for sending change events.</p>
+</li>
+<li>
+<p>Notify - used for sending e-mails.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ads_user_import_workflow_channels"><a class="anchor" href="#_ads_user_import_workflow_channels"></a>ADS User Import Workflow Channels</h4>
+<div class="paragraph">
+<p>The workflow needs only one channel per port. It represents the user objects.</p>
+</div>
+<div class="sect4">
+<h5 id="_ts_port"><a class="anchor" href="#_ts_port"></a>TS Port</h5>
+<div class="paragraph">
+<p>This port represents the connection to ADS. It is only used for exporting users and attributes from the ADS. The users are expected to be stored in the organizational unit <strong>OU=Users,OU=BRQH,OU=CZ</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Export:</p>
+</div>
+<div class="paragraph">
+<p>Filter is set to <strong>&amp;(objectClass=user)(objectCategory=person)</strong>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_identity_port"><a class="anchor" href="#_identity_port"></a>Identity Port</h5>
+<div class="paragraph">
+<p>This port represents the connection to the Identity Store. It is used for importing users into an Identity domain.</p>
+</div>
+<div class="paragraph">
+<p><strong>Export:</strong></p>
+</div>
+<div class="paragraph">
+<p>For exporting, the search base is taken from the environment property <strong>role_ts_account_base</strong> (in the connected directory <strong>Provisioning</strong> tab). The filter is needed to only export users from an Identity domain.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mapping:</strong></p>
+</div>
+<div class="paragraph">
+<p>The SPML identifier must be set when a user is created. The id is composed by exchanging the base of source ADS identifier (full DN containing DCs and OUs) through the <strong>role_ts_account_base</strong>. The base of the ADS user is set as the concatenation of the Relative User Base (<strong>user_base_rel</strong>) settings and Domain.</p>
+</div>
+<div class="paragraph">
+<p>The associated user for a source entry is first searched using the mapped <strong>dxmADsGuid</strong> attribute value and then via the <strong>dxmADsSamAccountName</strong> attribute value.</p>
+</div>
+<div class="paragraph">
+<p>The attribute dxrState is mapped specially by a Java class. The resulting values are ENABLED, DISABLED or TBDEL. The states ENABLED and DISABLED are set according to the attribute flag <strong>userAccountControl</strong>, which controls the account state in ADS. The TBDEL state is set when the source entry in ADS no longer exists. When a change of the <strong>dxrState</strong> attribute is detected, an appropriate date attribute of the user entry is set with the current date and time. The <strong>dxrStartDate</strong> attribute is set for newly imported user objects (ENABLED). Deleted entries (TBDEL) have the attribute <strong>dxrEndDate</strong> set. The change of state ENABLED to DISABLED (DISABLED to ENABLED resp.) is tracked in the attribute <strong>dxrDisableStartDate</strong> (<strong>dxrDisableEndDate</strong> resp.).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_relational_database_user_import_workflow"><a class="anchor" href="#_relational_database_user_import_workflow"></a>Relational Database User Import Workflow</h3>
+<div class="paragraph">
+<p>The <strong>Import Users from Database</strong> workflow imports users and their role assignments from a relational database into a DirX identity domain. It uses the Identity domain connector to access the DirX Identity domain and the JDBC connector to access the relational database. The connected directory UserDB represents the relational database containing the users and their role assignments and the connected directory Identity Store represents the Identity domain.</p>
+</div>
+<div class="paragraph">
+<p>The Full-Import controller is configured as the join engine. The controller exports all users from the database table, adds the assignments from the role assignment table and then imports them into the DirX Identity domain user tree. The Identity domain connector resolves and stores the users along with changed accounts and groups. If a privilege requires approval, the connector starts a request workflow.</p>
+</div>
+<div class="sect3">
+<h4 id="_relational_database_user_import_workflow_prerequisites"><a class="anchor" href="#_relational_database_user_import_workflow_prerequisites"></a>Relational Database User Import Workflow Prerequisites</h4>
+<div class="paragraph">
+<p>The sample workflow configuration expects a Microsoft Access database <strong>new-hr</strong>. It uses the open source JDBC Java driver UCanAccess; the jar file <strong>ucanaccess.jar</strong> with this driver is deployed with the IdS-J Server in its subfolder <strong>confdb/jobs/framework/lib/</strong>.</p>
+</div>
+<div class="paragraph">
+<p>The relational database must contain two tables: the <strong>EMPL</strong> table with a list of users and the <strong>EmplRoles</strong> table with a list of user-role assignments. They reference the user with their <strong>PersonalNr</strong> and the role with their <strong>roleID</strong>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_relational_database_user_import_workflow_configuration"><a class="anchor" href="#_relational_database_user_import_workflow_configuration"></a>Relational Database User Import Workflow Configuration</h4>
+<div class="paragraph">
+<p>The Import Users from Database workflow configuration conforms to the standard real-time workflow structure: it is composed of a join activity and an error activity. The following figure illustrates this configuration:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch5_sourceWFs/image2.png" alt="Relational Database User Import Workflow">
+</div>
+<div class="title">Figure 2. Relational Database User Import Workflow</div>
+</div>
+<div class="paragraph">
+<p>As shown in the figure, the JDBC connector accesses the relational database, while the Identity domain connector accesses the Identity domain.</p>
+</div>
+<div class="sect4">
+<h5 id="_jdbc_connector_and_connected_directory_configuration"><a class="anchor" href="#_jdbc_connector_and_connected_directory_configuration"></a>JDBC Connector and Connected Directory Configuration</h5>
+<div class="paragraph">
+<p>The JDBC connector configuration obtains its properties from the referenced bind profile (user, password) and the JDBC connected directory&#8217;s <strong>driverDBType</strong>, <strong>type</strong> and <strong>url</strong> attributes. In the sample, <strong>driverDBtype</strong> is the JDBC-ODBC driver (class name: <strong>siemens.dxm.connector.jdbc.AccessOverJdbcOdbcDriver</strong>) and <strong>type</strong> is the class name of the driver (<strong>net.ucanaccess.jdbc.UcanaccessDriver</strong>).</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_ts_port_filter_configuration"><a class="anchor" href="#_ts_port_filter_configuration"></a>TS Port Filter Configuration</h5>
+<div class="paragraph">
+<p>The TS port represents the relational database accessed by the JDBC connector. You need to configure a real-time filter for the TS port that adds the user-role assignments from the <strong>EmplRoles</strong> table as an attribute to the user. The sample configuration uses the filter class <strong>net.atos.dirx.dxi.connector.svclayer.workflow.JdbcRoleAsgFilter</strong>, which evaluates the following configuration options:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>assignmentTable - the filter needs to know the name of the table that contains the user-role assignments. As it sees all requests and responses between the join engine and the JDBC connector, it also receives the requests to the users table and must leave them untouched.</p>
+</li>
+<li>
+<p>roleAsgAttribute - the attribute under which the role assignments should be returned to the join engine. If the option is empty, the filter uses the <strong>rolesassigned</strong> attribute.</p>
+</li>
+<li>
+<p>userIdColumn - the column name of the user-role table that holds the ID of the user. The filter expects the search result to be ordered by this column. All consecutive records with the same user ID are considered to belong to the same user and added as multiple values (one record = one assignment = one value) to the role assignment attribute of the user.</p>
+</li>
+<li>
+<p>roleIdColumn - the column name of the user-role table that holds the identifier of the role.</p>
+</li>
+<li>
+<p>paramIDColumn - the column name of the user-role table that holds the identifier of the role parameter.</p>
+</li>
+<li>
+<p>paramValueColumn - the column name of the user-role table that holds the value of the role parameter.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The filter only intersects search requests for the assignment table. It collects all search result entries for the same user and adds them as a multi-value attribute to the first entry for this user. The join engine then adds this attribute to the user attributes list it has obtained by reading from the user’s table.</p>
+</div>
+<div class="paragraph">
+<p>Note that the column names that contain the end date of an assignment, the role parameter UID and the role parameter value are hard-coded in the filter. For a custom workflow, the filter needs to be changed and adapted.</p>
+</div>
+<div class="paragraph">
+<p>The sample filter implementation can be used as a template for custom filters. See the source code in the folder <strong>Additions/ServiceLayerConnector</strong> and the Javadoc in the folder <strong>Documentation/DirX identity/ServiceLayerConnector</strong> of the product media.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_relational_database_user_import_workflow_channel_configuration"><a class="anchor" href="#_relational_database_user_import_workflow_channel_configuration"></a>Relational Database User Import Workflow Channel Configuration</h4>
+<div class="paragraph">
+<p>The following figure illustrates the workflow&#8217;s ports and their channels:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch5_sourceWFs/image3.png" alt="Relational Database User Import Workflow Ports and Channels">
+</div>
+<div class="title">Figure 3. Relational Database User Import Workflow Ports and Channels</div>
+</div>
+<div class="paragraph">
+<p>As shown in the figure, the TS port represents the access to the relational database, while the Identity Store port represents the access to the DirX Identity domain.</p>
+</div>
+<div class="paragraph">
+<p>You need to configure two channels for the relational database:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>User - the primary channel for reading the user attributes.</p>
+</li>
+<li>
+<p>user-roles - the secondary channel that represents the table holding the user-role assignments.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Here is a snippet of the <strong>EMPL</strong> table with the user attributes, including the <strong>PersonalNr</strong> column, which uniquely identifies the user in this table:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch5_sourceWFs/image4.png" alt="Relational Database User Import Workflow EMPL Table">
+</div>
+<div class="title">Figure 4. Relational Database User Import Workflow EMPL Table</div>
+</div>
+<div class="paragraph">
+<p>Here is a snippet of the EmplRoles table showing its columns:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch5_sourceWFs/image5.png" alt="Relational Database User Import Workflow EmplRoles Table">
+</div>
+<div class="title">Figure 5. Relational Database User Import Workflow EmplRoles Table</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Especially the <strong>PersonalNr</strong> column, which contains the ID of the user and acts as a type of foreign key into the <strong>EMPL</strong> table in the database.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>You need to configure three channels for the Identity domain:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>User - the primary channel that represents the users in the domain.</p>
+</li>
+<li>
+<p>user-roles - the secondary channel that represents the user-role assignments.</p>
+</li>
+<li>
+<p>setPassword - the password channel that defines the password-related attributes.</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="_user_channel_at_the_ts_port"><a class="anchor" href="#_user_channel_at_the_ts_port"></a>User Channel at the TS Port</h5>
+<div class="paragraph">
+<p>This port is only used for searching, so there is nothing to be configured for the import. The Export tab needs to contain the table name in DN format; in the sample, it is <strong>Table=EMPL</strong>.</p>
+</div>
+<div class="paragraph">
+<p>The mapping lists all the columns of the table that are to be synchronized to the Identity domain. Note that the identifier is in DN format and should be populated with the <strong>EmployeeID</strong>, which is considered to be unique.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_user_roles_channel_at_the_ts_port"><a class="anchor" href="#_user_roles_channel_at_the_ts_port"></a>User-roles Channel at the TS Port</h5>
+<div class="paragraph">
+<p>This secondary channel needs to refer to the primary channel <strong>User</strong> in its Primary Channel tab. For joining an assignment record to the user record, you need to select the user ID column in the assignment table (in the sample, <strong>EmplRoles.PersonalNr</strong>) and in the users table (in the sample, <strong>PersonalNr</strong>).</p>
+</div>
+<div class="paragraph">
+<p>The Export tab needs to contain the table name in DN format; in the sample, it&#8217;s <strong>Table=EMPL</strong>.</p>
+</div>
+<div class="paragraph">
+<p>The mapping lists the columns to be exported. As the workflow only reads from the database, you don&#8217;t need to configure a mapping.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_user_channel_at_the_identity_store_port"><a class="anchor" href="#_user_channel_at_the_identity_store_port"></a>User Channel at the Identity Store Port</h5>
+<div class="paragraph">
+<p>In the Export tab, make sure to sort the entries according to the same attribute as in the database; in the sample, it is the <strong>employeeNr</strong>, because the <strong>personalNr</strong> in the database is mapped to it.</p>
+</div>
+<div class="paragraph">
+<p>In the Export tab, configure the parent folder of the users to be exported and imported as the search base. It is taken from the environment variable <strong>role_ts_account_base</strong>. This variable is set in the connected TS directory (that is, the user database). For simplicity, the folder <strong>cn=system</strong> under the users folder is selected for the sample because it exists by default and it is empty.</p>
+</div>
+<div class="paragraph">
+<p>The joining of a database user to the user in LDAP is also performed using the unique <strong>employeeNr</strong> (Join tab).</p>
+</div>
+<div class="paragraph">
+<p>The user-privilege assignments are configured in the separate channel <strong>user-roles</strong>. As a result, you need to add a reference to this channel to the <strong>Member</strong> <strong>Channel</strong> field in the General tab.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_user_roles_channel_at_the_identity_store_port"><a class="anchor" href="#_user_roles_channel_at_the_identity_store_port"></a>User-roles Channel at the Identity Store Port</h5>
+<div class="paragraph">
+<p>The user-roles channel represents the privilege assignments of the user.</p>
+</div>
+<div class="paragraph">
+<p>As the sample covers only role assignments, you only need to configure the <strong>rolesassigned</strong> attribute in the mapping section. You need to configure the attributes <strong>permissionsassigned</strong> and <strong>groupsassigned</strong> for permissions and groups. You also need to implement and configure a mapping function for these attributes; in the sample, it is <strong>net.atos.dirx.dxi.connector.svclayer.workflow.MapRolesAssigned</strong>. This function expects the assignments in the attribute <strong>rolesassigned</strong> of the source entry in structured JSON format; for details, see the chapter on the Identity Domain Connector in the <em>DirX Identity Connectivity Reference</em>. The mapping replaces the ID of the role that is known in the database with the DN of the role in LDAP. For this purpose, it retrieves a reference to the connector from the environment and requests it to search the role by its role ID.</p>
+</div>
+<div class="paragraph">
+<p>You can use the sample mapping function implementation as a template for custom mappings. See the source code in the folder <strong>Additions/ServiceLayerConnector</strong> and the Javadoc in the folder <strong>Documentation/DirX identity/ServiceLayerConnector</strong> of the product media.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_setpassword_channel_at_the_identity_store_port"><a class="anchor" href="#_setpassword_channel_at_the_identity_store_port"></a>setPassword Channel at the Identity Store Port</h5>
+<div class="paragraph">
+<p>The <strong>setPassword</strong> channel represents the password-related attributes of the user. This is expressed by setting a reference to the <strong>Password</strong> <strong>Primary</strong> <strong>Channel</strong> field (in the sample, <strong>User</strong>) in the General tab.</p>
+</div>
+<div class="paragraph">
+<p>By default, the connector does not store the password itself. Instead, it sends it encrypted within a password change event to the workflow UserPasswordEventManager. This workflow changes the password at the user and initiates an update in corresponding accounts. You don&#8217;t need to configure other password-related attributes such as <strong>dxrPwdReset</strong> explicitly. They are handled automatically by the password change workflows.</p>
+</div>
+<div class="paragraph">
+<p>If you want the connector to store the password as is directly in LDAP and not send a password change event, you must set the configuration attribute <strong>suppressPwdEvent</strong> to true. You can do this in the port <strong>IdentityDomain</strong> under the join activity of the workflow and select the tab Target System.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_importing_database_users_without_their_role_assignments"><a class="anchor" href="#_importing_database_users_without_their_role_assignments"></a>Importing Database Users without their Role Assignments</h4>
+<div class="paragraph">
+<p>The sample workflow imports users and their role assignments. If you want to import users but not their assignments, you can re-use the workflow configuration by making the following changes to it:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Delete the channels for the assignments: navigate to the user-roles channel of the connected TS directory (in the sample, this is <strong>UserDB</strong>), select <strong>Go</strong> <strong>to</strong> <strong>DataView</strong> and then delete the LDAP channel entry in the Data View. Now perform the same actions on the corresponding user-roles channel under the Identity Store connected directory. To find its parent channel, select the <strong>IdentityDomain</strong> port under the workflow join activity and then navigate to the channel parent.</p>
+</li>
+<li>
+<p>Delete the references from the User channels: under both connected directories, select the User channel. In the General tab, clear the <strong>Member</strong> <strong>Channel</strong> field.</p>
+</li>
+<li>
+<p>Delete the role-assignment filter in the TS port: navigate to the join activity in the workflow and then to its TS port. Select the child role-assignment filter. From the context menu, select <strong>Go to DataView</strong> and then delete the LDAP filter entry in the Data View.</p>
+</li>
+<li>
+<p>Select the workflow wizard <strong>wf-UserImportFromDB</strong>: In the Wizard field of the workflow entry, select the other wizard from the folder <strong>Configuration</strong> &#8594; <strong>Connector</strong> <strong>Types</strong> &#8594; <strong>SvcLayerConnector</strong> &#8594; <strong>Wizards</strong>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_role_import_workflow"><a class="anchor" href="#_role_import_workflow"></a>Role Import Workflow</h3>
+<div class="paragraph">
+<p>The workflow <strong>Import Roles from database</strong> imports roles from a JDBC database using DirX Identity Provisioning Web Services. The following figure illustrates this workflow.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch5_sourceWFs/image6.png" alt="Role Import Workflow">
+</div>
+<div class="title">Figure 6. Role Import Workflow</div>
+</div>
+<div class="paragraph">
+<p>The role import workflow is based on Java real-time technology, with the JDBC connector accessing the database and the SPMLV1ToV2 connector accessing DirX Identity domain. The Full-Import controller is configured as the join engine. Full-Import is a one-way controller that exports all roles from the source system and then imports them into the target system; in this case, the Identity domain.</p>
+</div>
+<div class="paragraph">
+<p>This workflow can also be used as a template for normal provisioning workflows to SPMLv2 target systems by setting the SPMLV1ToV2 connector for the target system port, the LDAP connector for the Identity port and the synchronization or validation controller as the join engine.</p>
+</div>
+<div class="paragraph">
+<p>The connected directory <strong>RoleDB</strong> represents the database containing the roles and the connected directory <strong>SPMLv2WebServices</strong> represents the Identity domain accessed via the Provisioning Services.</p>
+</div>
+<div class="paragraph">
+<p>The workflow needs only one channel for roles and a minimal set of attributes to be synchronized.</p>
+</div>
+<div class="paragraph">
+<p>The next sections describe</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Workflow prerequisites</p>
+</li>
+<li>
+<p>How to configure the workflow</p>
+</li>
+<li>
+<p>The workflow and its activities</p>
+</li>
+<li>
+<p>Ports</p>
+</li>
+<li>
+<p>Channels</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_role_import_workflow_prerequisites"><a class="anchor" href="#_role_import_workflow_prerequisites"></a>Role Import Workflow Prerequisites</h4>
+<div class="paragraph">
+<p>The workflow configuration expects a Microsoft Access database registered as <strong>new-hr</strong> using the URL "jdbc:odbc:new-hr" (see connected directory, tab <strong>Configuration</strong>).</p>
+</div>
+<div class="paragraph">
+<p>At the Identity side, the Identity Web Services must be deployed. Configure its port at the service associated with the connected directory and then configure the server name at the server object associated with the service. The URL path <strong>ProvisioningService/services/Spmlv2RequestService</strong> reflects the default path of the Web Services' Provisioning Services deployed with the IdS-J server.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_role_import_workflow_configuration"><a class="anchor" href="#_role_import_workflow_configuration"></a>Role Import Workflow Configuration</h4>
+<div class="paragraph">
+<p>The default Connectivity scenario&#8217;s <strong>Import Role From Database</strong> workflow synchronizes role entries from a relational database table to the role catalog in the Identity Store.</p>
+</div>
+<div class="paragraph">
+<p>To run the Import Role From Database workflow successfully, you must perform these steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Configure the JDBC source.</p>
+</li>
+<li>
+<p>Configure the Role Import workflow.</p>
+</li>
+<li>
+<p>Deploy the Identity Web Services.</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="_configuring_the_jdbc_source"><a class="anchor" href="#_configuring_the_jdbc_source"></a>Configuring the JDBC Source</h5>
+<div class="paragraph">
+<p>The example database used for this scenario is delivered with DirX Identity and has the pathname <em>install_path</em>*/data/extension/new-hr.mdb*. It is protected with the password <strong>dirx</strong> to show the JDBC connector&#8217;s password feature.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Copy this database to <strong>C:/MetahubData</strong> (or another location, if you prefer). It is a good idea to make a copy of the <strong>new-hr.mdb</strong> database, so that you can restore the original later on if the working copy becomes corrupted.</p>
+</li>
+<li>
+<p>Define this HR database to be an ODBC database:</p>
+</li>
+<li>
+<p>On Windows 32bit:</p>
+</li>
+<li>
+<p>Go to <strong>Start</strong> &#8594; <strong>Settings</strong> &#8594; <strong>Control</strong> <strong>Panel</strong> and then double-click <strong>Administrative Tools</strong></p>
+</li>
+<li>
+<p>Click on <strong>Data</strong> <strong>Sources</strong> <strong>(ODBC)</strong>.</p>
+</li>
+<li>
+<p>On Windows 64bit:</p>
+</li>
+<li>
+<p>Run <strong>C:/windows/sysWOW64/odbcad32.exe</strong>.</p>
+</li>
+<li>
+<p>If you installed DirX Identity with the system account, select the <strong>System DSN</strong> tab and then click <strong>Add&#8230;&#8203;</strong> or use the <strong>User DSN</strong> tab.</p>
+</li>
+<li>
+<p>Select <strong>Driver to Microsoft Access</strong> (<strong>*.mdb</strong>) and then click <strong>Finish</strong>.</p>
+</li>
+<li>
+<p><strong>E</strong>nter <strong>new-hr</strong> into the field <strong>Data Source Name</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Select&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Navigate to the location where you have copied <strong>new-hr.mdb</strong>, select it and then click <strong>OK</strong>. A new ODBC source is created.</p>
+</li>
+<li>
+<p>Click <strong>OK</strong> again.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_configuring_the_role_import_workflow"><a class="anchor" href="#_configuring_the_role_import_workflow"></a>Configuring the Role Import Workflow</h5>
+<div class="paragraph">
+<p>In the activity, select the Full-Import controller, which imports all source entries into the Identity Store and also discovers deleted source entries.</p>
+</div>
+<div class="paragraph">
+<p>In the Identity domain port, specify the following options:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>URL path</strong>: the path of the URL that denotes the Provisioning Web Service. Normally this is: <strong>ProvisioningService/services/Spmlv2RequestService</strong>.</p>
+</li>
+<li>
+<p>Specify <strong>roles</strong> as the SPMLv2 <strong>PSO Target ID</strong>.</p>
+</li>
+<li>
+<p>The reference attributes are <strong>dxrPermissionLink</strong> and <strong>dxrRoleLink</strong>. For the reference handler class, specify the default <strong>com.siemens.dxm.connector.spmlv1tov2.handler.SimpleReferenceHandler</strong> or leave it empty.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Only one channel is used per connected directory. The default mapping considers only very few attributes for importing a role into the Identity domain:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The identifier is concatenated from the role root entry, configured as role_ts_account_base in the connected directory and the attribute "name" of the source entry.</p>
+</li>
+<li>
+<p>The primary key of the source ("pk") is mapped to "dxrRoleId" and is therefore also used as one of the join conditions.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_deploying_the_identity_web_services"><a class="anchor" href="#_deploying_the_identity_web_services"></a>Deploying the Identity Web Services</h5>
+<div class="paragraph">
+<p>See the chapter "Web Services &#8594; Runtime Operation" in the <em>DirX Identity Integration Framework Guide</em> for information on how to deploy the Identity Web Services. You can deploy them to the built-in Tomcat in the IdS-J server or set up an additional Tomcat instance for the deployment.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_role_import_workflow_and_activities"><a class="anchor" href="#_role_import_workflow_and_activities"></a>Role Import Workflow and Activities</h4>
+<div class="paragraph">
+<p>The workflow <strong>Import Roles from database</strong> is a real-time workflow with two activities:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Join activity - implements the role import</p>
+</li>
+<li>
+<p>Error activity - receives update requests that failed despite retries and issues notifications</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The join activity is controlled by the <strong>Full-Import</strong> controller. It exports entries via the connector configured in the <strong>TS</strong> port and performs updates via the connector configured in the <strong>IdentityDomain</strong> port, as illustrated in the following figure:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch5_sourceWFs/image7.png" alt="Role Import Workflow Ports and Channels">
+</div>
+<div class="title">Figure 7. Role Import Workflow Ports and Channels</div>
+</div>
+<div class="paragraph">
+<p>The workflow is not intended to be started on events, since we do not expect change events from the database.</p>
+</div>
+<div class="paragraph">
+<p>There are no global user hooks and no filters necessary.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_role_import_workflow_ports"><a class="anchor" href="#_role_import_workflow_ports"></a>Role Import Workflow Ports</h4>
+<div class="paragraph">
+<p>The role import workflow supports the following ports:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>TS port - represents the database that contains the roles. The JDBC connector is used to access the database.</p>
+</li>
+<li>
+<p>IdentityDomain port - represents the DirX Identity domain and is accessed via the SPMLV1ToV2 connector. The SPMLv2 target identifier <strong>roles</strong> tell the SPMLv2 Web service to manage role objects. For roles, the references <strong>dxrRoleLink</strong> and <strong>dxrPermissionLink</strong> are supported. These items are simple references without attributes, so the simple reference handler is sufficient for the corresponding protocol elements. This workflow does not support any other SPMLv2 capabilities and it does not support passwords.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_role_import_workflow_channels"><a class="anchor" href="#_role_import_workflow_channels"></a>Role Import Workflow Channels</h4>
+<div class="paragraph">
+<p>The workflow needs only one channel per port. It represents the roles.</p>
+</div>
+<div class="sect4">
+<h5 id="_ts_port_2"><a class="anchor" href="#_ts_port_2"></a>TS Port</h5>
+<div class="paragraph">
+<p>Direction: Identity Store &#8594; Database</p>
+</div>
+<div class="paragraph">
+<p>This channel is only used for exporting roles from the database. The roles are expected to be stored in the table <strong>roles</strong>. No filter is required.</p>
+</div>
+<div class="paragraph">
+<p>The column <strong>pk</strong> contains the primary key of a role and is expected to be created by the database on creation. Therefore this attribute must not be updated and the SPML identifier need not be set when a role is created. In addition, the table contains the columns <strong>name</strong> and <strong>description</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Although mapping is not needed, it is configured. It is very simple with only one-to-one mappings. Especially the SPML identifier (table name + primary key) is expected in the attribute <strong>dxrRoleID</strong> in the corresponding Identity channel.</p>
+</div>
+<div class="paragraph">
+<p>There are two join conditions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The first join condition expects an existing primary key and uses the SPML identifier as its search base.</p>
+</li>
+<li>
+<p>The second join condition tries to join using the mapped value of the <strong>name</strong> column, assuming that the name is unique in the table.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_identity_port_2"><a class="anchor" href="#_identity_port_2"></a>Identity Port</h5>
+<div class="paragraph">
+<p>Direction: Database &#8594; Identity Store</p>
+</div>
+<div class="paragraph">
+<p>This channel is used for importing roles into an Identity domain.</p>
+</div>
+<div class="paragraph">
+<p>Since only simple references are used, no user hook is necessary.</p>
+</div>
+<div class="paragraph">
+<p><strong>Export:</strong></p>
+</div>
+<div class="paragraph">
+<p>For exporting, the search base is taken from the environment property <strong>role_ts_account_base</strong> (in the connected directory <strong>Provisioning</strong> tab). The filter is needed to only export roles and no containers. Since the Web Services by default work with paged read, the appropriate flag is set to active (but can be omitted, since this is not configurable in the connector).</p>
+</div>
+<div class="paragraph">
+<p><strong>Mapping:</strong></p>
+</div>
+<div class="paragraph">
+<p>The SPML identifier must be set when a role is created. It is calculated using the <strong>name</strong> attribute of the source entry and the <strong>role_ts_account_base</strong> as the parent folder.</p>
+</div>
+<div class="paragraph">
+<p>This name attribute is also stored in the attribute <strong>dxrReference</strong>, the primary key is stored in <strong>dxrRoleId</strong>. The following figure illustrates the channel mapping.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch5_sourceWFs/image8.png" alt="Role Import Workflow Channel Mapping">
+</div>
+<div class="title">Figure 8. Role Import Workflow Channel Mapping</div>
+</div>
+<div class="paragraph">
+<p><strong>Join:</strong></p>
+</div>
+<div class="paragraph">
+<p>The associated role for a source entry is first searched using the mapped SPML identifier and then via the primary key stored in <strong>dxrRoleID</strong>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ldif_user_import_workflow"><a class="anchor" href="#_ldif_user_import_workflow"></a>LDIF User Import Workflow</h3>
+<div class="paragraph">
+<p>The LDIF user import workflow operates between the Users folder in the Identity Store and an LDIF content file as a connected system that contains user entries.</p>
+</div>
+<div class="paragraph">
+<p>The workflow is based on Java real-time technology, with the LDIF connector accessing an LDIF file and the LDAP connector accessing a DirX Identity domain. The SyncOneWay2Identity controller is configured as the join engine. The controller exports all users from the source file system and then imports them into the Identity domain user tree. It works in "merge" mode, which means that it doesn’t delete users in the Identity Store that do not exist in the source file. If "Replace" mode is desired, you can easily switch to the Full-Import controller in the Controller tab of the workflow’s Join activity.</p>
+</div>
+<div class="paragraph">
+<p>This workflow can also be used as a template for other Java-based source workflows for user objects. Other user data sources instead of LDIF content file may be connected.</p>
+</div>
+<div class="paragraph">
+<p>The connected directory LDIFfile represents the connected file system containing the users and the connected directory Identity Store represents the Identity domain.</p>
+</div>
+<div class="paragraph">
+<p>The next sections describe</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Workflow prerequisites</p>
+</li>
+<li>
+<p>How to configure the workflow</p>
+</li>
+<li>
+<p>The workflow and its activities</p>
+</li>
+<li>
+<p>Ports</p>
+</li>
+<li>
+<p>Channels</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The workflow needs only one channel for users and a set of attributes to be imported.</p>
+</div>
+<div class="paragraph">
+<p>The delivered workflow is:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Import Users from LDIF</strong> - exports all users from the LDIF file found under the specified search base and filter and then imports them into the Identity Store.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_ldif_user_import_workflow_prerequisites"><a class="anchor" href="#_ldif_user_import_workflow_prerequisites"></a>LDIF User Import Workflow Prerequisites</h4>
+<div class="paragraph">
+<p>After performing the following steps, you can run the workflow without changing any configuration parameters:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Copy it with the Global View from the default scenario to your domain.</p>
+</li>
+<li>
+<p>Copy the sample source data file <em>install_path/</em>*data/data.ldif* to <strong>C:/MetahubData</strong>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ldif_user_import_workflow_configuration"><a class="anchor" href="#_ldif_user_import_workflow_configuration"></a>LDIF User Import Workflow Configuration</h4>
+<div class="paragraph">
+<p>Start the LDIF User Import workflow configuration wizard from the Global View domain-specific Source Realtime Scenario by right-clicking on the workflow line between the <strong>LDIFfile</strong> and the <strong>Identity Store</strong> or from the Expert View by right-clicking on the workflow under your domain and then selecting the configuration wizard. By stepping through the wizard, you can activate or deactivate auditing, choose another controller for the join engine, change the export search conditions, adapt the mapping or change the target join criteria.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ldif_user_import_workflow_and_activities"><a class="anchor" href="#_ldif_user_import_workflow_and_activities"></a>LDIF User Import Workflow and Activities</h4>
+<div class="paragraph">
+<p>The workflow Import <strong>Users from LDIF</strong> is a Java-based source workflow with two activities:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Join activity - implements the user import.</p>
+</li>
+<li>
+<p>Error activity - receives update requests that failed despite retries and issues notifications.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The join activity is controlled by default by the <strong>SyncOneWay2Identity</strong> controller. It exports LDIF file user entries via the LDIF connector configured in the <strong>TS</strong> port and then performs updates via the LDAP connector configured in the <strong>IdentityDomain</strong> port, as illustrated in the following figure:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch5_sourceWFs/image9.png" alt="LDIF User Import Workflow Ports and Channels">
+</div>
+<div class="title">Figure 9. LDIF User Import Workflow Ports and Channels</div>
+</div>
+<div class="paragraph">
+<p>You can start the workflow either manually or via a schedule.</p>
+</div>
+<div class="paragraph">
+<p>There are no global user hooks and no filters necessary.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ldif_user_import_workflow_ports"><a class="anchor" href="#_ldif_user_import_workflow_ports"></a>LDIF User Import Workflow Ports</h4>
+<div class="paragraph">
+<p>The workflow supports the following ports:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>TS port - represents the LDIF file that contains the users (accounts). The LDIF connector is used to access the LDIF file.</p>
+</li>
+<li>
+<p>IdentityDomain port - represents the DirX Identity domain and is accessed via the LDAP connector.</p>
+</li>
+<li>
+<p>Event - used for sending change events.</p>
+</li>
+<li>
+<p>Notify - used for sending e-mails.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ldif_user_import_workflow_channels"><a class="anchor" href="#_ldif_user_import_workflow_channels"></a>LDIF User Import Workflow Channels</h4>
+<div class="paragraph">
+<p>The workflow needs only one channel per port. It represents the user objects.</p>
+</div>
+<div class="sect4">
+<h5 id="_users_channel_at_ts_port"><a class="anchor" href="#_users_channel_at_ts_port"></a>Users Channel at TS Port</h5>
+<div class="paragraph">
+<p>This port represents the connection to LDIF. This workflow uses it for exporting users and attributes from the LDIF file.</p>
+</div>
+<div class="paragraph">
+<p><strong>Export:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Searchbase:</strong></p>
+</div>
+<div class="paragraph">
+<p>CN=Users,CN=My-Company.</p>
+</div>
+<div class="paragraph">
+<p><strong>Filter:</strong></p>
+</div>
+<div class="paragraph">
+<p>&amp;(objectClass=inetOrgPerson)(employeeNumber=*)(ou=Procurement).</p>
+</div>
+<div class="paragraph">
+<p>Searching only users from the organizational unit Procurement is just a sample configuration and can be changed to search and import all users from the delivered sample source file data.ldif.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mapping:</strong></p>
+</div>
+<div class="paragraph">
+<p>Mainly used by the LDIF User Export workflow, which performs the configured mapping from Identity to the configured LDIF data export file. This workflow only reads the selected attributes from the import data file as the source for the mapping to Identity.</p>
+</div>
+<div class="paragraph">
+<p><strong>Join:</strong></p>
+</div>
+<div class="paragraph">
+<p>Only used by the LDIF User Export workflow.</p>
+</div>
+<div class="paragraph">
+<p><strong>Specific Attributes:</strong></p>
+</div>
+<div class="paragraph">
+<p>export_file = C:/MetahubData/data_out.ldif</p>
+</div>
+<div class="paragraph">
+<p>Only used by the LDIF User Export workflow as the data output file.</p>
+</div>
+<div class="paragraph">
+<p>Import_file = C:/MetahubData/data.ldif</p>
+</div>
+<div class="paragraph">
+<p>Used by this workflow as the data input file.</p>
+</div>
+<div class="paragraph">
+<p>Used by an LDIF Change (not Content) User Export workflow as the source connected system user data base for search operations of the join engine to calculate add, modify and delete requests as usual depending on those search results representing the existing user data.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_users_channel_at_identity_port"><a class="anchor" href="#_users_channel_at_identity_port"></a>Users Channel at Identity Port</h5>
+<div class="paragraph">
+<p>This port represents the connection to the Identity Store. This workflow uses it for importing users into an Identity domain.</p>
+</div>
+<div class="paragraph">
+<p><strong>Export:</strong></p>
+</div>
+<div class="paragraph">
+<p>This workflow uses the export settings for joining entries. The search base is composed of the environment property <strong>role_user_base</strong> (in the connected directory <strong>Provisioning</strong> tab) and the preceding subfolder “OU=Procurement,O=My-Company” resulting in the complete search base “OU=Procurement,O=My-Company,CN=Users,CN=My-Company”. As mentioned above, reducing the search on the organizational unit Procurement is just a sample and can be changed to search all users in the domain. It should correspond to the search base defined in the Export tab of the Users Channel at TS port.</p>
+</div>
+<div class="paragraph">
+<p>The filter is needed to only export users from an Identity domain.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mapping:</strong></p>
+</div>
+<div class="paragraph">
+<p>The SPML identifier must be set when a user is created. The id is mapped in a java source mapping, which just takes the id of the source entry and assigns it to the target id.</p>
+</div>
+<div class="paragraph">
+<p>The attribute dxrState is set to “NEW” in case an entry is created, otherwise it is not changed (flag onAddOnly=true).</p>
+</div>
+<div class="paragraph">
+<p><strong>Join:</strong></p>
+</div>
+<div class="paragraph">
+<p>The associated user for a source entry is searched using the mapped <strong>employeeNumber</strong> attribute.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ldif_user_export_workflow"><a class="anchor" href="#_ldif_user_export_workflow"></a>LDIF User Export Workflow</h3>
+<div class="paragraph">
+<p>The LDIF user export workflow operates between the Users folder in the Identity Store and an LDIF content file as the connected system that contains user entries.</p>
+</div>
+<div class="paragraph">
+<p>The workflow is based on Java real-time technology, with the LDIF connector accessing an LDIF file and the LDAP connector accessing a DirX Identity domain. The <strong>SyncOneWay2TS</strong> controller is configured as the join engine. The controller exports all users from the Identity domain user tree and then imports them into the connected file system.</p>
+</div>
+<div class="paragraph">
+<p>The connected directory <strong>LDIFfile</strong> represents the connected file system containing the users and the connected directory Identity Store represents the Identity domain.</p>
+</div>
+<div class="paragraph">
+<p>The next sections describe</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Workflow prerequisites</p>
+</li>
+<li>
+<p>How to configure the workflow</p>
+</li>
+<li>
+<p>The workflow and its activities</p>
+</li>
+<li>
+<p>Ports</p>
+</li>
+<li>
+<p>Channels</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The workflow needs only one channel for users and a set of attributes to be exported.</p>
+</div>
+<div class="paragraph">
+<p>The delivered workflow is:</p>
+</div>
+<div class="paragraph">
+<p><strong>Export Users to LDIF</strong> - exports all users from the Identity Store found under the specified search base and filter and then writes them into the LDIF content file.</p>
+</div>
+<div class="sect3">
+<h4 id="_ldif_user_export_workflow_prerequisites"><a class="anchor" href="#_ldif_user_export_workflow_prerequisites"></a>LDIF User Export Workflow Prerequisites</h4>
+<div class="paragraph">
+<p>After performing the following steps, you can run the workflow without changing any configuration parameters:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Copy it with the Global View from the default scenario to your domain.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ldif_user_export_workflow_configuration"><a class="anchor" href="#_ldif_user_export_workflow_configuration"></a>LDIF User Export Workflow Configuration</h4>
+<div class="paragraph">
+<p>Start the LDIF User Export workflow configuration wizard from the Global View domain-specific Source Realtime Scenario by right-clicking on the workflow line between the <strong>LDIFfile</strong> and the <strong>Identity Store</strong> or from the Expert View by right-clicking on the workflow under your domain and then selecting the configuration wizard. By stepping through the wizard, you can activate or deactivate auditing, change the export search conditions, adapt the mapping or change the target join criteria.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ldif_user_export_workflow_and_activities"><a class="anchor" href="#_ldif_user_export_workflow_and_activities"></a>LDIF User Export Workflow and Activities</h4>
+<div class="paragraph">
+<p>The workflow <strong>Export Users to LDIF</strong> is a Java-based workflow with two activities:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Join activity - implements the user export.</p>
+</li>
+<li>
+<p>Error activity - receives update requests that failed despite retries and issues notifications.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The join activity is controlled by the <strong>SyncOneWay2TS</strong> controller. It exports Identity Store user entries via the LDAP connector configured in the <strong>IdentityDomain</strong> port and then performs updates via the LDIF connector configured in the <strong>TS</strong> port, as illustrated in the following figure:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch5_sourceWFs/image9.png" alt="LDIF User Export Workflows Ports and Channels">
+</div>
+<div class="title">Figure 10. LDIF User Export Workflows Ports and Channels</div>
+</div>
+<div class="paragraph">
+<p>You can start the workflow either manually or via a schedule.</p>
+</div>
+<div class="paragraph">
+<p>There are no global user hooks and no filters necessary.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ldif_user_export_workflow_ports"><a class="anchor" href="#_ldif_user_export_workflow_ports"></a>LDIF User Export Workflow Ports</h4>
+<div class="paragraph">
+<p>The workflow supports the following ports:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>IdentityDomain port - represents the DirX Identity domain and is accessed via the LDAP connector.</p>
+</li>
+<li>
+<p>TS port - represents the LDIF file that contains the users (accounts). The LDIF connector is used to access the LDIF file.</p>
+</li>
+<li>
+<p>Event - used for sending change events.</p>
+</li>
+<li>
+<p>Notify - used for sending e-mails.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ldif_user_export_workflow_channels"><a class="anchor" href="#_ldif_user_export_workflow_channels"></a>LDIF User Export Workflow Channels</h4>
+<div class="paragraph">
+<p>The workflow needs only one channel per port. It represents the user objects.</p>
+</div>
+<div class="sect4">
+<h5 id="_users_channel_at_identity_port_2"><a class="anchor" href="#_users_channel_at_identity_port_2"></a>Users Channel at Identity Port</h5>
+<div class="paragraph">
+<p>This port represents the connection to the Identity Store. This workflow uses it for exporting users from the Identity domain.</p>
+</div>
+<div class="paragraph">
+<p><strong>Export:</strong></p>
+</div>
+<div class="paragraph">
+<p>This workflow uses the export settings for searching the entries to be exported. The search base is composed of the environment property <strong>role_user_base</strong> (in the connected directory <strong>Provisioning</strong> tab) and the preceding subfolder “OU=Procurement,O=My-Company” resulting in the complete search base “OU=Procurement,O=My-Company,CN=Users,CN=My-Company”. Reducing the search on the organizational unit Procurement is just a sample and can of course be extended to search all users in the domain. It should correspond to the search base defined in the Export tab of the Users Channel at TS port.</p>
+</div>
+<div class="paragraph">
+<p>The filter is needed to only export users from an Identity domain.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mapping:</strong></p>
+</div>
+<div class="paragraph">
+<p>Mainly used by the LDIF User Import workflow, which performs the configured mapping from the LDIF data import file to Identity. This workflow only reads the selected attributes from Identity as the source for the mapping to the LDIF content data export file.</p>
+</div>
+<div class="paragraph">
+<p><strong>Join:</strong></p>
+</div>
+<div class="paragraph">
+<p>Only used by the LDIF User Import workflow.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_users_channel_at_ts_port_2"><a class="anchor" href="#_users_channel_at_ts_port_2"></a>Users Channel at TS Port</h5>
+<div class="paragraph">
+<p>This port represents the connection to LDIF. This workflow uses it for exporting users and attributes from the LDIF file.</p>
+</div>
+<div class="paragraph">
+<p><strong>Export:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Searchbase:</strong></p>
+</div>
+<div class="paragraph">
+<p>CN=Users,CN=My-Company.</p>
+</div>
+<div class="paragraph">
+<p><strong>Filter:</strong></p>
+</div>
+<div class="paragraph">
+<p>&amp;(objectClass=inetOrgPerson)(employeeNumber=*)(ou=Procurement).</p>
+</div>
+<div class="paragraph">
+<p>Searching only users from the organizational unit Procurement is just a sample configuration and can be changed to search and import all users from the delivered sample source file data.ldif.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mapping:</strong></p>
+</div>
+<div class="paragraph">
+<p>The SPML identifier must be set when a user is created. The id is mapped in a simple expression mapping from the source id, $\{source.id}, to the target id.</p>
+</div>
+<div class="paragraph">
+<p><strong>Join:</strong></p>
+</div>
+<div class="paragraph">
+<p>The associated user for a source entry is searched using the mapped target id as first join criteria and then the source employeeNumber attribute as second join criteria.</p>
+</div>
+<div class="paragraph">
+<p><strong>Specific Attributes:</strong></p>
+</div>
+<div class="paragraph">
+<p>export_file = C:/MetahubData/data_out.ldif</p>
+</div>
+<div class="paragraph">
+<p>Used by this workflow as the data output file.</p>
+</div>
+<div class="paragraph">
+<p>Import_file = C:/MetahubData/data.ldif</p>
+</div>
+<div class="paragraph">
+<p>Only used by the LDIF User Import workflow as the data input file.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_csv_workflows"><a class="anchor" href="#_csv_workflows"></a>CSV Workflows</h3>
+<div class="paragraph">
+<p>DirX Identity delivers Export and Import CSV workflows. This section describes the workflows features that are common to both types of workflow.</p>
+</div>
+<div class="paragraph">
+<p>Rows of a CSV file do not usually have an identifier. The Specific Attribute namingAttr describes which column is used as the identifier. This column should contain a distinguished name. For searches, this column is evaluated for the base object and scope part of the search.</p>
+</div>
+<div class="paragraph">
+<p>The columns and their order are defined by the mapping.Technical attribute. The columns are defined by the dxmselectedAttributes LDAP attribute.</p>
+</div>
+<div class="paragraph">
+<p>You can also define which separator should be used in the CSV file and whether or not the CSV file should include a header line.</p>
+</div>
+<div class="sect3">
+<h4 id="_csv_user_import_workflow"><a class="anchor" href="#_csv_user_import_workflow"></a>CSV User Import Workflow</h4>
+<div class="paragraph">
+<p>The CSV user import workflow operates between the Users folder in the Identity Store and a CSV file as the connected system that contains user entries.</p>
+</div>
+<div class="paragraph">
+<p>The workflow is based on Java real-time technology, with the CSV connector accessing a CSV file and the LDAP connector accessing a DirX Identity domain. The SyncOneWay2Identity controller is configured as the join engine. The controller exports all users from the source file system and then imports them into the Identity domain user tree. It works in "Merge" mode, which means that it doesn&#8217;t delete users in the Identity Store that do not exist in the source file. If you want to run in "Replace" mode, you can switch to the Full-Import controller in the Controller tab of the workflow’s Join activity.</p>
+</div>
+<div class="paragraph">
+<p>The connected directory CSV file represents the connected file system containing the users and the connected directory Identity Store represents the Identity domain.</p>
+</div>
+<div class="paragraph">
+<p>The next sections describe</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Workflow prerequisites</p>
+</li>
+<li>
+<p>How to configure the workflow</p>
+</li>
+<li>
+<p>The workflow and its activities</p>
+</li>
+<li>
+<p>Ports</p>
+</li>
+<li>
+<p>Channels</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The workflow needs only one channel for users and a set of attributes to be imported.</p>
+</div>
+<div class="paragraph">
+<p>The delivered workflow is:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Import Users from CSV</strong> - exports all users from the CSV file found under the specified search base and filter and then imports them into the Identity Store.</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="_csv_user_import_workflow_prerequisites"><a class="anchor" href="#_csv_user_import_workflow_prerequisites"></a>CSV User Import Workflow Prerequisites</h5>
+<div class="paragraph">
+<p>After performing the following steps, you can run the workflow without changing any configuration parameters:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Copy it with the Global View from the default scenario to your domain.</p>
+</li>
+<li>
+<p>Copy the sample source data file <em>install_path/</em>*data/datatest.csv* to <strong>C:/MetahubData</strong>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_csv_user_import_workflow_configuration"><a class="anchor" href="#_csv_user_import_workflow_configuration"></a>CSV User Import Workflow Configuration</h5>
+<div class="paragraph">
+<p>Start the CSV User Import workflow configuration wizard from the Global View domain-specific Source Realtime Scenario by right-clicking on the workflow line between the <strong>CSVFile</strong> and the <strong>Identity Store</strong> or from the Expert View by right-clicking on the workflow under your domain and then selecting the configuration wizard. By stepping through the wizard, you can activate or deactivate auditing, choose another controller for the join engine, change the export search conditions, adapt the mapping or change the target join criteria.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_csv_user_import_workflow_and_activities"><a class="anchor" href="#_csv_user_import_workflow_and_activities"></a>CSV User Import Workflow and Activities</h5>
+<div class="paragraph">
+<p>The workflow <strong>Import Users from CSV</strong> is a Java-based source workflow with two activities:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Join activity - implements the user import.</p>
+</li>
+<li>
+<p>Error activity - receives update requests that failed despite retries and issues notifications.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The join activity is controlled by default by the <strong>SyncOneWay2Identity</strong> controller. It exports CSV file user entries via the CSV connector configured in the <strong>TS</strong> port and then performs updates via the LDAP connector configured in the <strong>IdentityDomain</strong> port, as illustrated in the following figure:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch5_sourceWFs/image9.png" alt="CSV User Import Workflow Ports and Channels">
+</div>
+<div class="title">Figure 11. CSV User Import Workflow Ports and Channels</div>
+</div>
+<div class="paragraph">
+<p>You can start the workflow either manually or via a schedule.</p>
+</div>
+<div class="paragraph">
+<p>There are no global user hooks and no filters necessary.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_csv_user_import_workflow_ports"><a class="anchor" href="#_csv_user_import_workflow_ports"></a>CSV User Import Workflow Ports</h5>
+<div class="paragraph">
+<p>The workflow supports the following ports:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>TS port - represents the CSV file that contains the users (accounts). The CSV connector is used to access the CSV file.</p>
+</li>
+<li>
+<p>IdentityDomain port - represents the DirX Identity domain and is accessed via the LDAP connector.</p>
+</li>
+<li>
+<p>Event - used for sending change events.</p>
+</li>
+<li>
+<p>Notify - used for sending e-mails.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_csv_user_import_workflow_channels"><a class="anchor" href="#_csv_user_import_workflow_channels"></a>CSV User Import Workflow Channels</h5>
+<div class="paragraph">
+<p>The workflow needs only one channel per port. It represents the user objects.</p>
+</div>
+<div class="paragraph">
+<p>1. Users Channel at TS Port</p>
+</div>
+<div class="paragraph">
+<p>This port represents the connection to CSV. This workflow uses it for exporting users and attributes from the CSV file.</p>
+</div>
+<div class="paragraph">
+<p><strong>Export:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Searchbase:</strong></p>
+</div>
+<div class="paragraph">
+<p>CN=Users,CN=My-Company.</p>
+</div>
+<div class="paragraph">
+<p><strong>Filter:</strong></p>
+</div>
+<div class="paragraph">
+<p>&amp;(employeeNumber=*)(ou=Procurement).</p>
+</div>
+<div class="paragraph">
+<p>Searching only users from the organizational unit Procurement is just a sample configuration and can of course be changed to search and import all users from the delivered sample source file datatest.csv.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mapping:</strong></p>
+</div>
+<div class="paragraph">
+<p>Mainly used by the CSV User Export workflow, which performs the configured mapping from Identity to the configured CSV data export file. This workflow only reads the selected attributes from the import data file as the source for the mapping to Identity. Mapping includes all columns of the CSV file. The order in the mapping (technical the dxmSelectedAttributes) represents the order in the CSV file. The column specified by namingAttribute defines the identifier. Here a column dn is specified which contains a distinguished name. The value of this column is returned as SPML Id for the row.</p>
+</div>
+<div class="paragraph">
+<p><strong>Join:</strong></p>
+</div>
+<div class="paragraph">
+<p>Only used by the CSV User Export workflow.</p>
+</div>
+<div class="paragraph">
+<p><strong>Specific Attributes:</strong></p>
+</div>
+<div class="paragraph">
+<p>export_file = C:/MetahubData/datatest_out.csv</p>
+</div>
+<div class="paragraph">
+<p>Only used by the CSV User Export workflow as the data output file.</p>
+</div>
+<div class="paragraph">
+<p>Import_file = C/MetahubData/datatest.csv</p>
+</div>
+<div class="paragraph">
+<p>Used by this workflow as the data input file.</p>
+</div>
+<div class="paragraph">
+<p>Naming_attr = dn</p>
+</div>
+<div class="paragraph">
+<p>The column containing the identifier.</p>
+</div>
+<div class="paragraph">
+<p>The has_header attribute is not specified; that is, there is no header line in the CSV file. Define <strong>true</strong> if the CSV file contains a header line</p>
+</div>
+<div class="paragraph">
+<p>The separator attribute is not specified; that is, the comma is the separator. Define | if the CSV file uses the pipe symbol as a separator</p>
+</div>
+<div class="paragraph">
+<p>Comment: Not specified. When reading, no comment lines are skipped. If specified (for example, #”) every line containing this value is treated as a comment and is skipped during read. Sometines comments are used even though the CSV specification does not support comment lines.</p>
+</div>
+<div class="paragraph">
+<p>2. Users Channel at Identity Port</p>
+</div>
+<div class="paragraph">
+<p>This port represents the connection to the Identity Store. This workflow uses it for importing users into an Identity domain.</p>
+</div>
+<div class="paragraph">
+<p><strong>Export:</strong></p>
+</div>
+<div class="paragraph">
+<p>This workflow uses the export settings for joining entries. The search base is composed of the environment property <strong>role_user_base</strong> (in the connected directory <strong>Provisioning</strong> tab) and the preceding subfolder "OU=Procurement,O=My-Company" resulting in the complete search base "OU=Procurement,O=My-Company,CN=Users,CN=My-Company". As mentioned above reducing the search on the organizational unit Procurement is just a sample and can of course be extended to search all users in the domain. It should correspond to the search base defined in the Export tab of the Users Channel at TS port.</p>
+</div>
+<div class="paragraph">
+<p>The filter is needed to only export users from an Identity domain.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mapping:</strong></p>
+</div>
+<div class="paragraph">
+<p>The SPML identifier must be set when a user is created. The id is mapped in a Java source mapping, which just takes the id of the source entry and assigns it to the target id.</p>
+</div>
+<div class="paragraph">
+<p>The attribute dxrState is set to "NEW" when an entry is created; otherwise, it is not changed (flag onAddOnly=true).</p>
+</div>
+<div class="paragraph">
+<p><strong>Join:</strong></p>
+</div>
+<div class="paragraph">
+<p>The associated user for a source entry is searched using the mapped <strong>employeeNumber</strong> attribute.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_customizing_the_workflow_to_handle_files_without_a_dn_column"><a class="anchor" href="#_customizing_the_workflow_to_handle_files_without_a_dn_column"></a>Customizing the Workflow to Handle Files without a DN Column</h5>
+<div class="paragraph">
+<p>This section provides an example of how to customize the CSV User Import workflow to import users from CSV files that do not provide a DN column. In our example, we have a CSV file named <strong>Users.csv</strong> with user entries. We want to import these entries using the Java-based source workflows.</p>
+</div>
+<div class="paragraph">
+<p>In <strong>Users.csv</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The first line is the header with the name of the fields. The separator is the semicolon (<strong>;</strong>).</p>
+</li>
+<li>
+<p>The second line is a user entry</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Here is an example:</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><code>sn;givenName;cn;employeeNumber;employeeType;c;l;o;street;telephoneNumber;mail;ou;description;preferredLanguage;dxmOprMaster;dxrSalutation;postalCode;facsimileTelephoneNumber;dxrState</code></p>
+</div>
+<div class="paragraph">
+<p><code>Muster;Henry;Muster Henry;5208;Internal;DE;My-Company Munich;My-Company;Teller Str. 1113;+49 89 323-42111;;Sales;Manager of Sales department;de;HR;Hr.;80157;+49 89 323-58564;NEW</code></p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>To customize the workflow to import users from our example CSV file:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Copy <strong>Users.csv</strong> to <strong>C:/MetahubData</strong>.</p>
+</li>
+<li>
+<p>In DirX Identity Manager, go to <strong>Connectivity</strong> &#8594; <strong>Global</strong> <strong>View</strong> &#8594; <strong>Scenarios</strong> &#8594; <strong>My</strong>-<strong>Company</strong> &#8594; <strong>Main</strong>.</p>
+</li>
+<li>
+<p>Right click and then select <strong>New</strong> <strong>Connected</strong> <strong>Directory</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/ch5_sourceWFs/image11.png" alt="image11"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Right click the new directory and then select <strong>Configure</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/ch5_sourceWFs/image12.png" alt="image12"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Select <strong>CSVfile</strong> and click <strong>Next</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/ch5_sourceWFs/image13.png" alt="9"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In <strong>Name</strong>, enter <strong>UserCSV</strong> and then click <strong>Next</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/ch5_sourceWFs/image14.png" alt="image14"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Step through the next configuration dialogs without changing anything until you arrive at the Supply Operational Attributes dialog.</p>
+</li>
+<li>
+<p>Define the unique identifier field in your CSV file. In our example, it is <strong>employeeNumber</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/ch5_sourceWFs/image15.png" alt="image15"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click <strong>Next</strong> and then <strong>Finish</strong>.</p>
+</li>
+<li>
+<p>Right click and select <strong>New Workflow Line.</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/ch5_sourceWFs/image16.png" alt="image16"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Draw a line between <strong>UserCSV</strong> and <strong>IdentityStore</strong>. Select the line, right click and select <strong>New</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/ch5_sourceWFs/image17.png" alt="image17"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Select <strong>Import Users from CSV</strong> and click <strong>Next</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/ch5_sourceWFs/image18.png" alt="image18"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In <strong>Name</strong>, enter <strong>Import Users from UserCSV</strong>. Click <strong>Next</strong> to step through the remaining dialogs. Click <strong>Finish</strong>.</p>
+</li>
+<li>
+<p>In the Expert View, navigate to the Identity Store <strong>users</strong> channel as shown in the following figure:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/ch5_sourceWFs/image19.png" alt="image19"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Select the Export tab. Delete the contents of <strong>Search</strong> <strong>Base</strong> and set <strong>Filter</strong> to <strong>none</strong>:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/ch5_sourceWFs/image20.png" alt="image20"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Select the Mapping tab and then click <strong>Edit</strong>. Deselect <strong>ID mapping</strong> and delete the line with Mapping Source <strong>dummy</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/ch5_sourceWFs/image21.png" alt="image21"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In the Specific Attributes tab, add the following values to the following fields:</p>
+</li>
+<li>
+<p>import_file - <strong>C:/MetahubData/Users.csv</strong></p>
+</li>
+<li>
+<p>naming_attr - <strong>employeeNumber</strong></p>
+</li>
+<li>
+<p>has_header - <strong>true</strong></p>
+</li>
+<li>
+<p>separator - <strong>;</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/ch5_sourceWFs/image22.png" alt="image22"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Select the corresponding UsrCSV user channel as shown in the next figure:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/ch5_sourceWFs/image23.png" alt="image23"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Select the Export tab and change <strong>Search</strong> <strong>Base</strong> to <strong>"o=My-Company," + $\{env.role_user_base}</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/ch5_sourceWFs/image24.png" alt="image24"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In the Mapping tab, change the value in the first line of the Mapping Source column that corresponds to <strong>Identifier:DN</strong> to the following:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>"cn=" + ${source.givenName} + " " + ${source.sn} + "," + "ou=" + ${source.ou} + "," + ${env.user_base}"</strong></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/ch5_sourceWFs/image25.png" alt="image25"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In the Specific Attributes tab, add the following parameter and save:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>user_base : o=My-Company,cn=Users,cn=My-Company</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Go to the <strong>Import Users from UserCSV</strong> workflow as shown in the next figure. Click <strong>Edit</strong> and check <strong>Is</strong> <strong>Active</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/ch5_sourceWFs/image26.png" alt="image26"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Right-click on <strong>Import Users from UserCSV</strong> and then select <strong>Load IDS-J Configuration</strong> from the context menu.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/ch5_sourceWFs/image27.png" alt="image27"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Select <strong>Import Users from UserCSV</strong> and run the workflow.</p>
+</li>
+<li>
+<p>Check to see if the user was created.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_csv_user_export_workflow"><a class="anchor" href="#_csv_user_export_workflow"></a>CSV User Export Workflow</h4>
+<div class="paragraph">
+<p>The CSV user export workflow operates between the Users folder in the Identity Store and a CSV file as the connected system that contains user entries.</p>
+</div>
+<div class="paragraph">
+<p>The workflow is based on Java real-time technology, with the CSV connector accessing a CSV file and the LDAP connector accessing a DirX Identity domain. The <strong>SyncOneWay2TS</strong> controller is configured as the join engine. The controller exports all users from the Identity domain user tree and then imports them into the connected file system.</p>
+</div>
+<div class="paragraph">
+<p>The connected directory <strong>CSVfile</strong> represents the connected file system containing the users and the connected directory Identity Store represents the Identity domain.</p>
+</div>
+<div class="paragraph">
+<p>The next sections describe</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Workflow prerequisites</p>
+</li>
+<li>
+<p>How to configure the workflow</p>
+</li>
+<li>
+<p>The workflow and its activities</p>
+</li>
+<li>
+<p>Ports</p>
+</li>
+<li>
+<p>Channels</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The workflow needs only one channel for users and a set of attributes to be exported.</p>
+</div>
+<div class="paragraph">
+<p>The delivered workflow is:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Export Users to CSV</strong> - exports all users from the Identity Store found under the specified search base and filter and then writes them into the CSV file.</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="_csv_user_export_workflow_prerequisites"><a class="anchor" href="#_csv_user_export_workflow_prerequisites"></a>CSV User Export Workflow Prerequisites</h5>
+<div class="paragraph">
+<p>After performing the following steps, you can run the workflow without changing any configuration parameters:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Copy it with the Global View from the default scenario to your domain.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_csv_user_export_workflow_configuration"><a class="anchor" href="#_csv_user_export_workflow_configuration"></a>CSV User Export Workflow Configuration</h5>
+<div class="paragraph">
+<p>Start the CSV User Export workflow configuration wizard from the Global View domain-specific Source Realtime Scenario by right-clicking on the workflow line between the <strong>CSVfile</strong> and the <strong>Identity Store</strong> or from the Expert View by right-clicking on the workflow under your domain and then selecting the configuration wizard. By stepping through the wizard, you can activate or deactivate auditing, change the export search conditions, adapt the mapping or change the target join criteria.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_csv_user_export_workflow_and_activities"><a class="anchor" href="#_csv_user_export_workflow_and_activities"></a>CSV User Export Workflow and Activities</h5>
+<div class="paragraph">
+<p>The workflow Export Users to CSV is a Java-based workflow with two activities:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Join activity - implements the user export.</p>
+</li>
+<li>
+<p>Error activity - receives update requests that failed despite retries and issues notifications.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The join activity is controlled by the <strong>SyncOneWay2TS</strong> controller. It exports Identity Store user entries via the LDAP connector configured in the <strong>IdentityDomain</strong> port and performs updates via the CSV connector configured in the <strong>TS</strong> port as illustrated in the following figure:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch5_sourceWFs/image10.png" alt="CSV User Export Workflows Ports and Channels">
+</div>
+<div class="title">Figure 12. CSV User Export Workflows Ports and Channels</div>
+</div>
+<div class="paragraph">
+<p>You can start the workflow either manually or via a schedule.</p>
+</div>
+<div class="paragraph">
+<p>There are no global user hooks and no filters necessary.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_csv_user_export_workflow_ports"><a class="anchor" href="#_csv_user_export_workflow_ports"></a>CSV User Export Workflow Ports</h5>
+<div class="paragraph">
+<p>The workflow supports the following ports:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>IdentityDomain port - represents the DirX Identity domain and is accessed via the LDAP connector.</p>
+</li>
+<li>
+<p>TS port - represents the CSV file that contains the users (accounts). The CSV connector is used to access the CSV file.</p>
+</li>
+<li>
+<p>Event - used for sending change events.</p>
+</li>
+<li>
+<p>Notify - used for sending e-mails.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_csv_user_export_workflow_channels"><a class="anchor" href="#_csv_user_export_workflow_channels"></a>CSV User Export Workflow Channels</h5>
+<div class="paragraph">
+<p>The workflow needs only one channel per port. It represents the user objects.</p>
+</div>
+<div class="paragraph">
+<p>1. Users Channel at Identity Port</p>
+</div>
+<div class="paragraph">
+<p>This port represents the connection to the Identity Store. This workflow uses it for exporting users from the Identity domain.</p>
+</div>
+<div class="paragraph">
+<p><strong>Export:</strong></p>
+</div>
+<div class="paragraph">
+<p>This workflow uses the export settings for searching the entries to be exported. The search base is composed of the environment property <strong>role_user_base</strong> (in the connected directory <strong>Provisioning</strong> tab) and the preceding subfolder "OU=Procurement,O=My-Company" resulting in the complete search base "OU=Procurement,O=My-Company,CN=Users,CN=My-Company". Reducing the search on the organizational unit Procurement is just a sample and can be changed to search all users in the domain. It should correspond to the search base defined in the Export tab of the Users Channel at TS port.</p>
+</div>
+<div class="paragraph">
+<p>The filter is needed only to export users from an Identity domain.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mapping:</strong></p>
+</div>
+<div class="paragraph">
+<p>Mainly used by the CSV User Import workflow, which performs the configured mapping from the CSV data import file to Identity. This workflow only reads the selected attributes from Identity as the source for the mapping to the CSV data export file.</p>
+</div>
+<div class="paragraph">
+<p><strong>Join:</strong></p>
+</div>
+<div class="paragraph">
+<p>Only used by the CSV User Import workflow.</p>
+</div>
+<div class="paragraph">
+<p>2. Users Channel at TS Port</p>
+</div>
+<div class="paragraph">
+<p>This port represents the connection to CSV. This workflow uses it for exporting users and attributes from the CSV file.</p>
+</div>
+<div class="paragraph">
+<p><strong>Export:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Searchbase:</strong></p>
+</div>
+<div class="paragraph">
+<p>CN=Users,CN=My-Company.</p>
+</div>
+<div class="paragraph">
+<p><strong>Filter:</strong></p>
+</div>
+<div class="paragraph">
+<p>&amp;(employeeNumber=*)(ou=Procurement).</p>
+</div>
+<div class="paragraph">
+<p>Searching only users from the organizational unit Procurement is just a sample configuration and can be changed to search and import all users from the delivered sample source file <strong>datatest.csv</strong>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mapping:</strong></p>
+</div>
+<div class="paragraph">
+<p>The SPML identifier must be set when a user is created. The id is mapped in a simple expression mapping from the source id, $\{source.id}, to the target id.</p>
+</div>
+<div class="paragraph">
+<p><strong>Join:</strong></p>
+</div>
+<div class="paragraph">
+<p>The associated user for a source entry is searched using the mapped target id as first join criteria and then the source employeeNumber attribute as second join criteria.</p>
+</div>
+<div class="paragraph">
+<p><strong>Specific Attributes:</strong></p>
+</div>
+<div class="paragraph">
+<p>export_file = C:/MetahubData/datatest_out.csv</p>
+</div>
+<div class="paragraph">
+<p>Used as data output file by this workflow.</p>
+</div>
+<div class="paragraph">
+<p>Naming_attr = dn</p>
+</div>
+<div class="paragraph">
+<p>The column that contains the identifier. The generated identifier is written to this column</p>
+</div>
+<div class="paragraph">
+<p>The has_header attribute is not specified; that is, there is no header line in the CSV file. Define <strong>true</strong> if the CSV file contains a header line</p>
+</div>
+<div class="paragraph">
+<p>The separator attribute is not specified; that is, the comma is the separator. Define | if the CSV file uses the pipe symbol as the separator</p>
+</div>
+<div class="paragraph">
+<p>Import_file = C:/MetahubData/datatest.csv</p>
+</div>
+<div class="paragraph">
+<p>Only used by the CSV User Import workflow as the data input file.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_remote_ad_workflow"><a class="anchor" href="#_remote_ad_workflow"></a>Remote AD Workflow</h3>
+<div class="paragraph">
+<p>The Remote AD workflow is not a typical source workflow: it is a combination of workflows (AD export and LDIF import) with special data transfer (Web service).</p>
+</div>
+<div class="paragraph">
+<p>DirX Identity can be deployed as part of the Atos Cloud Service Identity Management as a Service (IDMaaS). Provisioning targets can be in the provider’s (Atos) cloud infrastructure, in a public cloud or on customer premises outside of any cloud. The Remote AD workflow is intended for use at customer sites outside of a cloud.</p>
+</div>
+<div class="paragraph">
+<p>The Remote AD connector must be able to work without online (LDAP) connection to the DirX Identity configuration database. On the customer side, a standard framework-based job implements the export to file function. The job obtains its configuration from XML files: one for the job and one for the search request with the filter conditions. An LDIF import workflow imports the file to DirX Directory.</p>
+</div>
+<div class="paragraph">
+<p>The following figure illustrates the Remote AD connector operation:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch5_sourceWFs/image28.png" alt="Remote AD Connector Operation">
+</div>
+<div class="title">Figure 13. Remote AD Connector Operation</div>
+</div>
+<div class="paragraph">
+<p>See the Remote AD Connector description in the <em>DirX Identity Connectivity Reference</em> for more details.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_external_ldap_user_import_workflows"><a class="anchor" href="#_external_ldap_user_import_workflows"></a>External LDAP User Import Workflows</h3>
+<div class="paragraph">
+<p>DirX Identity delivers two workflows for importing users from an external LDAP to the Identity Store. They are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Full Import of external LDAP Users</strong> - the workflow is started from DirX Identity Manager (either manually or by a schedule) and performs either the initial load of users from an external LDAP directory or the complete re-synchronization of the external LDAP directory. In complete re-synchronization, users may be deleted or marked as to-be-deleted in the Identity Store.</p>
+</li>
+<li>
+<p><strong>Import Users from external LDAP</strong> - The workflow is normally started by an event and imports a user (or updates a user or deletes a user or marks a user as to-be-deleted) depending on the incoming event and the existence of that user in the Identity Store. If the workflow is started by DirX Identity Manager manually or triggered by the scheduler, it performs a re-synchronization of the external LDAP users (without deleting users or marking users as deleted).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The next sections describe the configuration of the two workflows and how to send events using <strong>metacp</strong> to trigger the synchronization of an external user.</p>
+</div>
+<div class="sect3">
+<h4 id="_external_ldap_user_full_import_workflow"><a class="anchor" href="#_external_ldap_user_full_import_workflow"></a>External LDAP User Full Import Workflow</h4>
+<div class="paragraph">
+<p>The <strong>Full Import of external LDAP Users</strong> workflow operates between the Users folder in the <strong>Identity Store</strong> and an external LDAP directory accessing organizational persons in that directory.</p>
+</div>
+<div class="paragraph">
+<p>The workflow is based on Java real-time technology, with two LDAP connectors accessing the external LDAP directory and the Identity Store. The <strong>FullImport</strong> controller is configured as the join engine. The controller exports all users from the external LDAP directory and then imports them into the user tree of the Identity Store. It performs the following operations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Adds a user if the entry does not exist in the Identity Store.</p>
+</li>
+<li>
+<p>Modifies a user if the user exists in the Identity Store but has different attribute values.</p>
+</li>
+<li>
+<p>Marks a user as to-be-deleted (dxrState=“TBDEL”) if the user is no longer available in the external LDAP directory (this is the default behavior of the workflow)</p>
+</li>
+<li>
+<p>Deletes a user if it is no longer available in the external LDAP directory. (This mode for external users that have been deleted requires changes to the workflow configuration; specifically, mapping of the <strong>dxrState</strong> attribute and post mapping)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This workflow can also be used as a template for other Java-based source workflows for synchronization of objects other than users.</p>
+</div>
+<div class="paragraph">
+<p>The next sections describe</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Workflow prerequisites</p>
+</li>
+<li>
+<p>How to configure the workflow</p>
+</li>
+<li>
+<p>The workflow and its activities</p>
+</li>
+<li>
+<p>Ports</p>
+</li>
+<li>
+<p>Channels</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The workflow needs only one channel for users and a set of attributes to be imported.</p>
+</div>
+<div class="sect4">
+<h5 id="_external_ldap_user_full_import_workflow_prerequisites"><a class="anchor" href="#_external_ldap_user_full_import_workflow_prerequisites"></a>External LDAP User Full Import Workflow Prerequisites</h5>
+<div class="paragraph">
+<p>If you did not create a new Connected Directory when you configured the workflow, you need to create one as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Go to the Global View and configure a new Connected Directory by choosing the template <strong>UserLDAP</strong> from the default folder.</p>
+</li>
+<li>
+<p>In <strong>General</strong> <strong>Parameters</strong>, configure <strong>LDAP</strong> <strong>External</strong> <strong>Service</strong> by entering values for <strong>IP</strong> <strong>Address</strong> and <strong>Data</strong> <strong>Port</strong>. You can also set the <strong>SSL</strong>, <strong>Secure</strong> <strong>Port</strong> and <strong>Client</strong> <strong>Authentication</strong> fields if necessary.</p>
+</li>
+<li>
+<p>In <strong>Provisioning</strong>, define the search bases for searching the users:</p>
+</li>
+<li>
+<p>In <strong>Identity</strong> &#8594; <strong>Account Base</strong>, define the search bases for searching the users in the Identity Store.</p>
+</li>
+<li>
+<p>In <strong>Target</strong> <strong>System</strong> &#8594; <strong>UserBase</strong>, define the search bases for searching the users in the external LDAP directory.</p>
+</li>
+<li>
+<p>In <strong>Bind</strong> <strong>Profile</strong>, define the credentials of <strong>LDAPAdmin</strong> (the administrator of the external LDAP directory). Set at least <strong>User</strong>, <strong>Password</strong>, <strong>Authentication</strong> and <strong>Protocol</strong>.</p>
+</li>
+<li>
+<p>In <strong>Set</strong> <strong>Directory</strong> <strong>Name</strong>, set the name of the Connected Directory (if you have not yet already done so).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Create a new workflow line between the Connected Directory and the Identity Store.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_external_ldap_user_full_import_workflow_configuration"><a class="anchor" href="#_external_ldap_user_full_import_workflow_configuration"></a>External LDAP User Full Import Workflow Configuration</h5>
+<div class="paragraph">
+<p>Start the <strong>Full Import of external LDAP Users</strong> workflow configuration wizard: right-click on the workflow line (select <strong>New</strong>) and then select the <strong>Full Import of external LDAP Users</strong> template of the default folder. Alternatively you can select the workflow in the Expert View by right-clicking on the workflow under your domain and then selecting the configuration wizard. By stepping through the wizard, you can activate or deactivate auditing, choose another controller for the join engine (not recommended), change the export search conditions, adapt the mapping or change the target join criteria. Keep in mind that you don’t need to set <strong>Cluster</strong> and <strong>Domain</strong> in <strong>Is Applicable for</strong> when defining the <strong>General Info</strong> parameters.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_external_ldap_user_full_import_workflow_and_activities"><a class="anchor" href="#_external_ldap_user_full_import_workflow_and_activities"></a>External LDAP User Full Import Workflow and Activities</h5>
+<div class="paragraph">
+<p>The <strong>Full Import of external LDAP Users</strong> workflow is a Java-based source workflow with two activities:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Join activity - implements the user import.</p>
+</li>
+<li>
+<p>Error activity - receives update requests that failed despite retries and issues notifications.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The join activity is controlled by default by the <strong>FullImport</strong> controller. It exports user entries of the external LDAP directory via the LDAP connector configured in the <strong>TS</strong> port and then performs updates via the LDAP connector configured in the <strong>IdentityDomain</strong> port, as illustrated in the following figure:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch5_sourceWFs/image29.png" alt="External LDAP Users Full Import Workflow Ports and Channels">
+</div>
+<div class="title">Figure 14. External LDAP Users Full Import Workflow Ports and Channels</div>
+</div>
+<div class="paragraph">
+<p>You can start the workflow either manually or via a schedule.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_external_ldap_user_full_import_workflow_ports"><a class="anchor" href="#_external_ldap_user_full_import_workflow_ports"></a>External LDAP User Full Import Workflow Ports</h5>
+<div class="paragraph">
+<p>The workflow supports the following ports:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>TS port - represents the external LDAP directory that contains the users. The LDAP connector is used to access that LDAP directory.</p>
+</li>
+<li>
+<p>IdentityDomain port - represents the DirX Identity domain and is accessed via the LDAP connector.</p>
+</li>
+<li>
+<p>Event - used for sending change events.</p>
+</li>
+<li>
+<p>Notify - used for sending e-mails.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_external_ldap_user_full_import_workflow_channels"><a class="anchor" href="#_external_ldap_user_full_import_workflow_channels"></a>External LDAP User Full Import Workflow Channels</h5>
+<div class="paragraph">
+<p>The workflow needs only one channel per port. It represents the user objects.</p>
+</div>
+<div class="paragraph">
+<p>1. Users Channel at TS Port</p>
+</div>
+<div class="paragraph">
+<p>This port represents the connection to the external LDAP directory. This workflow uses it for exporting users and attributes.</p>
+</div>
+<div class="paragraph">
+<p><strong>Export:</strong></p>
+</div>
+<div class="paragraph">
+<p>Searchbase:</p>
+</div>
+<div class="paragraph">
+<p>$\{env.user_base} matches the definition in the new Connected Directory.</p>
+</div>
+<div class="paragraph">
+<p><strong>Filter:</strong></p>
+</div>
+<div class="paragraph">
+<p>(objectClass=organizationalPerson)</p>
+</div>
+<div class="paragraph">
+<p>Searching all organizational persons below the search base.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mapping:</strong></p>
+</div>
+<div class="paragraph">
+<p>Mainly used by the workflow to perform the mapping to an entry in the <strong>Identity Store</strong>. The following attributes are defined here (with the <strong>ReadOnly</strong> flag): <strong>cn</strong>, <strong>description</strong>, <strong>employeeNumber</strong>, <strong>facsimileTelephoneNumber</strong>, <strong>gn</strong>, <strong>postalCode</strong>, <strong>postalAddress</strong>, <strong>sn</strong>, <strong>st</strong>, <strong>street</strong>, <strong>telephoneNumber</strong>, <strong>title</strong> and <strong>userCertificate;binary</strong>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Join:</strong></p>
+</div>
+<div class="paragraph">
+<p>Not used by the workflow.</p>
+</div>
+<div class="paragraph">
+<p>2. Users Channel at Identity Port</p>
+</div>
+<div class="paragraph">
+<p>This port represents the connection to the Identity Store. This workflow uses it for importing users into an Identity domain.</p>
+</div>
+<div class="paragraph">
+<p><strong>Channel Userhook:</strong></p>
+</div>
+<div class="paragraph">
+<p>The following user hook (as part of <strong>dxmJoin.jar</strong>) is used: <strong>net.atos.dxm.join.userhook.ldap.UserHookLdapUsers</strong>.</p>
+</div>
+<div class="paragraph">
+<p>The user hook has implemented two interfaces:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>preUpdate:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If entries should be marked as deleted (state TBDEL) then additionally the attribute <strong>dxrDeleteDate</strong> is set. Therefore the domain value of <strong>Maximum time in days to delete an object</strong> needs to be evaluated first.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>postUpdate:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>After successful execution of the update operation in the <strong>Identity Store</strong>, the attribute <strong>businessCategory</strong> is set at the user object of the external LDAP directory. The value is <strong>updated at</strong> <em>time stamp</em>. That interface should be adapted according to your requirements. If you don’t need any information in the external LDAP directory about successful execution of the operation in <strong>Identity Store</strong>, then simply drop <strong>postUpdate</strong>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Export:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Searchbase:</strong></p>
+</div>
+<div class="paragraph">
+<p>${env.role_ts_account_base} matches the definition in the new Connected Directory.</p>
+</div>
+<div class="paragraph">
+<p><strong>Filter:</strong></p>
+</div>
+<div class="paragraph">
+<p>((objectClass=derUser)(!(objectClass=dxrPersona)) (!(objectClass=dxrPersona)) (!(objectClass=dxrFunctionalUser))(!(objectClass=dxrUserFacet))</p>
+</div>
+<div class="paragraph">
+<p>The workflow searches all organizational persons below the search base. Consequently, you should carefully adapt your workflow to your requirements. If you import the users to an existing subtree, you should mark these users with an additional attribute and use that attribute in the filter. Otherwise the <strong>FullImport</strong> controller will delete users (or mark the users as deleted) that already exist in that subtree and which have not been imported from the external LDAP directory.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mapping:</strong></p>
+</div>
+<div class="paragraph">
+<p>The SPML identifier is mapped by a simple expression as follows:</p>
+</div>
+<div class="paragraph">
+<p>${joinedEntry.id}</p>
+</div>
+<div class="paragraph">
+<p>"cn=" + ${source.cn} + ",o=LDAP-External,cn=Users,cn=My-Company"</p>
+</div>
+<div class="paragraph">
+<p>If the entry is already available, then the DN of the existing entry is used. If it is a new entry, then the second expression applies.</p>
+</div>
+<div class="paragraph">
+<p>The workflow uses several 1:1 mappings for the attributes <strong>cn</strong>, <strong>description</strong>, <strong>employeeNumber</strong>, <strong>facsimileTelephoneNumber</strong>, <strong>gn</strong>, <strong>postalCode</strong>, <strong>postalAddress</strong>, <strong>sn</strong>, <strong>st</strong>, <strong>street</strong>, <strong>telephoneNumber</strong>, <strong>title</strong> and <strong>userCertificate;binary</strong>.</p>
+</div>
+<div class="paragraph">
+<p>The <strong>dxrPrimaryKey</strong> attribute is set be the expression “$\{source.id}. Note that <strong>dxrPrimaryKey</strong> is also used in the join conditions.</p>
+</div>
+<div class="paragraph">
+<p>The <strong>dxrState</strong> attribute is either set to NEW for new entries or TBDEL if the entry no longer exists in the external LDAP directory. For state TBDEL, the attribute <strong>dxrEndDate</strong> is set to <strong>now</strong> and the <strong>dxrDeleteDate</strong> is set according to the domain value of <strong>Maximum time in days to delete an object</strong>. If you want to delete the object directly, then you should adapt the mapping for “dxrState” and/or the post mapping (by changing the operation from MODIFY to DELETE).</p>
+</div>
+<div class="paragraph">
+<p><strong>Join:</strong></p>
+</div>
+<div class="paragraph">
+<p>The associated user for a source entry is searched, first with <strong>dxrPrimaryKey</strong> matching the dn of the external LDAP user and then if not found with the mapped cn attribute.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_external_ldap_user_import_workflow"><a class="anchor" href="#_external_ldap_user_import_workflow"></a>External LDAP User Import Workflow</h4>
+<div class="paragraph">
+<p>The <strong>Import Users from external LDAP</strong> workflow operates between the Users folder in the Identity Store and an external LDAP directory accessing organizational persons in that directory.</p>
+</div>
+<div class="paragraph">
+<p>The workflow is based on Java real-time technology, with two LDAP connectors accessing the external LDAP directory and the Identity Store. The <strong>SyncOneWay2Identity</strong> controller is configured as the join engine. The controller exports all users from the external LDAP directory and then imports them into the user tree of the Identity Store if it is started manually in DirX Identity Manager or triggered by the scheduler. It processes just one user if the workflow is triggered by an event.</p>
+</div>
+<div class="paragraph">
+<p>The workflow performs the following operations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Adds a user if the entry does not exist in the Identity Store.</p>
+</li>
+<li>
+<p>Modifies a user if the user exists in the Identity Store but has different attribute values.</p>
+</li>
+<li>
+<p>Marks a user as to-be-deleted (dxrState=”TBDEL”) if the user is no longer available in the external LDAP directory (this is the default behavior of the workflow).</p>
+</li>
+<li>
+<p>Deletes a user if it is no longer available in the external LDAP directory. (This mode for external users that been deleted requires changes to the workflow configuration; specifically, mapping of the attribute <strong>dxrState</strong> and post mapping.)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This workflow can also be used as a template for other Java-based source workflows for synchronization of objects other than users.</p>
+</div>
+<div class="paragraph">
+<p>The next sections describe</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Workflow prerequisites</p>
+</li>
+<li>
+<p>How to configure the workflow</p>
+</li>
+<li>
+<p>The workflow and its activities</p>
+</li>
+<li>
+<p>Ports</p>
+</li>
+<li>
+<p>Channels</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The workflow needs only one channel for users and a set of attributes to be imported.</p>
+</div>
+<div class="sect4">
+<h5 id="_external_ldap_user_import_workflow_prerequisites"><a class="anchor" href="#_external_ldap_user_import_workflow_prerequisites"></a>External LDAP User Import Workflow Prerequisites</h5>
+<div class="paragraph">
+<p>If you did not create a new Connected Directory when you configured the External LDAP User Full Import Workflow, you need to create one as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Go to the Global View and configure a new Connected Directory by choosing the template <strong>UserLDAP</strong> from the default folder.</p>
+</li>
+<li>
+<p>In <strong>General Parameters</strong>, configure <strong>LDAP External Service</strong> by entering values in <strong>IP</strong> <strong>Address</strong> and <strong>Data</strong> <strong>Port</strong>. You can also set <strong>SSL</strong>, <strong>Secure</strong> <strong>Port</strong> and <strong>Client</strong> <strong>Authentication</strong> if necessary.</p>
+</li>
+<li>
+<p>In <strong>Provisioning</strong>, define the search bases for searching the users:</p>
+</li>
+<li>
+<p>In <strong>Identity &#8594; Account Base</strong>, define the search bases for searching the users in the Identity Store.</p>
+</li>
+<li>
+<p>In <strong>Target</strong> <strong>System</strong> &#8594; <strong>UserBase</strong>, define the search bases for searching the users in the external LDAP directory.</p>
+</li>
+<li>
+<p>In <strong>Bind</strong> <strong>Profile</strong>, define the credentials of <strong>LDAPAdmin</strong> (the administrator of the external LDAP directory). Set at least <strong>User</strong>, <strong>Password</strong>, <strong>Authentication</strong> and <strong>Protocol</strong>.</p>
+</li>
+<li>
+<p>In <strong>Set</strong> <strong>Directory</strong> <strong>Name</strong>, set the name of the Connected Directory (if you have not yet already done so).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Create a new workflow line between the Connected Directory and the Identity Store.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_external_ldap_user_import_workflow_configuration"><a class="anchor" href="#_external_ldap_user_import_workflow_configuration"></a>External LDAP User Import Workflow Configuration</h5>
+<div class="paragraph">
+<p>Start the <strong>Import Users from external LDAP</strong> workflow configuration wizard: right-click on the workflow line (select <strong>New</strong>) and then select the <strong>Import Users from external LDAP</strong> template of the default folder. Alternatively you can select the workflow in the Expert View by right-clicking on the workflow under your domain and then selecting the configuration wizard. By stepping through the wizard, you can activate or deactivate auditing, choose another controller for the join engine (not recommended), change the export search conditions, adapt the mapping or change the target join criteria. Keep in mind that you need to set <strong>Cluster</strong> and <strong>Domain</strong> in <strong>Is Applicable for</strong> when defining the <strong>General Info</strong> parameters.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_external_ldap_user_import_workflow_and_activities"><a class="anchor" href="#_external_ldap_user_import_workflow_and_activities"></a>External LDAP User Import Workflow and Activities</h5>
+<div class="paragraph">
+<p>The workflow <strong>Import Users from external LDAP</strong> is a Java-based source workflow with two activities:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Join activity - implements the user import.</p>
+</li>
+<li>
+<p>Error activity - receives update requests that failed despite retries and issues notifications.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The join activity is controlled by default by the <strong>SyncOneWay2Identity</strong> controller. It exports user entries of the external LDAP directory via the LDAP connector configured in the TS port and then performs updates via the LDAP connector configured in the <strong>IdentityDomain</strong> port, as illustrated in the following figure:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch5_sourceWFs/image29.png" alt="External LDAP User Import Workflow Ports and Channels">
+</div>
+<div class="title">Figure 15. External LDAP User Import Workflow Ports and Channels</div>
+</div>
+<div class="paragraph">
+<p>You can start the workflow either manually or via a schedule or set it up to be triggered by an incoming event.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_external_ldap_user_import_workflow_ports"><a class="anchor" href="#_external_ldap_user_import_workflow_ports"></a>External LDAP User Import Workflow Ports</h5>
+<div class="paragraph">
+<p>The workflow supports the following ports:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>TS port - represents the external LDAP directory that contains the users. The LDAP connector is used to access that LDAP directory.</p>
+</li>
+<li>
+<p>IdentityDomain port - represents the DirX Identity domain and is accessed via the LDAP connector.</p>
+</li>
+<li>
+<p>Event - used for sending change events.</p>
+</li>
+<li>
+<p>Notify - used for sending e-mails.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_external_ldap_user_import_workflow_channels"><a class="anchor" href="#_external_ldap_user_import_workflow_channels"></a>External LDAP User Import Workflow Channels</h5>
+<div class="paragraph">
+<p>The workflow needs only one channel per port. It represents the user objects.</p>
+</div>
+<div class="paragraph">
+<p>1. Users Channel at TS Port</p>
+</div>
+<div class="paragraph">
+<p>This port represents the connection to the external LDAP directory. This workflow uses it for exporting users and attributes.</p>
+</div>
+<div class="paragraph">
+<p><strong>Export:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Searchbase:</strong></p>
+</div>
+<div class="paragraph">
+<p>${env.user_base} matches the definition in the new Connected Directory.</p>
+</div>
+<div class="paragraph">
+<p><strong>Filter:</strong></p>
+</div>
+<div class="paragraph">
+<p>(objectClass=organizationalPerson)</p>
+</div>
+<div class="paragraph">
+<p>Searching all organizational persons below the search base.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mapping:</strong></p>
+</div>
+<div class="paragraph">
+<p>Mainly used by the workflow to perform the mapping to an entry in the <strong>Identity Store</strong>. Consequently, the following attributes are defined here (with the <strong>ReadOnly</strong> flag): <strong>cn</strong>, <strong>description</strong>, <strong>employeeNumber</strong>, <strong>facsimileTelephoneNumber</strong>, <strong>gn</strong>, <strong>postalCode</strong>, <strong>postalAddress</strong>, <strong>sn</strong>, <strong>st</strong>, <strong>street</strong>, <strong>telephoneNumber</strong>, <strong>title</strong> and <strong>userCertificate;binary</strong>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Join:</strong></p>
+</div>
+<div class="paragraph">
+<p>Not used by the workflow.</p>
+</div>
+<div class="paragraph">
+<p>2. Users Channel at Identity Port</p>
+</div>
+<div class="paragraph">
+<p>This port represents the connection to the Identity Store. This workflow uses it for importing users into an Identity domain.</p>
+</div>
+<div class="paragraph">
+<p><strong>Channel Userhook:</strong></p>
+</div>
+<div class="paragraph">
+<p>The following user hook (as part of <strong>dxmJoin.jar</strong> is used: <strong>net.atos.dxm.join.userhook.ldap.UserHookLdapUsers</strong>.</p>
+</div>
+<div class="paragraph">
+<p>The user hook has implemented two interfaces:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>preUpdate</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If entries should be marked as deleted (state TBDEL) then additionally the attribute <strong>dxrDeleteDate</strong> is set. Therefore the domain value of <strong>Maximum time in days to delete an object</strong> needs to be evaluated first.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>postUpdate</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>After successful execution of the update operation in the Identity Store, the attribute <strong>businessCategory</strong> is set at the user object of the external LDAP directory. The value is <strong>updated at</strong> <em>time stamp</em>. Adapt this interface according to your requirements or simply drop it if you don’t need any information in the external LDAP directory about successful execution of the operation in Identity Store.</p>
+</div>
+<div class="paragraph">
+<p><strong>Export:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Searchbase:</strong></p>
+</div>
+<div class="paragraph">
+<p>${env.role_ts_account_base} matches the definition in the new Connected Directory.</p>
+</div>
+<div class="paragraph">
+<p><strong>Filter:</strong></p>
+</div>
+<div class="paragraph">
+<p>objectClass=derUser)(!(objectClass=dxrPersona (!(objectClass=dxrPersona)) (!(objectClass=dxrFunctionalUser))(!(objectClass=dxrUserFacet))</p>
+</div>
+<div class="paragraph">
+<p>The workflow searches all organizational persons below the search base. Therefore you should carefully adapt your workflow to your requirements.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mapping:</strong></p>
+</div>
+<div class="paragraph">
+<p>The SPML identifier is mapped by a simple expression as follows:</p>
+</div>
+<div class="paragraph">
+<p>${joinedEntry.id}</p>
+</div>
+<div class="paragraph">
+<p>"cn=" + $\{source.cn} + ",o=LDAP-External,cn=Users,cn=My-Company"</p>
+</div>
+<div class="paragraph">
+<p>If the entry is already available, the DN of the existing entry is used. If it is a new entry, the second expression applies.</p>
+</div>
+<div class="paragraph">
+<p>The workflow uses several 1:1 mappings for the attributes <strong>cn</strong>, <strong>description</strong>, <strong>employeeNumber</strong>, <strong>facsimileTelephoneNumber</strong>, <strong>gn</strong>, <strong>postalCode</strong>, <strong>postalAddress</strong>, <strong>sn</strong>, <strong>st</strong>, <strong>street</strong>, <strong>telephoneNumber</strong>, <strong>title</strong> and <strong>userCertificate;binary</strong>.</p>
+</div>
+<div class="paragraph">
+<p>The attribute <strong>dxrPrimaryKey</strong> is set be the expression “$\{source.id}. Note that <strong>dxrPrimaryKey</strong> is also used in the join conditions.</p>
+</div>
+<div class="paragraph">
+<p>The attribute <strong>dxrState</strong> is either set to ENABLED for new entries or TBDEL if the entry no longer exists in the external LDAP directory. For state TBDEL, the attribute <strong>dxrEndDate</strong> is set to <strong>now</strong> and the <strong>dxrDeleteDate</strong> is set according to the domain value of <strong>Maximum time in days to delete an object</strong>. If you want to delete the object directly, then you should adapt the mapping for <strong>dxrState</strong> and/or the post mapping (by changing the operation from MODIFY to DELETE).</p>
+</div>
+<div class="paragraph">
+<p><strong>Join:</strong></p>
+</div>
+<div class="paragraph">
+<p>The associated user for a source entry is searched first with <strong>dxrPrimaryKey</strong> matching the DN of the external LDAP user and then if not found with the mapped cn attribute.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sending_events_to_synchronize_external_users"><a class="anchor" href="#_sending_events_to_synchronize_external_users"></a>Sending Events to Synchronize External Users</h4>
+<div class="paragraph">
+<p>This section describes how to use <strong>metacp</strong> to send events that trigger the synchronization of an external user.</p>
+</div>
+<div class="sect4">
+<h5 id="_event_types"><a class="anchor" href="#_event_types"></a>Event Types</h5>
+<div class="paragraph">
+<p>An event is an XML document compliant with the XML namespace "urn:siemens:dxm:EVENT:1:0". This namespace is proprietary and extends the standard namespace SPML v1 "urn:oasis:names:tc:SPML:1:0". There are three types of events according the change it wants to notify: entry was created (<code>&lt;addEvent&gt;</code>), changed (<code>&lt;modifyEvent&gt;</code>) or deleted (<code>&lt;deleteEvent&gt;</code>). Each event extends the corresponding SPML request: <code>&lt;addRequest&gt;</code>, <code>&lt;modifyRequest&gt;</code> or <code>&lt;deleteRequest&gt;</code>. For details about SPML v1, see the standard specification; for example, <a href="https://www.oasis-open.org/committees/download.php/4137/os-pstc-spml-core-1.0.pdf" class="bare">https://www.oasis-open.org/committees/download.php/4137/os-pstc-spml-core-1.0.pdf</a>.</p>
+</div>
+<div class="paragraph">
+<p>Each event document should contain the necessary XML namespaces at the beginning of the document in its first element. These are:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">xmlns:dsml="urn:oasis:names:tc:DSML:2:0:core"
+xmlns:spml="urn:oasis:names:tc:SPML:1:0"
+xmlns:event="urn:siemens:dxm:EVENT:1:0"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The remainder of this section assumes the namespace prefixes <strong>event</strong>, <strong>spml</strong> and <strong>dsml</strong>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_identifier_and_requestid"><a class="anchor" href="#_identifier_and_requestid"></a>Identifier and requestID</h5>
+<div class="paragraph">
+<p>Each SPML request and the corresponding events contain an &lt;identifier&gt; element that represents the identifier of the changed entry in the source system. For an LDAP or Active Directory source - as expected in these workflows - it is of type DN. Here is a sample:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;spml:identifier type="urn:oasis:names:tc:SPML:1:0#DN"&gt;
+    &lt;spml:id&gt;cn=Abele,ou=Sales,o=My-Company&lt;/spml:id&gt;
+&lt;/spml:identifier&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Normal SPML add and modify requests need to contain the list of attributes or modifications. They are not needed here; the identifier is sufficient. The import workflow uses it to read the entry and all configured attributes from the source system.</p>
+</div>
+<div class="paragraph">
+<p>SPML requests and the events can contain a requestID parameter. It is not necessary and might occur in some debug logs.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_name_and_source"><a class="anchor" href="#_name_and_source"></a>Name and Source</h5>
+<div class="paragraph">
+<p>In addition to SPML requests, events contain a mandatory name attribute and an optional &lt;source&gt; element. Both are used for identifying the appropriate workflow that is started to handle the event.</p>
+</div>
+<div class="paragraph">
+<p>The name attribute has the following structure:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;domain&gt;.dxm.request.importToIdentity.&lt;type&gt;.cluster='&lt;cluster&gt;'.resource='&lt;resource&gt;'.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Here is an example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">my-company.dxm.request.importToIdentity.LDAP.cluster='External'.resource='External'.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The part that follows the domain is the queue name to which to send the event and also characterizes the workflow type. Type, cluster and domain normally identify the target system and here identify the workflow. Think about importing users from different sources or importing users and roles. Make sure that these values match the corresponding ones in the <strong>Is applicable for</strong> section of the workflow definition.</p>
+</div>
+<div class="paragraph">
+<p>The &lt;source&gt; element gives some information about the source of the event. It contains the application as a separate XML attribute as well as type, cluster and resource, which contain the same values as described for the name attribute. The application contains the name of the sending application. When sending the event with <strong>metacp</strong>, please use the name <strong>metacp</strong>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_a_complete_sample_event"><a class="anchor" href="#_a_complete_sample_event"></a>A Complete Sample Event</h5>
+<div class="paragraph">
+<p>The following example shows an add event:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;event:addEvent xmlns:spml="urn:oasis:names:tc:SPML:1:0"
+    xmlns:event="urn:siemens:dxm:EVENT:1:0"
+    requestID="svc.add.uid-123"
+    name="my-company.dxm.request.importToIdentity.LDAP.cluster='External'.resource='External'"&gt;
+  &lt;spml:identifier type="urn:oasis:names:tc:SPML:1:0#DN"&gt;
+    &lt;spml:id&gt;cn=Abele,ou=Sales,o=My-Company&lt;/spml:id&gt;
+  &lt;/spml:identifier&gt;
+  &lt;event:source application="metacp" type="LDAP" resource="external" cluster="external"/&gt;
+&lt;/event:addEvent&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_sent_event_with_metacp"><a class="anchor" href="#_sent_event_with_metacp"></a>Sent Event with metacp</h5>
+<div class="paragraph">
+<p>For sending an event with <strong>metacp</strong>, you should prepare a template with the event analogous to the example shown in the previous section. Use placeholders for the event type and "DN of changed entry" variables.</p>
+</div>
+<div class="paragraph">
+<p>For a specific entry, replace the placeholders and send them with a Tcl script such as the following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-tcl hljs" data-lang="tcl">set topic "my-company.dxm.request.importToIdentity.LDAP.cluster='External'.resource='External'"
+set event …
+
+ats init
+ats send -topic $topic -message "$event"
+ats term</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="understanding-the-tcl-based-source-workflows"><a class="anchor" href="#understanding-the-tcl-based-source-workflows"></a>Understanding the Tcl-based Source Workflows</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>DirX Identity&#8217;s Tcl-based source scheduled workflows provided with the default Connectivity scenario include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Creation workflows - workflows that extract user information from existing identity sources (for example, an HR or CRM database) and populate the Identity Store with user information.</p>
+</li>
+<li>
+<p>Update workflows - workflows that transfer specific information from the Identity Store to the identity sources (for example, e-mail addresses or telephone numbers) to enable them to use the joined, high-quality information in the Identity Store.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The creation workflows described here all work the same way. They:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Extract identity information from the identity source.</p>
+</li>
+<li>
+<p>Merge the extracted information into the Identity Store (the merge mode of the meta controller is used).</p>
+</li>
+<li>
+<p>Use the employeeNumber as join criteria.</p>
+</li>
+<li>
+<p>Create a local GUID for each identity (into the attribute dxmGuid) that is composed of a fixed string and the employeeNumber.</p>
+</li>
+<li>
+<p>Mark all created and modified user entries in the Identity Store for privilege resolution (dxrTBA=TRUE).</p>
+</li>
+<li>
+<p>Set the start and end dates of the identities (setting the end date prepares an identity to be deleted).</p>
+</li>
+<li>
+<p>Set the dxmOprMaster attribute that indicates which identity source controls this identity. This avoids additionally that the same identity is controlled by several masters which would lead to oscillating identity information and to confusion.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>DirX Identity provides the following pre-configured creation and update workflows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>LDIFfile2Ident</strong> - imports data from an LDIF content file to the Identity Store and creates or updates the corresponding identities (this file acts as identity master for all German persons from Munich).</p>
+</li>
+<li>
+<p><strong>Ident2LDIFfile</strong> - exports all German persons from Munich from the Identity Store to an LDIF content file. Use this information to update the identity source (for example the e-mail addresses or telephone numbers).</p>
+</li>
+<li>
+<p><strong>CSVfile2Ident</strong> - imports data from a CSV file to the Identity Store and creates or updates the corresponding identities (this file acts as identity master for all German persons from Berlin).</p>
+</li>
+<li>
+<p><strong>dent2CSVfile</strong> - exports all German persons from Berlin from the Identity Store to a CSV file. Use this information to update the identity source (for example the e-mail addresses or telephone numbers).</p>
+</li>
+<li>
+<p><strong>XMLfile2Ident</strong> - imports data from an XML file to the Identity Store and creates or updates the corresponding identities (this file acts as identity master for all German persons from Frankfurt). Please note that the DDN must be the first attribute in the Selected Attributes list for this workflow to function properly.</p>
+</li>
+<li>
+<p><strong>Ident2XMLfile</strong> - exports all German persons from Frankfurt from the Identity Store to an XML file. Use this information to update the identity source (for example the e-mail addresses or telephone numbers). Please note that the DDN must be the first attribute in the Selected Attributes list for this workflow to function properly.</p>
+</li>
+<li>
+<p><strong>Ident2XSLT</strong> - exports all German persons from Frankfurt from the Identity Store to an XML file. Use this information to update the identity source (for example the e-mail addresses or telephone numbers). In contrast to the <strong>Ident2XMLfile</strong> workflow, an additional XSLT conversion is possible. Please note that the DDN must be the first attribute in the Selected Attributes list for this workflow to function properly.</p>
+</li>
+<li>
+<p><strong>DSMLfile2Ident</strong> - imports data from a DSML V1 file to the Identity Store and creates or updates the corresponding identities (this file acts as identity master for all German persons from Frankfurt). Please note that the DDN must be the first attribute in the Selected Attributes list for this workflow to function properly.</p>
+</li>
+<li>
+<p><strong>Ident2DSMLfile</strong> - exports all German persons from Frankfurt from the Identity Store to a DSML file. Use this information to update the identity source (for example the e-mail addresses or telephone numbers). Please note too that the DDN must be the first attribute in the Selected Attributes list for this workflow to function properly.</p>
+</li>
+<li>
+<p><strong>CorpDir2Ident</strong> - copies all entries that were imported by the LDIFfile2Ident workflow to the tree ou=newTree in the Identity Store. Note that this workflow can only run after a successful run of the LDIFfile2Ident workflow.</p>
+</li>
+<li>
+<p><strong>DirXLDIF2Ident</strong> - imports entries in an LDIF content or change file generated by the DirX directory service into the Identity Store.</p>
+</li>
+<li>
+<p><strong>SAP-R3-HR2Ident</strong> - imports data from an LDIF file that was generated by DirX Identity&#8217;s SAP HR agent to the Identity Store and creates or updates the corresponding identities (this file acts as identity master for all persons from Rome).</p>
+</li>
+<li>
+<p><strong>SAP-R3-OM2Ident</strong> - imports organizational data from an LDIF file that was generated by DirX Identity&#8217;s SAP HR agent from the SAP OM subsystem to the identity store. It creates a structure of organizational units.</p>
+</li>
+<li>
+<p><strong>LDIFfile2CSVfile</strong> - transfers information from an LDIF file to a CSV file. This is an example of a workflow that works without any intermediate Identity Store.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_configuring_the_corporate_directory_workflow"><a class="anchor" href="#_configuring_the_corporate_directory_workflow"></a>Configuring the Corporate Directory Workflow</h3>
+<div class="paragraph">
+<p>The default Connectivity scenario&#8217;s CorpDir2Ident workflow synchronizes user entries from an LDAP-enabled corporate directory into the Identity Store. By default, the workflow processes only new and modified users. Users that have been physically deleted from the corporate directory are not recognized, but you can extend the workflow if the deleted users in the source directory are marked with a special attribute. The workflow consists of a <strong>metacp</strong> activity that exports users from the corporate directory and creates or modifies users in the Identity Store. The workflow performs delta synchronization based on modification time stamps.</p>
+</div>
+<div class="paragraph">
+<p>To run the CorpDir2Ident workflow successfully, you must perform these steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Go to the connected directory icon <strong>CorpDir</strong>.</p>
+</li>
+<li>
+<p>In the wizard window, open the <strong>Service</strong> object and set the correct address and port information.</p>
+</li>
+<li>
+<p>Click the <strong>Bind Profiles</strong> step. Open the bind profile and set the correct user and password information.</p>
+</li>
+<li>
+<p>Click <strong>OK</strong>, and then click <strong>Finish</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Now you must define an LDIF agreement before this workflow can run. See the section "Configuring the DirXdelta Provisioning Workflow" for details.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuring_the_dirx_ldif_directory_workflow"><a class="anchor" href="#_configuring_the_dirx_ldif_directory_workflow"></a>Configuring the DirX LDIF Directory Workflow</h3>
+<div class="paragraph">
+<p>The default Connectivity scenario&#8217;s DirXLDIF2Ident workflow synchronizes LDIF content and change files supplied by the DirX directory service into the Identity Store. The workflow processes new, deleted and modified users. The workflow consists of one <strong>metacp</strong> activity that processes all LDIF files supplied in a specific location and creates or modifies users in the Identity Store. All created and modified user entries in the Identity Store are marked for role resolution (dxrTBA=TRUE). The workflow performs delta synchronization based on LDIF change files.</p>
+</div>
+<div class="paragraph">
+<p>To run the DirXLDIF2Ident workflow successfully, you must perform these steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Go to the connected directory icon <strong>DirXLDIF</strong>.</p>
+</li>
+<li>
+<p>In the wizard window, click <strong>LDIF Agreement Parameters</strong>.</p>
+</li>
+<li>
+<p>Change the <strong>LDIF Agreement Folder</strong> path to suit your DirX installation and the related LDIF agreement (normally the LDIF Agreement Folder should be <em>dirx_install_path</em>*/server/ldif*).</p>
+</li>
+<li>
+<p>Click <strong>OK</strong>, and then click <strong>Finish</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Now you must define an LDIF agreement before this workflow can run. For details, see the section "Configuring the DirXdelta Workflow".</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuring_the_dirxdelta_workflow"><a class="anchor" href="#_configuring_the_dirxdelta_workflow"></a>Configuring the DirXdelta Workflow</h3>
+<div class="paragraph">
+<p>The DirX Identity DirXdelta synchronization workflow <strong>DirXdelta2Ident</strong> handles synchronization between a DirX LDAP directory that creates LDIF change files based on an LDIF agreement and imports this information into an LDAP directory. Before you can run this workflow, you must set up a DirX LDIF agreement. The following sections describe the rules you need to follow for DirXdelta LDIF agreements and describes how to set up an agreement. The workflow checks the defined directory to which the LDIF change files are written and processes all files with the correct LDIF agreement identifier (by default, 88).</p>
+</div>
+<div class="sect3">
+<h4 id="_dirxdelta_ldif_agreement_rules"><a class="anchor" href="#_dirxdelta_ldif_agreement_rules"></a>DirXdelta LDIF Agreement Rules</h4>
+<div class="paragraph">
+<p>In general, you must observe the following rules when creating an LDIF agreement suitable for the pre-configured DirXdelta workflow:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The replication area (context prefix + subtree base) must match the workflow&#8217;s input base object. Job &#8594; Input Channel &#8594; Import/Export contains by default a setting "base_obj ou=Sales, o=PQR" which is suitable for the samples described in the previous section.<br>
+<br>
+Note: It is essential to decide whether or not to place a blank space after the comma in the setting. Place a blank if the LDIF content/change files are generated by the DirX Server (via LDIF agreements). Don’t place a blank if the LDIF change files are written by <strong>metacp</strong>.<br>
+<br>
+For example, you must change this setting to "base_obj ou=Controlling, o=PQR" if the related LDIF agreement is designed to process changes of subordinates of "ou=Controlling, o=PQR"</p>
+</li>
+<li>
+<p>If your LDIF agreement is configured for both full and incremental refresh, the LDIF policy of this agreement must be "Save user attributes plus Creation-Time and Modification-Time only".</p>
+</li>
+<li>
+<p>The LDIF agreement must be specified so that the LDIF files are generated in Latin-1 (ISO 8859-1) format.</p>
+</li>
+<li>
+<p>The workflow is designed to synchronize persons only. Where necessary, intermediate nodes like organizational units are created with dummy attribute values according to the workflow&#8217;s superior_info setting. As a result, the LDIF agreement should be defined with a refinement filter to an object class representing a person (as in the sample script create-iper.adm - see the next section "Setting Up the LDIF Agreement"). This action prevents confusing “naming violation” error messages during the creation of intermediate nodes. If you intend to synchronize objects other than persons, you must change the mapping so that it is consistent for all objects (for example, one-to-one mapping using lStringEscapeLDIF for all attributes to be synchronized).</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_setting_up_the_ldif_agreement"><a class="anchor" href="#_setting_up_the_ldif_agreement"></a>Setting Up the LDIF Agreement</h4>
+<div class="paragraph">
+<p>You can create LDIF agreements with <strong>dirxadm</strong> scripts or with DirXmanage. For details, see the DirX documentation.</p>
+</div>
+<div class="paragraph">
+<p>The default <strong>DirXdelta2Ident</strong> workflow requires an LDIF agreement that matches the workflow&#8217;s default settings. Our sample agreement writes an LDIF file every hour and has the agreement ID 88.</p>
+</div>
+<div class="paragraph">
+<p>See the section "DirXdelta LDIF Agreement Rules" for information about how to set up LDIF agreements correctly.</p>
+</div>
+<div class="paragraph">
+<p>Note: Be sure that the directory to which the DirX server writes the LDIF change files grants read <strong>and write</strong> access to the DirXdelta workflow (<strong>metacp</strong>).</p>
+</div>
+<div class="paragraph">
+<p>To create the sample agreement with DirXmanage:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Start DirXmanage</p>
+</li>
+<li>
+<p>Open <strong>Policies</strong> &#8594; <strong>Shadow Operational Bindings</strong></p>
+</li>
+<li>
+<p>Perform <strong>Local Operations</strong> &#8594; <strong>Add</strong> &#8594; <strong>Primary</strong> &#8594; <strong>LDIF agreement</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Input Data</strong>:</p>
+</div>
+<div class="paragraph">
+<p><strong>General</strong>: Shadowing Status=Activated, Identifier=88</p>
+</div>
+<div class="paragraph">
+<p><strong>Shadowing Agreement</strong>: Context prefix=/o=pqr</p>
+</div>
+<div class="paragraph">
+<p>Update mode: Window time &#8230;&#8203; = 10 sec</p>
+</div>
+<div class="paragraph">
+<p>Update interval &#8230;&#8203; = 3600 sec</p>
+</div>
+<div class="paragraph">
+<p><strong>Replication Area</strong>: Subtree base=/ou=mthb/ou=Sales</p>
+</div>
+<div class="paragraph">
+<p>Refinement=Internet-Organizational-Person</p>
+</div>
+<div class="paragraph">
+<p><strong>LDIF policy</strong>: Click <strong>Save user attributes plus Creation-Time and Modification-Time only</strong>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click <strong>OK</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The LDIF agreement is now active and running. You can start the workflow to process the initial LDIF content file.</p>
+</div>
+<div class="paragraph">
+<p>To edit the agreement again:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Start DirXmanage</p>
+</li>
+<li>
+<p>Click <strong>Policies</strong> &#8594; <strong>Shadow</strong> <strong>Operational</strong> <strong>Bindings</strong></p>
+</li>
+<li>
+<p>Click the line with the agreement number 88</p>
+</li>
+<li>
+<p>Click <strong>Local</strong> <strong>Operations</strong> &#8594; <strong>Terminate</strong></p>
+</li>
+<li>
+<p>Now you can edit the agreement.</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="_sample_scripts_to_handle_the_sample_agreement"><a class="anchor" href="#_sample_scripts_to_handle_the_sample_agreement"></a>Sample Scripts to Handle the Sample Agreement</h5>
+<div class="paragraph">
+<p>The following sample scripts illustrate how to create, activate, deactivate and delete the sample agreement:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>agrenv.tcl</strong> - contains the central definition of the agreement identifier (in DirX terminology, this is an operational binding identifier)</p>
+</li>
+<li>
+<p><strong>create.adm</strong> - creates the agreement.</p>
+</li>
+<li>
+<p><strong>create-iper.adm</strong> - similar to <strong>create.adm</strong> with the scope of the agreement limited to objects of class inetOrgPerson</p>
+</li>
+<li>
+<p><strong>establish.adm</strong> - activates the agreement</p>
+</li>
+<li>
+<p><strong>show.adm</strong> - displays the agreement</p>
+</li>
+<li>
+<p><strong>terminate.adm</strong> - script for deactivating the agreement</p>
+</li>
+<li>
+<p><strong>delete.adm</strong> - script for deleting the agreement</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Assumptions: Administrator <strong>cn=admin,o=pqr</strong> with Password <strong>dirx</strong></p>
+</div>
+<div class="paragraph">
+<p>Instructions for use:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Copy the scripts from the folder <em>install_path</em>*/data/ldifagr/dirx* or <em>install_path</em>*/data/ldifagr/dirx-ee* into a folder of your choice.</p>
+</li>
+<li>
+<p>Open an MS/DOS Command Prompt window or a UNIX shell and navigate to the script folder.</p>
+</li>
+<li>
+<p>Change agreement identifier in <strong>agrenv.tcl</strong> if necessary. If you change the identifier, don&#8217;t forget to update the agreement number in the workflow definition.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Create the agreement:</p>
+</div>
+<div class="paragraph">
+<p><code><strong>dirxadm create-iper.adm</strong></code> (or <code><strong>dirxadm create.adm</strong></code>)</p>
+</div>
+<div class="paragraph">
+<p>-&#8594; An agreement will be created that writes an LDIF change file every hour</p>
+</div>
+<div class="paragraph">
+<p>Activate the agreement:</p>
+</div>
+<div class="paragraph">
+<p><code><strong>dirxadm establish.adm</strong></code></p>
+</div>
+<div class="paragraph">
+<p>Display the agreement:</p>
+</div>
+<div class="paragraph">
+<p><code><strong>dirxadm show.adm</strong></code></p>
+</div>
+<div class="paragraph">
+<p>Deactivate the agreement:</p>
+</div>
+<div class="paragraph">
+<p><code><strong>dirxadm terminate.adm</strong></code></p>
+</div>
+<div class="paragraph">
+<p>Delete the agreement:</p>
+</div>
+<div class="paragraph">
+<p><code><strong>dirxadm delete.adm</strong></code></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuring_the_file_based_source_workflows"><a class="anchor" href="#_configuring_the_file_based_source_workflows"></a>Configuring the File-Based Source Workflows</h3>
+<div class="paragraph">
+<p>The default Connectivity scenario provides a set of creation and update workflows that allow for connectivity to various systems that support data exchange via LDIF, CSV or XML/DSML V1 file formats. Other structured file formats are possible but are not pre-configured.</p>
+</div>
+<div class="paragraph">
+<p>Before you can run these workflows successfully, you need to copy some sample data files to a default location:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Open the file directory <strong>data</strong> in the DirX Identity installation path.</p>
+</li>
+<li>
+<p>Copy the files <strong>data.ldif</strong>, <strong>sapr3_full.ldif</strong>, <strong>sapr3_om.ldif</strong>, <strong>data.csv</strong>, <strong>dsml_data.xml</strong>, <strong>xml_data.xml</strong> to the location <strong>C:/ MetahubData</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following file-based source workflows are available and can run without any further configuration steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>LDIFfile2Ident</p>
+</li>
+<li>
+<p>Ident2LDIFfile</p>
+</li>
+<li>
+<p>CSVfile2Ident</p>
+</li>
+<li>
+<p>Ident2CSVfile</p>
+</li>
+<li>
+<p>XMLfile2Ident</p>
+</li>
+<li>
+<p>Ident2XMLfile</p>
+</li>
+<li>
+<p>Ident2XSLT</p>
+</li>
+<li>
+<p>DSMLfile2Ident</p>
+</li>
+<li>
+<p>Ident2DSMLfile</p>
+</li>
+<li>
+<p>SAP-R3-HR2Ident</p>
+</li>
+<li>
+<p>SAP-R3-OM2Ident</p>
+</li>
+<li>
+<p>LDIFfile2CSVfile</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuring_the_relational_database_workflows"><a class="anchor" href="#_configuring_the_relational_database_workflows"></a>Configuring the Relational Database Workflows</h3>
+<div class="paragraph">
+<p>The relational database workflows provided with the default Connectivity scenario can synchronize user entries from a relational database that is either accessible via ODBC or JDBC into the Identity Store. By default, the workflows process only new and modified users. Users that have been physically deleted from the relational database are not recognized, but you can extend the workflows if the deleted users in the source directory are marked with a special attribute.</p>
+</div>
+<div class="paragraph">
+<p>The import workflows consist of a JDBC or ODBC agent activity that exports the information from the source and a <strong>metacp</strong> activity that creates or modifies users in the Identity Store.</p>
+</div>
+<div class="paragraph">
+<p>The default Connectivity scenario ODBC/JDBC workflows are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ODBC2Ident</p>
+</li>
+<li>
+<p>Ident2ODBC</p>
+</li>
+<li>
+<p>ODBC_Ident (a sequential combination of the two previous workflows)</p>
+</li>
+<li>
+<p>JDBC2Ident</p>
+</li>
+<li>
+<p>Ident2JDBC</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To complete and use these workflows, Microsoft Access 20xx must be installed on your computer.</p>
+</div>
+<div class="paragraph">
+<p>The example HR database used in the default scenario is delivered with DirX Identity and has the pathname <em>install_path</em>*/data/personal.mdb*. It is protected with the password <strong>dirx</strong> to show the ODBC agent&#8217;s password feature.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Copy this database to <strong>C:/MetahubData</strong> (or another location, if you prefer). It is a good idea to make a copy of the <strong>personal.mdb</strong> database, so that you can restore the original later on if the working copy becomes corrupted.</p>
+</li>
+<li>
+<p>Define this HR database to be an ODBC database:</p>
+</li>
+<li>
+<p>Go to <strong>Start</strong> &#8594; <strong>Settings</strong> &#8594; <strong>Control</strong> <strong>Panel</strong> and double-click <strong>Administrative Tools</strong></p>
+</li>
+<li>
+<p>Click on <strong>Data</strong> <strong>Sources</strong> <strong>(ODBC)</strong>.</p>
+</li>
+<li>
+<p>If you installed DirX Identity with the system account, select the <strong>System-DSN</strong> tab and click <strong>Add&#8230;&#8203;</strong> otherwise use the <strong>User DSN</strong> tab.</p>
+</li>
+<li>
+<p>Select <strong>Driver to Microsoft Access</strong> (<strong>*.mdb</strong>) and then click <strong>Finish</strong>.</p>
+</li>
+<li>
+<p>Enter <strong>personal</strong> into the field <strong>Data Source Name</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Select&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Navigate to the location where you have copied <strong>personal.mdb</strong>, select it and click <strong>OK</strong>. A new ODBC source is created.</p>
+</li>
+<li>
+<p>Click <strong>OK</strong> again.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Your ODBC workflows should now run.</p>
+</div>
+<div class="paragraph">
+<p>Note: The password of the Access 20xx database provided with DirX Identity is <strong>dirx</strong>. To change it, perform these steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Start Microsoft Access.</p>
+</li>
+<li>
+<p>Click <strong>File</strong> &#8594; <strong>Open</strong>.</p>
+</li>
+<li>
+<p>Select the database.</p>
+</li>
+<li>
+<p>Click <strong>Open</strong> <strong>Exclusive</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Tools</strong> &#8594; <strong>Security</strong> &#8594; <strong>Set</strong> <strong>Database</strong> <strong>Password</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Don&#8217;t forget to change the relevant bind profile to the same value.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
