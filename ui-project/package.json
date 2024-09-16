@@ -52,5 +52,9 @@
     "stylelint": "~13.3",
     "stylelint-config-standard": "~20.0",
     "vinyl-fs": "~3.0"
+  },
+  "dependencies": {
+    "@fontsource-variable/montserrat": "^5.1.0",
+    "typeface-montserrat": "^1.1.13"
   }
 }
