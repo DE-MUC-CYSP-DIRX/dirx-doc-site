@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Using the Default Connectivity Applications :: DirX Identity Documentation</title>
+    <title>Preface :: DirX Identity Documentation</title>
     <meta name="generator" content="Antora 3.1.9">
     <link rel="stylesheet" href="../../../_/css/site.css">
   </head>
@@ -127,13 +127,13 @@
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="#using_default_connectivity_application">Using the Default Connectivity Applications</a>
+    <a class="nav-link" href="ch4_defappls.html#using_default_connectivity_application">Using the Default Connectivity Applications</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="#working_with_default_connectivity_application_objects">Working with Default Connectivity Application Objects</a>
+    <a class="nav-link" href="ch4_defappls.html#working_with_default_connectivity_application_objects">Working with Default Connectivity Application Objects</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="#working_with_default_connectivity_scenario">Working with the Default Connectivity Scenario</a>
+    <a class="nav-link" href="ch4_defappls.html#working_with_default_connectivity_scenario">Working with the Default Connectivity Scenario</a>
   </li>
 </ul>
   </li>
@@ -179,8 +179,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">DirX Identity</a></li>
-    <li><a href="appl-dev-guide.html">Application Development Guide</a></li>
-    <li><a href="#using_default_connectivity_application">Using the Default Connectivity Applications</a></li>
+    <li><a href="preface.html">Preface</a></li>
   </ul>
 </nav>
 </div>
@@ -189,86 +188,37 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Using the Default Connectivity Applications</h1>
-<div id="preamble">
-<div class="sectionbody">
+<h1 class="page">Preface</h1>
 <div class="paragraph">
-<p>This chapter describes the default Connectivity applications available in the <strong>Connectivity</strong> view group and how to configure and customize them. For information about the default request workflows, see the <em>DirX Identity Provisioning Administration Guide</em>. The sections in this chapter</p>
+<p>This manual provides the information necessary to understand the DirX Identity default Connectivity applications and how to configure and extend them. It consists of the following chapters:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Describe how to work with the default Connectivity applications as a whole</p>
+<p><a href="ch1_applsref.html#understanding_the_default_application_workflow_technology" class="xref page">Chapter 1</a> describes the different workflow architectures used in the default applications and how to customize these types.</p>
 </li>
 <li>
-<p>Provide an understanding of the default Connectivity applications</p>
+<p><a href="ch2_reqWFs.html#using_request_workflows" class="xref page">Chapter 2</a> provides information about the request workflows available in the <strong>Provisioning</strong> view that support user self-registration and delegated administration activities.</p>
 </li>
 <li>
-<p>Describe how to configure a custom Connectivity scenario</p>
+<p><a href="ch3_configScen.html#configuring_custom_scenarios" class="xref page">Chapter 3</a> describes how to setup consistent custom scenarios both in the Provisioning configuration and Connectivity configuration.</p>
+</li>
+<li>
+<p><a href="ch4_defappls.html#using_default_connectivity_application" class="xref page">Chapter 4</a> describes how to reuse the default applications in the Connectivity configuration.</p>
+</li>
+<li>
+<p><a href="ch5_sourceWFs.html#using_the_source_workflows" class="xref page">Chapter 5</a> describes Identity source workflows available in the <strong>Connectivity</strong> view that synchronize information from existing sources to the Identity Store.</p>
+</li>
+<li>
+<p>Chapter 6 describes Identity maintenance workflows available in the <strong>Connectivity</strong> view that help to maintain your identity system to ensure consistent and current data of high quality.</p>
+</li>
+<li>
+<p>Chapter 7 describes Identity target system workflows available in the <strong>Connectivity</strong> view that synchronize information from connected systems with the DirX Identity Store.</p>
+</li>
+<li>
+<p>Appendix A describes features that still work but should no longer be used because better features are available.</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>The chapters that follow describe the default Connectivity applications and are subdivided into the following:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Source workflows</p>
-</li>
-<li>
-<p>Maintenance workflows</p>
-</li>
-<li>
-<p>Target system workflows</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="working_with_default_connectivity_application_objects"><a class="anchor" href="#working_with_default_connectivity_application_objects"></a>Working with Default Connectivity Application Objects</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>All default Connectivity application objects are located in <strong>Default</strong> folders. We strongly recommend that you do not work directly in the default Connectivity scenario or any of its folders. Instead, you should create your own scenarios and create your own connected directories and workflows within your own scenarios. The "Getting Started" chapter in the <em>DirX Identity Tutorial</em> provides detailed instructions on how to perform these tasks. When you follow this recommended procedure, all of your objects are created in folders within your own scenario; for example, workflows are created in the <strong>Workflows</strong> folder, connected directories are created in the <strong>Connected Directory</strong> folder and so on. DirX Identity automatically uses folders that have the name of your scenario.</p>
-</div>
-<div class="paragraph">
-<p><strong>Important note:</strong> The objects you create from default application objects will not be affected by DirX Identity upgrades for two reasons: each object has a unique identifier (and your created objects have these identifiers, too) and DirX Identity preserves all central objects from the previous release by copying them to a version-specific folder (but only if there were changes in these objects).</p>
-</div>
-<div class="paragraph">
-<p>You should also be aware that some default Connectivity applications use central objects like Tcl scripts in the folder <strong>Configuration</strong> &#8594; <strong>Tcl</strong>. If you change these central objects, all of your copied default applications will be affected by your change. DirX Identity surrounds all property sheets that belong to this central area with a red border that contains the text <strong>This object might be shared because it belongs to the Configuration folder</strong>. If you do not want this behavior, you should make your copies independent from the central objects by creating local ones. See the section "Linking Objects" in the "Managing Provisioning Workflows" chapter in the <em>DirX Identity Connectivity Administration Guide</em> to learn more about thi concept.s</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="working_with_default_connectivity_scenario"><a class="anchor" href="#working_with_default_connectivity_scenario"></a>Working with the Default Connectivity Scenario</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The default Connectivity applications consist of:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Source Workflows</strong> - comprise the <strong>Source Real-time</strong> and <strong>Source Scheduled</strong> scenarios. These scenarios consist of Java-based / Tcl-based Identity creation workflows, which assist with importing and joining organizational and user information from various sources to create identities within the Identity Store. Update workflows can import attributes back to these source systems.</p>
-</li>
-<li>
-<p><strong>Maintenance Workflows</strong> - comprise the <strong>Identity Store</strong> scenario. This scenario contains Identity maintenance workflows, which help to manage the created identities. Consistency checks, policy execution, privilege resolution and password expiration are examples of this workflow group.</p>
-</li>
-<li>
-<p><strong>Target System Workflows</strong> - comprise the <strong>Target Real-time</strong> and <strong>Target Scheduled</strong> scenarios. These scenarios contain all Java-based / Tcl-based Identity Provisioning workflows, which offer initial load and validation from connected systems as well as regular synchronization. These scenarios also offer password synchronization and other useful capabilities.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>These workflows are part of the default Connectivity scenario, which you can view with Identity Manager&#8217;s <strong>Connectivity</strong> &#8594; <strong>Global</strong> view. The following figure illustrates the default Connectivity scenarios and its workflows.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/ch4_defappls/image1.gif" alt="DirX Identity Default Connectivity Scenario">
-</div>
-<div class="title">Figure 1. DirX Identity Default Connectivity Scenario</div>
-</div>
-</div>
 </div>
 </article>
   </div>

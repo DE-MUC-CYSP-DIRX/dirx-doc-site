@@ -57,16 +57,16 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">Overview</span>
+    <span class="nav-text">Documentation</span>
 <ul class="nav-list">
   <li class="nav-item is-current-page" data-depth="1">
-    <a class="nav-link" href="index.html">Title</a>
+    <a class="nav-link" href="index.html">Overview</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="0">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">Application Development Guide</span>
+    <a class="nav-link" href="appl-dev-guide/appl-dev-guide.html">Application Development Guide</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
@@ -179,8 +179,8 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="index.html">DirX Identity</a></li>
-    <li>Overview</li>
-    <li><a href="index.html">Title</a></li>
+    <li>Documentation</li>
+    <li><a href="index.html">Overview</a></li>
   </ul>
 </nav>
 </div>
@@ -190,9 +190,128 @@
 </aside>
 <article class="doc">
 <h1 class="page">DirX Identity Documentation</h1>
+<div id="preamble">
+<div class="sectionbody">
 <div class="imageblock">
 <div class="content">
-<img src="_images/dxi-title.png" alt="dxi title">
+<img src="_images/dxi-title.png" alt="DirX Identity" width="200">
+</div>
+</div>
+<div class="paragraph">
+<p>DirX Identity provides a powerful set of pre-configured default applications that you can use to create your identity management environment. The default applications are intended for use as templates and are primarily designed to interact with the user, account and group objects in the Identity Store and the source and connected systems.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dirx_identity_document_set"><a class="anchor" href="#_dirx_identity_document_set"></a>DirX Identity Document Set</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The DirX Identity document set consists of the following manuals:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>DirX Identity Introduction.</em> Use this book to obtain a description of DirX Identity architecture and components.</p>
+</li>
+<li>
+<p><em>DirX Identity Tutorial</em>. Use this book to get familiar quickly with your DirX Identity installation.</p>
+</li>
+<li>
+<p><em>DirX Identity Provisioning Administration Guide.</em> Use this book to obtain a description of DirX Identity provisioning architecture and components and to understand the basic tasks of DirX Identity provisioning administration using DirX Identity Manager.</p>
+</li>
+<li>
+<p><em>DirX Identity Connectivity Administration Guide.</em> Use this book to obtain a description of DirX Identity connectivity architecture and components and to understand the basic tasks of DirX Identity connectivity administration using DirX Identity Manager.</p>
+</li>
+<li>
+<p><em>DirX Identity User Interfaces Guide.</em> Use this book to obtain a description of the user interfaces provided with DirX Identity.</p>
+</li>
+<li>
+<p><a href="appl-dev-guide/appl-dev-guide.html" class="xref page"><em>DirX Identity Application Development Guide</em></a>. Use this book to obtain information how to extend DirX Identity and to use the default applications.</p>
+</li>
+<li>
+<p><em>DirX Identity Customization Guide</em>. Use this book to customize your DirX Identity environment.</p>
+</li>
+<li>
+<p><em>DirX Identity Integration Framework</em>. Use this book to understand the DirX Identity framework and to obtain a description how to extend DirX Identity.</p>
+</li>
+<li>
+<p><em>DirX Identity Web Center Reference</em>. Use this book to obtain reference information about the DirX Identity Web Center.</p>
+</li>
+<li>
+<p><em>DirX Identity Web Center Customization Guide</em>. Use this book to obtain information how to customize the DirX Identity Web Center.</p>
+</li>
+<li>
+<p><em>DirX Identity Meta Controller Reference</em>. Use this book to obtain reference information about the DirX Identity meta controller and its associated command-line programs and files.</p>
+</li>
+<li>
+<p><em>DirX Identity Connectivity Reference</em>. Use this book to obtain reference information about the DirX Identity agent programs, scripts, and files.</p>
+</li>
+<li>
+<p><em>DirX IdentityTroubleshooting Guide</em>. Use this book to track down and solve problems in your DirX Identity installation.</p>
+</li>
+<li>
+<p><em>DirX Identity Installation Guide</em>. Use this book to install DirX Identity.</p>
+</li>
+<li>
+<p><em>DirX Identity Migration Guide</em>. Use this book to migrate from previous versions.</p>
+</li>
+<li>
+<p><em>DirX Identity Release Notes</em>. Use this book to understand the features and limitations of the current release. This document is shipped with the DirX Identity installation as the file <strong>Readme.txt</strong> or <strong>Readme.doc</strong>.</p>
+</li>
+<li>
+<p><em>DirX Identity History of Changes</em>. Use this book to understand the features of previous releases. This document is shipped with the DirX Identity installation as the file <strong>HistoryOfChanges.txt</strong> or <strong>HistoryOfChanges.doc</strong>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_notation_conventions"><a class="anchor" href="#_notation_conventions"></a>Notation Conventions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Boldface type</strong><br>
+In command syntax, bold words and characters represent commands or keywords that must be entered exactly as shown.<br></p>
+</div>
+<div class="paragraph">
+<p>+
+In examples, bold words and characters represent user input.</p>
+</div>
+<div class="paragraph">
+<p><em>Italic type<br>
+</em>In command syntax, italic words and characters represent placeholders for information that you must supply.</p>
+</div>
+<div class="paragraph">
+<p>[ ]<br>
+In command syntax, square braces enclose optional items.</p>
+</div>
+<div class="paragraph">
+<p>\{ }<br>
+In command syntax, braces enclose a list from which you must choose one item.<br></p>
+</div>
+<div class="paragraph">
+<p>+
+In Tcl syntax, you must actually type in the braces, which will appear in boldface type.</p>
+</div>
+<div class="paragraph">
+<p>|<br>
+In command syntax, the vertical bar separates items in a list of choices.</p>
+</div>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>+
+In command syntax, ellipses indicate that the previous item can be repeated.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><em>install_path<br>
+</em>The exact name of the root of the directory where DirX Identity programs and files are installed. The default installation directory is <em>userID_home_directory</em>*/DirX Identity* on UNIX systems and <strong>C:\Program Files\Atos\DirX Identity</strong> on Windows systems. During installation the installation directory can be specified. In this manual, the installation-specific portion of pathnames is represented by the notation <em>install_path</em>.</p>
+</div>
+<div class="paragraph">
+<p><em>dxi_java_home<br>
+</em>The exact name of the root directory of the Java for DirX Identity. This location is defined during product installation. For details, see the sections "Installation" and "The Java for DirX Identity" in the <em>DirX Identity Installation Guide</em>.</p>
+</div>
 </div>
 </div>
 </article>
