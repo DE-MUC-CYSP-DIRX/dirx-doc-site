@@ -149,6 +149,30 @@
   </li>
 </ul>
   </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch6_maintWFs.html#using_the_maintenance_workflows">Using the Maintenance Workflows</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch6_maintWFs.html#understanding_java_based_maintenance_workflows">Understanding the Java-based Maintenance Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch6_maintWFs.html#understanding_tcl_based_maintenance_workflows">Understanding the Tcl-based Maintenance Workflows</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch7_targetWFs.html#using_the_target_system_provisioning_workflows">Using the Target System (Provisioning) Workflows</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch7_targetWFs.html#understanding_java_based_target_system_workflows">Understanding Java-based Target System Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch7_targetWFs.html#understanding_tcl_based_target_system_workflows">Understanding Tcl-based Target System Workflows</a>
+  </li>
+</ul>
+  </li>
 </ul>
   </li>
 </ul>
@@ -514,10 +538,7 @@ Other-Clusters +
 <p>Set the <strong>Connected Directory</strong> link on the General tab to the same connected directory as the first target system.</p>
 </li>
 <li>
-<p>Create an account object, for example, named <strong>bindaccount</strong>, for the purpose of binding to the connected system beneath the <strong>Accounts</strong> or <strong>Accounts</strong> <strong>and</strong> <strong>Groups</strong> container. Account objects are not allowed to be created under a different container. Then move it up one level in the Data View to exclude it from synchronization to the connected system. The link to this bind account is set in the <strong>Bind</strong> <strong>Parameters</strong> section in the <strong>Server</strong> <strong>Connection</strong> tab of the target system. Set the password of this account in the Data View <strong>userPassword</strong> attribute. This action sets the <strong>dxmPassword</strong> accordingly. Using an existing account that is linked to a user can cause problems because the workflow may no longer be able to log in to the connected system if the password is changed. Therefore we recommend using a separate bind account where you manage the password manually. As this account may be used as access for password modifications, it must have sufficient access rights (preferably an administrator account) in the connected system.</p>
-</li>
-</ul>
-</div>
+<p>Create an account object, for example, named <strong>bindaccount</strong>, for the purpose of binding to the connected system beneath the <strong>Accounts</strong> or <strong>Accounts</strong> <strong>and</strong> <strong>Groups</strong> container. Account objects are not allowed to be created under a different container. Then move it up one level in the Data View to exclude it from synchronization to the connected system. The link to this bind account is set in the <strong>Bind</strong> <strong>Parameters</strong> section in the <strong>Server</strong> <strong>Connection</strong> tab of the target system. Set the password of this account in the Data View <strong>userPassword</strong> attribute. This action sets the <strong>dxmPassword</strong> accordingly. Using an existing account that is linked to a user can cause problems because the workflow may no longer be able to log in to the connected system if the password is changed. Therefore we recommend using a separate bind account where you manage the password manually. As this account may be used as access for password modifications, it must have sufficient access rights (preferably an administrator account) in the connected system.<br></p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -530,8 +551,7 @@ The <strong>dxrName</strong> attribute of the bind account must contain the bind
 </tr>
 </table>
 </div>
-<div class="ulist">
-<ul>
+</li>
 <li>
 <p>Set all other necessary parameters on the Workflow Configuration (for some target system types this tab is called Server Connection), Connector Configuration and Environment Properties tabs. These parameters are specific to the target system. Keep in mind that all target systems in the cluster use the same cluster workflows configured in the Connectivity view group.<br>
 <br>
