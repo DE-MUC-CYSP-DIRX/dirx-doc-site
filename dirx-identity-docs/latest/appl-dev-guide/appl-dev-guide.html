@@ -173,6 +173,39 @@
   </li>
 </ul>
   </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appa_depr.html#deprecated_features">Deprecated Features</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_depr.html#ads_provisioning_workflows">ADS Provisioning Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_depr.html#dashboard_workflow">Dashboard Workflow</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_depr.html#dirx_access_workflows">DirX Access Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_depr.html#jdbc_provisioning_workflows">JDBC Provisioning Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_depr.html#ldap_provisioning_workflows">LDAP Provisioning Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_depr.html#ldap_xxl_provisioning_workflows">LDAP XXL Provisioning Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_depr.html#lotus_notes_provisioning_workflows">Lotus Notes Provisioning Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_depr.html#unix_pam_provisioning_workflows">UNIX PAM Provisioning Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_depr.html#unix_pam_workflows">UNIX PAM Workflows</a>
+  </li>
+</ul>
+  </li>
 </ul>
   </li>
 </ul>
@@ -243,7 +276,7 @@
 <p><a href="ch7_targetWFs.html#using_the_target_system_provisioning_workflows" class="xref page">Chapter 7</a> describes Identity target system workflows available in the <strong>Connectivity</strong> view that synchronize information from connected systems with the DirX Identity Store.</p>
 </li>
 <li>
-<p>Appendix A describes features that still work but should no longer be used because better features are available.</p>
+<p><a href="appa_depr.html#deprecated_features" class="xref page">Appendix A</a> describes features that still work but should no longer be used because better features are available.</p>
 </li>
 </ul>
 </div>
@@ -28475,6 +28508,1479 @@ set rh_file_tgt(GroupDxrName) $src(cn)</code></pre>
 <p>SiPass can only assign exactly one group to an account. Build your role structure so that only one group is assigned to an account. DirX Identity does not check this restriction. If an account is assigned to more than one group, the import into SiPass fails.</p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="deprecated_features"><a class="anchor" href="#deprecated_features"></a>Appendix A: Deprecated Features</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section contains features that still work but should not be used because better features are available.</p>
+</div>
+<div class="paragraph">
+<p>Use the Java-based workflows instead of the Tcl-based workflows described in this chapter.</p>
+</div>
+<div class="paragraph">
+<p>Note that the features described in this chapter are still supported but will not be enhanced.</p>
+</div>
+<div class="sect2">
+<h3 id="ads_provisioning_workflows"><a class="anchor" href="#ads_provisioning_workflows"></a>A.1. ADS Provisioning Workflows</h3>
+<div class="paragraph">
+<p>This section comprises all issues related to Active Directory and Exchange Provisioning workflows.</p>
+</div>
+<div class="sect3">
+<h4 id="_exchange_server_2007_provisioning_workflow"><a class="anchor" href="#_exchange_server_2007_provisioning_workflow"></a>A.1.1. Exchange Server 2007 Provisioning Workflow</h4>
+<div class="paragraph">
+<p>Microsoft strongly recommends that you install Exchange Server 2007 on a 64-bit processor machine with a 64-bit operating system, even though it is possible to install it on a 32-bit processor machine. Also at least one domain controller that is the schema master must have Windows Server 2003 Service Pack 1 installed.</p>
+</div>
+<div class="paragraph">
+<p>For further hardware and software requirements as well as the required steps to prepare Active Directory, the domains and the forest for Exchange 2007, refer to the Microsoft documentation.</p>
+</div>
+<div class="paragraph">
+<p>To administer Exchange Server 2007 including the administration of mailbox-enabled users (if the mailbox Server role was installed) you can install the Exchange 2007 management tools, which consist of the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Exchange Management Console</p>
+</li>
+<li>
+<p>Exchange Management Shell</p>
+</li>
+<li>
+<p>Exchange Help File</p>
+</li>
+<li>
+<p>Exchange Best Practices Analyzer Tool</p>
+</li>
+<li>
+<p>Exchange Troubleshooting Assistant Tool</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Creating Mailbox-enabled Users:</strong></p>
+</div>
+<div class="paragraph">
+<p>To create mailbox-enabled users with the Tcl-based provisioning workflows (C++-based AdsAgent) the following changes in the attribute mappings must be done:</p>
+</div>
+<div class="paragraph">
+<p>The attribute “textEncodedORAddress” can be eliminated from the mapping because Exchange 2007 does not support the X400 provider anymore by default.</p>
+</div>
+<div class="paragraph">
+<p>The attribute displayName has to be set to make the created mailbox enabled user work properly together with the Exchange 2007 GUI. For example map the LDAP cn attribute to the Exchange displayName attribute.</p>
+</div>
+<div class="paragraph">
+<p>In addition to the known attributes that must be set on creation of a mailbox-enabled user the following ones can be set:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>msExchRecipientTypeDetails</p>
+</li>
+<li>
+<p>msExchVersion</p>
+</li>
+<li>
+<p>msExchRecipientDisplayType</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Setting these attributes prevents the created mailbox to be shown as <strong>Legacy Mailbox</strong> by the Exchange Management Console tool. By Exchange 2007 a <strong>Legacy Mailbox</strong> is regarded as a one that resides on an Exchange 2000/2003 server or that has been created by an Active Directory Users and Computers snap in extended by Exchange 2000/2003 functionality.</p>
+</div>
+<div class="paragraph">
+<p>To make a <strong>Legacy Mailbox</strong> a <strong>User Mailbox</strong> also the Exchange Management Shell command <strong>setMailbox</strong> with the <strong>ApplyMandatoryProperties</strong> parameter can be used:</p>
+</div>
+<div class="paragraph">
+<p><code>C:\&gt;Set-Mailbox -Identity <em>USERNAME</em> –ApplyMandatoryProperties</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Configuring with C++ based AdsAgent:</strong></p>
+</div>
+<div class="paragraph">
+<p>In the import.ini file the attributes must be set with the following types:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>msExchRecipientTypeDetails=Integer</p>
+</li>
+<li>
+<p>msExchVersion=CaseIgnoreString</p>
+</li>
+<li>
+<p>msExchRecipientDisplayType=Integer</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Mapping with both C++-based and Java-based agent or connector:</strong></p>
+</div>
+<div class="paragraph">
+<p>Set these attributes in the mapping to constant values:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>msExchVersion: 4535486012416 (optional)</p>
+</li>
+<li>
+<p>msExchRecipientDisplayType: 1073741824 (optional)</p>
+</li>
+<li>
+<p>msExchRecipientTypeDetails: 1 (mandatory)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="dashboard_workflow"><a class="anchor" href="#dashboard_workflow"></a>A.2. Dashboard Workflow</h3>
+<div class="paragraph">
+<p>The DirX Identity Dashboard workflow provisions a Dashboard target system. The following workflow is available:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Ident_Dashboard_Sync</strong> - exports data from the Identity Store and imports it to the Dashboard target system and vice versa</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Note that the complexity of the Dashboard system requires a workflow of corresponding complexity to handle all of Dashboard&#8217;s features. The next sections provide conceptual and operational information about the Dashboard workflow.</p>
+</div>
+<div class="sect3">
+<h4 id="_dashboard_workflow_general_issues"><a class="anchor" href="#_dashboard_workflow_general_issues"></a>A.2.1. Dashboard Workflow: General Issues</h4>
+<div class="paragraph">
+<p>DirX Identity synchronization workflows read information from the Identity Store, perform the necessary update operations in the target system, read the target system content and update the Identity Store information accordingly. This procedure sets the status information in the identity store to correct and consistent values.</p>
+</div>
+<div class="paragraph">
+<p>Because the Dashboard system handles a set of other target systems and is not readable through its interfaces, DirX Identity uses a special procedure to handle this target system. The following figure illustrates this procedure.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/appa_depr/image1.gif" alt="Dashboard Synchronization Workflow Operation">
+</div>
+<div class="title">Figure 115. Dashboard Synchronization Workflow Operation</div>
+</div>
+<div class="paragraph">
+<p>As illustrated in the figure:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The first activity - the meta controller (<strong>metacp</strong>) account update - collects the account information from all associated target systems and writes it at the corresponding Dashboard account.</p>
+</li>
+<li>
+<p>The next activity operates like workflows for other target systems. The <strong>metacp</strong> export activity reads all necessary information from the Identity Store and writes it to the data file. The target system agent (the Dashboard agent) writes this information to the target system.</p>
+</li>
+<li>
+<p>Depending on the result of the corresponding target system interface (API) action, the Dashboard agent writes a response file that contains the distinguished names (DNs) of all accounts where the operation was successful. Other results are only documented in the trace file.</p>
+</li>
+<li>
+<p>An additional meta controller activity - <strong>metacp</strong> <strong>import</strong> - uses this response file to update the relevant status information in the Identity Store.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The entire procedure assumes that the target system interface (API) reports correctly whether an operation was successful or not. On success, the target system agent writes the corresponding entry into the response file.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_prerequisites_and_limitations_5"><a class="anchor" href="#_prerequisites_and_limitations_5"></a>A.2.2. Prerequisites and Limitations</h4>
+<div class="paragraph">
+<p>Before you can use the Dashboard workflow, you must extend the DirX Identity Store schema with Dashboard target system-specific attributes and object classes so that the workflows can store Dashboard-specific information in the Identity Store. For instructions, see the section "Extending the Schema for the Target System Workflows".</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dashboard_workflow_operational_features"><a class="anchor" href="#_dashboard_workflow_operational_features"></a>A.2.3. Dashboard Workflow: Operational Features</h4>
+<div class="paragraph">
+<p>In order to understand the Dashboard workflow, you need to understand the relevant features of the Dashboard system:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Each user must have a corresponding account in the Dashboard system. The account name is necessary to authenticate to the Dashboard system.</p>
+</li>
+<li>
+<p>The Dashboard account has a category attribute that defines the authorization to the external applications that are configured in Dashboard. A category can enable access to one or more applications. It is not possible to refine the access to specific functionality within an application.</p>
+</li>
+<li>
+<p>One physical target system can be represented by several applications within Dashboard that model a part of the available functionality.</p>
+</li>
+<li>
+<p>Dashboard can handle single sign-on to the external applications. To provide this feature, Dashboard keeps, for each user, the relevant account information of the external applications (username and password). Three facets exist:</p>
+</li>
+<li>
+<p>Common account: The external application uses the same username and password that Dashboard itself uses. In this case, the account information is set to "username=<strong>" and "password=</strong>".</p>
+</li>
+<li>
+<p>Common password: The external application uses a different username but the same password that Dashboard uses. In this case, the account information is set to "username=TSusername" and "password=*".</p>
+</li>
+<li>
+<p>Diverse account: The external application uses a username and password that are different from the ones that Dashboard uses. In this case, the account information is set to "username=TSusername" and "password=TSpassword".</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In a DirX Identity Connectivity scenario, it only makes sense to support the first two facets. The third one is not supported.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The Dashboard system also supports several authentication types:</p>
+</li>
+<li>
+<p>Simple type: The password is kept during the Dashboard session. If an external application entry of a Dashboard account contains an asterisk ('*'), the session password is used to log into the external application; otherwise, the stored value is used as the password for login.</p>
+</li>
+<li>
+<p>Password-less type: Other authentication types, for example, reuse of the Windows login, cannot provide the password. Therefore the "asterisk" solution does not work. In this case, the password of the Dashboard account and all passwords of the external application entries must be set to the same value.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Dashboard&#8217;s category feature is a type of role model (with hierarchies and so on.). Users are assigned categories (for example, Physician or Nurse) to enable them to access several specific Web pages that may in turn be bound to external applications. Dashboard only handles the access to the application. It cannot handle fine granular access within the external applications.</p>
+</div>
+<div class="paragraph">
+<p>The next figure shows the Dashboard privilege model and its relationship to external applications.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/appa_depr/image2.gif" alt="Dashboard Privilege Model">
+</div>
+<div class="title">Figure 116. Dashboard Privilege Model</div>
+</div>
+<div class="paragraph">
+<p>Assume a physician needs to work with the external applications Invision and Pharmacy. This access can be modeled as a Physician role that uses a Physician permission that has the following groups assigned to it:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>One or more categories in the Dashboard target system to obtain basic access to the Dashboard system (to ensure Dashboard account creation and enabling).</p>
+</li>
+<li>
+<p>One or more groups in the Invision target system for fine granular access to Invision. This assignment creates the necessary Invision account.</p>
+</li>
+<li>
+<p>One or more groups in any additional target systems (for example, Pharmacy) for fine granular access to these additional systems. This assignment creates the necessary target system account.</p>
+</li>
+<li>
+<p>The target systems must be marked as Dashboard-relevant systems (The Peer Target System property must point to a Dashboard target system within DirX IdentityTS).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>With this approach, inconsistencies might occur. If a user gets an account in a target system that is not enabled (on the portal of the user) by one of the assigned Dashboard categories, the user cannot enter the application via Dashboard (but he can via the application&#8217;s native access). To ensure that the target system is accessible, you must create an "access category" for each target system that is assigned to the user via a permission if one of the groups of the target system is assigned. The advantage of this approach is that the whole access control model is visible within DirX Identity (that is, DirX Identity can ensure correct access to the target system).</p>
+</div>
+<div class="paragraph">
+<p>To summarize the model within DirX Identity: DirX Identity contains a Dashboard target system with all necessary Dashboard accounts. The groups represent the Dashboard categories. A special attribute at the Dashboard target system object defines whether simple or password-less authentication is used.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/appa_depr/image3.gif" alt="DirX Identity Dashboard Synchronization Model">
+</div>
+<div class="title">Figure 117. DirX Identity Dashboard Synchronization Model</div>
+</div>
+<div class="paragraph">
+<p>DirX Identity also contains a set of Dashboard-managed target systems. These target systems have their own accounts for these users and target system-specific groups and group memberships. Such a target system can be represented as several external applications in the Dashboard system (e.g., Invision can be represented as Invision1 as Invision2). Because the name of the target system might be different from the names of the external applications which are represented by this target system in Dashboard, you can set the external application names in the Portal External Application property of each of the associated target system. The user can log in to one of the available Invision applications (Invision1 or Invision2).</p>
+</div>
+<div class="paragraph">
+<p>The workflow works as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>To get the active relevant accounts and its names (dxmDshExternalApp) for one of the Dashboard accounts, the first workflow activity retrieves all non-deleted accounts (active or inactive) for this user from all target systems that have the Dashboard target system set as Peer Target System property. If such a target system has set several names in the Portal External Application property, each name is used as a separate external application for the Dashboard account. The external application account name is then equal to the value of the dxrName attribute of the account in the external application (target system). If the dxrName attribute is empty the attribute cn is used instead. Just one account per target system is selected (the primary one in case of multiple accounts) and is configured for all the names listed in Portal External Application property. The inactive external applications are evaluated as a complement of the currently resolved list of external applications to the list of external applications in a previous run of the workflow and are written to the dxmDshExternalAppDel attribute.<br>
+<br>
+Note that this activity needs to know the location of the Dashboard target system account base. This information is retrieved from the Identity Store&#8217;s account base attribute that is set automatically from the target system wizard. This concept restricts the number of Dashboard target systems per configured identity store to exactly one.</p>
+</li>
+<li>
+<p>The second activity reads the user&#8217;s Dashboard account and all necessary account attributes. Additionally it fetches the related user&#8217;s password from the identity store as initial password (specified by the dxrUserLink attribute of the account). This assures that the actual password is taken. If the dxrUserLink attribute of the account is missing or no password for the user exists, a default value is used (configured in the post join mapping script of the second job).</p>
+</li>
+<li>
+<p>The assigned group memberships are transferred as categories to Dashboard.</p>
+</li>
+<li>
+<p>The workflow adds external application attributes (retrieved from the dxmDshExternalApp and dxmDshExternalAppDel attributes) to each Dashboard account entry with account name and password information.</p>
+</li>
+<li>
+<p>If the attribute Prevent Password Synchronization of a Dashboard relevant target system is set, the workflow sets empty passwords for all the related external applications accounts. Otherwise the workflow uses the star ('*') or the value of the user’s password (according to the simple or password-less authentication type setting of the Dashboard target system).</p>
+</li>
+<li>
+<p>All the information is transferred via the Dashboard agent to the Dashboard target system.</p>
+</li>
+<li>
+<p>Dashboard response is joined with the Dashboard user data stored in the identity store. The relevant target system state is set.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dashboard_password_synchronization"><a class="anchor" href="#_dashboard_password_synchronization"></a>A.2.4. Dashboard Password Synchronization</h4>
+<div class="paragraph">
+<p>The Dashboard password synchronization workflow that uses the Dashboard connector synchronizes the Dashboard password and all the Dashboard-related target systems that do not use empty passwords. The external applications for a Dashboard account are taken from the actual values of the attribute dxmDshExternalApp. The password for external applications is then set according to the authentication type of the Dashboard target system.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="dirx_access_workflows"><a class="anchor" href="#dirx_access_workflows"></a>A.3. DirX Access Workflows</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+These workflows are no longer usable. Read the information in the chapter DirX Access Workflows to understand how DirX Identity and DirX Access can interact.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The DirX Access provisioning workflows work between a target system of type <strong>SPMLv1</strong> in the Identity Store and the corresponding connected DirX Access server with configured Provisioning Web Service.</p>
+</div>
+<div class="paragraph">
+<p>The workflows use the SPML connector (SpmlV1SoapConnector2TS) for provisioning. This connector communicates with the DirX Access Provisioning Web Service. The following figure illustrates the DirX Access provisioning workflow architecture.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/appa_depr/image4.gif" alt="DirX Access Provisioning Workflow Architecture">
+</div>
+<div class="title">Figure 118. DirX Access Provisioning Workflow Architecture</div>
+</div>
+<div class="paragraph">
+<p>The workflows handle the following objects:</p>
+</div>
+<div class="paragraph">
+<p><strong>User</strong> - the common DirX Access user.</p>
+</div>
+<div class="paragraph">
+<p><strong>Role</strong> - the common DirX Access business role.</p>
+</div>
+<div class="paragraph">
+<p>The delivered workflows are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Ident_DXA_Realtime</strong> - the synchronization workflow exports detected changes for user (account) and business role (group) objects from Identity Store to the DirX Access server in the first step. The second step is to validate the processed changes in the DirX Access server to the Identity Store.</p>
+</li>
+<li>
+<p><strong>Validate_DXA_Realtime</strong> - the validation workflow imports existing DirX Access users and business roles with role assignment from the DirX Access server to the Identity Store.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_dirx_access_prerequisites_and_limitations"><a class="anchor" href="#_dirx_access_prerequisites_and_limitations"></a>A.3.1. DirX Access Prerequisites and Limitations</h4>
+<div class="paragraph">
+<p>The DirX Access workflows support only DirX Access user and business role objects. They do not support password synchronization for DirX Access.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_configuring_dirx_access_workflows"><a class="anchor" href="#_configuring_dirx_access_workflows"></a>A.3.2. Configuring DirX Access Workflows</h4>
+<div class="paragraph">
+<p>To configure the connection to DirX Access:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Specify the <strong>IP address</strong> and the <strong>Data Port</strong> of the DirX Access SPML v1 Provisioning Web Service. Use the corresponding DirX Access service object which is the part of the connected DirX Access system.</p>
+</li>
+<li>
+<p>You can configure the <strong>URL Path</strong> and <strong>Socket Timeout</strong> at the target system port of the appropriate workflow object. (See the DirX Access provisioning workflows configuration in the <strong>Expert View</strong> in the <strong>Connectivity</strong> part in the <strong>DirX Manager</strong>.) You can change the <strong>URL Path</strong> according to real deployment of the DirX Access Provisioning Web Service. You can increase the timeout value (in seconds) in the <strong>Socket Timeout</strong> if necessary.</p>
+</li>
+<li>
+<p>Set up the bind credentials of the connected DirX Access system. Use the correct credentials with sufficient rights.</p>
+</li>
+<li>
+<p>Check the provisioning settings used by the connected DirX Access system. Specify them according to real values for your provisioned DirX Access target system.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_configuring_the_dirx_access_target_system"><a class="anchor" href="#_configuring_the_dirx_access_target_system"></a>A.3.3. Configuring the DirX Access Target System</h4>
+<div class="paragraph">
+<p>The DirX Access target system requires the following layout:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Accounts</strong> - all DirX Access users are located in a subfolder <strong>Accounts</strong>.</p>
+</li>
+<li>
+<p><strong>Groups</strong> - all DirX Access business role objects are located in a subfolder <strong>Groups</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The attribute <strong>dxrPrimaryKey</strong> of accounts and groups contains the PSO Identifier of these objects in the connected DirX Access system. (See the SPMLv2 specification for more details about PSO Identifiers.)</p>
+</div>
+<div class="paragraph">
+<p>The business role (group) membership is stored at the user (account) object and references the <strong>dxrPrimaryKey</strong> attribute of business role (group) objects.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dirx_access_workflows_and_activities"><a class="anchor" href="#_dirx_access_workflows_and_activities"></a>A.3.4. DirX Access Workflows and Activities</h4>
+<div class="paragraph">
+<p>The following figure shows the layout of the channels that are used by the UNIX-PAM workflow&#8217;s join activity:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/appa_depr/image5.gif" alt="DirX Access Provisioning Workflow Channels and Objects">
+</div>
+<div class="title">Figure 119. DirX Access Provisioning Workflow Channels and Objects</div>
+</div>
+<div class="paragraph">
+<p>The DirX Access users (with membership) and business roles are synchronized via a pair of channels (one channel per direction).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dirx_access_ports"><a class="anchor" href="#_dirx_access_ports"></a>A.3.5. DirX Access Ports</h4>
+<div class="paragraph">
+<p>This section describes the DirX Access ports.</p>
+</div>
+<div class="paragraph">
+<p>TS Port</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>CF - Crypt Filter</strong><br>
+A DirX Access filter is configured implicitly. It is used to send the decrypted password attribute p<strong>assword</strong> to DirX Access.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dirx_access_channels"><a class="anchor" href="#_dirx_access_channels"></a>A.3.6. DirX Access Channels</h4>
+<div class="paragraph">
+<p>This section provides information about DirX Access channels.</p>
+</div>
+<div class="sect4">
+<h5 id="_common_aspects_8"><a class="anchor" href="#_common_aspects_8"></a>Common Aspects</h5>
+<div class="paragraph">
+<p>Direction: Identity Store &#8594; DirX Access</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>enabled</strong> - the attribute used for disabling of the user object in DirX Access. The correct value is derived from the <strong>dxrState</strong> attribute of the corresponding account object in the Identity Store.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Direction: DirX Access &#8594; Identity Store</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>CommonProcsDxa.calculateIdInIdentity</strong> - calculates the ID.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_accounts_7"><a class="anchor" href="#_accounts_7"></a>Accounts</h5>
+<div class="paragraph">
+<p>Direction: Identity Store &#8594; DirX Access</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ID: <strong>dxrPrimaryKey</strong></p>
+</li>
+<li>
+<p>Join: <strong>${source.dxrPrimaryKey}</strong> or <strong>${source.dxrName}</strong> identical to <strong>loginName</strong></p>
+</li>
+<li>
+<p>DirX Access requires some mandatory attributes. Mandatory attributes are mapped mostly in a common way, some are mapped as constants.</p>
+</li>
+<li>
+<p>The <strong>roles</strong> attribute holds the business group membership.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Direction: DirX Access &#8594; Identity Store</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Join via the <strong>dxrName</strong> attribute that is mapped identically to the <strong>loginName</strong> attribute.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_groups_6"><a class="anchor" href="#_groups_6"></a>Groups</h5>
+<div class="paragraph">
+<p>Direction: Identity Store &#8594; DirX Access</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ID: <strong>dxrPrimaryKey</strong></p>
+</li>
+<li>
+<p>Join: <strong>${source.dxrPrimaryKey}</strong></p>
+</li>
+<li>
+<p>DirX Access requires some mandatory attributes. Mandatory attributes are mapped mostly in a common way, and some are mapped as constants.</p>
+</li>
+<li>
+<p>The <strong>mode</strong> attribute must be set to <strong>1</strong> for business roles.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Direction: DirX Access &#8594; Identity Store</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Join via the <strong>dxrName</strong> attribute that is mapped identically to the <strong>name</strong> attribute.</p>
+</li>
+<li>
+<p>Post-mapping removes all administrative roles from the imported DirX Access roles (it simply omits the roles with the <strong>mode</strong> attribute set to <strong>0</strong>).</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="jdbc_provisioning_workflows"><a class="anchor" href="#jdbc_provisioning_workflows"></a>A.4. JDBC Provisioning Workflows</h3>
+<div class="paragraph">
+<p>The DirX Identity JDBC workflows provision a JDBC target system. The following workflows are available:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>JDBC2Ident_Validation</strong> - performs initial loads or validations from the JDBC target system</p>
+</li>
+<li>
+<p><strong>Ident_JDBC_Sync</strong> - synchronizes between the JDBC target system within DirX Identity and the real JDBC target system.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The next sections provide information about JDBC workflow implementation.</p>
+</div>
+<div class="sect3">
+<h4 id="_general_information_about_the_jdbc_workflows"><a class="anchor" href="#_general_information_about_the_jdbc_workflows"></a>A.4.1. General Information about the JDBC Workflows</h4>
+<div class="paragraph">
+<p>Because the JDBC workflows assume the same database structure as the ODBC workflows, the workflow structure is also the same. They also use the ODBC Tcl scripts, especially the ODBC profile script.</p>
+</div>
+<div class="paragraph">
+<p>Because JDBC workflows use the JDBC agent, joins are configured here in a special view section. The join feature is not needed in all JDBC jobs, but all jobs are configured the same way.</p>
+</div>
+<div class="paragraph">
+<p>The JDBC agent is always run in full mode (a delta filter feature is not yet available). As a result, deleted records in the JDBC database are never exported. As a result, the TSState attribute in the identity store cannot be updated for deleted accounts or groups. Use the validation workflow to perform this task.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_jdbc_system_table_layout"><a class="anchor" href="#_jdbc_system_table_layout"></a>A.4.2. JDBC System Table Layout</h4>
+<div class="paragraph">
+<p>The JDBC workflows assume the following table layout in the JDBC target system:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A table of groups, where each row represents one group</p>
+</li>
+<li>
+<p>A table of accounts, where each row represents one account</p>
+</li>
+<li>
+<p>A table of memberships, where each row represents a membership of one account in one group</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_jdbc_workflow_configuration"><a class="anchor" href="#_jdbc_workflow_configuration"></a>A.4.3. JDBC Workflow Configuration</h4>
+<div class="paragraph">
+<p>The JDBC agent&#8217;s import and export configuration files are stored under the JDBC connected directory. As in the attribute configuration, the database schema is described here. Each JDBC export job uses this configuration.</p>
+</div>
+<div class="paragraph">
+<p>For searchRequest for exports, the JDBC2Ident_SyncGroup_JDBCExport and JDBC2Ident_SyncGroup_JDBCExport jobs use their own searchRequest files because they use special anchor values to find the selected attributes. All other JDBC export jobs use the standard searchRequest file.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_jdbc_agent_operations"><a class="anchor" href="#_jdbc_agent_operations"></a>A.4.4. JDBC Agent Operations</h4>
+<div class="paragraph">
+<p>For JDBC agent import:</p>
+</div>
+<div class="paragraph">
+<p>An LDIF change file is generated by the preceding <strong>metacp</strong> job:</p>
+</div>
+<div class="paragraph">
+<p>Dn: consists of: identifying attribute(s), table=tablename</p>
+</div>
+<div class="paragraph">
+<p>A specific group:<br>
+<code>dn:DxrGroupName=verynew,table=Groups</code></p>
+</div>
+<div class="paragraph">
+<p>or a specific membership:<br>
+<code>dn:MembershipGroupID=1,MembershipAccountID=26,table=Memberships</code></p>
+</div>
+<div class="paragraph">
+<p>For JDBC agent export:</p>
+</div>
+<div class="paragraph">
+<p>An LDIF content file is generated:</p>
+</div>
+<div class="paragraph">
+<p>A specific group with its memberships:<br>
+<code>
+dn: groupid=1,view=members<br>
+groupdesc: xx<br>
+groupdxrname: ODBCall<br>
+groupid: 1<br>
+groupodbcname: all<br>
+accountdxrname: bj099999
+</code></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_adddelete_membership_lists"><a class="anchor" href="#_adddelete_membership_lists"></a>A.4.5. Add/Delete Membership Lists</h4>
+<div class="paragraph">
+<p>Because the JDBC agent cannot currently run in delta mode, the JDBC workflow (<strong>JDBC2Ident_SyncGroup_MetaCP</strong> job) cannot generate "add" and "delete" member lists. Instead, the workflow accumulates all memberships in the <strong>accountDxrName</strong> attribute and synchronizes back the complete member list with the common <strong>modGroupInRole</strong> routine. This operation is different from the ODBC workflow and will be changed when the delta feature is available.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ldap_provisioning_workflows"><a class="anchor" href="#ldap_provisioning_workflows"></a>A.5. LDAP Provisioning Workflows</h3>
+<div class="paragraph">
+<p>The following LDAP workflows to provision any LDAP directory are available:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>LDAP2_Ident_Validation</strong> - performs initial load or validation from an LDAP directory</p>
+</li>
+<li>
+<p><strong>Ident_LDAP_Sync</strong> - synchronizes between the Identity Store and an LDAP directory</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_ldap_provisioning_workflow_concepts"><a class="anchor" href="#_ldap_provisioning_workflow_concepts"></a>A.5.1. LDAP Provisioning Workflow Concepts</h4>
+<div class="paragraph">
+<p>This chapter defines concepts that are necessary to understand the operation of the LDAP workflows. Per default the workflow assumes <strong>groupOfNames</strong> at the target system side.</p>
+</div>
+<div class="sect4">
+<h5 id="_empty_groups"><a class="anchor" href="#_empty_groups"></a>Empty Groups</h5>
+<div class="paragraph">
+<p>LDAP groups contain a member or uniqueMember attribute that cannot be empty (it is mandatory and must have a value). This is handled differently on the DirX Identity and the target system side:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In the DirX Identity target system the group is empty. Note that the uniqueMember attribute contains the domain name to fulfill the LDAP requirement that empty groups cannot exist (cn=<em>domainName</em>). The dxrGroupMemberOK, dxrGroupMemberAdd and dxrGroupMember attributes are empty.</p>
+</li>
+<li>
+<p>To overcome the problem on the target system side, the LDAP workflow fills empty groups with a customizable value (default is 'cn=no_member'). For configuration of this feature see the next chapter.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_enable_disable_of_accounts"><a class="anchor" href="#_enable_disable_of_accounts"></a>Enable / Disable of Accounts</h5>
+<div class="paragraph">
+<p>The workflow supports enable and disable. The status attribute of DirX Identity is mapped to a freely definable attribute in the target system (default: employeeType). For configuration of this feature see the next chapter.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ldap_provisioning_workflow_configuration"><a class="anchor" href="#_ldap_provisioning_workflow_configuration"></a>A.5.2. LDAP Provisioning Workflow Configuration</h4>
+<div class="paragraph">
+<p>This chapter explains how you can customize specific issues of the LDAP workflows.</p>
+</div>
+<div class="sect4">
+<h5 id="_empty_groups_2"><a class="anchor" href="#_empty_groups_2"></a>Empty Groups</h5>
+<div class="paragraph">
+<p>Open the User Hooks script of the Identity_LDAP_Sync activity for group synchronization. Adapt the default statement in the Preprocessing section:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-tcl hljs" data-lang="tcl">set fixGroupMember "cn=no_members"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This distinguished name is entered into empty groups on the target system side. If your directory or your applications cannot handle a value that points to nowhere, create an entry in an area that is not synchronized by DirX Identity (to overcome the problem that this entry is synchronized) and set the fixGroupMember value to point to this entry.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_enable_disable_of_accounts_2"><a class="anchor" href="#_enable_disable_of_accounts_2"></a>Enable / Disable of Accounts</h5>
+<div class="paragraph">
+<p>To change the default attribute employeeType to another attribute, perform these steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Open the User Hooks script for the account activity of the Identity_LDAP_Sync workflow.</p>
+</li>
+<li>
+<p>Select the attribute in the output channel&#8217;s Selected Attributes.</p>
+</li>
+<li>
+<p>Edit the statement in the Preprocessing section:<br>
+set dxrTSStateAttr "employeeType"</p>
+</li>
+<li>
+<p>Open the User Hooks script for the account activity of the Ident2LDAP_Validation workflow.</p>
+</li>
+<li>
+<p>Select the attribute in the input channel&#8217;s Selected Attributes.</p>
+</li>
+<li>
+<p>Edit the statement in the Preprocessing section:<br>
+set dxrTSStateAttr "employeeType"</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ldap_xxl_provisioning_workflows"><a class="anchor" href="#ldap_xxl_provisioning_workflows"></a>A.6. LDAP XXL Provisioning Workflows</h3>
+<div class="paragraph">
+<p>Group-side storage of memberships in DirX Identity can cause performance problems when large groups (hundred thousands to millions of members) must be handled. One solution is to store the membership at the account instead of at the groups because the number of memberships for accounts typically does not exceed 1000. If the real target system needs group-side membership storage, DirX Identity can nevertheless store the memberships account-side, which significantly improves all internal service handling. DirX Identity&#8217;s LDAP XXL workflows support LDAP target systems with this model.</p>
+</div>
+<div class="paragraph">
+<p>The following LDAP XXL workflows are available:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>LDAPXXL2_Ident_Validation</strong> - performs initial load or validation from an LDAP directory</p>
+</li>
+<li>
+<p><strong>Ident_LDAPXXL_Sync</strong> - synchronizes between the Identity Store and an LDAP directory</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_ldap_xxl_general_information"><a class="anchor" href="#_ldap_xxl_general_information"></a>A.6.1. LDAP XXL General Information</h4>
+<div class="paragraph">
+<p>The LDAP XXL workflows operate differently from the standard LDAP workflow, as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The validation workflow&#8217;s account job reads memberships from the target system and merges them to the identity store accounts. Its group job does not handle memberships.</p>
+</li>
+<li>
+<p>The synchronization workflow&#8217;s group job reads memberships from the Identity Store via extra searches and merges them with the groups in the target system. Its account job reads memberships in the target system via extra searches and synchronizes the membership back to the accounts in the Identity Store.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Unlike the standard LDAP workflow, the synchronization workflow&#8217;s group job uses the following optimizations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>It does not read the member attribute in the LDAP target system into memory (avoids large memory lists)</p>
+</li>
+<li>
+<p>It does not use the Tcl <strong>lappend</strong> command for large lists (slow function)</p>
+</li>
+<li>
+<p>It does not use the <strong>rh</strong> arrays (slow Tcl behavior). Instead they build obj modify/create strings</p>
+</li>
+<li>
+<p>It appends/creates members in portions (blocks)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ldapxxl_workflow_concepts"><a class="anchor" href="#_ldapxxl_workflow_concepts"></a>A.6.2. LDAPXXL Workflow Concepts</h4>
+<div class="paragraph">
+<p>This section explains LDAPXXL workflow implementation concepts.</p>
+</div>
+<div class="sect4">
+<h5 id="_new_common_procedures"><a class="anchor" href="#_new_common_procedures"></a>New Common Procedures</h5>
+<div class="paragraph">
+<p>The two new common procedures are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>modGroupStatesInRole</p>
+</li>
+<li>
+<p>addGroupStatesInRole</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>These procedures handle the states but do not handle the memberships as in the mod/addGroupInRole procedures.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_workflow_integration"><a class="anchor" href="#_workflow_integration"></a>Workflow Integration</h5>
+<div class="paragraph">
+<p>Uniquemember is no longer in the target selected attribute list, which prevents it from being read during the join operation.</p>
+</div>
+<div class="paragraph">
+<p><strong>PostmappingAdd:</strong></p>
+</div>
+<div class="paragraph">
+<p>The PostmappingAdd: routine:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Creates the group via the <strong>obj</strong> <strong>create</strong> command. It generates an attribute string for the command from the mapped tgt attributes, and assumes that Abbreviation and Name are identical.</p>
+</li>
+<li>
+<p>Searches the "add" members and appends the first portion of members to the command.</p>
+</li>
+<li>
+<p>Adds all other add members in portions via an <strong>obj</strong> <strong>modify -addattr</strong> command.</p>
+</li>
+<li>
+<p>Sets the action to none (because add is already done) and sets a special switch <strong>restore_action</strong>.</p>
+</li>
+<li>
+<p>Restores the action in loopextraFunction so that backward synchronization of the states can be performed for ADD.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>PostmappingMod:</strong></p>
+</div>
+<div class="paragraph">
+<p>The PostmappingMod: routine:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Searches for the members to be deleted.</p>
+</li>
+<li>
+<p>For every member, searches the target system to determine whether or not a delete attribute operation needs to be performed. If it does, the routine builds the list of attributes to be deleted.</p>
+</li>
+<li>
+<p>If a given block size is reached, performs an <strong>obj modify -delattr</strong> with <em>block_size</em> members.</p>
+</li>
+<li>
+<p>Handles add members analog. Block size is configured at the job (specific attribute block_size defaults to 100).</p>
+</li>
+<li>
+<p>Instead of having a large Tcl (result) list of members, uses the target system as the list. Every search in the list results in an LDAP search.</p>
+</li>
+<li>
+<p>Modifies the other attributes with the standard script operation.</p>
+</li>
+<li>
+<p>Creates a namespace search to handle the searches for add/delete members. It consists of a search and a get(getNextMembers) procedure. The search result is held in this namespace.</p>
+</li>
+<li>
+<p>The get procedure returns the next number of attributes separated by “;”.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>LoopExtraFunction</strong></p>
+</div>
+<div class="paragraph">
+<p>This routine restores the action if the restore_action switch is set.</p>
+</div>
+<div class="paragraph">
+<p>Additional Statistics</p>
+</div>
+<div class="paragraph">
+<p>The LDAP XXL workflows offer additional statistics. For example:</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><code>
+#<br>
+# Additional statistics:<br>
+#==========================<br>
+# Nr of groups created: 0<br>
+# Nr of modifies to append members for new groups: 0<br>
+# Nr of modifies to change memberships: 3<br>
+# Nr of groups for which memberships have changed: 1
+</code></p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Specific Attribute block_size (Job)</strong></p>
+</div>
+<div class="paragraph">
+<p>The job&#8217;s block_size attribute is used for creates and modifies. A single create/modify operation handles max <em>block_size</em> members.</p>
+</div>
+<div class="paragraph">
+<p>Paged-Read Integration</p>
+</div>
+<div class="paragraph">
+<p>The following sections provide information about paged-read integration in the LDAPXXL workflows.</p>
+</div>
+<div class="paragraph">
+<p><strong>Group Synchronization</strong></p>
+</div>
+<div class="paragraph">
+<p>Searches for the add/delete memberships in role may return large results. These searches should use paged read to avoid memory problems. All search functionality is extracted in a Tcl file called “Post Join Search Tcl Script”. It contains three namespaces:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>A namespace searchType to determine what kind of searches are supported</p>
+</li>
+<li>
+<p>A namespace for simple paging (searchPaged) and</p>
+</li>
+<li>
+<p>A namespace for "simple" searches (search) are provided</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Virtual list view (VLV) may be supported in a future release.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>Simple Paging (paged read)</strong></p>
+</div>
+<div class="paragraph">
+<p>The searchPaged namespace contains procedures for paged read.</p>
+</div>
+<div class="paragraph">
+<p>Paged read requires an extra bind with a -<strong>bindid</strong> option; for users of the search functionality, this is the only difference in the interface between the several search types. As a result, searchPaged offers a bind procedure. The caller passes the bind ID and the connection parameters. The first time <strong>bind</strong> is called for the given bind ID, it performs the bind. Subsequent calls with the same bind ID do not result in another bind; the existing bind is used.</p>
+</div>
+<div class="paragraph">
+<p>The page size can be configured at the job object:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-tcl hljs" data-lang="tcl">variable PAGESIZE &lt;?job@SpecificAttributes(page_size,$default="100")/&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Uh:: Prolog:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-tcl hljs" data-lang="tcl">set st(paged) 0
+set rc [searchType::determineSearchType src_bind_id st]
+set usePagedResult $st(paged)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The variable of uh namespace usePagedResult is set. Here if “simple paging” is possible, usePagedResult is set to 1 (it means true or yes). Otherwise, simple searches are used. If you never want to use simple paging you can hard-code it here.</p>
+</div>
+<div class="paragraph">
+<p>A second index vlv of the st array indicates whether VLV is supported.</p>
+</div>
+<div class="paragraph">
+<p><strong>Post-Join Mapping</strong></p>
+</div>
+<div class="paragraph">
+<p>In postMappingAdd/Mod, the variable usePagedResult is used to determine if search procedures need to be called from search or searchPaged namespace. For usePagedResult, the bind procedure is also called:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-tcl hljs" data-lang="tcl">if {$usePagedResult == 1} {
+    set rc [searchPaged::bind paged_bind_id src_conn_param]
+}
+...
+if {$usePagedResult == 0} {
+    search::SearchMembers $src_conn_param(bind_id) $role_ts_account_base ..
+} else {
+    searchPaged::SearchMembers paged_bind_id $role_ts_account_base ..
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Account Synchronization</strong></p>
+</div>
+<div class="paragraph">
+<p>The search for the changed accounts in the Identity Store might return a large result. To avoid memory problems, the standard script&#8217;s paged read functionality is now used. Paged read is switched on and the page size is set in the account synchronization job&#8217;s input channel. Sorting is now disabled (because sorting DDN and paged read is not supported).</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_detailed_customization"><a class="anchor" href="#_detailed_customization"></a>A.6.3. Detailed Customization</h4>
+<div class="paragraph">
+<p>Perform the following steps to change the Role LDAPXXL workflows from GroupOfUniqueNames to GroupOfNames.</p>
+</div>
+<div class="paragraph">
+<p>For the validation workflow/validate accounts:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Go to the wizard step "Attribute Mapping for Accounts".</p>
+</li>
+<li>
+<p>Edit PostJoin Mapping.</p>
+</li>
+<li>
+<p>In PostJoinMapping Procedure GetCurrentTSMembers, replace<strong><br>
+set rc [SearchMembers $bind_id $base_obj GroupOfUniqueNames uniquemember $accountdn locMembs]</strong><br>
+<br>
+with<strong><br>
+<br>
+set rc [SearchMembers $bind_id $base_obj GroupOfNames member $accountdn locMembs]</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For the validation workflow/validate groups</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Wizard step "Attribute Mapping for Groups"</p>
+</li>
+<li>
+<p>Select InputChannel</p>
+</li>
+<li>
+<p>Press show button in Export Properties Tab</p>
+</li>
+<li>
+<p>Update the "Search Filter" of export properties to objectClass="groupOfNames"</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For the synchronization workflow/synchronize accounts:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In DirX Manager&#8217;s expert view: UserHook under the <strong>Role_LDAPXXL_SyncAccount_MetaCP</strong> job<br>
+uh: ModifyRoleEntry procedure:<br>
+<br>
+replace<strong><br>
+set rc [SearchMembers $bind_id $base_obj GroupOfUniqueNames uniquemember $accountdn DDN currTSMembs]</strong><br>
+<br>
+with<strong><br>
+<br>
+set rc [SearchMembers $bind_id $base_obj GroupOfNames member $accountdn DDN currTSMembs]</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For the synchronization workflow/synchronize groups:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Go to the wizard step "Target Selected Attributes for Groups": Replace<strong><br>
+uniqueMember replace-all</strong><br>
+<br>
+with<strong><br>
+<br>
+member replace-all</strong></p>
+</li>
+<li>
+<p>Go to the wizard step "Import Properties for Groups". In Join Expression,<br>
+change <strong>GroupOfUniqueNames</strong> to <strong>GroupOfNames</strong></p>
+</li>
+<li>
+<p>Go to the wizard step "Attribute Mapping for Groups": Edit PostJoin Mapping:<br>
+<br>
+postMappingAdd:<br>
+<br>
+Change<strong><br>
+set tgt(objectClass) "GroupOfUniqueNames top"</strong><br>
+to<strong><br>
+set tgt(objectClass) "GroupOfNames top"</strong><br>
+<br>
+Change<strong><br>
+set tgt(uniqueMember) $add_member</strong><br>
+to<strong><br>
+set tgt(member) $add_member</strong><br>
+<br>
+postMappingMod:<br>
+<br>
+Change<strong><br>
+set members $found_entry(uniqueMember)</strong><br>
+to<strong><br>
+set members $found_entry(member)</strong><br>
+<br>
+Change<strong><br>
+set tgt(uniqueMember) $members</strong><br>
+to<strong><br>
+set tgt(member) $members</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In the connected directory LDAPXXL:</p>
+</div>
+<div class="paragraph">
+<p>Configure LDAP TS in Hub:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Go to the wizard step "Operational Attributes".</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In ObjectClasses Groups, change <strong>GroupOfUniqueNames</strong> to <strong>GroupOfNames</strong></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="lotus_notes_provisioning_workflows"><a class="anchor" href="#lotus_notes_provisioning_workflows"></a>A.7. Lotus Notes Provisioning Workflows</h3>
+<div class="paragraph">
+<p>This section comprises all Lotus Notes-specific information for Tcl-based workflows.</p>
+</div>
+<div class="sect3">
+<h4 id="_tcl_based_lotus_notes_provisioning_workflows"><a class="anchor" href="#_tcl_based_lotus_notes_provisioning_workflows"></a>A.7.1. Tcl-based Lotus Notes Provisioning Workflows</h4>
+<div class="paragraph">
+<p>The DirX Identity Tcl-based Lotus Notes workflows provision a Lotus Notes target system. Two workflows are available:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Notes2Ident_Validation</strong> - performs initial load or validation from a Lotus Notes target system</p>
+</li>
+<li>
+<p><strong>Ident_Notes_Sync</strong> - synchronizes between the Identity Store and a Lotus Notes target system</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Configuration notes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The parameter "Account Root in TS" of the target system object (in the Provisioning view) must contain a structure element like '/o=mycompany' which must match with the one contained in the cert.id file, because the Notes Server creates the fullname of the user by concatenating givenName, surname and this structure part contained in the cert.id file. This fullname also is used in the member attributes of groups in Notes. As a consequence the cn of a Notes target system account in Provisioning is generated like the fullname in Notes to be able to assign group members to accounts in the Provisioning view.</p>
+</li>
+<li>
+<p>The parameter "Group Root in TS" must be left empty, because groups are kept flat in Notes and not in the kind of structure like users.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Deletion of accounts in Lotus Notes is a specific procedure:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The workflow cannot delete accounts directly. Instead it marks an account for deletion in the Lotus Notes system.</p>
+</li>
+<li>
+<p>You can define in the Notes server the time after which an account is physically deleted from the address book (for example, two minutes) and the time after which the mail file is deleted.</p>
+</li>
+<li>
+<p>This feature implies that the dxrTSstate is not set correctly during this run of the synchronization workflow. As a result, the next synchronization workflow will try to delete the same entries again. This action does not result in a warning state. Instead, one of the next synchronization workflows or a validation workflow will set the dxrTS flag accordingly.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="unix_pam_provisioning_workflows"><a class="anchor" href="#unix_pam_provisioning_workflows"></a>A.8. UNIX PAM Provisioning Workflows</h3>
+<div class="paragraph">
+<p>A Pluggable Authentication Module (PAM) is a method that allows you to provide the authentication for system and other services (login, su, sshd…) using other services (LDAP…). Today the support for PAM is included in most of the common UNIX distributions. PAM was originally developed by Sun Microsystems. The topics in this section describe how PAM works and how to set up PAM Provisioning workflows.</p>
+</div>
+<div class="sect3">
+<h4 id="_how_pam_works"><a class="anchor" href="#_how_pam_works"></a>A.8.1. How PAM Works</h4>
+<div class="paragraph">
+<p>The basic idea of the PAM system are pluggable authentication modules - shared object files that are typically located in the /lib/security directory. Applications use for access to these modules two interfaces. The first is a system library attached to the application that allows the application to access the application authentication services directly. The second layer is the system configuration - the administrator specifies here the authentication rules for an application as desired.</p>
+</div>
+<div class="paragraph">
+<p>PAM is used in four areas: user authentication, account control, session management and password change. The PAM modules process control or executive functions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>User authentication</strong> checks the identity of the user: password check, Kerberos authentication etc.</p>
+</li>
+<li>
+<p><strong>Account control</strong> processes some verification which is not directly related to user identity: limited access time for a user, limited number of concurrently logged users etc.</p>
+</li>
+<li>
+<p><strong>Session management</strong> is activated before and after service execution: sets the environment variables, execution of chroot, enables network disk connections etc.</p>
+</li>
+<li>
+<p>The <strong>control flag</strong> describes how to work with the PAM module. The possible values are required, requisite, sufficient and optional.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_setting_up_pam_provisioning_workflows"><a class="anchor" href="#_setting_up_pam_provisioning_workflows"></a>A.8.2. Setting Up PAM Provisioning Workflows</h4>
+<div class="paragraph">
+<p>Provisioning of PAM requires the following setup steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Install an LDAP directory that you can use for PAM. See the specific vender documentation how to perform this task.</p>
+</li>
+<li>
+<p>Install and configure PAM for your UNIX system. See the specific vendor documentation. This includes a setup of the PAM LDAP schema. Important part of the schema are the object classes <strong>posixAccount</strong> and <strong>posixGroup</strong>.</p>
+</li>
+<li>
+<p>Check that PAM is working. Create for example an account and a group that allows access to read a file and check that this account can read the file.</p>
+</li>
+<li>
+<p>Create a UNIX PAM target system in the Provisioning view group with Identity Manager. This includes creation of a UNIX PAM LDAP connected directory and the related workflows.</p>
+</li>
+<li>
+<p>Note: the target system wizard copies only the Tcl-based workflows. If you want to use real-time provisioning, copy the relevant workflows in the Connectivity view group as is described in the DirX Identity Connectivity Administration Guide.</p>
+</li>
+<li>
+<p>Test your scenario thoroughly.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="unix_pam_workflows"><a class="anchor" href="#unix_pam_workflows"></a>A.9. UNIX-PAM Workflows</h3>
+<div class="paragraph">
+<p>The UNIX-PAM Provisioning workflows operate between a target system of type <strong>LDAP</strong> in the Identity Store and the corresponding connected LDAP server that is configured for use with UNIX-PAM (see RFC 2307).</p>
+</div>
+<div class="paragraph">
+<p>The workflows use the standard LDAP connector (LdapConnector) for provisioning. This connector communicates with the LDAP server across the native LDAP protocol. (See the section "LDAP Workflows" for more information). The following figure illustrates the UNIX-PAM Provisioning workflow architecture.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/appa_depr/image6.gif" alt="UNIX-PAM Workflow Architecture">
+</div>
+<div class="title">Figure 120. UNIX-PAM Workflow Architecture</div>
+</div>
+<div class="paragraph">
+<p>The workflows handle the following UNIX objects:</p>
+</div>
+<div class="paragraph">
+<p><strong>Account</strong> - the common UNIX accounts (object classes <strong>posixUser</strong> and <strong>shadowUser</strong> according to RFC 2307).</p>
+</div>
+<div class="paragraph">
+<p><strong>Group</strong> - the common UNIX groups (object classes <strong>posixGroup</strong> according to RFC 2307).</p>
+</div>
+<div class="paragraph">
+<p>The delivered workflows are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Ident_UNIX-PAM_Realtime</strong> - the synchronization workflow that exports detected changes for account and group objects from Identity Store to the LDAP server and then validates the processed changes in the LDAP server to the Identity Store.</p>
+</li>
+<li>
+<p><strong>Validate_UNIX-PAM_Realtime</strong> - the validation workflow that imports existing UNIX accounts and groups with group assignment from the LDAP server to the Identity Store.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_unix_pam_workflow_prerequisites_and_limitations"><a class="anchor" href="#_unix_pam_workflow_prerequisites_and_limitations"></a>A.9.1. UNIX-PAM Workflow Prerequisites and Limitations</h4>
+<div class="paragraph">
+<p>The UNIX-PAM workflows have the following prerequisites and limitations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Before you can use the workflows, you must extend the DirX Identity Store schema with UNIX-PAM target system-specific attributes and object classes so that the workflows can store UNIX-PAM-specific information in the Identity Store. For instructions, see the section "Extending the Schema for the Target System Workflows".</p>
+</li>
+<li>
+<p>The workflows support only the object classes <strong>posixAccount</strong>, <strong>shadowAccount</strong> and <strong>posixGroup</strong> defined by RFC 2307.</p>
+</li>
+<li>
+<p>The workflows as delivered do not support password synchronization for UNIX-PAM. (See the section "LDAP Workflows" for an example of a password synchronization workflow for a UNIX-PAM (LDAP-based) connected directory.)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_configuring_unix_pam_workflows"><a class="anchor" href="#_configuring_unix_pam_workflows"></a>A.9.2. Configuring UNIX-PAM Workflows</h4>
+<div class="paragraph">
+<p>To configure the connection to UNIX-PAM:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Specify the IP address and the data port of the LDAP server that is configured for use with UNIX-PAM. Use the corresponding UNIX-PAM service object that is the part of the connected UNIX-PAM LDAP directory. Use correct port numbers according to your LDAP server settings. You can also set the usage of secure connection (SSL) or enable client authentication.</p>
+</li>
+<li>
+<p>Set up the bind credentials of the connected LDAP directory representing UNIX-PAM. Use the correct credentials (with sufficient rights). These are the credentials used for administration of the LDAP server. Use the valid DN syntax for the user name.</p>
+</li>
+<li>
+<p>Check the provisioning settings used by the connected UNIX-PAM system. Specify them according to real values for your provisioned UNIX-PAM target system.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_configuring_the_unix_pam_target_system"><a class="anchor" href="#_configuring_the_unix_pam_target_system"></a>A.9.3. Configuring the UNIX-PAM Target System</h4>
+<div class="paragraph">
+<p>The UNIX-PAM target system requires the following layout:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Accounts</strong> - all UNIX accounts are located in a subfolder <strong>Accounts</strong>.</p>
+</li>
+<li>
+<p><strong>Groups</strong> - all UNIX groups are located in a subfolder <strong>Groups</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The attribute <strong>dxrPrimaryKey</strong> of accounts and groups contains the DN of these objects in the connected system.</p>
+</div>
+<div class="paragraph">
+<p>The standard JavaScript dxrNameForAccounts.js generates the attribute <strong>uid</strong> for the UNIX account.</p>
+</div>
+<div class="paragraph">
+<p>The UNIX-PAM specific JavaScript uniqueNumber.js generates the attributes <strong>uidNumber</strong> and <strong>gidNumber</strong> for the UNIX account.</p>
+</div>
+<div class="paragraph">
+<p>The attribute gidNumber for the UNIX account (refers to the primary UNIX group of the account) is by default automatically chosen as one of the assigned UNIX groups. It uses the obligation mechanism (see group objects) and the UNIX-PAM specific JavaScript AccountGidNumber.js. The JavaScript updates the <strong>gidNumber</strong> when necessary. You can change the primary group manually at the account object.</p>
+</div>
+<div class="paragraph">
+<p>The group object stores the group membership and references the <strong>uid</strong> attribute of the account objects.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_unix_pam_workflow_and_activities"><a class="anchor" href="#_unix_pam_workflow_and_activities"></a>A.9.4. UNIX-PAM Workflow and Activities</h4>
+<div class="paragraph">
+<p>The following figure shows the layout of the channels that are used by the UNIX-PAM workflow&#8217;s join activity:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/appa_depr/image7.gif" alt="UNIX-PAM Provisioning Workflow Channels and Objects">
+</div>
+<div class="title">Figure 121. UNIX-PAM Provisioning Workflow Channels and Objects</div>
+</div>
+<div class="paragraph">
+<p>The UNIX objects account and group (and membership) are synchronized via a pair of channels (one channel per direction).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_unix_pam_ports"><a class="anchor" href="#_unix_pam_ports"></a>A.9.5. UNIX-PAM Ports</h4>
+<div class="paragraph">
+<p>This section describes the UNIX-PAM ports.</p>
+</div>
+<div class="paragraph">
+<p>TS Port</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>CF - Crypt Filter</strong><br>
+A UNIX-PAM filter is implicitly configured. It is used to send the decrypted password attribute <strong>userPassword</strong> to the LDAP server.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_unix_pam_channels"><a class="anchor" href="#_unix_pam_channels"></a>A.9.6. UNIX-PAM Channels</h4>
+<div class="paragraph">
+<p>This section provides information about UNIX-PAM channels.</p>
+</div>
+<div class="sect4">
+<h5 id="_common_aspects_9"><a class="anchor" href="#_common_aspects_9"></a>Common Aspects</h5>
+<div class="paragraph">
+<p>Direction: Identity Store &#8594; UNIX-PAM</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>shadowFlag</strong> - the attribute used for disabling of the account object in the connected LDAP directory (used for UNIX-PAM). The correct value is derived from the <strong>dxrState</strong> attribute of the corresponding account object in the Identity Store. This is an experimental setting and must be supported by the relevant UNIX-PAM implementation.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Direction: UNIX PAM &#8594; Identity Store</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>CommonProcsUnixPam.calculateIdInIdentity</strong> - calculates the Id.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_accounts_8"><a class="anchor" href="#_accounts_8"></a>Accounts</h5>
+<div class="paragraph">
+<p>Direction: Identity Store &#8594; UNIX-PAM</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ID: <strong>dxrPrimaryKey</strong></p>
+</li>
+<li>
+<p>Join: <strong>${source.dxrPrimaryKey}</strong> or <strong>${source.uidNumber}</strong></p>
+</li>
+<li>
+<p>UNIX-PAM requires some mandatory attributes. (See RFC 2307 for details.) Mandatory attributes are mapped in a common way.</p>
+</li>
+<li>
+<p>The <strong>gidNumber</strong> attribute holds the primary group membership.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Direction: UNIX-PAM &#8594; Identity Store</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Join via the <strong>dxrName</strong> attribute that is mapped identically to the <strong>uidNumber</strong> attribute.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_groups_7"><a class="anchor" href="#_groups_7"></a>Groups</h5>
+<div class="paragraph">
+<p>Direction: Identity Store &#8594; UNIX-PAM</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ID: <strong>dxrPrimaryKey</strong></p>
+</li>
+<li>
+<p>Join: <strong>${source.dxrPrimaryKey}</strong> or <strong>{source.gidNumber}</strong></p>
+</li>
+<li>
+<p>UNIX-PAM requires some mandatory attributes. (See RFC 2307 for details.) Mandatory attributes are mapped in a common way.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Direction: UNIX-PAM &#8594; Identity Store</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Join via the <strong>dxrName</strong> attribute that is mapped identically to the <strong>gidNumber</strong> attribute.</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
