@@ -39,12 +39,12 @@
         var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
         svg.setAttribute('class', 'copy-icon')
         var use = document.createElementNS('http://www.w3.org/2000/svg', 'use')
-        use.setAttribute('href', uiRootPath + '/img/octicons-16.svg#icon-clippy')
+        use.setAttribute('href', uiRootPath + '/img/clippy.svg')
         svg.appendChild(use)
         copy.appendChild(svg)
       } else {
         var img = document.createElement('img')
-        img.src = uiRootPath + '/img/octicons-16.svg#view-clippy'
+        img.src = uiRootPath + '/img/clippy.svg'
         img.alt = 'copy icon'
         img.className = 'copy-icon'
         copy.appendChild(img)
