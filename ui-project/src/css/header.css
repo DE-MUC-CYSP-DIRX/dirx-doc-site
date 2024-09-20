@@ -33,6 +33,18 @@ body {
   color: var(--navbar-font-color);
 }
 
+.navbar-brand .navbar-item.logo {
+  background: transparent url(../img/dirx-logo.svg) no-repeat center / 0%;
+  mask: url(../img/dirx-logo.svg) no-repeat center;
+  background-color: var(--navbar-logo-color);
+  align-self: center;
+  height: calc(var(--navbar-height) * 1);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0;
+  width: calc(var(--navbar-height) * 1);
+}
+
 .navbar-brand .navbar-item:first-child {
   align-self: center;
   padding: 0;
