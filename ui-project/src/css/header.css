@@ -17,6 +17,10 @@ body {
   top: 0;
   width: 100%;
   z-index: var(--z-index-navbar);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar a {
@@ -36,13 +40,14 @@ body {
 .navbar-brand .navbar-item.logo {
   background: transparent url(../img/dirx-logo.svg) no-repeat center / 0%;
   mask: url(../img/dirx-logo.svg) no-repeat center;
+  mask-position: 50% 25%;
   background-color: var(--navbar-logo-color);
   align-self: center;
-  height: calc(var(--navbar-height) * 1);
+  height: 2rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   padding: 0;
-  width: calc(var(--navbar-height) * 1);
+  width: var(--navbar-height);
 }
 
 .navbar-brand .navbar-item:first-child {
@@ -144,7 +149,9 @@ body {
   color: var(--navbar-menu-font-color);
   display: block;
   line-height: var(--doc-line-height);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  height: 2rem;
 }
 
 .navbar-item.has-dropdown {
@@ -165,7 +172,7 @@ body {
 }
 
 .navbar-link {
-  padding-right: 2.5em;
+  padding-right: 2rem;
 }
 
 .navbar-dropdown .navbar-item {
@@ -195,8 +202,8 @@ body {
   align-items: center;
   background: var(--navbar-button-background);
   border: 1px solid var(--navbar-button-border-color);
-  border-radius: 0.15rem;
-  height: 1.75rem;
+  border-radius: 0.5rem;
+  height: 2rem;
   color: var(--navbar-button-font-color);
   padding: 0 0.75em;
   white-space: nowrap;
@@ -253,6 +260,7 @@ body {
   .navbar-menu,
   .navbar-end {
     display: flex;
+    gap: 0.75rem;
   }
 
   .navbar-item,
@@ -306,7 +314,7 @@ body {
     background: var(--navbar-menu-background);
     border: 1px solid var(--navbar-menu-border-color);
     border-top: none;
-    border-radius: 0 0 0.25rem 0.25rem;
+    border-radius: 0.5rem;
     display: none;
     top: 100%;
     left: 0;
