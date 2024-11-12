@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>dirxmodify :: Documentation</title>
+    <link rel="canonical" href="https://docs.dirx.solutions/dirx-directory-docs/latest/admin-reference/ch1-7_dirxmodify.html">
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.dirx.solutions">
+        <div class="navbar-item logo"></div>
+        Documentation
+      </a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="./">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">DirX Access</a>
+            <a class="navbar-item" href="#">DirX Audit</a>
+            <a class="navbar-item" href="../index.html">DirX Directory</a>
+            <a class="navbar-item" href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dirx-directory-docs" data-version="9.1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">DirX Directory</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">General</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">About this Documentation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="pdf-src/admin-reference.html">Administration Reference</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../copyright.html">Copyright</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="adrefprf.html">Preface</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-0_cmds.html">DirX Directory Commands</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-1_dirxadm.html">dirxadm</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_abbr_dirxcp_dirxadm">abbr (dirxcp, dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_attr_dirxadm">attr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_audit_dirxadm">audit (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_db_dirxadm">db (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_dse_dirxadm">dse (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_ldap_dirxadm">ldap (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_lob_dirxadm">lob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_nmi_dirxadm">nmi (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_progsvr_dirxadm">progsvr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sob_dirxadm">sob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sys_dirxadm">sys (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_util_dirxadm">util (dirxadm)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-2_dirxcp.html">dirxcp</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_abbr_dirxadm_dirxcp">abbr (dirxadm, dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_args_dirxcp">args (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_ldapargs_dirxcp">ldapargs (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_obj_dirxcp">obj (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_util_dirxcp">util (dirxcp)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-3_dirxauddecode.html">dirxauddecode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-4_dirxaudstatistics.html">dirxaudstatistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-5_dirxdumplog.html">dirxdumplog</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-6_dirxbackup.html">dirxbackup</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="ch1-7_dirxmodify.html">dirxmodify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-8_dirxconfig.html">dirxconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-9_dbaminit.html">dbaminit</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-10_dbamconfig.html">dbamconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-11_dbamboot.html">dbamboot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-12_dirxload.html">dirxload</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-13_dbamverify.html">dbamverify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-14_dbamdevinfo.html">dbamdevinfo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-15_dirxextop.html">dirxextop</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-16_dirxhostinfo.html">dirxhostinfo</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch2_files.html">DirX Directory Files</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirx_directory_environment_variable_ini_file">DirX Directory Environment Variable Ini File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_abbreviation_files">Abbreviation Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_configuration_file">LDAP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_http_server_configuration_file">HTTP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_directory_client_configuration_file">Directory Client Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_key_material">LDAP Server Key Material</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ssltls_certificate_database">SSL/TLS Certificate Database</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_key_database_used_for_client_authentication">Key Database Used for Client Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_idms_configuration_and_key_material_files">IDMS Configuration and Key Material Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_snmpv2_trap_configuration_file">SNMPv2 Trap Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirxauddecode_configuration_file">dirxauddecode Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_syslog_configuration_file">syslog Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_logging_configuration_files">Logging Configuration Files</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch3_schema.html">DirX Directory Default DSA Schema</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_table">Attribute Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_object_classes_table">Object Classes Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_syntax_table">Attribute Syntax Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_matching_rule_table">Matching Rule Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_schema_check">Schema Check</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html">Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_setting_environment_variables">Setting Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_using_the_dirx_directory_ini_file">Using the DirX Directory ini File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_windows_systems">Windows Systems</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_linux_systems">Linux Systems</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch4_envvars.html#_dirx_directory_environment_variables">DirX Directory Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_operating_system_environment_variables">Operating System Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_system_directories_for_temporary_files">System Directories for Temporary Files</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_enabling_keepalive_timeinterval">Enabling KEEPALIVE Time/Interval</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch5_ipports.html">IP Port Numbers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_general_information">General Information</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_environment_variables">Port Numbers Specified in Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_attributes_of_ldap_server_configuration_subentry">Port Numbers Specified in Attributes of LDAP Server Configuration Subentry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_configuration_files">Port Numbers Specified in Configuration Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_and_the_firewall">Port Numbers and the Firewall</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ch6_fileloc.html">File Locations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appa_ldapmibs.html">LDAP MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_static_table">LDAP MIB Static Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_total_table">LDAP MIB Total Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_current_table">LDAP MIB Current Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_association_table">LDAP MIB Association Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_environment_table">LDAP MIB Environment Table</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appb_exitcodes.html">Exit Codes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_http_server_exit_codes">HTTP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_progsvr_exit_codes">Progsvr Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_dsa_exit_codes">DSA Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_ldap_server_exit_codes">LDAP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_exit_codes_and_the_dirx_directory_watchdog_process">Exit Codes and the DirX Directory Watchdog Process</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appc_dbammibs.html">DBAM MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_transaction_statistics">DBAM Transaction Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_statistics">DBAM Buffer Cache Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_io_statistics">DBAM Buffer Cache I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_translog_device_io_statistics">DBAM Translog Device I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_checkpoint_statistics">DBAM Checkpoint Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_interval_statistics">DBAM Interval Statistics</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">DirX Directory</span>
+    <span class="version">9.1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">DirX Directory</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">9.1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dirx-identity-docs/latest/index.html">9.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">DirX Directory</a></li>
+    <li><a href="pdf-src/admin-reference.html">Administration Reference</a></li>
+    <li><a href="ch1-0_cmds.html">DirX Directory Commands</a></li>
+    <li><a href="ch1-7_dirxmodify.html">dirxmodify</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">dirxmodify</h1>
+<div class="sect1">
+<h2 id="_synopsis"><a class="anchor" href="#_synopsis"></a>Synopsis</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>dirxmodify</strong><br>
+&#160; &#160; <strong>-f</strong> <em>LDIF_file</em> [<strong>-a</strong>]<br>
+&#160; &#160; &#160; &#160; [<strong>-A</strong> <em>attribute_type1</em>:<em>attribute_value1</em>+<em>attribute_type2</em>:<em>attribute_value2</em><br>
+&#160; &#160; &#160; &#160; &#160; &#160; [+<em>attribute_type3</em>:<em>attribute_value3</em>+&#8230;&#8203;]]<br>
+&#160; &#160; &#160; &#160; [<strong>-B</strong> <em>type</em>:_value_+<em>type1</em>:_value1_[_type2_:_value2_&#8230;&#8203;]]<br>
+&#160; &#160; &#160; &#160; [<strong>-c</strong>]<br>
+&#160; &#160; &#160; &#160; [<strong>-C</strong> <em>certDB_file</em>]<br>
+&#160; &#160; &#160; &#160; [<strong>-d</strong>]<br>
+&#160; &#160; &#160; &#160; [<strong>-D</strong> <em>bind_DN</em>]<br>
+&#160; &#160; &#160; &#160; [<strong>-w</strong> <em>password |</em> <strong>-W</strong> <em>password_file</em>]<br>
+&#160; &#160; &#160; &#160; [<strong>-e</strong> <em>error_file</em>]<br>
+&#160; &#160; &#160; &#160; [<strong>-E</strong>]<br>
+&#160; &#160; &#160; &#160; [<strong>-g</strong>]<br>
+&#160; &#160; &#160; &#160; [<strong>-G</strong>]<br>
+&#160; &#160; &#160; &#160; [<strong>-h</strong> <em>host</em>]<br>
+&#160; &#160; &#160; &#160; [<strong>-p</strong> <em>port_number</em>]<br>
+&#160; &#160; &#160; &#160; [<strong>-i</strong> <em>attribute_type</em>] […]<br>
+&#160; &#160; &#160; &#160; [<strong>-I</strong> <em>number</em>]<br>
+&#160; &#160; &#160; &#160; [<strong>-l</strong>]<br>
+&#160; &#160; &#160; &#160; [<strong>-M</strong> <em>pattern</em>] […]<br>
+&#160; &#160; &#160; &#160; [<strong>-n</strong>]<br>
+&#160; &#160; &#160; &#160; [<strong>-O</strong> <em>file_name</em>]<br>
+&#160; &#160; &#160; &#160; [<strong>-o</strong> <em>entry_offset</em>]<br>
+&#160; &#160; &#160; &#160; [<strong>-P</strong> <em>number</em>]<br>
+&#160; &#160; &#160; &#160; [<strong>-S</strong> <em>number</em>]<br>
+&#160; &#160; &#160; &#160; [<strong>-q</strong> <em>filter</em>]<br>
+&#160; &#160; &#160; &#160; [<strong>-R</strong>]<br>
+&#160; &#160; &#160; &#160; [<strong>-r</strong> <em>separator-old_string-separator-new_string</em>]<br>
+&#160; &#160; &#160; &#160; [<strong>-s</strong> <em>separator-old_type-separator-new_type</em>]<br>
+&#160; &#160; &#160; &#160; [<strong>-t</strong> <em>byte_offset</em>]<br>
+&#160; &#160; &#160; &#160; [<strong>-U</strong> <em>separator-old_string-separator-new_string</em>]<br>
+&#160; &#160; &#160; &#160; [<strong>-u</strong>]<br>
+&#160; &#160; &#160; &#160; [<strong>-v</strong>]<br>
+&#160; &#160; &#160; &#160; [<strong>-x</strong>]<br>
+&#160; &#160; &#160; &#160; [<strong>-z</strong> <em>string</em>]<br>
+&#160; &#160; &#160; &#160; [<strong>-Z</strong>] |<br>
+&#160; &#160; &#160; &#160; <strong>-V</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_purpose"><a class="anchor" href="#_purpose"></a>Purpose</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Loads an LDIF content or change file into an existing directory database using an LDAPv3 server.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_options"><a class="anchor" href="#_options"></a>Options</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>-f</strong> <em>LDIF_file</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the LDIF file to be loaded via LDAPv3 protocol. Specify the full pathname or relative pathname of the LDIF file.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-a</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>This option is required for LDIF content files. Only new entries are added. Any error reported stops processing. Non-fatal errors are ignored if the <strong>-c</strong> option has been specified. This option is prohibited for LDIF change files.</p>
+<div class="paragraph">
+<p>If an LDIF file containing schema information is loaded this option is prohibited.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-A</strong> <em>attribute_type1</em>:<em>attribute_value1</em>+<em>attribute_type2</em>:<em>attribute_value2</em><br>
+&#160; &#160; &#160; &#160; [+<em>attribute_type3</em>:<em>attribute_value3</em>+&#8230;&#8203;]</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies attribute types and values that are added to each object in the specified LDIF content file that contains <em>attribute_type1</em> with <em>attribute_value1</em>. The number of attribute types and values is unlimited. Separate multiple attribute value assertions with a plus sign (<strong>+</strong>). A SPACE character can only be specified as part of an attribute value. Specifying binary or Base-64 encoded attribute values is not supported. You can specify this option only once.</p>
+<div class="paragraph">
+<p>This option is prohibited for LDIF change files.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-B</strong>[none]
+*  <em>type</em>:_value_+<em>type1</em>:_value1_ [+<em>type2</em>:_value2_+<em>&#8230;&#8203;</em>]</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that all occurrencies of the attribute type <em>type</em> and attribute value <em>value</em> in the specified LDIF content file are replaced by the attribute type(s) and attibute value(s) specified in <em>type1</em>*:*<em>vaue1</em>**...*<strong><em>type_n</em></strong>:*<em>value_n</em>. You can use the wildcard character (<strong>*</strong>) for the old attribute value <em>value</em> to specify any exisiting attribute value. The number of new attribute type and value assertions <em>type1</em>*:*<em>vaue1</em>**...*<strong><em>type_n</em></strong>:*<em>value_n</em> is unlimited. Separate multiple attribute value assertions with a plus sign (<strong>+</strong>). You can specify this option only once.</p>
+<div class="paragraph">
+<p>This option is prohibited for LDIF change files.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-c</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxmodify</strong> to continue processing and ignore LDAP errors detected during the load operation.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-C</strong> <em>certDB_file</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the full pathname of the cert8.db file that contains the certificate database used by the Mozilla ldapssl library. A certificate database typically consists of PKCS#12 containers with the client&#8217;s user certificates and their corresponding private keys, server certificates of valid servers and CA-certificates of accepted Root CAs. (See section <strong>SSL/TLS Certificate Database</strong> of chapter <strong>DirX</strong> <strong>Directory Files</strong> for details.)</p>
+<div class="paragraph">
+<p>The default value is <em>install_path</em>*/client/conf/cert8.db*.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-d</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxmodify</strong> to display the options specified or their default values and exits. To process the LDIF file you must re-issue the <strong>dirxmodify</strong> command without the <strong>-d</strong> option.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-D</strong> <em>bind_DN</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the distinguished name in LDAP format that <strong>dirxmodify</strong> is to use when binding to the LDAP server that manages the database. If this option is not used, <strong>dirxmodify</strong> binds as an anonymous user.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-w</strong> <em>password</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the password that <strong>dirxmodify</strong> is to use when binding to the LDAP server.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-W</strong> <em>password_file</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the path to a file containing the password that <strong>dirxmodify</strong> is to use when binding to the LDAP server (see the <strong>-w</strong> option). The password must be the only content of this file. When creating the file, the password must be specified in plain ASCII format. After the first successful reading by the application, the password is symmetrically encrypted and the file is rewritten to provide protected local storage.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-e</strong> <em>error_file</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxmodify</strong> to write erroneous LDIF entries detected during the load operation to the specified file.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-E</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxmodify</strong> to use server-based authenticated, encrypted LDAP communication over SSL/TLS.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-g</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxmodify</strong> to ignore all attribute assertions with empty values.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-G</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxmodify</strong> to handle attribute assertions with empty values like an error.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-h</strong> <em>host</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the host name or TCP/IP address of the LDAP server to which <strong>dirxmodify</strong> is to bind. The default value is <strong>localhost</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-p</strong> <em>port_number</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the LDAP port number of the LDAP server to which <strong>dirxmodify</strong> is to bind. The default value is <strong>389</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-i</strong> <em>attribute_type</em> […]</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxmodify</strong> to ignore attributes of the specified attribute type(s) during the load operation. You can specify a maximum of 16 attribute types. You cannot specify the distinguished name (DN) attribute type. This option can only be used for LDIF content files together with the option <strong>-a</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-I</strong> <em>number</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>(Capital letter "i".) Sets the reporting interval to <em>number</em> records.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-l</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>(Lower letter "L".) Converts ISO-8859-1 (Latin-1) characters to UTF-8 characters for all attribute values. Conversion is not performed on Base-64-encoded values. You cannot use this option with the <strong>-u</strong> option.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-M</strong> <em>pattern</em> […]</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxmodify</strong> to ignore all records of the LDIF file containing the string <em>pattern</em>. If <em>pattern</em> contains the SPACE character it must be enclosed by quotation marks (<strong>""</strong>). <em>pattern</em> must not contain the characters carriage return or line feed. <em>pattern</em> can be any string that may occur in the LDIF record.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-n</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Runs <strong>dirxmodify</strong> in "simulation" mode: the command processes the LDIF file but does not perform the LDAP operations. This option is useful for collecting statistics or checking LDIF files.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-O</strong> <em>file_name</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxmodify</strong> to write possibly modified records to a LDIF content or LDIF change file with the name specified in <em>file_name</em> instead of performing the modifications to the DirX Directory database. The following options are evaluated when processing the LDIF file records:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>-A</strong> (adds attribute types and values)</p>
+</li>
+<li>
+<p><strong>-B</strong> (replaces attribute types and values)</p>
+</li>
+<li>
+<p><strong>-i</strong> (ignores attributes, only when rewriting LDIF content files)</p>
+</li>
+<li>
+<p><strong>-l</strong> (converts Latin-1 characters to UTF-8)</p>
+</li>
+<li>
+<p><strong>-M</strong> (ignores records conatining a specific string)</p>
+</li>
+<li>
+<p><strong>-o</strong> (specifies the file position where to start processing records)</p>
+</li>
+<li>
+<p><strong>-P</strong> (specifies the maximum number of values in the first operation propagated to the DSA when splitting records)</p>
+</li>
+<li>
+<p><strong>-S</strong> (specifies the maximum number of values in the operations propagated to the DSA when splitting records)</p>
+</li>
+<li>
+<p><strong>-r</strong> (replaces specific strings)</p>
+</li>
+<li>
+<p><strong>-s</strong> (replaces attribute types)</p>
+</li>
+<li>
+<p><strong>-t</strong> (specifies the file position where to start processing records)</p>
+</li>
+<li>
+<p><strong>-U</strong> (modifies a specific string inside a distinguished name)</p>
+</li>
+<li>
+<p><strong>-u</strong> (checks Base-64 values for UTF-8 conformance)</p>
+</li>
+<li>
+<p><strong>-z</strong> (process only records whose distinguished name contain the specified string)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-o</strong> <em>entry_offset</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the LDIF entry number within the LDIF file at which <strong>dirxmodify</strong> is to start the load operation. The default value is 0. When this option is used with the <strong>-t</strong> option, <em>entry_offset</em> is relative to <strong>-t</strong> <em>byte_offset.</em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-P</strong> <em>number</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the maximum number of values in the first add operation propagated to the DSA when splitting records. The default value is <strong>100</strong>. A value of <strong>0</strong> disables auto-splitting mode.</p>
+<div class="paragraph">
+<p>This option is prohibited for LDIF change files.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-S</strong> <em>number</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the maximum number of values in follow-up modify operations propagated to the DSA when splitting records. The default value is <strong>5000</strong>. A value of <strong>0</strong> disables auto-splitting mode.</p>
+<div class="paragraph">
+<p>This option is prohibited for LDIF change files.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-q</strong> <em>filter</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Performs a simple LDAP filter query on the LDIF file. Specify the filter using the syntax <strong>(*<em>attribute___type</em></strong>=<strong><em>assertion</em></strong>)<strong>. You can use the wildcard character (</strong>) in the filter. You cannot use "not", "or" and "and" filters. When you use this option, you must also use the <strong>-n</strong> option.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-R</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxmodify</strong> to extract all distinguished names from the LDIF content file and performs delete operations for all entries with these distinguished names in the DIT. This option overrules the <strong>-a</strong> option.</p>
+<div class="paragraph">
+<p>This option is prohibited for LDIF change files.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-r</strong> <em>separator-old_string-separator-new_string</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Replaces all occurrences of <em>old_string</em> with <em>new_string</em> in attribute values. <em>separator</em> is a character that marks the start of each string; for example, a slash (<strong>/</strong>), a colon (<strong>:</strong>), and so on. For example, -r /old/new replaces the string "old" by the string "new". You can specify this option only once.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-s</strong> <em>separator-old_type-separator-new_type</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Replaces all occurrences of <em>old_type</em> with <em>new_type</em> in attribute types. <em>separator</em> is a character that marks the start of each string; for example, a slash (<strong>/</strong>), a colon (<strong>:</strong>), and so on. For example, -s :phone:telephone replaces the attribute type "phone" by the attribute type "telephone". You can specify this option only once.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-t</strong> <em>byte_offset</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the offset in bytes into the LDIF file at which processing is to start. The default value is <strong>0</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-U</strong> <em>separator-old_string-seperator-new_string</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Replaces all occurrences of <em>old_string</em> with <em>new_string</em> in the distinguished name. <em>separator</em> is a character that marks the start of each string; for example, a slash (<strong>/</strong>), a colon (<strong>:</strong>), and so on. For example, -U /ou=Kieselbach/ou=Kisseldorf replaces the old ou=Kieselbach by the new ou=Kisseldorf inside the distinguished name. This option is only performed to the distinguished name, it is not performed to attributes with distinguished name syntax. You can specify this option only once.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-u</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Checks all non Base-64 values for UTF-8 conformance. You cannot use this option with the <strong>-l</strong> option.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-v</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Enables verbose mode. Displays progress and performance information during the load operation.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-x</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Displays additional LDIF statistics about attributes, entries, and nodes after it completes the load operation.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-z</strong> <em>string</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxmodify</strong> to process only those entries whose distinguished names contain the specified string.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-Z</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxmodify</strong> to add a specific LDAP control to all requests. This LDAP control directs the directory server to save the values of the operational attributes creatorsName, modifiersName, creationTimestamp and modificationTimestamp present in the LDIF file. If this option is not specified or the LDIF record does not contain the operational attribute the directory server generates values for this attribute.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-V</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Displays the DirX Directory product version, in the format:</p>
+<div class="paragraph">
+<p><em>product_version build_id date time</em></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p><code>DirX Directory V9.0 9.4.428 2023:03:23 20:10 64-Bit</code></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>dirxmodify</strong> command processes the contents of an LDIF content or change file and performs the modifications to the directory database over LDAPv3 protocol. This command is a stand-alone tool: it does not require a running DirX Directory installation in order to run (it requires only that the Mozilla LDAP libraries V6.0 or newer are installed) if you do not propagate the modifications to the server, for example if you have specified the <strong>-x</strong>, the <strong>-n</strong>, or the <strong>-O</strong> option. You can run the command locally or from a remote machine.</p>
+</div>
+<div class="paragraph">
+<p>It is recommended to perform a backup of your database before you load the LDIF files.</p>
+</div>
+<div class="paragraph">
+<p>The schema must correspond to the entries that are contained in the LDIF files. The LDIF files must either contain schema modifications at the beginning of the files or the administrator must modify the schema before loading the LDIF files. DirX Directory Manager for example provides easy and convenient to use features for schema management and schema synchronization.</p>
+</div>
+<div class="paragraph">
+<p>By default, <strong>dirxmodify</strong> stops the load operation whenever it encounters errors. Use the <strong>-c</strong> option to allow <strong>dirxmodify</strong> to continue with the load operation when it encounters non-fatal errors.</p>
+</div>
+<div class="paragraph">
+<p>If an error occurs that causes <strong>dirxmodify</strong> to exit, you must re-issue the <strong>dirxmodify</strong> command (the command has no automatic error recovery function). To continue after the error location, use the<br>
+<strong>-o</strong> or <strong>-t</strong> option.</p>
+</div>
+<div class="paragraph">
+<p>By default, <strong>dirxmodify</strong> performs an anonymous bind to the LDAP server that is managing the DirX Directory database. Use the <strong>-D</strong> option and the <strong>-w</strong> or <strong>-W</strong> option to direct <strong>dirxmodify</strong> to perform a simple authenticated bind to the LDAP server using the distinguished name and password specified by the options. You must ensure that the specified user has the necessary permissions to perform the directory modifications.</p>
+</div>
+<div class="paragraph">
+<p>By default, <strong>dirxmodify</strong> binds to the LDAP server defined by "localhost" that is listening on port 389. Use the <strong>-h</strong> and/or <strong>-p</strong> options to specify a different LDAP server host name or TCP/IP address and/or another LDAP port number.</p>
+</div>
+<div class="paragraph">
+<p>By default, <strong>dirxmodify</strong> does not save the LDIF entries that it rejects during the load operation. Use the <strong>-e</strong> option to override this default. When you specify this option, <strong>dirxmodify</strong> saves each erroneous LDIF entry (in LDIF format) with a description of the error to the file you specify to the option. Consequently, you can use this file as input to <strong>dirxmodify</strong> after correcting the indicated errors.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-l</strong> (lowercase "L") option to convert ISO-8859-1 (Latin-1) characters to UTF-8 characters. When using this option, you must ensure that Latin-1 characters in the file are not already represented by their 2-byte UTF-8 characters, because the hex codes will be converted twice and incorrect entries may be added to the database.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-M</strong> option to exclude all records of an LDIF file containing specific strings from processing.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-n</strong> option to check whether <strong>dirxmodify</strong> can successfully process the LDIF file. The command performs all of the operations but does not make any LDAP requests to perform the operations on the DirX Directory database. Consequently, any LDIF entries that contain errors normally detected by LDAP operations—for example, entries with object classes or attribute types that are not defined in the schema, or with superior DSEs that do not exist in the DIT—will not be detected. You can use the <strong>-n</strong> option with the <strong>-x</strong> option to generate statistical information for analysis.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-I</strong> <em>number</em> (capital letter "i") option to set the reportimg interval to a specific number of records.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-q</strong> option in conjunction with the <strong>-n</strong> option to perform a simple LDAP query on the LDIF file.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-R</strong> option to delete the entries from the database instead of adding or modifying them.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-r</strong> option to replace strings in attribute values during the load operation (attribute types are not affected). The command makes the string replacements to the read-in LDIF file before it propagates the modifications to the DirX Directory database. It does not modify the LDIF file itself. Similarly, you can use the <strong>-s</strong> option to replace attribute type names during the load operation (attribute values are not affected). Note that <strong>dirxmodify</strong> does not check the syntax of the new attribute type for consistency with the old type. The separator character that you use with the <strong>-r</strong> and <strong>-s</strong> options must not appear in the old or new values. You cannot use wildcards in old or new values.</p>
+</div>
+<div class="paragraph">
+<p>Similarly to the -<strong>r</strong> and <strong>-s</strong> option, you can use the <strong>-U</strong> option to modify substrings in distinguished names. Non-naming attributes and values are not affected. Note that <strong>dirxmodify</strong> does not check the syntax, the schema consistency, or the consistency with the old type of the new naming attribute type or value. The separator character that you use with the <strong>-U</strong> must not appear in the old or new values. You cannot use wildcards in old or new values.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-A</strong> option to add the specified attribute values to each object in the LDIF content file that contains <em>attribute_type1</em> with <em>attribute_value1</em>. The command adds the attributes to the attribute list of all create operations before it propagates the modifications to the DirX Directory database. It does not modify the LDIF file itself. Adding an already existing attribute value results in an error. This option is prohibited for LDIF change files.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-B</strong> option to replace all occurrencies of an specified attribute (<em>type</em>*:*<em>value</em>) in the LDIF content file with the specified new attribute type and value assertions (<em>type1</em>*:*<em>vaue1</em>**...*<strong><em>type_n</em></strong>:*<em>value_n</em>). The command adds only the new attribute types and values to the attribute list of all create operations before it propagates the modifications to the DirX Directory database. It does not modify the LDIF file itself and does not create the old attribute in the DirX Directory database. This option is prohibited for LDIF change files.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-i</strong> option to ignore up to 16 attributes during the load operation.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-G</strong> option to handle attribute assertions with empty values as an error. This avoids adding attribute types without values.</p>
+</div>
+<div class="paragraph">
+<p>By default, <strong>dirxmodify</strong> reads an LDIF file starting at byte offset zero (the first LDIF entry). Use the <strong>-o</strong> option to specify an LDIF entry number at which <strong>dirxmodify</strong> is to begin reading the file. Use the <strong>-t</strong> option to specify the offset in bytes into the LDIF file at which <strong>dirxmodify</strong> is to begin reading the file. The <strong>-t</strong> option is useful if you have used CTRL/C to stop <strong>dirxmodify</strong>, and you want to resume processing at the location in the file at which you stopped <strong>dirxmodify</strong>. If you also both the <strong>-t</strong> and the <strong>-o</strong> options, the LDIF entry offset is relative to the byte offset (<strong>dirxmodify</strong> calculates the entry offset specified in the <strong>-o</strong> option starting from the byte offset specified in the <strong>-t</strong> option).</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-P</strong> and <strong>-S</strong> options to direct <strong>dirxmodify</strong> to automatically split huge records that cannot be processed otherwise. This is useful for example when processing group attributes containing a huge number of members. When splitting a record the LDAP server propagates an add operation to the server followed by several modify operations. If one of the operations fails the database is rolled back to the status before sending the first operation. Auto-splitting of records can only be performed for LDIF content files and only for adding new objects or adding new attribute values to existing attributes.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-O</strong> option to process the LDIF file records and write the possibly modified records into a new LDIF file instead of propagating the operations to the server. The maximum size of an LDIF file that <strong>dirxmodify</strong> can process for this option is 2 GB. If the LDIF file is greater than 2 GB the behaviour of <strong>dirxmodify</strong> is undefined.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-E</strong> option to enable authenticated, encrypted LDAP communication over SSL/TLS. Specify the name of the certificate database in the <strong>-C</strong> option, and the LDAP secured port number of the LDAP server in the <strong>-p</strong> option. Usually the LDAP secured port number is 636. Running <strong>dirxmodify</strong> in SSL mode may reduce performance.</p>
+</div>
+<div class="paragraph">
+<p>By default, <strong>dirxmodify</strong> reports only errors that occur during the load operation. Use the <strong>-v</strong> option to direct <strong>dirxmodify</strong> to write statistical information about the load operation to standard output.</p>
+</div>
+<div class="paragraph">
+<p>Before you process a large LDIF file, we recommend that you run <strong>dirxmodify</strong> with the <strong>-n</strong> option and the <strong>-e</strong> option to scan the LDIF file for errors and write any erroneous LDIF entries to an error file for examination and correction. Using this method allows you to detect systematic errors in an LDIF file and prevents you from having a partially loaded database that contains possibly unwanted data.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The following sample command loads an LDIF file starting at the 500<sup>th</sup> LDIF entry.</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxmodify –o 500 -f mycompany.ldif</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The following sample command returns the number of common names present in an LDIF file:</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxmodify -n -q (cn=*) -f mycompany.ldif</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The following sample command adds all entries in the LDIF content file <strong>mycompany.ldif</strong>. In the event that errors occur they are ignored and processing continues. The attributes telephone number (<strong>tn</strong>) and description (<strong>dsc</strong>) are ignored during the load operation.</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxmodify -D cn=admin,o=My-Company –w dirx –a –c –i tn –i dsc
+           -f mycompany.ldif</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The following sample command loads the LDIF file <strong>mycompany.ldif</strong> and ignores all records containing the strings <strong>dn: cn=ldapRoot, o=pqr</strong> and <strong>objectClass: x500subSchema</strong>.</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxmodify –M "dn: cn=ldapRoot, o=pqr"
+           –M "objectClass: x500subSchema"
+           -f mycompany.ldif</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The following sample command adds the objectclass values <strong>OrgPerson</strong>, <strong>person</strong>, and <strong>top</strong> to all entries in the LDIF content file <strong>mycompany.ldif</strong>. It adds the attribute value assertion <strong>\{objectclass=OrgPerson;person;top}</strong> to all create operations before propagating them to the server.</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxmodify -D cn=admin,o=My-Company –w dirx
+           –A objectclass:OrgPerson+objectclass:person+objectclass:top
+           -f mycompany.ldif</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exit_codes"><a class="anchor" href="#_exit_codes"></a>Exit Codes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>dirxmodify</strong> command returns an exit code of <strong>0</strong> on success. It writes errors to <strong>stderr</strong> or to the specified error file, if the <strong>-e</strong> option is used.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_see_also"><a class="anchor" href="#_see_also"></a>See Also</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>dirxload</strong></p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>DirX is a registered trademark © Copyright 2024, Eviden SAS – All rights reserved.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license.
+    Several icons used are provided by Google and are licensed under the
+    <a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License Version 2.0</a>.
+  </p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>

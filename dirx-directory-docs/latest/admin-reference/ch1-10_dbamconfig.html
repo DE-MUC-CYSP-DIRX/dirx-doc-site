@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>dbamconfig :: Documentation</title>
+    <link rel="canonical" href="https://docs.dirx.solutions/dirx-directory-docs/latest/admin-reference/ch1-10_dbamconfig.html">
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.dirx.solutions">
+        <div class="navbar-item logo"></div>
+        Documentation
+      </a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="./">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">DirX Access</a>
+            <a class="navbar-item" href="#">DirX Audit</a>
+            <a class="navbar-item" href="../index.html">DirX Directory</a>
+            <a class="navbar-item" href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dirx-directory-docs" data-version="9.1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">DirX Directory</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">General</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">About this Documentation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="pdf-src/admin-reference.html">Administration Reference</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../copyright.html">Copyright</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="adrefprf.html">Preface</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-0_cmds.html">DirX Directory Commands</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-1_dirxadm.html">dirxadm</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_abbr_dirxcp_dirxadm">abbr (dirxcp, dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_attr_dirxadm">attr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_audit_dirxadm">audit (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_db_dirxadm">db (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_dse_dirxadm">dse (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_ldap_dirxadm">ldap (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_lob_dirxadm">lob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_nmi_dirxadm">nmi (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_progsvr_dirxadm">progsvr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sob_dirxadm">sob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sys_dirxadm">sys (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_util_dirxadm">util (dirxadm)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-2_dirxcp.html">dirxcp</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_abbr_dirxadm_dirxcp">abbr (dirxadm, dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_args_dirxcp">args (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_ldapargs_dirxcp">ldapargs (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_obj_dirxcp">obj (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_util_dirxcp">util (dirxcp)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-3_dirxauddecode.html">dirxauddecode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-4_dirxaudstatistics.html">dirxaudstatistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-5_dirxdumplog.html">dirxdumplog</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-6_dirxbackup.html">dirxbackup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-7_dirxmodify.html">dirxmodify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-8_dirxconfig.html">dirxconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-9_dbaminit.html">dbaminit</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="ch1-10_dbamconfig.html">dbamconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-11_dbamboot.html">dbamboot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-12_dirxload.html">dirxload</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-13_dbamverify.html">dbamverify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-14_dbamdevinfo.html">dbamdevinfo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-15_dirxextop.html">dirxextop</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-16_dirxhostinfo.html">dirxhostinfo</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch2_files.html">DirX Directory Files</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirx_directory_environment_variable_ini_file">DirX Directory Environment Variable Ini File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_abbreviation_files">Abbreviation Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_configuration_file">LDAP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_http_server_configuration_file">HTTP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_directory_client_configuration_file">Directory Client Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_key_material">LDAP Server Key Material</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ssltls_certificate_database">SSL/TLS Certificate Database</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_key_database_used_for_client_authentication">Key Database Used for Client Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_idms_configuration_and_key_material_files">IDMS Configuration and Key Material Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_snmpv2_trap_configuration_file">SNMPv2 Trap Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirxauddecode_configuration_file">dirxauddecode Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_syslog_configuration_file">syslog Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_logging_configuration_files">Logging Configuration Files</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch3_schema.html">DirX Directory Default DSA Schema</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_table">Attribute Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_object_classes_table">Object Classes Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_syntax_table">Attribute Syntax Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_matching_rule_table">Matching Rule Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_schema_check">Schema Check</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html">Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_setting_environment_variables">Setting Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_using_the_dirx_directory_ini_file">Using the DirX Directory ini File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_windows_systems">Windows Systems</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_linux_systems">Linux Systems</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch4_envvars.html#_dirx_directory_environment_variables">DirX Directory Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_operating_system_environment_variables">Operating System Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_system_directories_for_temporary_files">System Directories for Temporary Files</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_enabling_keepalive_timeinterval">Enabling KEEPALIVE Time/Interval</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch5_ipports.html">IP Port Numbers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_general_information">General Information</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_environment_variables">Port Numbers Specified in Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_attributes_of_ldap_server_configuration_subentry">Port Numbers Specified in Attributes of LDAP Server Configuration Subentry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_configuration_files">Port Numbers Specified in Configuration Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_and_the_firewall">Port Numbers and the Firewall</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ch6_fileloc.html">File Locations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appa_ldapmibs.html">LDAP MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_static_table">LDAP MIB Static Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_total_table">LDAP MIB Total Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_current_table">LDAP MIB Current Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_association_table">LDAP MIB Association Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_environment_table">LDAP MIB Environment Table</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appb_exitcodes.html">Exit Codes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_http_server_exit_codes">HTTP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_progsvr_exit_codes">Progsvr Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_dsa_exit_codes">DSA Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_ldap_server_exit_codes">LDAP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_exit_codes_and_the_dirx_directory_watchdog_process">Exit Codes and the DirX Directory Watchdog Process</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appc_dbammibs.html">DBAM MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_transaction_statistics">DBAM Transaction Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_statistics">DBAM Buffer Cache Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_io_statistics">DBAM Buffer Cache I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_translog_device_io_statistics">DBAM Translog Device I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_checkpoint_statistics">DBAM Checkpoint Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_interval_statistics">DBAM Interval Statistics</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">DirX Directory</span>
+    <span class="version">9.1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">DirX Directory</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">9.1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dirx-identity-docs/latest/index.html">9.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">DirX Directory</a></li>
+    <li><a href="pdf-src/admin-reference.html">Administration Reference</a></li>
+    <li><a href="ch1-0_cmds.html">DirX Directory Commands</a></li>
+    <li><a href="ch1-10_dbamconfig.html">dbamconfig</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">dbamconfig</h1>
+<div class="sect1">
+<h2 id="_synopsis"><a class="anchor" href="#_synopsis"></a>Synopsis</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>dbamconfig</strong><br>
+&#160; &#160; <strong>-c -D</strong> <em>data_device</em>[,<em>block_type1</em>[=<em>size1</em> {<strong>MB</strong> | <strong>GB</strong>}]<br>
+&#160; &#160; &#160; &#160; …<br>
+&#160; &#160; &#160; &#160; [,<em>block_type6</em>[=<em>size6</em> {<strong>MB</strong> | <strong>GB</strong>}]]<br>
+&#160; &#160; &#160; &#160; [<strong>-D</strong>…] …<br>
+&#160; &#160; &#160; &#160; <strong>-T</strong> <em>translog_device</em><br>
+&#160; &#160; &#160; &#160; <strong>-P</strong> <em>profile_name</em> |<br>
+&#160; &#160; <strong>-d -P</strong> {<em>profile_name</em> | <strong>ALL</strong>} |<br>
+&#160; &#160; <strong>-s</strong> [<strong>-l</strong>] [<strong>-P</strong> {<em>profile_name</em> | <strong>ALL</strong>}] |<br>
+&#160; &#160; <strong>-V</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_purpose"><a class="anchor" href="#_purpose"></a>Purpose</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Creates, deletes, and displays the properties of a database profile. A profile describes the location and layout of a DirX Directory database (number, size and relationship of physical (raw) device(s) and the usage of the device(s) for the different database block types).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_options"><a class="anchor" href="#_options"></a>Options</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>-c</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Creates a database profile with the name specified in the <strong>-P</strong> option.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-D</strong> <em>data_device</em>[<strong>,*<em>block_type1</em>[</strong>=<strong><em>size1</em> \{*MB</strong> | <strong>GB</strong>}]…[<strong>,*<em>block_type6</em>[</strong>=<strong><em>size6</em> \{*MB</strong> | <strong>GB</strong>}]]</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Describes a raw (physical) device to be used as a directory data device where:</p>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p><em>data_device</em> is the name of the device; for example, <strong>/dev/rdsk/c0t0s0s1</strong> (Linux). On Windows, it is the full path of the NTFS folder in that the raw device was mounted with the local disk manager, for example <strong>D:\RawDevices\OrgDB</strong>. Assigning a drive letter to the raw device is prohibited on Windows.</p>
+</li>
+<li>
+<p><em>block_type</em> specifies up to six different type(s) of directory data to be stored, and</p>
+</li>
+<li>
+<p><em>size</em> specifies the size of the associated <em>block_type</em> in the device.<br></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Use one of the following keywords to specify <em>block_type</em>:</p>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p><strong>AVIDX</strong>—The device stores attribute value index blocks</p>
+</li>
+<li>
+<p><strong>BITSTR</strong>—The device stores bit string blocks</p>
+</li>
+<li>
+<p><strong>GENERAL</strong>—The device stores general blocks</p>
+</li>
+<li>
+<p><strong>PSEUDO</strong>—The device stores pseudo object blocks</p>
+</li>
+<li>
+<p><strong>REAL</strong>—The device stores real object blocks</p>
+</li>
+<li>
+<p><strong>TREE</strong>—The device stores tree blocks</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Specify <em>size</em> as an integer in the range 1 through 9999 followed by the keyword <strong>MB</strong> (to specify the size in megabytes) or <strong>GB</strong> (to specify the size in gigabytes).</p>
+</li>
+<li>
+<p>Use one or more <strong>-D</strong> options to specify one or more raw devices to be used as directory data devices for the database. This option is only valid with the <strong>-c</strong> option.</p>
+</li>
+<li>
+<p>The maximum device sizes are the following:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>REAL</strong> device:<br></p>
+<div class="paragraph">
+<p>The maximum size of a <strong>REAL</strong> object block device is 1TB (1024 GB). This limit depends on the chosen size of the real object blocks and the maximum number of entries. The real object block size is specified in the <strong>–o</strong> option of the <strong>dbamboot</strong> command. The following table illustrates this relationship:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 27%;">
+<col style="width: 45%;">
+<col style="width: 28%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Block Size</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Maximum number of entries</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Device Size</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1k</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">536870911</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">512 GB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4k</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">268435456</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1024 GB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16k</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">67108864</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1024 GB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64k</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16777216</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1024 GB</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>DBAM stores one entry with all its attributes in one real object block and in follow blocks. The maximum number of follow blocks used for one entry is limited to 8192. Follow blocks are stored in the GENERAL device (see below). Therefore the maximum size of an entry is (8193 * REAL BLOCK size); for example, if the REAL BLOCK size is 1KB, the maximum size for one entry is 8193 KB.</p>
+</div>
+</li>
+<li>
+<p><strong>AVIDX</strong> device:<br></p>
+<div class="paragraph">
+<p>The disk space in an <strong>AVIDX</strong> device is managed by clusters in sizes of 8 MB, 32 MB and 128 MB. <strong>dbamboot</strong> calculates the appropriate cluster size. This cluster size cannot modified during the life time of the database. The maximum device size is 409 GB because the maximum allowable cluster number of DBAM is 3276 clusters.</p>
+</div>
+</li>
+<li>
+<p><strong>GENERAL</strong>, <strong>BITSTR</strong>, <strong>PSEUDO</strong>, <strong>TREE</strong> device:<br></p>
+<div class="paragraph">
+<p>The maximum size of these devices is 128 GB per device. You can specify a seperate device for each block type that is each device can consume the maximum available disk space, or you can combine several block types in one device that is these block types share the maximum available disk space.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If any of the limitations above is exceeded <strong>dbamconfig</strong> aborts with the error message <strong>Internal limits exceeded</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>–T</strong> <em>translog_device</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>The name of the raw (physical) device to be used as a transaction data device. For example, <strong>/dev/rdsk/c0t0s0s2</strong> (Linux) or <strong>D:\RawDevices\OrgTranslog</strong> (Windows). (See <em>data_device</em> of the <strong>-D</strong> option for details on the raw device name.)<br></p>
+<div class="paragraph">
+<p>You must provide at least is <strong>256 MB</strong> for the tranlog device. For best performance the size of the translog device should increase with the DBAM cache size and the checkpoint size. A good way to calculate the optimum size is to multiply the DBAM cache size by two (2). A translog device size of 4 GB performs well even for very large DBAM cache sizes (greater than 4 GB).<br></p>
+</div>
+<div class="paragraph">
+<p>This option is only valid with the <strong>-c</strong> option.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-P</strong> <em>profile_name</em></p>
+</div>
+<div class="paragraph">
+<p><strong>-P</strong> \{<em>profile_name</em> | <strong>ALL</strong>}</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>The name of a database profile. This option must be used with the <strong>-c</strong> and <strong>-d</strong> options, and is optional for the <strong>-s</strong> option. The maximum size of a database profile name is 32 characters.<br>
+<br>
+If the keyword <strong>ALL</strong> is used with the <strong>-d</strong> or <strong>-s</strong> option all existing database profiles are deleted or displayed.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-d</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Deletes the database profile(s) specified in the <strong>-P</strong> option if it is not the current active profile.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-s</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Displays the properties of the profile(s) specified in the <strong>-P</strong> option. If no <strong>-P</strong> option is specified the properties of all existing profiles are displayed.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-l</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Displays a detailed list of database profile properties.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-V</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Displays the DirX Directory product version, in the format:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><em>product_version build_id date time</em></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p><code>DirX Directory V9.0 9.4.428 2023:03:23 20:10 64-Bit</code></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>dbamconfig</strong> command creates a profile for a DBAM database, deletes (a) profile(s), and displays the properties of a selected profile or all profiles.</p>
+</div>
+<div class="paragraph">
+<p>Before you can use <strong>dbamconfig</strong>, you must:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Provide disk space for the database(s).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-c</strong> option to create a profile for a DirX Directory database. Use one or more <strong>-D</strong> options to specify one or more raw devices to be used as directory data devices for the database. The <strong>-T</strong> option specifies the raw device to be used as the transaction device for the database. The <strong>-P</strong> option specifies the name for the profile.</p>
+</div>
+<div class="paragraph">
+<p>If you specify a single data device and you do not explicitly specify the block type and the size of the device, the <strong>dbamconfig</strong> command allocates forty percent of the raw device for the <strong>REAL</strong> block type, forty percent for the <strong>AVIDX</strong> block type. The remaining twenty percent of the device are shared by the other block types.</p>
+</div>
+<div class="paragraph">
+<p>If you specify more than one data device, <strong>dbamconfig</strong> allocates any block types that you do not explicitly specify on one of the raw devices that has the required disk space. If none of the devices in the configuration have sufficient disk space for this block type, the profile cannot be created and the operation fails.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-d</strong> option to remove a profile for a DirX Directory database. It is prohibited to delete the current active profile. The DSA logs the name of the current active profile in the file <em>install_path</em>*/server/log/fatalDSA**. If you need to extend your database because the DBAM device limits have been exceeded then follow the procedure as described in the chapter titled “Extending the Directory Database” in the <em>Disc Dimensioning Guide</em>.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-s</strong> option to display the properties of a profile for a DirX Directory database.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The following sample command creates a profile for a DirX Directory database of one data device and one transaction device on Windows.</p>
+<div class="listingblock">
+<div class="content">
+<pre>dbamconfig -c –D D:\RawDevices\OrgDB
+              –T D:\RawDevices\OrgTranslog
+              –P OrgProfile</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The following sample command creates a profile for a DirX Directory database of one data device and one transaction device on Linux.</p>
+<div class="listingblock">
+<div class="content">
+<pre>dbamconfig -c –D /dev/rdsk/c0t0d0s1
+              –T /dev/rdsk/c0t0d0s2
+              –P profile1</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The following sample command creates a profile for a DirX Directory database of one data device and one transaction device on Linux. In this example, 20GB of the 36GB raw device used as the data device are allocated for the block type <strong>REAL</strong>, 10GB are allocated for the block type <strong>AVIDX</strong>, and the remaining 6GB are shared by the remaining block types.</p>
+<div class="listingblock">
+<div class="content">
+<pre>dbamconfig -c –D /dev/rdsk/c0t0d0s1,REAL=20GB,AVIDX=10GB
+              -T /dev/rdsk/c0t0d0s2 –P profile2</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The following sample command creates a profile for a DirX Directory database of 3 data devices and a transaction device on Linux. In this example, the first data device is allocated for block type <strong>REAL</strong>, the second data device is allocated for block type <strong>AVIDX</strong>, and in the third data device 5GB are allocated for the <strong>TREE</strong> block type and the remaining space is shared by the remaining block types.</p>
+<div class="listingblock">
+<div class="content">
+<pre>dbamconfig -c –D /dev/rdsk/c0t0d0s1,REAL
+              -D /dev/rdsk/c0t0d0s2,AVIDX
+              -D /dev/rdsk/c0t0d0s3,TREE=5GB
+              -T /dev/rdsk/c0t0d0s2
+              –P profile3</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The following sample command displays a summary of the properties of all profiles that exist in the profile directory.</p>
+<div class="listingblock">
+<div class="content">
+<pre>dbamconfig -s –P ALL</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The following sample command displays the details of a profile.</p>
+<div class="listingblock">
+<div class="content">
+<pre>dbamconfig -s -l -Pprofile1</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The following sample command displays the details of all profiles.</p>
+<div class="listingblock">
+<div class="content">
+<pre>dbamconfig -s –l</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The command output is as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>  ProfileName: OrgProfile
+    DataDevice(s):
+      Mountpoint: D:\RawDevices\OrgDB\
+      VolumeName: \\?\Volume{cc42f0fb-8355-11d6-a05c-009027ca3eba}
+      DeviceSize: 29.293 GB
+        Logical device(s):
+          BlockType(s): GENERAL | BITSTR | PSEUDO | TREE
+          DeviceSize:   5.857 GB
+
+          BlockType(s): REAL
+          DeviceSize:   11.714 GB
+
+          BlockType(s): AVIDX
+          DeviceSize:   11.714 GB
+
+    TransactionDevice:
+      Mountpoint: D:\RawDevices\OrgTranslog\
+      VolumeName: \\?\Volume{cc42f0fd-8355-11d6-a05c-009027ca3eba}
+      DeviceSize: 4.742 GB</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exit_codes"><a class="anchor" href="#_exit_codes"></a>Exit Codes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>dbamconfig</strong> command returns an exit code of <strong>0</strong> on success or a <strong>1</strong> if it encountered an error. The text of the error message is displayed on <strong>stderr</strong>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_see_also"><a class="anchor" href="#_see_also"></a>See Also</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>dbamboot</strong>, <strong>dirxload</strong>, chapter titled <strong>Setting up the DirX Directory Service</strong> in the <em>DirX Directory Administration Guide</em></p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>DirX is a registered trademark © Copyright 2024, Eviden SAS – All rights reserved.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license.
+    Several icons used are provided by Google and are licensed under the
+    <a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License Version 2.0</a>.
+  </p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>

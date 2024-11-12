@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>LDAP MIB Tables :: Documentation</title>
+    <link rel="canonical" href="https://docs.dirx.solutions/dirx-directory-docs/latest/admin-reference/appa_ldapmibs.html">
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.dirx.solutions">
+        <div class="navbar-item logo"></div>
+        Documentation
+      </a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="./">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">DirX Access</a>
+            <a class="navbar-item" href="#">DirX Audit</a>
+            <a class="navbar-item" href="../index.html">DirX Directory</a>
+            <a class="navbar-item" href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dirx-directory-docs" data-version="9.1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">DirX Directory</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">General</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">About this Documentation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="pdf-src/admin-reference.html">Administration Reference</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../copyright.html">Copyright</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="adrefprf.html">Preface</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-0_cmds.html">DirX Directory Commands</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-1_dirxadm.html">dirxadm</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_abbr_dirxcp_dirxadm">abbr (dirxcp, dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_attr_dirxadm">attr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_audit_dirxadm">audit (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_db_dirxadm">db (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_dse_dirxadm">dse (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_ldap_dirxadm">ldap (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_lob_dirxadm">lob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_nmi_dirxadm">nmi (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_progsvr_dirxadm">progsvr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sob_dirxadm">sob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sys_dirxadm">sys (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_util_dirxadm">util (dirxadm)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-2_dirxcp.html">dirxcp</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_abbr_dirxadm_dirxcp">abbr (dirxadm, dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_args_dirxcp">args (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_ldapargs_dirxcp">ldapargs (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_obj_dirxcp">obj (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_util_dirxcp">util (dirxcp)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-3_dirxauddecode.html">dirxauddecode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-4_dirxaudstatistics.html">dirxaudstatistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-5_dirxdumplog.html">dirxdumplog</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-6_dirxbackup.html">dirxbackup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-7_dirxmodify.html">dirxmodify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-8_dirxconfig.html">dirxconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-9_dbaminit.html">dbaminit</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-10_dbamconfig.html">dbamconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-11_dbamboot.html">dbamboot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-12_dirxload.html">dirxload</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-13_dbamverify.html">dbamverify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-14_dbamdevinfo.html">dbamdevinfo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-15_dirxextop.html">dirxextop</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-16_dirxhostinfo.html">dirxhostinfo</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch2_files.html">DirX Directory Files</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirx_directory_environment_variable_ini_file">DirX Directory Environment Variable Ini File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_abbreviation_files">Abbreviation Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_configuration_file">LDAP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_http_server_configuration_file">HTTP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_directory_client_configuration_file">Directory Client Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_key_material">LDAP Server Key Material</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ssltls_certificate_database">SSL/TLS Certificate Database</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_key_database_used_for_client_authentication">Key Database Used for Client Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_idms_configuration_and_key_material_files">IDMS Configuration and Key Material Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_snmpv2_trap_configuration_file">SNMPv2 Trap Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirxauddecode_configuration_file">dirxauddecode Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_syslog_configuration_file">syslog Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_logging_configuration_files">Logging Configuration Files</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch3_schema.html">DirX Directory Default DSA Schema</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_table">Attribute Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_object_classes_table">Object Classes Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_syntax_table">Attribute Syntax Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_matching_rule_table">Matching Rule Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_schema_check">Schema Check</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html">Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_setting_environment_variables">Setting Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_using_the_dirx_directory_ini_file">Using the DirX Directory ini File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_windows_systems">Windows Systems</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_linux_systems">Linux Systems</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch4_envvars.html#_dirx_directory_environment_variables">DirX Directory Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_operating_system_environment_variables">Operating System Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_system_directories_for_temporary_files">System Directories for Temporary Files</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_enabling_keepalive_timeinterval">Enabling KEEPALIVE Time/Interval</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch5_ipports.html">IP Port Numbers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_general_information">General Information</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_environment_variables">Port Numbers Specified in Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_attributes_of_ldap_server_configuration_subentry">Port Numbers Specified in Attributes of LDAP Server Configuration Subentry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_configuration_files">Port Numbers Specified in Configuration Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_and_the_firewall">Port Numbers and the Firewall</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ch6_fileloc.html">File Locations</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appa_ldapmibs.html">LDAP MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#_ldap_mib_static_table">LDAP MIB Static Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#_ldap_mib_total_table">LDAP MIB Total Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#_ldap_mib_current_table">LDAP MIB Current Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#_ldap_mib_association_table">LDAP MIB Association Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#_ldap_mib_environment_table">LDAP MIB Environment Table</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appb_exitcodes.html">Exit Codes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_http_server_exit_codes">HTTP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_progsvr_exit_codes">Progsvr Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_dsa_exit_codes">DSA Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_ldap_server_exit_codes">LDAP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_exit_codes_and_the_dirx_directory_watchdog_process">Exit Codes and the DirX Directory Watchdog Process</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appc_dbammibs.html">DBAM MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_transaction_statistics">DBAM Transaction Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_statistics">DBAM Buffer Cache Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_io_statistics">DBAM Buffer Cache I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_translog_device_io_statistics">DBAM Translog Device I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_checkpoint_statistics">DBAM Checkpoint Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_interval_statistics">DBAM Interval Statistics</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">DirX Directory</span>
+    <span class="version">9.1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">DirX Directory</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">9.1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dirx-identity-docs/latest/index.html">9.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">DirX Directory</a></li>
+    <li><a href="pdf-src/admin-reference.html">Administration Reference</a></li>
+    <li><a href="appa_ldapmibs.html">LDAP MIB Tables</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">LDAP MIB Tables</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The LDAP server&#8217;s MIB information is a subset of the specifications of the recommendation entitled <em>Directory Server Monitoring MIB (RFC 2605)</em> that correspond to the LDAP server and some additional information like the LDAP server&#8217;s configuration. The MIB information is stored in the following.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>LDAP MIB static table</p>
+</li>
+<li>
+<p>LDAP MIB total table</p>
+</li>
+<li>
+<p>LDAP MIB current table</p>
+</li>
+<li>
+<p>LDAP MIB association table</p>
+</li>
+<li>
+<p>LDAP MIB environment table</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>These tables are held in memory and reflect the lifetime of the information stored. The information can be displayed by using the LDAP extended operations ldap_mib_total, ldap_mib_current, ldap_mib_assoc, ldap_mib_env and ldap_mib_dump. (See the <strong>dirxextop</strong> reference page for details.) It is represented by strings (String), static integer values (Value), dynamic counters (Counter or MaxCounter (maximum number)), or structured values (Structured).</p>
+</div>
+<div class="paragraph">
+<p>This appendix lists all information stored in these tables.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ldap_mib_static_table"><a class="anchor" href="#_ldap_mib_static_table"></a>LDAP MIB Static Table</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The LDAP MIB static table stores information that is usually set during initialization performed at start time of the LDAP server.It remains unchanged during lifetime of the LDAP server process.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 22%;">
+<col style="width: 13%;">
+<col style="width: 45%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>MIB attribute</strong></th>
+<th class="tableblock halign-left valign-top"><strong>MIB name</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Type</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OS Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">os_name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of OS</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Phys Memory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">phys_mem_total</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Real physical memory in MB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CTX Size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ctx_size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Memory in use by CTX (CTX is the internal DirX Directory memory manager)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CTX HWM Size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ctx_size_hwm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">High water mark of memory used by CTX</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CTX Ulimit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ctx_limit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maximum amount of memory CTX will use for current process (if exceeded, allocations will fail)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Avail Memory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">phys_mem_free</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Available physical memory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Page size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mem_page_size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Memory page size in bytes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CPUs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">num_processors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Num CPUs online</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max Fd soft</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">max_files_soft</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max # of file descriptors (softlimit)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max Fd hard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">max_files_hard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max # of file descriptors (hardlimit)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pid</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Process ID</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Host Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">host_name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hostname</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Host IP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">host_ip</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IP4 address</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Server Version</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">server_version</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Detailed description of server build, e.g. V6.0 A00 136 2001:01:08 20:10</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Server Type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">server_type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database server type either ‘frontend server’ or ‘backend server’</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Server Mode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">server_mode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Either ‘Read Only’ or ‘Read/Write’</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact DSA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">contact_dsa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Network DSA PSAP address</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DAP Sharing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">backend_sharing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Whether same users share same backend connection</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow Anonym</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">anonym_allowed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Whether anonymous users are allowed to access server</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SSL Encryption</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ssl_version</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Encryption strength supported by server<br>
+e.g. weak SSL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Start Time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">start_time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Server start time<br>
+e.g. Wed Feb 07 16:37:37 2003</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Current Time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">current_time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Current Time<br>
+e.g. Wed Feb 07 16:42:37 2003</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_configuration</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used server configuration subentry name</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ClCfg File</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cfg_file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used client config file<br>
+e.g. dirxldap.cfg</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Socket Mode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sock_mode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Socket mode in use – can be sync or async</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ldap Port</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_port</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Port number for plain LDAP requests<br>
+e.g. 389</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SSL Port</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ssl_port</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Port number for SSL encrypted LDAP requests<br>
+e.g. 636</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RPC Port</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rpc_port</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Port number for RPC requests<br>
+e.g. 6999</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max Conn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">max_conn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maximum allowed LDAP connections; e.g. 1024</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Client Idle Time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cl_idle_time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max time in seconds a client may be idle before server closes connection e.g. 300</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backend unbind delay time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dap_delay_time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max time a shared backend connection is held after last client unbinds</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TCP/IP Response Mode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tcp_resp_mode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used TCP/IP response mode</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DN Escape Mode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dn_escape</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used Mode to escape DNs<br>
+e.g. ‘quotes’ or ‘backslash’</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Search Size Limit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">size_limit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max entry count for search requests (0=unlimited)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Search Time Limit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time_limit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max time for search (0=unlimited)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supported Search Controls</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sup_ctrl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supported search controls<br>
+e.g. PR+SSS</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Thread Pool Size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">thr_pool_size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of LDAP worker threads available</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DAP Pool Size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dap_pool_size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">anonymous DAP connection pool size</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allowed IPs Number</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of allowed IP addresses</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allowed IP Addresses</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allowed IP addresses</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denied IPs Number</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of denied IP addresses</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denied IP Addresses</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denied IP addresses</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IP Allow</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ip_allow</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Strings</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">List of IPs granted access to server</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IP Deny</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ip_deny</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Strings</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">List of IPs denied access to server</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Black Box Size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">black_box_size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP PDU black box size</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ldap_mib_total_table"><a class="anchor" href="#_ldap_mib_total_table"></a>LDAP MIB Total Table</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The LDAP MIB total table stores information that is accumulated during lifetime of the LDAP server.Usually this information increases and delivers a temporary snapshot of the running LDAP server.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 22%;">
+<col style="width: 25%;">
+<col style="width: 14%;">
+<col style="width: 39%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>MIB attribute</strong></th>
+<th class="tableblock halign-left valign-top"><strong>MIB name</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Type</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tot_op</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of LDAP operations processed by the server.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cache Hits</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cache_ratio</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Percentage of search cache hits</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PDU Errors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pdu_err</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of illegal PDUs received from clients.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Client Shutdowns</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cl_shutdowns</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of socket closes performed by client without regular unbind.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referral errors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">referral_err</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of referral errors occurred in searches. (base obj = Lap referral)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SSL Connections</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ssl_conns</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of established SSL connections.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SSL Errors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ssl_err</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of SSL errors on established SSL connections.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Binds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">binds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of LDAP Bind requests processed .</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bind Errors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">binds_err</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of unsuccessful LDAP Binds.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bind Security Errors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">binds_sec_err</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of failed binds because of invalid credentials or inappropriate authentication</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Binds V2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">binds_v2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of LDAP V2 Binds.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Binds V3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">binds_v3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of LDAP V3 Binds.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Binds anonym</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">binds_anonym</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of anonymous LDAP Binds.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Binds simple</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">binds_simple</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of simple authenticated Binds.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Binds strong</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">binds_strong</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of strong authenticated binds (SSL client authentication used).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unbinds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">unbinds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Number of client issued LDAP Unbinds</p>
+</div>
+<div class="paragraph">
+<p>(Note: if client just closes connection it is counted as a PDU error)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Searches</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">searches</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of LDAP Searches performed</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Search Errors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">searches_err</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of unsuccessful searches (e.g. illegal base object, insufficient access rights etc)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Searched Entries</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">searches_entries</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of returned entries in LDAP Searches</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Searched Attrs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">searches_attrs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of returned attributes in LDAP Searches</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Searched Referrals</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">searches_referrals</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of referrals returned in LDAP Searches (not referral err)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Searches Baselevel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">searches_baselevel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of base level searches</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Searches<br>
+Onelevel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">searches_onelevel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of one level searches</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Searches<br>
+Subtree</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">searches_subtree</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of sub tree searches</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Adds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of Adds performed</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Add Errors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adds_err</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of unsuccessful LDAP Adds</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Modifys</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mods</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of LDAP Modify operations performed</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Modify Errors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mods_err</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of unsuccessful LDAP Modify operations</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Modify RDNs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">modrdns</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of performed LDAP Modify RDN ops</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Modify RDN Errors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">modrdns_err</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of unsuccessful LDAP Modify RDN ops</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deletes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">deletes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of performed LDAP Delete ops</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Delete Errors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">deletes_err</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of failed Deletes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compares</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">compares</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of performed LDAP Compare ops</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compare Errors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">compares_err</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of failed Compares</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Abandons</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">abandons</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of requested LDAP abandon ops</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Extended Ops</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">extops</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of extended operations requested (Note: extended operations are not supported and will be counted as errors)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Extended Ops Errors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">extops_err</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of failed Extended Ops</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TCP Bytes sent</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tcp_bytes_out</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of KB sent to LDAP Clients</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TCP Bytes received</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tcp_bytes_in</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of KB received from LDAP Clients</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DSA dropouts</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dap_dropouts</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of failed operations because of backend dropout<br>
+(DRX_REMOTE_ABORT,<br>
+DRX_LOCAL_ABORT,<br>
+BAD_SESSION)<br>
+e.g. after DSA crash/shutdown/reboot</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RPC operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rpc_ops</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RPC operations performed<br>
+(except logging)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Untrusted Conns</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">untrusted_conns</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Connection attempts from denied IPs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Added Schema Attributes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">schema_at_adds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of new attributes added to schema</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deletes Schema Attributes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">schema_at_dels</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of attributes deletions in schema<br>
+(deleting means setting to obsolete)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Added Schema Objectclasses</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">schema_oc_adds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of new OCLs added to schema</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deletes Schema Objectclasses</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">schema_oc_dels</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of OCL deletions in schema<br>
+(deleting means setting to obsolete)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DirX-API Timeouts</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">api_timeouts</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of operations timed out in DirX Directory-API (feature not active by default)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TCP-send() timeouts</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tcpsend_timeouts</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of operations that failed because client has not collected results vis TCP within 30 sec – server closes connection</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ldap_mib_current_table"><a class="anchor" href="#_ldap_mib_current_table"></a>LDAP MIB Current Table</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The LDAP MIB current table stores information that is accumulated during lifetime of the LDAP server.Usually this information increases and decreases, reflects some status information (Status), for example LDAP cache enabled (<strong>ON</strong>) and LDAP cache information is valid (<strong>valid</strong>), or provides the maximum value (MaxCounter) during LDAP server&#8217;s lifetime.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 21%;">
+<col style="width: 20%;">
+<col style="width: 16%;">
+<col style="width: 43%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>MIB attribute</strong></th>
+<th class="tableblock halign-left valign-top"><strong>MIB name</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Type</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cache Status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cache_state</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Current status of LDAP response cache. Values can be ‘ON + valid’, ‘ON + invalid’, ‘OFF + valid’, and ‘OFF + invalid’.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cache Hit Ratio</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cache_ratio</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Current cache hit ratio.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP Binds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">curr_lbinds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MaxCounter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of currently active client LDAP connections open for incoming requests.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max LDAP Binds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">max_lbinds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MaxCounter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max number of concurrent LDAP connections seen thus far</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DAP Binds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">curr_dbinds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MaxCounter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of currently active backend connections to the DSA (Note: the anonymous connection is always held open)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max DAP Binds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">max_dbinds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MaxCounter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max Number of concurrent DAP connections seen thus far</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pool Threads running</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pool_thr_running</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of currently working pool threads</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Overflow Threads running</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ovfl_thr_running</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of threads running to handle OP-stack overflow situations</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Overflow Threads idle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ovfl_thr_idle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of idle overflow threads</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pool Threads idle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pool_thr_idle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of idle pool threads</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Op Stack size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">op_stack_size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of currently queued operations waiting for processing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max Op Stack size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">op_stack_size_max</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MaxCounter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max number of queues operations seen thus far</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Overflow Stack Size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ovfl_stack_size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of currently queued operations on overflow stack (waiting to be processed by overflow thread(s))</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SD max</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">highest_sd</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MaxCounter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Highest socket descriptor seen so far</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Socket Info</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">slist</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Structured</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">List of socket information containing fd, state, IP for each socket</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ldap_mib_association_table"><a class="anchor" href="#_ldap_mib_association_table"></a>LDAP MIB Association Table</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The LDAP MIB association table stores information that is dynamic concerning the content of the entire table and the values of each MIB attribute stored.It provides information concerning the number of LDAP client connections established, general information about each LDAP connection, and all operations running for each LDAP client connection.</p>
+</div>
+<div class="paragraph">
+<p>The following MIB attributes are provided concerning LDAP connections established:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Number of currently established LDAP connections</p>
+</li>
+<li>
+<p>Number of currently established backend (DAP) connections and additional info (anonym, simple, sasl, rebinds, shares, authentication)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following MIB attributes are provided for each connection established:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Peer IP address</p>
+</li>
+<li>
+<p>Socket descriptor used for I/O</p>
+</li>
+<li>
+<p>Type of LDAP bind (anonym, simple, strong)</p>
+</li>
+<li>
+<p>Security (normal, SSL)</p>
+</li>
+<li>
+<p>User DN (if SSL bind, taken from user certificate)</p>
+</li>
+<li>
+<p>SSL user id (issuer + serial) (if security is SSL)</p>
+</li>
+<li>
+<p>Creation time of connection</p>
+</li>
+<li>
+<p>Last activity time of connection</p>
+</li>
+<li>
+<p>LDAP version (2/3)</p>
+</li>
+<li>
+<p>Number of operations started on this connection</p>
+</li>
+<li>
+<p>Number of currently running operations on this connection</p>
+</li>
+<li>
+<p>Bytes transferred/received on current connection</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following MIB attributes are provided for each operation running:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Operation type (search, add, modify, .…)</p>
+</li>
+<li>
+<p>Duration thus far</p>
+</li>
+<li>
+<p>Internal Operation Name (e.g. LDAP_Con4_Op23)</p>
+</li>
+<li>
+<p>In use flag (set if operation is processed by a thread)</p>
+</li>
+<li>
+<p>LDAP message ID</p>
+</li>
+<li>
+<p>Unique operation ID</p>
+</li>
+<li>
+<p>Request parameters according to op type (e.g. base object, filter, etc. for search)<br>
+Attribute values are represented by their length and not by their current value)</p>
+</li>
+<li>
+<p>Internal operation processing state (‘C’ =created, ‘Q’=queued, ‘P’ = PDU received, ‘A’= API called, ‘R’= responding, ‘T’=terminating)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ldap_mib_environment_table"><a class="anchor" href="#_ldap_mib_environment_table"></a>LDAP MIB Environment Table</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This table contains the current environment strings as they are known by the server, for example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Env Infos:
+    Environment : _=/opt/dirx/bin/dirxdsas
+    Environment : DIRX_SVC_EXTINFO=libDBAM.so,DBAMDebug_ids,dba_msg_table
+    Environment : _INIT_UTS_RELEASE=5.8
+    Environment : nLSPATH=/opt/dirx/nls/msg/en_US.ASCII/%N
+    Environment : CMXSOCKET=-K30
+    Environment : LC_MONETARY=en_US.ISO8859-1
+    Environment : _INIT_UTS_MACHINE=sun4us
+    Environment : LC_TIME=en_US.ISO8859-1
+    Environment : DIRX_DSA_CONSISTENCY_CHECK=1
+    Environment : DIRX_DEL_TIME=720
+    Environment : PATH=/usr/sbin:/usr/bin:/opt/dirx/bin:/usr/bin
+    Environment : _INIT_UTS_VERSION=Generic_108528-18
+    Environment : DIRX_DIRSTR_CHOICE=UTF8
+    Environment : DIRX_OWN_PSAP=TS=DSA1,NA='TCP/IP_IDM!internet=127.0.0.1+port=21200'
+    Environment : _INIT_RUN_NPREV=0
+    Environment : _INIT_NET_STRATEGY=none
+    Environment : _INIT_UTS_NODENAME=alice
+    Environment : _INIT_UTS_ISA=sparc
+    Environment : _INIT_PREV_LEVEL=S
+    Environment : LC_MESSAGES=C
+    Environment : LC_CTYPE=en_US.ISO8859-1
+    Environment : DIRX_INST_PATH=/opt/dirx
+    Environment : _INIT_UTS_SYSNAME=SunOS
+    Environment : LC_COLLATE=en_US.ISO8859-1
+    Environment : LC_NUMERIC=en_US.ISO8859-1
+    Environment : LD_LIBRARY_PATH=/opt/dirx/lib
+    Environment : PWD=/
+    Environment : TZ=MET
+    Environment : _INIT_RUN_LEVEL=3
+    Environment : _INIT_UTS_PLATFORM=FJSV,GPUS</pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>DirX is a registered trademark © Copyright 2024, Eviden SAS – All rights reserved.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license.
+    Several icons used are provided by Google and are licensed under the
+    <a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License Version 2.0</a>.
+  </p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>

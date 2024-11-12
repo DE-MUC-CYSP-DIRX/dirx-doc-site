@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>dirxauddecode :: Documentation</title>
+    <link rel="canonical" href="https://docs.dirx.solutions/dirx-directory-docs/latest/admin-reference/ch1-3_dirxauddecode.html">
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.dirx.solutions">
+        <div class="navbar-item logo"></div>
+        Documentation
+      </a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="./">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">DirX Access</a>
+            <a class="navbar-item" href="#">DirX Audit</a>
+            <a class="navbar-item" href="../index.html">DirX Directory</a>
+            <a class="navbar-item" href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dirx-directory-docs" data-version="9.1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">DirX Directory</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">General</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">About this Documentation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="pdf-src/admin-reference.html">Administration Reference</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../copyright.html">Copyright</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="adrefprf.html">Preface</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-0_cmds.html">DirX Directory Commands</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-1_dirxadm.html">dirxadm</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_abbr_dirxcp_dirxadm">abbr (dirxcp, dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_attr_dirxadm">attr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_audit_dirxadm">audit (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_db_dirxadm">db (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_dse_dirxadm">dse (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_ldap_dirxadm">ldap (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_lob_dirxadm">lob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_nmi_dirxadm">nmi (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_progsvr_dirxadm">progsvr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sob_dirxadm">sob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sys_dirxadm">sys (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_util_dirxadm">util (dirxadm)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-2_dirxcp.html">dirxcp</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_abbr_dirxadm_dirxcp">abbr (dirxadm, dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_args_dirxcp">args (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_ldapargs_dirxcp">ldapargs (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_obj_dirxcp">obj (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_util_dirxcp">util (dirxcp)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="ch1-3_dirxauddecode.html">dirxauddecode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-4_dirxaudstatistics.html">dirxaudstatistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-5_dirxdumplog.html">dirxdumplog</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-6_dirxbackup.html">dirxbackup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-7_dirxmodify.html">dirxmodify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-8_dirxconfig.html">dirxconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-9_dbaminit.html">dbaminit</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-10_dbamconfig.html">dbamconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-11_dbamboot.html">dbamboot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-12_dirxload.html">dirxload</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-13_dbamverify.html">dbamverify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-14_dbamdevinfo.html">dbamdevinfo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-15_dirxextop.html">dirxextop</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-16_dirxhostinfo.html">dirxhostinfo</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch2_files.html">DirX Directory Files</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirx_directory_environment_variable_ini_file">DirX Directory Environment Variable Ini File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_abbreviation_files">Abbreviation Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_configuration_file">LDAP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_http_server_configuration_file">HTTP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_directory_client_configuration_file">Directory Client Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_key_material">LDAP Server Key Material</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ssltls_certificate_database">SSL/TLS Certificate Database</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_key_database_used_for_client_authentication">Key Database Used for Client Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_idms_configuration_and_key_material_files">IDMS Configuration and Key Material Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_snmpv2_trap_configuration_file">SNMPv2 Trap Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirxauddecode_configuration_file">dirxauddecode Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_syslog_configuration_file">syslog Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_logging_configuration_files">Logging Configuration Files</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch3_schema.html">DirX Directory Default DSA Schema</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_table">Attribute Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_object_classes_table">Object Classes Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_syntax_table">Attribute Syntax Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_matching_rule_table">Matching Rule Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_schema_check">Schema Check</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html">Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_setting_environment_variables">Setting Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_using_the_dirx_directory_ini_file">Using the DirX Directory ini File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_windows_systems">Windows Systems</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_linux_systems">Linux Systems</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch4_envvars.html#_dirx_directory_environment_variables">DirX Directory Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_operating_system_environment_variables">Operating System Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_system_directories_for_temporary_files">System Directories for Temporary Files</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_enabling_keepalive_timeinterval">Enabling KEEPALIVE Time/Interval</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch5_ipports.html">IP Port Numbers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_general_information">General Information</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_environment_variables">Port Numbers Specified in Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_attributes_of_ldap_server_configuration_subentry">Port Numbers Specified in Attributes of LDAP Server Configuration Subentry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_configuration_files">Port Numbers Specified in Configuration Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_and_the_firewall">Port Numbers and the Firewall</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ch6_fileloc.html">File Locations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appa_ldapmibs.html">LDAP MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_static_table">LDAP MIB Static Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_total_table">LDAP MIB Total Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_current_table">LDAP MIB Current Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_association_table">LDAP MIB Association Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_environment_table">LDAP MIB Environment Table</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appb_exitcodes.html">Exit Codes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_http_server_exit_codes">HTTP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_progsvr_exit_codes">Progsvr Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_dsa_exit_codes">DSA Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_ldap_server_exit_codes">LDAP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_exit_codes_and_the_dirx_directory_watchdog_process">Exit Codes and the DirX Directory Watchdog Process</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appc_dbammibs.html">DBAM MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_transaction_statistics">DBAM Transaction Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_statistics">DBAM Buffer Cache Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_io_statistics">DBAM Buffer Cache I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_translog_device_io_statistics">DBAM Translog Device I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_checkpoint_statistics">DBAM Checkpoint Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_interval_statistics">DBAM Interval Statistics</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">DirX Directory</span>
+    <span class="version">9.1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">DirX Directory</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">9.1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dirx-identity-docs/latest/index.html">9.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">DirX Directory</a></li>
+    <li><a href="pdf-src/admin-reference.html">Administration Reference</a></li>
+    <li><a href="ch1-0_cmds.html">DirX Directory Commands</a></li>
+    <li><a href="ch1-3_dirxauddecode.html">dirxauddecode</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">dirxauddecode</h1>
+<div class="sect1">
+<h2 id="_synopsis"><a class="anchor" href="#_synopsis"></a>Synopsis</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>dirxauddecode -i</strong> <em>audit_log_file</em><br>
+&#160; &#160; [<strong>-a</strong> <em>ascii_file</em>]<br>
+&#160; &#160; [<strong>-o</strong> <em>operation</em> …]<br>
+&#160; &#160; [<strong>-G</strong> <em>operation_group</em> …]<br>
+&#160; &#160; [<strong>-r</strong>]<br>
+&#160; &#160; [<strong>-d</strong> <em>number</em>]<br>
+&#160; &#160; [<strong>-A</strong> <em>number</em>]<br>
+&#160; &#160; [<strong>-p</strong> <em>protocol</em> …]<br>
+&#160; &#160; [<strong>-c</strong> <em>ldap_connection_identifier</em>]<br>
+&#160; &#160; [<strong>-C</strong> <em>string</em>]<br>
+&#160; &#160; [<strong>-F</strong> <em>audit_configuration_file</em>]<br>
+&#160; &#160; [<strong>-X</strong>]<br>
+&#160; &#160; [<strong>-k</strong> <em>encryption_password</em> | <strong>-K</strong> <em>encryption_password_file</em>]<br>
+&#160; &#160; [<strong>-l</strong> <em>record_count</em>]<br>
+&#160; &#160; [<strong>-B</strong> <em>begin_time</em>]<br>
+&#160; &#160; [<strong>-E</strong> <em>end_time</em>]<br>
+&#160; &#160; [-<strong>S</strong> <em>sob_id</em>]<br>
+&#160; &#160; [-<strong>N</strong> <em>dn</em>]<br>
+&#160; &#160; [<strong>-Q</strong> <em>cookie</em>]<br>
+&#160; &#160; {[<strong>-t</strong> <em>IP_address</em>[,<em>IP_address</em>] | <strong>-T</strong> <em>IP_address</em>[,<em>IP_address</em>]]}<br>
+&#160; &#160; [<strong>-u</strong> <em>user</em>]<br>
+&#160; &#160; [<strong>-b</strong> <em>user</em>]<br>
+&#160; &#160; {[<strong>-y</strong> <em>filtering_DNs_file</em> | <strong>-Y</strong> <em>ignoring_DNs_file</em>]}<br>
+&#160; &#160; [<strong>-D</strong> <em>contact_DSA_name</em>]<br>
+&#160; &#160; [<strong>-P</strong> <em>LDAP_server_name</em>]<br>
+&#160; &#160; [<strong>-Z</strong>]<br>
+&#160; &#160; [<strong>-U</strong>]<br>
+&#160; &#160; [<strong>-v</strong>] |<br>
+&#160; &#160; [<strong>-h</strong>] |<br>
+&#160; &#160; <strong>-V</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_purpose"><a class="anchor" href="#_purpose"></a>Purpose</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Evaluates a single binary DSA or LDAP server audit log file. Use the <strong>dirxaudstatistics</strong> command if you want to evaluate more than one audit log file or provide detailed statistical information about the evaluated records.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_options"><a class="anchor" href="#_options"></a>Options</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>-i</strong> <em>audit_log_file</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>The name of the audit log file to evaluate.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <strong>dirxadm audit</strong> command initiates DSA auditing. When auditing is on, the DSA writes binary audit information to the pathname <em>install_path</em>*/server/audit/audit.log* by default. (The default can be overridden with the <strong>dirxadm audit</strong> command.)</p>
+</div>
+<div class="paragraph">
+<p>The <strong>dirxadm ldap audit -start</strong> command or the configured LDAP server audit configuration subentry initiates LDAP server auditing. When auditing is on, the LDAP server writes audit information to the pathname <em>install_path</em>*/ldap/audit/ldapConfiguration/audit.log* by default. (The default can be overridden with the LDAP Audit Destination Attribute of the LDAP server audit configuration subentry.)</p>
+</div>
+<div class="paragraph">
+<p><strong>-a</strong> <em>ascii_file</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the audit output file. If this option is not used, output is sent to <strong>stdout</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-o</strong> <em>operation</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Evaluates only entries of the specified operation. Specify one <strong>-o</strong> operation option for each operation that should be evaluated; for example, <strong>-o add -o modify</strong>. The following keywords apply to operation:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>all</strong> - All operations</p>
+</li>
+<li>
+<p><strong>abandon</strong> - All abandon operations</p>
+</li>
+<li>
+<p><strong>add</strong> - All add operations</p>
+</li>
+<li>
+<p><strong>bind</strong> - All bind operations</p>
+</li>
+<li>
+<p><strong>compare</strong> - All compare operations</p>
+</li>
+<li>
+<p><strong>moddn</strong> - All moddn operations</p>
+</li>
+<li>
+<p><strong>modify</strong> - All modify operations</p>
+</li>
+<li>
+<p><strong>search</strong> - All search operations</p>
+</li>
+<li>
+<p><strong>unbind</strong> - All unbind operations</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The following keywords are only relevant to the evaluation of DSA audit log files. They are ignored when evaluating LDAP server audit log files.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>abort</strong> - All abort operations</p>
+</li>
+<li>
+<p><strong>list</strong> - All list operations</p>
+</li>
+<li>
+<p><strong>read</strong> - All read operations</p>
+</li>
+<li>
+<p><strong>remove</strong> - All remove / delete operations</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The following keywords refer to shadowing protocol operations (DISP) in DSA audit log files:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>clean_up_shadow_journal</strong></p>
+</li>
+<li>
+<p><strong>consume_delete_entry</strong></p>
+</li>
+<li>
+<p><strong>coord_shadow_update</strong></p>
+</li>
+<li>
+<p><strong>incr_consume_change</strong></p>
+</li>
+<li>
+<p><strong>incr_supply_change</strong></p>
+</li>
+<li>
+<p><strong>req_shadow_update</strong></p>
+</li>
+<li>
+<p><strong>tot_consume_entry</strong></p>
+</li>
+<li>
+<p><strong>tot_supply_entry</strong></p>
+</li>
+<li>
+<p><strong>update_scheduled</strong></p>
+</li>
+<li>
+<p><strong>update_shadow</strong></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The following keywords are only relevant to the evaluation of LDAP server audit log files; they are ignored when evaluating DSA audit log files:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>delete</strong> - All delete operations.</p>
+</li>
+<li>
+<p><strong>extop</strong> - All LDAPv3 extended operations; for example, unsolicited notification or startTLS.</p>
+</li>
+<li>
+<p><strong>ldap</strong> - All LDAP server operations except other, unknown and RPC operations.</p>
+</li>
+<li>
+<p><strong>other</strong> - All unexpected client operations.</p>
+</li>
+<li>
+<p><strong>rpc</strong> - All RPC operations.</p>
+</li>
+<li>
+<p><strong>unknown</strong> - All unexpected client operations that indicate client misbehavior; for example, closing the socket layer without initiating an LDAP unbind operation.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-G</strong> <em>operation_group</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Evaluates only entries of the specified operation group. An operation group consists of multiple operations (see <strong>-o</strong>). Specify one <strong>-G</strong> operation group option for each operation group that should be evaluated; for example, <strong>-G MODIFICATION -G CONNECTION</strong>. The following keywords apply to operation groups:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>MODIFICATION</strong> - add, modify, moddn, remove, delete.</p>
+</li>
+<li>
+<p><strong>READING</strong> - read, compare, list, search.</p>
+</li>
+<li>
+<p><strong>SHADOWING</strong> - coord_shadow_update, req_shadow_update, update_shadow, update_scheduled, clean_up_shadow_journal, tot_supply_entry, tot_consume_entry, incr_supply_change, incr_consume_change, consume_delete_entry.</p>
+</li>
+<li>
+<p><strong>CONNECTION</strong> - bind, unbind, abort, abandon.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Operation groups can be used in conjunction with operations; for example, <strong>-G CONNECTION -o search.</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-r</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that only records with a result code other than success (0) should be evaluated.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-d</strong> <em>number</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxauddecode</strong> to print only the first <em>number</em> characters of an LDAP/DAP filter in a search request. The default value is <strong>1000</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-A</strong> <em>number</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxauddecode</strong> to print only the first <em>number</em> requested attributes of a search request. The default value is <strong>100</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-h</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Prints a command usage message.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-v</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Increases the verbosity level of <strong>dirxauddecode</strong> output. There are three levels of increasing verbosity: specify <strong>-v</strong> for the first level, specify <strong>-vv</strong> or <strong>-v -v</strong> for the second level, and specify<br>
+<strong>-vvv</strong> or <strong>-v -v -v</strong> for the third level.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-V</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Displays the DirX Directory product version, in the format:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><em>product_version build_id date time</em></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p><code>DirX Directory V9.0 9.4.428 2023:03:23 20:10 64-Bit</code></p>
+</div>
+<div class="paragraph">
+<p>The following option is only relevant to the evaluation of DSA audit log files. It is ignored when evaluating LDAP server audit log files.</p>
+</div>
+<div class="paragraph">
+<p><strong>-p</strong> <em>protocol</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Evaluates only entries of the specified <em>protocol</em> for DSA audit log files. Specify one <strong>-p</strong> <em>protocol</em> option for each protocol that should be evaluated; for example <strong>-p disp -p dsp</strong>. The following keywords (case insensitive) apply to <em>protocol</em>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>dap</strong> - All DAP operations</p>
+</li>
+<li>
+<p><strong>disp</strong> - All DISP operations</p>
+</li>
+<li>
+<p><strong>dsp</strong> - All DSP operations</p>
+</li>
+<li>
+<p><strong>rpc</strong> - All local (RPC) operations</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following options are only relevant to the evaluation of LDAP server audit log files. They are ignored when evaluating DSA server audit log files.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-c</strong> <em>ldap_connection_identifier</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies a unique connection identifier that identifies the LDAP connection to a client.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-C</strong> <em>string</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs the <strong>dirxauddecode</strong> command to evaluate only records that have a session-tracking control value with a SID-name component that contains the specified string. <strong>dirxaddecode</strong> does not evaluate records without a session-tracking control value and records where the string does not occur in the SID-Name component of the session-tracking control. For example, <strong>dirxauddecode -C WfStatusLogHandler</strong> will result in an output file that contains only those operations that were issued by an LDAP client that added a session-tracking control with the SID-Name that contains the string “WfStatusLogHandler” to the operation.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-F</strong> <em>audit_configuration_file</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the full pathname of the <strong>dirxauddecode</strong> configuration file to be used to customize the output for LDAP server audit log files. (See the section <strong>dirxauddecode Configuration File</strong> in the chapter <strong>DirX Directory Files</strong> for details.)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-X</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Displays a list of available commands for the <strong>dirxauddecode</strong> configuration file. (See the section <strong>dirxauddecode Configuration File</strong> in the chapter <strong>DirX Directory Files</strong> for details.)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-k</strong> <em>encryption_password</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the password that is required to evaluate and decrypt an encrypted audit log file. The <strong>dirxauddecode</strong> command automatically detects whether the audit log file is encrypted. If no key or an incorrect key is specified for an encrypted audit log file, the evaluation process is terminated and an error message is written to <strong>stderr</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-K</strong> <em>encryption_password_file</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the path to a file containing the password that is required to evaluate and decrypt an encrypted audit log file (see the <strong>-k</strong> option). The password must be the only content of this file. When creating the file, the password must be specified in plain ASCII format. After the first successful reading by the application, the password is symmetrically encrypted and the file is rewritten to provide protected local storage.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-I</strong> <em>record_count</em>*</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>(The option is an uppercase "i”) Specifies the number of audit records processed at which <strong>dirxauddecode</strong> issues progress reports during LDAP server audit log file processing. The default value is <strong>5000</strong>. A value of <strong>0</strong> specifies no progress reporting.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-B</strong> <em>begin_time</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that the <strong>dirxauddecode</strong> command evaluates only records created after the specified time. Specify the value in the format <em>YYYYMMDDhhmmss</em>; for example, <strong>20120617123000</strong>. The value represents the local time saved as the creation time stamp of an operation in the evaluated audit log file.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-E</strong> <em>end_time</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that the <strong>dirxauddecode</strong> command evaluates only records created before the specified time. Specify the value in the format <em>YYYYMMDDhhmmss</em>; for example, <strong>20120618123000</strong>. The value represents the local time saved as the creation time stamp of an operation in the evaluated audit log file.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-S</strong> <em>sob_id</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that the <strong>dirxauddecode</strong> command evaluates only records that do not contain an agreement id or contain an agreement id and match the specified <em>sob_id</em>. This option is particularly useful when combined with the <strong>-G SHADOWING</strong> option.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-N</strong> <em>dn</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that the <strong>dirxauddecode</strong> command evaluates only records that match the specified <em>dn</em>. Whether or not a record matches the specified <em>dn</em> depends on the record type:</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 46%;">
+<col style="width: 54%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Record type</strong></th>
+<th class="tableblock halign-left valign-top"><strong>The record is evaluated if</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ADD, MODIFY, MODDN, DELETE, COMPARE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the target entry name of the operation matches the specified <em>dn</em>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SEARCH</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the base object name matches the specified <em>dn</em> and the scope of the search is <strong>baseobject</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BIND</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the bind user name matches the specified <em>dn</em>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All other</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">never matches.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Specify multiple <strong>-N</strong> options to filter the evaluated records for multiple distinguished names; for example <strong>-N</strong> <em>dn1</em> <strong>-N</strong> <em>dn2</em>. The value of dn is case-insensitive.</p>
+</div>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="paragraph">
+<p><code><strong>-N cn=myentry,o=my-company -o add -o modify -o delete</strong></code> evaluates all LDAP records with add, modify and delete operations for the object <strong>cn=myentry, o=my-company</strong>.</p>
+</div>
+<div class="paragraph">
+<p><code><strong>-N cn=myuser,o=my-company -o bind</strong></code> evaluates all LDAP records with bind operations for the user <strong>cn=myuser, o=my-company</strong>.</p>
+</div>
+<div class="paragraph">
+<p><code><strong>-N/o=my-company/cn=myentry -o search</strong></code> evaluates all DAP records with search operations for the object <strong>/o=my-company/cn=myentry</strong> and the scope <strong>baseobject</strong>.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-Q</strong> <em>cookie</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that the <strong>dirxauddecode</strong> command evaluates only records for which the paged-result cookie is present. The <em>cookie</em> must be specified as a hex-value string like <strong>80000001</strong> (the same as in audit-output). For example, <strong>-Q 80000001</strong> evaluates all records that have a <em>cookie</em> <strong>80000001</strong>. If the cookie-string is <strong>ANY</strong>, then all records that have a cookie are evaluated no matter what the value is.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-t</strong> <em>IP_address</em>[,<em>IP_address</em>]</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that the <strong>dirxauddecode</strong> command evaluates only those records in the audit log file whose client IP address matches the specified IP address. Separate multiple IP addresses with a comma; for example, <strong>-t 127.0.0.1,192.10.1.20,192.10.1.30</strong>. Use the wildcard (*) to specify an IP submask; for example, <strong>-t 127.*.1,192.*.1.20,192.10.1.3</strong>. Either the <strong>-t</strong> or the <strong>-T</strong> option can be used; using both options fails.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-T</strong> <em>IP_address</em>[,<em>IP_address</em>]</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that the <strong>dirxauddecode</strong> command does not evaluate records in the audit log file whose client IP addresses match one or more specified IP addresses. The IP addresses specified must be Internet Protocol Version 4 (IPv4) addresses. Separate multiple IP addresses with a comma; for example, <strong>-T 127.0.0.1,192.10.1.20,192.10.1.30</strong>. Use the wildcard (*) to specify an IP submask; for example, <strong>-T 127.*.1,192.*.1.20,192.10.1.3</strong>. Either the <strong>-T</strong> or the <strong>-t</strong> option can be used; using both options fails.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-u</strong> <em>user</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that the <strong>dirxauddecode</strong> command evaluates only those records in the audit log file that match the specified user. Specify the distinguished name of the user in LDAP format (case sensitive). (See the section <strong>Distinguished Names</strong> in the chapter <strong>DirX Directory String Representation for LDAP Binds</strong> in <em>DirX Directory Syntaxes and Attributes</em> for details.) An empty string (<strong>""</strong>) specifies the anonymous user.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-b</strong> <em>user</em><br>
+Specifies that the <strong>dirxauddecode</strong> command evaluates only those records in the audit log file that match the specified user. Specify the distinguished name of the user in LDAP format (case insensitive). This option is equivalent to the option <strong>-u</strong>, except that the match is performed case insensitive. (See the section <strong>Distinguished Names</strong> in the chapter <strong>DirX Directory String Representation for LDAP Binds</strong> <em>in DirX Directory Syntaxes and Attributes</em> for details.) An empty string (<strong>""</strong>) specifies the anonymous user.</p>
+</div>
+<div class="paragraph">
+<p><strong>-y</strong> <em>filtering_DNs_file</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the name of a file that contains a list of DNs. The <strong>dirxauddecode</strong> command evaluates only those records in the audit log file that match one of the specified users. Specify the distinguished name of the users in LDAP format (case insensitive). (See the section <strong>Distinguished Names</strong> in the chapter <strong>DirX Directory String Representation for LDAP Binds</strong> in <em>DirX Directory Syntaxes and Attributes</em> for details.) The string <strong>anonymous</strong> specifies the anonymous user. You can use the wildcard (*) for RDNs.<br>
+<br>
+In the file <em>filtering_DNS_file</em>, blank lines and lines starting with the *#* character are ignored. Each line can contain one DN. Here is an example file:</p>
+<div class="listingblock">
+<div class="content">
+<pre># Evaluate all records containing the following users:
+cn=Schulz,ou=Sales,o=My-Company
+cn=Abele,ou=Development,o=My-Company
+
+# Evaluate all records under o=My-Company with cn Mayer or Meier:
+cn=Mayer,*,o=My-Company
+cn=Meier,*,o=My-Company
+
+# Evaluate all records of anonymous users:
+anonymous</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Either the <strong>-y</strong> or the <strong>-Y</strong> option can be used; using both options fails.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-Y</strong> <em>ignoring_DNs_file</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the name of a file that contains a list of DNs. The <strong>dirxauddecode</strong> command excludes all records in the audit log file from the result that match one of the specified users. The syntax of this option is the same as the syntax of the <strong>-y</strong> <em>filtering_DNs_file</em> option.<br>
+<br>
+Either the <strong>-Y</strong> or the <strong>-y</strong> option can be used; using both options fails.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-D</strong> <em>contact_DSA_name</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that the <strong>dirxauddecode</strong> command evaluates only those records in the audit log file whose <em>contact_DSA_name</em> matches the target DSA server. For LDAP records, <em>contact_DSA_name</em> must match the DSA naming in the LDAP server configuration file <strong>dirxldap.cfg</strong>. For DAP records, the <em>contact_DSA_name</em> must match subordinate or superior reference DN. The default value is all target servers.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-P</strong> <em>LDAP_server_name</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that the <strong>dirxauddecode</strong> command evaluates only those records in the audit log file whose <em>LDAP_server_name</em> matches the target server. <em>LDAP_server_name</em> must match JSON naming. The default value is all target servers. This option is only applicable when evaluating PROXY audits.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-U</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that UTF8 code is written to the user output file. If an attribute value is not UTF8-encoded, the value is written in hexadecimal code to the user file. If this option is omitted, ASCII code is written to the user output file.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-Z</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that CSV code with a limited number of fields is written to the user output file. The supported fields are UniqueID, StartTime, Duration, OpType. Here is an example output file:</p>
+<div class="listingblock">
+<div class="content">
+<pre>UniqueID, StartTime, Duration, OpType +
+1, 2012/11/28 10:15:30.852999, 0.110000, BIND</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>dirxauddecode</strong> command evaluates DSA and LDAP server audit log files and generates customized output (for LDAP server audit log files only; see the <strong>–X</strong> and <strong>–F</strong> options) or human-readable ASCII-formatted output to <strong>stdout</strong> or to the file specified in the <strong>–a</strong> option. The generated output identifies all incoming protocol requests, their detailed operation parameters and the result code for each operation. The output also contains operational information such as durations, threading information and error messages that can be used to diagnose the running system or tune DirX Directory. The output does not contain any entry information that read and search operations return; for example, attribute values or distinguished names of entries that satisfy the search filter.</p>
+</div>
+<div class="paragraph">
+<p>The output usually contains a header, 1-<em>n</em> audit records and a summary. The LDAP audit header contains useful information about server settings and configuration parameters. It also contains information about attribute indexes – which indexes are set and how often they are used – from the DSA. The audit records are complete; that is, no operations are lost unless operation filtering has been enabled with the <strong>–o</strong> <em>operation</em> option. However, the audit records are not guaranteed to be written in the same sequence as the server (LDAP and DSA) operations. When evaluating an LDAP audit log file with <strong>dirxauddecode</strong>, you can determine the sequence of the LDAP server operations from the operation name, which has the format:</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p><strong>LDAP_Con</strong><em>client_number</em>_<strong>Op</strong><em>operation_number</em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>where</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>client_number</em> specifies the client connection</p>
+</li>
+<li>
+<p><em>operation_number</em> specifies the operation</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Both numbers start with the value 0 (zero) and are incremented by 1 for each new client connection or operation. For example, <strong>LDAP_Con5_Op3</strong> identifies the fourth operation of the sixth client connection.</p>
+</div>
+<div class="paragraph">
+<p>You can use the <strong>-h</strong> option to display a usage message for the command.</p>
+</div>
+<div class="paragraph">
+<p>Keep in mind to limit your DSA and LDAP server audit log files to a useful size because the <strong>dirxauddecode</strong> command may run into a deadlock when the binary audit log file or the output file specified in the <strong>-a</strong> option exceeds the limit of 2 GB. Errors occur due to the 32-bit I/O mechanism when files are greater than 2 GB. (See the <strong>dirxadm audit</strong> reference page for information on how to limit the DSA audit log file size and the sections <strong>LDAP Audit Size Limit</strong> and <strong>LDAP Audit Max File Size</strong> in in <em>DirX</em> <em>Directory Syntaxes and Attributes</em> for information on how to limit the LDAP audit log file size.) Note that the ASCII output files may become five to ten times larger than the binary audit log files.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The following sample command evaluates a DSA audit file:</p>
+<div class="listingblock">
+<div class="content">
+<pre>% dirxauddecode -i audit.log -a dsa_audit.txt</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The sample command output written to the output file dsa_audit.txt is as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>#################  DIR.X AUDIT TRAIL (c) Eviden  ################################
+Cmd-Line: -i audit.log -a dsa_audit.txt
+=================================================================================
+Audit  File #             :1
+Input  File               :audit.log
+Output File               :dsa_audit.txt
+Audit Version             :8.8
+Server UUID               :a5857937-1caa-4b72-80b4-722dc5db0cd0
+Audit Start Time (local)  :Thu Nov 29 10:21:13 2012
+Audit Start Time (GMT)    :Thu Nov 29 09:21:13 2012
+Content Type              :DSA
+DB Master-Entries         :0
+DB Copy-Entries           :1573
+Server Version            :DirX Directory V8.2 B 8.8.98 2012:11:28 20:10
+Host Name                 :baumg03
+=================================================================================
+
+############# RECORD NUMBER 000226 #############
+Bind-Id:             0x00100007
+Start Time:             Thu Nov 29 10:38:00.971999 2012
+End Time:               Thu Nov 29 10:38:00.971999 2012
+Concurrency:            1
+BT Usage:               8 Conns, 1 Ops
+Duration:               0.000000 sec
+Protocol:            DAP (Responder)
+OP-Name:             Con16_Op0
+Operation:           BIND
+Role:                Responder
+AuthMech:            Simple
+Bind-Requestor:              /O=my-company/CN=admin
+IP-address:           10.93.25.149
+OpResCTXSize:         32 kB
+TotalCTXSize:         7 MB  (HWM: 9 MB)
+Result:              Successful (Size 0 Bytes)
+
+########## END RECORD NUMBER 000226 ############
+
+############# RECORD NUMBER 000227 #############
+OpUUID:              e792d1c7-7090-483d-b759-ae8afadfefbc
+Bind-Id:             0x00100007
+Start Time:             Thu Nov 29 10:38:07.190000 2012
+End Time:               Thu Nov 29 10:38:07.377000 2012
+Concurrency:            1
+BT Usage:               8 Conns, 1 Ops
+Duration:               0.187000 sec
+Protocol:            DAP (Responder)
+OP-Name:             Con16_Op1
+Operation:           SEARCH
+Base-Object:            /O=My-Company
+Scope:                  subtree
+Filter:                 (cn=*bel*)
+Options:                PrefCh CopyShallDo
+Found Entries:          16 (16 local, 0 remote)
+OpResCTXSize:         144 kB
+TotalCTXSize:         7 MB  (HWM: 9 MB)
+Result:              Successful (Size 1412 Bytes)
+
+########## END RECORD NUMBER 000227 ############
+
+############# RECORD NUMBER 000228 #############
+OpUUID:              5843680b-8550-401f-80aa-001e6cefd236
+Bind-Id:             0x00100007
+Start Time:             Thu Nov 29 10:38:20.923000 2012
+End Time:               Thu Nov 29 10:38:20.923000 2012
+Concurrency:            1
+BT Usage:               8 Conns, 1 Ops
+Duration:               0.000000 sec
+Protocol:            DAP (Responder)
+OP-Name:             Con16_Op2
+Operation:           SEARCH
+Base-Object:            /O=My-Company
+Scope:                  subtree
+Filter:                 (userCertificate:2.5.13.34:=\{ serialNumber 30, issuer rdnSequence:"/O=pqrupmann01/CN=admin" })
+Options:                PrefCh CopyShallDo
+Found Entries:          0 (0 local, 0 remote)
+OpResCTXSize:         80 kB
+TotalCTXSize:         7 MB  (HWM: 9 MB)
+Result:              Successful (Size 12 Bytes)
+
+########## END RECORD NUMBER 000228 ############
+
+############# RECORD NUMBER 000229 #############
+OpUUID:              9c6f7905-d6b5-4873-815f-3b8066fdd087
+Bind-Id:             0x00100007
+Start Time:             Thu Nov 29 10:38:23.782000 2012
+End Time:               Thu Nov 29 10:38:23.891999 2012
+Concurrency:            1
+BT Usage:               8 Conns, 1 Ops
+Duration:               0.109999 sec
+Protocol:            DAP (Responder)
+OP-Name:             Con16_Op3
+Operation:           SEARCH
+Base-Object:            /O=My-Company
+Scope:                  subtree
+Filter:                 (userCertificate:2.5.13.34:=\{ serialNumber 30, issuer rdnSequence:"/O=pqrupmann02/CN=admin" })
+Options:                PrefCh CopyShallDo
+Found Entries:          198 (198 local, 0 remote)
+OpResCTXSize:         1104 kB
+TotalCTXSize:         8 MB  (HWM: 9 MB)
+Result:              Successful (Size 16527 Bytes)
+
+########## END RECORD NUMBER 000229 ############
+
+############# RECORD NUMBER 000230 #############
+OpUUID:              d81ec15c-7c7f-401a-acdf-007883ab7215
+Bind-Id:             0x00100007
+Start Time:             Thu Nov 29 10:39:18.496000 2012
+End Time:               Thu Nov 29 10:39:18.542999 2012
+Concurrency:            1
+BT Usage:               8 Conns, 1 Ops
+Duration:               0.046999 sec
+Protocol:            DAP (Responder)
+OP-Name:             Con16_Op4
+Operation:           MODIFY
+Entry:                  /O=My-Company/OU=Payroll/CN=Kary Leary
+# Changes:              1
+ModType:                addVals
+  AttrType:             title
+  AttrVal:              Dr.
+OpResCTXSize:         48 kB
+TotalCTXSize:         7 MB  (HWM: 9 MB)
+Result:              Successful (Size 2 Bytes)
+
+########## END RECORD NUMBER 000230 ############
+
+
+=================================================================================
+  DSA Audit Summary     :
+    Records Processed   : 233
+  Log Time              : 1391 sec
+  Avrg Traffic          : 0.2 Ops/sec
+  Concurrency Max       : 2 (5 times) (Op# 000096)
+  CtxSize Min/Max       : 7 / 9 MB
+  CtxSize HWM Min/Max   : 7 / 9 MB
+  Protocol Ops          :
+    DAP Ops             : 229
+      Search            : 196
+      Modify            : 1
+      Bind              : 16 (0 Init, 16 Resp)
+      Unbind            : 4
+      ExtendedOp        : 6
+      Abort             : 6
+    DSP Ops             : 1
+      Abort             : 1
+    DISP Ops            : 0
+    DOP Ops             : 0
+    LOCAL Ops           : 0
+    RPC Ops             : 0
+    PagingCookieExpired : 0
+    UNKNOWN Ops         : 0
+
+  DAP Op Statistics      :     tot |    err |     % |      t Avrg |       t Max |       t Min
+    Search               :     196 |      0 |  85.2 |    0.007959 |    0.187000 |    0.000000
+    Modify               :       1 |      0 |   0.4 |    0.046999 |    0.046999 |    0.046999
+    Bind                 :      16 |      0 |   7.0 |    0.002938 |    0.016000 |    0.000000
+    Unbind               :       4 |      0 |   1.7 |    0.000000 |    0.000000 |    0.000000
+    Abort                :       6 |      0 |   2.6 |    0.000000 |    0.000000 |    0.000000
+    Extended             :       6 |      0 |   2.6 |    0.002500 |    0.015001 |    0.000000
+
+  DSP Op Statistics      :     tot |    err |     % |      t Avrg |       t Max |       t Min
+    Abort                :       1 |      0 |   0.4 |    0.000000 |    0.000000 |    0.000000
+
+  DISP Op Statistics     :     tot |    err |     % |      t Avrg |       t Max |       t Min
+
+  RPC Op Statistics      :     tot |    err |     % |      t Avrg |       t Max |       t Min
+
+
+    Top 100 Durations:
+      Duration    StartTime        EndTime           Op#      CC   CTXSize  Prot   Type/Info
+      0.187000 | 10:38:07.190000 | 10:38:07.377000 | 000227 |   1 |    7 | DAP   | SEARCH     n/a
+      0.109999 | 10:38:23.782000 | 10:38:23.891999 | 000229 |   1 |    8 | DAP   | SEARCH     n/a
+      0.046999 | 10:35:21.003000 | 10:35:21.049999 | 000203 |   1 |    7 | DAP   | SEARCH     n/a
+      0.046999 | 10:39:18.496000 | 10:39:18.542999 | 000230 |   1 |    7 | DAP   | MODIFY     n/a
+      0.031999 | 10:35:20.815000 | 10:35:20.846999 | 000202 |   1 |    7 | DAP   | SEARCH     n/a
+      0.031001 | 10:35:48.154999 | 10:35:48.186000 | 000217 |   1 |    7 | DAP   | SEARCH     n/a
+      0.030999 | 10:35:32.266000 | 10:35:32.296999 | 000208 |   1 |    9 | DAP   | SEARCH     n/a
+      0.016001 | 10:25:49.157999 | 10:25:49.174000 | 000114 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016001 | 10:35:21.111999 | 10:35:21.128000 | 000204 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016001 | 10:25:49.407999 | 10:25:49.424000 | 000135 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:21:28.427000 | 10:21:28.443000 | 000053 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:21:28.739000 | 10:21:28.755000 | 000086 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:21:28.832999 | 10:21:28.848999 | 000089 |   1 |    7 | DAP   | BIND       n/a
+      0.016000 | 10:25:48.438999 | 10:25:48.454999 | 000103 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:21:28.707999 | 10:21:28.723999 | 000082 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:21:28.536000 | 10:21:28.552000 | 000066 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:25:49.111000 | 10:25:49.127000 | 000110 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:21:28.614000 | 10:21:28.630000 | 000071 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:21:27.552000 | 10:21:27.568000 | 000004 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:25:49.220000 | 10:25:49.236000 | 000119 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:25:49.266999 | 10:25:49.282999 | 000123 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:25:49.313999 | 10:25:49.329999 | 000127 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:25:49.361000 | 10:25:49.377000 | 000131 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:21:28.161000 | 10:21:28.177000 | 000023 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:25:49.470000 | 10:25:49.486000 | 000140 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:25:49.516999 | 10:25:49.532999 | 000144 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:21:28.052000 | 10:21:28.068000 | 000010 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:25:49.141999 | 10:25:49.157999 | 000113 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:25:49.611000 | 10:25:49.627000 | 000152 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:25:49.720000 | 10:25:49.736000 | 000161 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:25:49.766999 | 10:25:49.782999 | 000165 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:25:49.861000 | 10:25:49.877000 | 000169 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:25:49.970000 | 10:25:49.986000 | 000178 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:25:50.016999 | 10:25:50.032999 | 000182 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:25:50.063999 | 10:25:50.079999 | 000186 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:35:19.783999 | 10:35:19.799999 | 000198 |   1 |    7 | DAP   | BIND       n/a
+      0.016000 | 10:21:28.207999 | 10:21:28.223999 | 000028 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:25:49.563999 | 10:25:49.579999 | 000148 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:21:28.286000 | 10:21:28.302000 | 000037 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:25:49.595000 | 10:25:49.611000 | 000151 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:35:39.124000 | 10:35:39.140000 | 000213 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:35:39.326999 | 10:35:39.342999 | 000215 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:21:28.302000 | 10:21:28.318000 | 000039 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:35:54.309999 | 10:35:54.325999 | 000219 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:21:28.082999 | 10:21:28.098999 | 000014 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:25:49.095000 | 10:25:49.111000 | 000109 |   1 |    7 | DAP   | SEARCH     n/a
+      0.016000 | 10:21:28.364000 | 10:21:28.380000 | 000046 |   1 |    7 | DAP   | SEARCH     n/a
+      0.015999 | 10:35:19.831000 | 10:35:19.846999 | 000199 |   1 |    7 | DAP   | SEARCH     n/a
+      0.015999 | 10:21:28.630000 | 10:21:28.645999 | 000073 |   1 |    7 | DAP   | SEARCH     n/a
+      0.015999 | 10:21:28.130000 | 10:21:28.145999 | 000019 |   1 |    7 | DAP   | SEARCH     n/a
+      0.015999 | 10:21:28.380000 | 10:21:28.395999 | 000048 |   1 |    7 | DAP   | SEARCH     n/a
+      0.015001 | 10:25:50.454999 | 10:25:50.470000 | 000192 |   1 |    7 | DAP   | BIND       n/a
+      0.015001 | 10:25:50.954999 | 10:25:50.970000 | 000197 |   1 |    7 | DAP   | EXTENDEDOP n/a
+      0.015001 | 10:25:49.704999 | 10:25:49.720000 | 000160 |   1 |    7 | DAP   | SEARCH     n/a
+      0.015001 | 10:25:49.454999 | 10:25:49.470000 | 000139 |   1 |    7 | DAP   | SEARCH     n/a
+      0.015001 | 10:35:19.862999 | 10:35:19.878000 | 000200 |   1 |    7 | DAP   | SEARCH     n/a
+      0.015001 | 10:25:49.204999 | 10:25:49.220000 | 000118 |   1 |    7 | DAP   | SEARCH     n/a
+      0.015001 | 10:21:28.223999 | 10:21:28.239000 | 000030 |   1 |    7 | DAP   | SEARCH     n/a
+      0.015001 | 10:21:28.473999 | 10:21:28.489000 | 000059 |   1 |    7 | DAP   | SEARCH     n/a
+      0.015001 | 10:21:27.520999 | 10:21:27.536000 | 000003 |   1 |    7 | DAP   | SEARCH     n/a
+      0.015001 | 10:21:28.723999 | 10:21:28.739000 | 000084 |   1 |    7 | DAP   | SEARCH     n/a
+      0.015001 | 10:25:49.954999 | 10:25:49.970000 | 000177 |   1 |    7 | DAP   | SEARCH     n/a
+      0.015001 | 10:21:28.145999 | 10:21:28.161000 | 000021 |   1 |    7 | DAP   | SEARCH     n/a
+      0.015001 | 10:21:28.395999 | 10:21:28.411000 | 000050 |   1 |    7 | DAP   | SEARCH     n/a
+      0.015001 | 10:21:28.645999 | 10:21:28.661000 | 000075 |   1 |    7 | DAP   | SEARCH     n/a
+      0.015001 | 10:25:49.329999 | 10:25:49.345000 | 000128 |   1 |    7 | DAP   | SEARCH     n/a
+      0.015001 | 10:25:48.454999 | 10:25:48.470000 | 000104 |   1 |    7 | DAP   | SEARCH     n/a
+      0.014999 | 10:25:49.252000 | 10:25:49.266999 | 000122 |   1 |    7 | DAP   | SEARCH     n/a
+      0.014999 | 10:25:49.424000 | 10:25:49.438999 | 000136 |   1 |    7 | DAP   | SEARCH     n/a
+      0.014999 | 10:21:28.068000 | 10:21:28.082999 | 000012 |   1 |    7 | DAP   | SEARCH     n/a
+      0.014999 | 10:21:28.443000 | 10:21:28.457999 | 000055 |   1 |    7 | DAP   | SEARCH     n/a
+      0.014999 | 10:25:50.002000 | 10:25:50.016999 | 000181 |   1 |    7 | DAP   | SEARCH     n/a
+      0.014999 | 10:25:50.049000 | 10:25:50.063999 | 000185 |   1 |    7 | DAP   | SEARCH     n/a
+      0.014999 | 10:25:49.549000 | 10:25:49.563999 | 000147 |   1 |    7 | DAP   | SEARCH     n/a
+      0.014999 | 10:35:35.219000 | 10:35:35.233999 | 000210 |   1 |    9 | DAP   | SEARCH     n/a
+      0.014999 | 10:25:49.502000 | 10:25:49.516999 | 000143 |   1 |    7 | DAP   | SEARCH     n/a
+      0.014999 | 10:25:49.877000 | 10:25:49.891999 | 000170 |   1 |    7 | DAP   | SEARCH     n/a
+      0.014999 | 10:25:49.299000 | 10:25:49.313999 | 000126 |   1 |    7 | DAP   | SEARCH     n/a
+      0.014999 | 10:35:54.295000 | 10:35:54.309999 | 000218 |   1 |    7 | DAP   | SEARCH     n/a
+      0.014999 | 10:25:49.924000 | 10:25:49.938999 | 000174 |   1 |    7 | DAP   | SEARCH     n/a
+      0.014999 | 10:25:49.174000 | 10:25:49.188999 | 000115 |   1 |    7 | DAP   | SEARCH     n/a
+      0.014999 | 10:25:49.377000 | 10:25:49.391999 | 000132 |   1 |    7 | DAP   | SEARCH     n/a
+      0.014999 | 10:25:49.627000 | 10:25:49.641999 | 000153 |   1 |    7 | DAP   | SEARCH     n/a
+##########################  END of TRAIL  #######################################</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The following sample command evaluates an LDAP server audit file:</p>
+<div class="listingblock">
+<div class="content">
+<pre>% dirxauddecode -i audit.log -vv -a ldap_audit.txt</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The sample command output written to the output file ldap_audit.txt is as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>#################  DIR.X AUDIT TRAIL (c) Eviden  ################################
+Cmd-Line: -i audit.log -vv -a ldap_audit.txt
+=================================================================================
+Audit  File #             :1
+Input  File               :audit.log
+Output File               :ldap_audit.txt
+Audit Version             :8.8
+Server UUID               :8360a2ac-b7e2-407a-aca9-0450d9e98ec9
+Audit Start Time (local)  :Thu Nov 29 10:25:50 2012
+Audit Start Time (GMT)    :Thu Nov 29 09:25:50 2012
+Audit Close Time (local)  :not closed (still in use!)
+Content Type              :LDAP
+OpSelection               :all
+OpErrors                  :yes
+Audit Level               :max
+Audit Encryption          :none
+Overflow Action:          :wrap around (default)
+Max Records per File      :10000
+Value Limit               :256
+DB Master-Entries         :0
+DB Copy-Entries           :1573
+OS Name                   :Microsoft Windows XP Professional- Service Pack 3 (build 2600)
+Total Phys Memory         :3062 MB
+Avail Phys Memory         :2047 MB
+Allocated CTX Size        :8 MB
+HWM CTX Size              :8 MB
+CTX ULimit                :1600 MB
+MemPagesize               :4096
+CPUs                      :2
+Max Open Files soft       :unlimited
+Max Open Files hard       :unlimited
+Audit Disk Space Total    :57143172 kB
+Audit Disk Space Free     :14593344 kB
+PID                       :2384
+Host Name                 :baumg03
+Host IP                   :10.93.25.149
+Server Version            :DirX Directory V8.2 B 8.8.98 2012:11:28 20:10 32-Bit
+Server Type               :Frontend Server
+Server Mode               :Read/Write
+Contact DSA
+:TS=DSA1,NA='TCP/IP_IDM!internet=1.2.3.4+port=21200',DNS='(HOST=baumg03,SSLPORT=21201,PLAINPOR
+T=21200,MODE=SSL)'
+Backend Sharing           :disabled
+Max DAP Share             :5
+Anonymous Allowed         :yes
+Anonymous Mapped DN       :---
+SSL Encryption            :SSLv3.0 TLSv1.0 TLSv1.1 TLSv1.2
+SSL SASL AuthID Mapping   :Certificate.subjectDN
+startTLS enabled          :yes
+Server Start Time         :Thu Nov 29 10:25:47 2012
+Configuration Name        :ldapConfiguration
+ClCfg File                :C:\Program Files\DirX\Directory\ldap\conf\dirxldap.cfg
+Ldap Port                 :389
+SSL Port                  :636
+RPC Port                  :6999
+Max Conn                  :1024
+Client Idle Time          :300
+Backend unbind delay time :0
+TCP/IP Response Mode      :24
+Socket Mode               :async
+Thread Pool Size          :32
+Anonym DAP Pool Size      :5
+DN Escape Mode            :backslash
+Search Size Limit         :0
+Search Time Limit         :0
+Search Service Controls   :PreferChaining CopyShallDo
+Supported LDAP Controls   :PR SSS SUBE PP
+Blackbox Size             :0
+Cache                     :OFF
+Cached Results            :0
+Cache Hit Ratio           :0%
+Allowed IPs               :all
+Denied IPs                :none
+Allowed Users             :all
+Denied Users              :none
+Ignore Records with IP    :---
+=================================================================================
+DB-Index-Info: (AttrIndexUsageInfo is updated by DSA every 30 min)
+Attr:                              objectClass : initial
+Attr:                                      ocl : initial
+Attr:                                       cn : initial final
+Attr:                               commonName : initial final
+Attr:                                       sn : initial final
+Attr:                                  surname : initial final
+Attr:                                        c : initial final
+Attr:                              countryName : initial final
+Attr:                                        o : initial final
+Attr:                         organizationName : initial final
+Attr:               collectiveOrganizationName : initial final
+Attr:                                       ou : initial final
+Attr:                   organizationalUnitName : initial final
+Attr:         collectiveOrganizationalUnitName : initial final
+Attr:                          userCertificate : initial present
+Attr:                                       uc : initial present
+
+
+AttrIndexUsageInfo:
+
+
+Attribute access counter high score at Thu Nov 29 10:21:16 2012 :
+Attribute name           : Index access counter
+                         :      INITIAL        FINAL     CONTAINS      PRESENT
+cn                       :          752            0            0            0
+objectClass              :            5            0            0            0
+sn                       :            0            2            0            0
+userCertificate          :            2            0            0            1
+o                        :            0            0            0            0
+ou                       :            0            0            0            0
+=================================================================================
+
+----------------- OPERATION 000031 ----------------
+  Create Time    :Thu Nov 29 10:38:00.908999 2012
+  Start Time     :Thu Nov 29 10:38:00.908999 2012
+  End Time       :Thu Nov 29 10:38:00.986999 2012
+  PoolThread#    :28 (0x15bc)
+  OpUUID         :6c940e2c-8969-427e-aaf4-cb772088291f
+  Concurrency    :1
+  OpStackSize    :1
+  OpFlow In/Out  :0/0
+  Duration       :0.078000 sec
+   LDAP QTime    :0.000000 sec
+   LDAP Prep Time:0.000000 sec
+   LDAP Resp Time:0.000000 sec
+    LDAP Snd Time:0.000000 sec (1 Calls, 0 Wouldblocks, WouldblockTime:0.000000 sec)
+    LDAP Enc Time:0.000000 sec
+  API Time       :0.078000 sec
+   API-Send      :0.000000 sec
+   API-ICOM Wait :0.062999 sec
+    IDM Time     :0.062999 sec
+    DSA Time     :0.000000 sec
+   API-Recv      :0.015000 sec
+    API-Dec      :0.000000 sec
+  User           :cn=admin,o=my-company
+  IP+Port+Sd     :[127.0.0.1]+4709+556
+  Op-Name        :LDAP_Con2_Op0
+  UniqueOpID     :31
+  Operation      :BIND
+  Version        :3
+  MessageID      :1
+  Bind-Type      :simple
+  Security       :normal
+  DAP-Share-Count:1
+  Bytes Received :39
+  Bytes Returned :29
+  Socket I/O     :plain
+  Abandoned      :no
+  Result Code    :0 (success)
+  Error Message  :Bind succeeded.
+
+----------------- OPERATION 000032 ----------------
+  Create Time    :Thu Nov 29 10:38:07.190000 2012
+  Start Time     :Thu Nov 29 10:38:07.190000 2012
+  End Time       :Thu Nov 29 10:38:07.392999 2012
+  PoolThread#    :30 (0x1460)
+  OpUUID         :e792d1c7-7090-483d-b759-ae8afadfefbc
+  Concurrency    :1
+  OpStackSize    :1
+  OpFlow In/Out  :0/0
+  Duration       :0.202999 sec
+   LDAP QTime    :0.000000 sec
+   LDAP Prep Time:0.000000 sec
+   LDAP Resp Time:0.000000 sec
+    LDAP Snd Time:0.000000 sec (17 Calls, 0 Wouldblocks, WouldblockTime:0.000000 sec)
+    LDAP Enc Time:0.000000 sec
+  API Time       :0.202999 sec
+   API-Send      :0.000000 sec
+   API-ICOM Wait :0.202999 sec
+    IDM Time     :0.015999 sec
+    DSA Time     :0.187000 sec
+   API-Recv      :0.000000 sec
+    API-Dec      :0.000000 sec
+  User           :cn=admin,o=my-company
+  IP+Port+Sd     :[127.0.0.1]+4709+556
+  Op-Name        :LDAP_Con2_Op1
+  UniqueOpID     :32
+  Operation      :SEARCH
+  Version        :3
+  MessageID      :2
+  Base Obj       :o=My-Company
+  Scope          :subtree
+  Filter         :(cn=ANY(bel))
+  Size Limit     :0
+  Time Limit     :0
+  Deref Alias    :always
+  Types Only     :no
+  Req Attr #     :1
+    Req Attr     :1.1 (no attributes)
+  Found Entries  :16
+  Found Attrs    :0
+  Found Values   :0
+  Op  Ctx Size   :114688 Bytes
+  API Ctx Size   :81920 Bytes
+  All Ctx Size   :8 MB
+  Bytes Received :56
+  Bytes Returned :992
+  Socket I/O     :plain
+  Cached Result  :no
+  Abandoned      :no
+  Result Code    :0 (success)
+  Error Message  :Search succeeded. Found 16 Entries (0 Aliases), 0 Attributes, 0 Values.
+(ChainedResult=no)
+
+----------------- OPERATION 000033 ----------------
+  Create Time    :Thu Nov 29 10:38:20.923000 2012
+  Start Time     :Thu Nov 29 10:38:20.923000 2012
+  End Time       :Thu Nov 29 10:38:20.923000 2012
+  PoolThread#    :0 (0x824)
+  OpUUID         :5843680b-8550-401f-80aa-001e6cefd236
+  Concurrency    :1
+  OpStackSize    :1
+  OpFlow In/Out  :0/0
+  Duration       :0.000000 sec
+   LDAP QTime    :0.000000 sec
+   LDAP Prep Time:0.000000 sec
+   LDAP Resp Time:0.000000 sec
+    LDAP Snd Time:0.000000 sec (1 Calls, 0 Wouldblocks, WouldblockTime:0.000000 sec)
+    LDAP Enc Time:0.000000 sec
+  API Time       :0.000000 sec
+  User           :cn=admin,o=my-company
+  IP+Port+Sd     :[127.0.0.1]+4709+556
+  Op-Name        :LDAP_Con2_Op2
+  UniqueOpID     :33
+  Operation      :SEARCH
+  Version        :3
+  MessageID      :3
+  Base Obj       :o=My-Company
+  Scope          :subtree
+  Filter         :(UserCertificate:2.5.13.34:=30$cn=admin,o=pqrupmann01)
+  Size Limit     :0
+  Time Limit     :0
+  Deref Alias    :always
+  Types Only     :no
+  Req Attr #     :1
+    Req Attr     :1.1 (no attributes)
+  Found Entries  :0
+  Op  Ctx Size   :32768 Bytes
+  API Ctx Size   :16384 Bytes
+  All Ctx Size   :8 MB
+  Bytes Received :103
+  Bytes Returned :103
+  Socket I/O     :plain
+  Cached Result  :no
+  Abandoned      :no
+  Result Code    :0 (success)
+  Error Message  :Search succeeded. Found 0 Entries (0 Aliases), 0 Attributes, 0 Values.
+(ChainedResult=no)
+...
+=================================================================================
+  LDAP Audit Summary:
+    Records Processed : 39
+    Total Ops Written : 39
+    Out-Of-Time Ops   : 0
+    Ldap Bytes In     : 9906
+    Ldap Bytes Out    : 940342
+    Successful Ops    : 35
+    Failed Ops        : 4
+    Abandoned Ops     : 3
+    SrchRes 0kB-1kB   : 19
+    SrchRes 1kB-10kB  : 4
+    SrchRes 10kB-100kB: 2
+    SrchRes 100kB-1MB : 1
+    SrchRes &gt; 1MB     : 0
+    Srch Scope Base   : 12
+    Srch Scope Onelvl : 11
+    Srch Scope Subtree: 3
+    Paged Searches    : 11
+    Found Entries     : 362
+    Found Attributes  : 253
+    Found Values      : 873
+    Log Time          : 337 sec
+    Avrg Traffic      : 0.1 Ops/sec
+    Duration 0-1ms    : 10 Ops
+    Duration 1-10ms   : 0 Ops
+    Duration 10-100ms : 19 Ops
+    Duration 100ms-1s : 4 Ops
+    Duration &gt;1s      : 6 Ops
+    Duration Max      : 7.201999 sec (Op# 000010)
+    Concurrency Max   : 3 (1 times) (Op# 000013)
+    Avrg Concurrency  : 1
+
+    Op Statistics     :  tot |    ok |   err |     % |       t Avrg |        t Max |        t
+Min |  Std-Dev
+      Binds           :    4 |     4 |     0 |  10.3 | 0.074250 sec | 0.218999 sec | 0.000000
+sec | 0.103267
+      Searches        :   26 |    26 |     0 |  66.7 | 0.544346 sec | 7.201999 sec | 0.000000
+sec | 1.562088
+      Modifys         :    1 |     1 |     0 |   2.6 | 0.062000 sec | 0.062000 sec | 0.062000
+sec | 0.000000
+      Unbinds         :    2 |     2 |     0 |   5.1 | 0.000000 sec | 0.000000 sec | 0.000000
+sec | 0.000000
+      Abandons        :    3 |     0 |     3 |   7.7 | 2.109000 sec | 2.796000 sec | 1.358999
+sec | 0.720569
+      Ext Ops         :    2 |     2 |     0 |   5.1 | 0.023500 sec | 0.030999 sec | 0.016000
+sec | 0.010606
+      Unknowns        :    1 |     0 |     1 |   2.6 | 0.000000 sec | 0.000000 sec | 0.000000
+sec | 0.000000
+
+    Error/ResultCode Statistics:
+       35 times success (0).
+        3 times other (80).
+        1 times unexpectedSocketCloseByClient (97).
+
+    Top 100 Durations:
+      Duration   CreateTime        EndTime           Op#      CC   Type/Info
+      0.281000 | 10:35:19.862999 | 10:35:20.143999 | 000003 |  1 | SEARCH
+(objectclass=subschema)
+      0.265000 | 10:38:23.766999 | 10:38:24.031999 | 000034 |  1 | SEARCH
+(UserCertificate:2.5.13.34:=30$cn=admin,o=pqrupmann02)
+      0.218999 | 10:35:19.581000 | 10:35:19.799999 | 000001 |  1 | BIND
+cn=admin,o=my-company
+      0.202999 | 10:38:07.190000 | 10:38:07.392999 | 000032 |  1 | SEARCH     (cn=ANY(bel))
+      0.078000 | 10:35:20.799999 | 10:35:20.877999 | 000005 |  1 | SEARCH
+(objectClass=PRES)
+      0.078000 | 10:38:00.908999 | 10:38:00.986999 | 000031 |  1 | BIND
+cn=admin,o=my-company
+      0.078000 | 10:35:21.003000 | 10:35:21.081000 | 000006 |  1 | SEARCH
+(objectClass=PRES)
+      0.062000 | 10:39:18.480999 | 10:39:18.542999 | 000035 |  1 | MODIFY     cn=Kary
+Leary,ou=Payroll,o=My-Company
+      0.062000 | 10:35:48.154999 | 10:35:48.216999 | 000020 |  1 | SEARCH
+(objectClass=PRES)
+      0.031000 | 10:35:54.497999 | 10:35:54.528999 | 000023 |  1 | SEARCH
+(objectClass=PRES)
+      0.030999 | 10:35:38.015000 | 10:35:38.045999 | 000015 |  2 | SEARCH
+(objectClass=PRES)
+      0.030999 | 10:36:23.683000 | 10:36:23.713999 | 000029 |  1 | EXT-OP     DSA-Index-Info
+      0.016000 | 10:35:21.111999 | 10:35:21.127999 | 000007 |  1 | SEARCH
+(objectclass=PRES)
+      0.016000 | 10:35:39.342999 | 10:35:39.358999 | 000019 |  1 | SEARCH
+(objectclass=PRES)
+      0.016000 | 10:35:55.888000 | 10:35:55.904000 | 000027 |  1 | SEARCH
+(objectclass=PRES)
+      0.016000 | 10:35:54.309999 | 10:35:54.325999 | 000022 |  1 | SEARCH
+(objectclass=PRES)
+      0.016000 | 10:35:39.326999 | 10:35:39.342999 | 000018 |  1 | SEARCH
+(objectClass=PRES)
+      0.016000 | 10:35:39.124000 | 10:35:39.140000 | 000016 |  1 | SEARCH
+(objectClass=PRES)
+      0.016000 | 10:40:23.740999 | 10:40:23.756999 | 000037 |  2 | EXT-OP     DSA-Index-Info
+      0.015999 | 10:35:19.831000 | 10:35:19.846999 | 000002 |  1 | SEARCH
+(objectclass=PRES)
+      0.015000 | 10:35:55.872999 | 10:35:55.887999 | 000026 |  1 | SEARCH
+(objectClass=PRES)
+      0.014999 | 10:35:39.140000 | 10:35:39.154999 | 000017 |  1 | SEARCH
+(objectclass=PRES)
+      0.014999 | 10:35:54.295000 | 10:35:54.309999 | 000021 |  1 | SEARCH
+(objectClass=PRES)
+
+##########################  END of TRAIL  #######################################</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exit_codes"><a class="anchor" href="#_exit_codes"></a>Exit Codes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>dirxauddecode</strong> command returns an exit code of <strong>0</strong> on success or a positive number if it encountered an error. The text of the error message is displayed on <strong>stderr</strong>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_see_also"><a class="anchor" href="#_see_also"></a>See Also</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>dirxadm</strong> (Chapter 1), <strong>audit</strong> (Chapter 1), <strong>Abbreviation Files</strong> (Chapter 2), <strong>dirxaudstatistics</strong> (Chapter 1)</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>DirX is a registered trademark © Copyright 2024, Eviden SAS – All rights reserved.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license.
+    Several icons used are provided by Google and are licensed under the
+    <a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License Version 2.0</a>.
+  </p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>

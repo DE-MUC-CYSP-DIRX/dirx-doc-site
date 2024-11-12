@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Exit Codes :: Documentation</title>
+    <link rel="canonical" href="https://docs.dirx.solutions/dirx-directory-docs/latest/admin-reference/appb_exitcodes.html">
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.dirx.solutions">
+        <div class="navbar-item logo"></div>
+        Documentation
+      </a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="./">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">DirX Access</a>
+            <a class="navbar-item" href="#">DirX Audit</a>
+            <a class="navbar-item" href="../index.html">DirX Directory</a>
+            <a class="navbar-item" href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dirx-directory-docs" data-version="9.1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">DirX Directory</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">General</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">About this Documentation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="pdf-src/admin-reference.html">Administration Reference</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../copyright.html">Copyright</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="adrefprf.html">Preface</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-0_cmds.html">DirX Directory Commands</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-1_dirxadm.html">dirxadm</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_abbr_dirxcp_dirxadm">abbr (dirxcp, dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_attr_dirxadm">attr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_audit_dirxadm">audit (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_db_dirxadm">db (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_dse_dirxadm">dse (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_ldap_dirxadm">ldap (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_lob_dirxadm">lob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_nmi_dirxadm">nmi (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_progsvr_dirxadm">progsvr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sob_dirxadm">sob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sys_dirxadm">sys (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_util_dirxadm">util (dirxadm)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-2_dirxcp.html">dirxcp</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_abbr_dirxadm_dirxcp">abbr (dirxadm, dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_args_dirxcp">args (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_ldapargs_dirxcp">ldapargs (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_obj_dirxcp">obj (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_util_dirxcp">util (dirxcp)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-3_dirxauddecode.html">dirxauddecode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-4_dirxaudstatistics.html">dirxaudstatistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-5_dirxdumplog.html">dirxdumplog</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-6_dirxbackup.html">dirxbackup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-7_dirxmodify.html">dirxmodify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-8_dirxconfig.html">dirxconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-9_dbaminit.html">dbaminit</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-10_dbamconfig.html">dbamconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-11_dbamboot.html">dbamboot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-12_dirxload.html">dirxload</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-13_dbamverify.html">dbamverify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-14_dbamdevinfo.html">dbamdevinfo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-15_dirxextop.html">dirxextop</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-16_dirxhostinfo.html">dirxhostinfo</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch2_files.html">DirX Directory Files</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirx_directory_environment_variable_ini_file">DirX Directory Environment Variable Ini File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_abbreviation_files">Abbreviation Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_configuration_file">LDAP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_http_server_configuration_file">HTTP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_directory_client_configuration_file">Directory Client Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_key_material">LDAP Server Key Material</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ssltls_certificate_database">SSL/TLS Certificate Database</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_key_database_used_for_client_authentication">Key Database Used for Client Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_idms_configuration_and_key_material_files">IDMS Configuration and Key Material Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_snmpv2_trap_configuration_file">SNMPv2 Trap Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirxauddecode_configuration_file">dirxauddecode Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_syslog_configuration_file">syslog Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_logging_configuration_files">Logging Configuration Files</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch3_schema.html">DirX Directory Default DSA Schema</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_table">Attribute Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_object_classes_table">Object Classes Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_syntax_table">Attribute Syntax Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_matching_rule_table">Matching Rule Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_schema_check">Schema Check</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html">Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_setting_environment_variables">Setting Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_using_the_dirx_directory_ini_file">Using the DirX Directory ini File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_windows_systems">Windows Systems</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_linux_systems">Linux Systems</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch4_envvars.html#_dirx_directory_environment_variables">DirX Directory Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_operating_system_environment_variables">Operating System Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_system_directories_for_temporary_files">System Directories for Temporary Files</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_enabling_keepalive_timeinterval">Enabling KEEPALIVE Time/Interval</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch5_ipports.html">IP Port Numbers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_general_information">General Information</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_environment_variables">Port Numbers Specified in Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_attributes_of_ldap_server_configuration_subentry">Port Numbers Specified in Attributes of LDAP Server Configuration Subentry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_configuration_files">Port Numbers Specified in Configuration Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_and_the_firewall">Port Numbers and the Firewall</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ch6_fileloc.html">File Locations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appa_ldapmibs.html">LDAP MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_static_table">LDAP MIB Static Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_total_table">LDAP MIB Total Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_current_table">LDAP MIB Current Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_association_table">LDAP MIB Association Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_environment_table">LDAP MIB Environment Table</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appb_exitcodes.html">Exit Codes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#_http_server_exit_codes">HTTP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#_progsvr_exit_codes">Progsvr Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#_dsa_exit_codes">DSA Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#_ldap_server_exit_codes">LDAP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#_exit_codes_and_the_dirx_directory_watchdog_process">Exit Codes and the DirX Directory Watchdog Process</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appc_dbammibs.html">DBAM MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_transaction_statistics">DBAM Transaction Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_statistics">DBAM Buffer Cache Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_io_statistics">DBAM Buffer Cache I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_translog_device_io_statistics">DBAM Translog Device I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_checkpoint_statistics">DBAM Checkpoint Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_interval_statistics">DBAM Interval Statistics</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">DirX Directory</span>
+    <span class="version">9.1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">DirX Directory</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">9.1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dirx-identity-docs/latest/index.html">9.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">DirX Directory</a></li>
+    <li><a href="pdf-src/admin-reference.html">Administration Reference</a></li>
+    <li><a href="appb_exitcodes.html">Exit Codes</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Exit Codes</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This appendix provides information about the exit codes of the DirX Directory HTTP server (dirxhttp), Progsvr (dirxprogsvr), DSA (dirxdsa) and LDAP server (dirxldapv3) process. It also provides information on how the DirX Directory Watchdog Process handles the exit codes of the server processes.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_http_server_exit_codes"><a class="anchor" href="#_http_server_exit_codes"></a>HTTP Server Exit Codes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When performing an exit, the HTTP server writes a message to its exception file or to the file <em>install_path</em><strong>/http/log/fatalHTTP_</strong><em>id1_id2</em>,where <em>id1</em> is the process ID (on Linux) or any number identifying the process (on Windows) and <em>id2</em> is a number.The following table lists all exit codes of the HTTP server.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 13%;">
+<col style="width: 29%;">
+<col style="width: 32%;">
+<col style="width: 26%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Numeric Value</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Symbolic Name</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Exception Message</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Reason</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WELLDEFINED_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n/a</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Regular shutdown of the process.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EXIT_FAILURE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initialization failed.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error during server initialization.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_progsvr_exit_codes"><a class="anchor" href="#_progsvr_exit_codes"></a>Progsvr Exit Codes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When performing an exit, the Progsvr writes a message to its exception file or to the file <em>install_path</em><strong>/progsvr/log/fatalPROGSVR_</strong><em>id1_id2</em>, where <em>id1</em> is the process ID (on Linux) or any number identifying the process (on Windows) and <em>id2</em> is a number.The following table lists all exit codes of the Progsvr.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 13%;">
+<col style="width: 29%;">
+<col style="width: 32%;">
+<col style="width: 26%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Numeric Value</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Symbolic Name</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Exception Message</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Reason</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WELLDEFINED_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n/a</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Regular shutdown of the process.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SVC_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SVC-Initialization failed (status = error<em>_code</em>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error in Svc config files or paths.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CREATE_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot create <em>errorMessage</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Access rights / resource problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VTMUTEX_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot initialize Thread Mutex: <em>mutex</em>, <em>errorMessage</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ENV_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dirx_env_init() failed : <em>environment_variable</em>, <em>errorMessage</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Environment configuration problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PROGSVR_RPC_EXIT2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RPC exit request - without restart</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intentional shutdown – This exit code only occurs if the Progsvr is started outside the control of the DirX Directory watchdog (test purpose).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">72</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PROGSVR_WSASTARTUP_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initialization of WinSock failed - WSAStartup failure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Runtime failure - only on Windows platforms.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">86</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PROGSVR_RPC_EXIT1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RPC exit request - with restart</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intentional shutdown,</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">97</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PROGSVR_RPC_INIT_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initialization of RPC failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A step of the RPC initialization failed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">98</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PROGSVR_WD_SIGNAL_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Watchdog signaling failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot send a startup signal to the watchdog.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dsa_exit_codes"><a class="anchor" href="#_dsa_exit_codes"></a>DSA Exit Codes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When performing an exit the DSA writes a message to its exception file or to the file <em>install_path</em><strong>/server/log/fatalDSA_</strong><em>id1_id2</em> where <em>id1</em> is the process ID (on Linux) or any number identifying the process (on Windows) and <em>id2</em> is a number.The following table lists all exit codes of the DSA.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 13%;">
+<col style="width: 29%;">
+<col style="width: 32%;">
+<col style="width: 26%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Numeric Value</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Symbolic Name</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Exception Message</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Reason</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WELLDEFINED_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n/a</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Regular shutdown of the process.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SVC_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SVC-Initialization failed (status = <em>error_code</em>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error in Svc config files or paths.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SOCK_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initialization of socket library failed (errno = <em>error_code</em>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WRONG_USAGE_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dirxdsa has been started with option other than –v or -V</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ICOM_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ICOMINIT() failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ICOM_ATTACH_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ICOMATTACH() failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CREATE_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot create <em>errorMessage</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Access rights / resource problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VTPRIO_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot set VThread priority, <em>errorMessage</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VTMUTEX_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot initialize Thread Mutex: <em>mutex</em>, <em>errorMessage</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HCFILE_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot create file: <em>filename</em>, <em>errorMessage</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Access rights / resource problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">14</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DB_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INIT_DATABASE_ONCE() failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database compatibility problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AUTH_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AUTH_INIT_ONCE() failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BT_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BT_INITIALISE() failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">17</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DSA_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INIT_DSA() failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sync problem, for example the server is already up and running.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SYNC_EVENT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SetEvent(SyncInitEventHandle) failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SYNC_OPEN_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OpenEvent() failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sync problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DEMO_EXPIRED_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">auth_util_check_expire_date() failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n/a</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ENV_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dirx_env_init() failed : <em>environment_variable</em>, <em>errorMessage</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Environment configuration problem,</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INIT_RESTART_EXIT</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exit due to temporary failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">77</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BC_FAILURE_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fatal error in CheckpointThread</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">I/O error during checkpoint.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">88</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CRASH_TOOL_EXIT</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exit after SIGSEGV or SIGBUS – only on Linux platforms if DirX Directory Interpose Crash Library is enabled.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">99</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IDM_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot connect (WSAENOBUFS)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Temporary IDM Connection problem (Windows only).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">100</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Can&#8217;t get free binding entry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Temporary overflow of the bindtable – software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">101</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TJ_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fatal error in ICOM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Too many internal communication errors.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">102</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_INIT_REMOTE_CDSA_READ_FAIL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error reading remote CDSA entry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Network error while reading remote CDSA entry.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ldap_server_exit_codes"><a class="anchor" href="#_ldap_server_exit_codes"></a>LDAP Server Exit Codes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When performing an exit the LDAP server writes a message to its exception file or to the file <em>install_path</em><strong>/ldap/log/fatalLDAP_</strong><em>id1_id2</em> where <em>id1</em> is the process ID (on Linux) or any number identifying the process (on Windows) and <em>id2</em> is a number.The following table lists all exit codes of the LDAP server.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14%;">
+<col style="width: 29%;">
+<col style="width: 32%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Numeric Value</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Symbolic Name</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Exception Message</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Reason</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WELLDEFINED_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n/a</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Regular shutdown of the process.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SVC_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SVC-Initialization failed (status = <em>error_code</em>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error in Svc config files or paths.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SOCK_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initialization of socket library failed (errno = <em>error_code</em>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WRONG_USAGE_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dirxldapv3 has been started with option other than –v or -V</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ICOM_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ICOMINIT() failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ICOM_ATTACH_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ICOMATTACH() failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CREATE_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot create <em>errorMessage</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Access rights / resource problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VTPRIO_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot set VThread priority, <em>errorMessage</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VTMUTEX_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot initialize Thread Mutex: <em>mutex</em>, <em>errorMessage</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HCFILE_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot create file: <em>filename</em>, <em>errorMessage</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Access rights / resource problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BT_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BT_INITIALISE() failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">23</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_SCHEMA_READ_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Schema from DSA is unusable (for example empty)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DSA or database problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ENV_INIT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dirx_env_init() failed : <em>environment_variable</em>, <em>errorMessage</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Environment configuration problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_RPC_EXIT2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RPC exit request - without restart</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intentional shutdown – This exit code only occurs if the LDAP server is started outside the control of the DirX Directory watchdog (test purpose).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">26</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_CREATE_OSS_HDL_KEYD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot create 'ldapOssHdl_key'</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">27</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_ROOT_READ_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot read schema name from LDAP root</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / administration problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">28</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_HOSTINFO_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">gethostname() or gethostbyname() failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / administration Problem</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_TOO_MANY_FDS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">_SC_OPEN_MAX &gt; FD_SETSIZE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / administration problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_TOO_FEW_FDS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">_SC_OPEN_MAX &lt; thread pool size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / administrationproblem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">31</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_THREAD_POOL_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Could not start all pool threads</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / resource / software problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_MISSING_LDAP_NAME</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No LDAP name for AT/OC in schema</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Administration problem in schema.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">33</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_FATAL_SYNTAX_MISMATCH</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">attribute syntax mismatch abbr&lt;&#8594;schema detected</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Administration problem in schema. At least one attribute syntax mismatches the syntax specified in the dirxabbr* files.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">34</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_OPEN_AUDIT_PWD_FILE_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot open specified audit encryption pwd file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / administration problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">35</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_READ_AUDIT_PWD_FILE_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot read from audit pwd file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / administration problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">36</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_AUDIT_OVERFLOW_STOP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configured to stop if audit file is full.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intentional shutdown.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">37</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_AUDIT_MKDIR_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot create target path for audit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / administration problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">38</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_AUDIT_OPEN_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot open/create audit log file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / administration problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">39</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_AUDIT_PATH_INVALID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid audit log path</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / administration problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">40</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_LOG_INIT_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot initialize logging</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / administration problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">41</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_DIRSTR_CHOICE_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">illegal dirstr choice value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration problem in environment.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">42</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_DAM_INIT_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">abbr file problem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / administration aroblem in dirxabbr* files.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">43</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_SSL_DLL_INIT_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot open SSL DLLs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / administration problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_SSL_IPL_INIT_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SSL call IPL_Initialize failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / resource / software problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">45</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_SSL_SEC_INIT_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SSL call SEC_Initialize failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / resource / software problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">46</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_NO_CERT_FILE_SERVER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SSL PKCS12 server certificate file not found</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / administration / installation problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">47</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_NO_SERVER_ROOT_CERTS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SSL Root file not found</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / administration / installation problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_CHARCNVRT_INIT_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Character conversion routine failure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">49</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_TERM_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Regular Termination failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / resource / software problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_NO_SSL_RAND_FILE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SSL Random seed file not found</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / administration / installation problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">51</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_NO_SSL_PWD_FILE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SSL Server Cert Pwd file not found</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / Administration / Installation Problem</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">52</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_OPEN_SSL_PWD_FILE_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SSL Open password file failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / administration problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">53</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_READ_SSL_PWD_FILE_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SSL Read password file failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / administration problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">54</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_OSS_INIT_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OSS En/Decoding LdapCtrlTable init failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">55</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_CACHE_INIT_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cache initialization failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">56</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_DRX_PREINIT_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Call to DRX_PREINITIALIZE failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">57</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_UNIQ_OP_ID_INIT_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UniqOpId initialization failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">58</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_OPSTACK_INIT_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OpStack initialization failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">59</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_THRPOOL_INIT_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Thread Pool initialization failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">60</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_CAUGHT_SIGTERM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Explicit termination by signal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intentional shutdown.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">61</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_RPC_TERMINATION</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Explicit termination by RPC request</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intentional shutdown.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">62</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_CMD_LINE_ERR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unknown cmd line option detected</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OSI_THREAD_TERMINATION</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OSI-Thread termination due to an unrecoverable problem.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Runtime problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">72</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_WSASTARTUP_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initialization of WinSock failed - WSAStartup failure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Runtime failure - only on Windows platforms.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">73</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_CONFIG_READ_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot read LDAP configuration/schema</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / administration / installation problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">74</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_CTX_ULIMIT_EXCEEDED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Memory exhausted</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Runtime problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">75</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_MAINLOOP_BROKEN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot establish network listener</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Runtime problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">77</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_UNKNOWN_AT_SYNTAX</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot handle unknown syntax</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fatal operation problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">78</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_UNKNOWN_OC_SYNTAX</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot handle unknown syntax</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fatal operation problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">79</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_WRITE_STDOUT_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fatal output error</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Runtime problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">80</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_THREAD_INIT_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot establish ports</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Runtime problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">81</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_CACHE_REGISTER_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DSA not available (DRX_REMOTE_ABORT_RECEIVED)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Runtime problem with DSA communication.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">82</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_CACHE_RECONFIG_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DSA not available during reconfiguration (DRX_REMOTE_ABORT_RECEIVED)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Runtime problem with DSA communication.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">83</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_SPECIAL_BIND_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot establish special DAP bind to DSA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Runtime problem with DSA communicatio.n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">84</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_ANONYMOUS_BIND_FAILED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot establish anonymous DAP bind to DSA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Runtime problem with DSA communication.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">85</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_TOO_MANY_ACCEPT_ERRORS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Too many accept() failed (e.g. EMFILE &#8594; no more descriptors )</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Runtime problem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">86</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_RPC_EXIT1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RPC exit request - with restart</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intentional shutdown.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">88</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP_CRASH</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reserved exit code for DirX Directory crash library</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The process has crashed and has written diagnostic data via crash library.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">99</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IDM_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot connect (WSAENOBUFS)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Temporary IDM Connection problem (Windows only).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">100</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BT_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cannot get free binding entry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Temporary overflow of bindtable – software failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">101</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TJ_EXIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fatal error in ICOM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Too many internal communication errors.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">999</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SSL_PW_FAILURE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PKCS#12 Passphrase is not suitable to decrypt cert_ldapserver.p12 file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration / administration problem.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exit_codes_and_the_dirx_directory_watchdog_process"><a class="anchor" href="#_exit_codes_and_the_dirx_directory_watchdog_process"></a>Exit Codes and the DirX Directory Watchdog Process</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In general, the exit code returned by the dirxprogsvr, the dirxdsa or the dirxldapv3 process is the criterion that determines whether the DirX Directory watchdog process restarts the respective process automatically.The watchdog process is called <strong>dirxdsas</strong> on Linux platforms and <strong>dirxserv.exe</strong> on Windows platforms.</p>
+</div>
+<div class="paragraph">
+<p>The following rules apply for restarting the process:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Exit codes lower than <strong>64</strong> are returned due to a fatal error.There is no automatic restart, because administrative or configuration changes, or even a software update is needed before a restart will succeed.</p>
+</li>
+<li>
+<p>Exit codes greater or equal <strong>64</strong> are returned when temporary failures occurred.The DirX Directory watchdog process restarts the DirX Directory server processes (progsvr, DSA and LDAP server).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If a DirX Directory server process is terminated due to a signal, the exit code value on Linux platforms is</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p><strong>128 +</strong> <em>signal number</em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For example, if the signal Segmentation Violation (11) occurred, the exit code value is 139 (128 + 11). Therefore, process termination due to a signal except the signals SIGTERM and SIGKILL results in the automatic restart of the DirX Directory server processes.</p>
+</div>
+<div class="paragraph">
+<p>The DirX Directory watchdog additionally restarts the LDAP server process dirxldapv3 each time it restarts the DSA. This is necessary to guarantee the consistency of the LDAP cache with the database.</p>
+</div>
+<div class="paragraph">
+<p>When performing an exit, the watchdog process writes a message to the file <em>install_path</em><strong>/server/log/fatalSRV_</strong><em>id1_id2</em> where <em>id1</em> is the process ID (on Linux) or any number identifying the process (on Windows) and <em>id2</em> is a number.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>DirX is a registered trademark © Copyright 2024, Eviden SAS – All rights reserved.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license.
+    Several icons used are provided by Google and are licensed under the
+    <a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License Version 2.0</a>.
+  </p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>

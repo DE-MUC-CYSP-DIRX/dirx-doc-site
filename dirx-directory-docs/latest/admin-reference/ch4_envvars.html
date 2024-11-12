@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Environment Variables :: Documentation</title>
+    <link rel="canonical" href="https://docs.dirx.solutions/dirx-directory-docs/latest/admin-reference/ch4_envvars.html">
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.dirx.solutions">
+        <div class="navbar-item logo"></div>
+        Documentation
+      </a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="./">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">DirX Access</a>
+            <a class="navbar-item" href="#">DirX Audit</a>
+            <a class="navbar-item" href="../index.html">DirX Directory</a>
+            <a class="navbar-item" href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dirx-directory-docs" data-version="9.1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">DirX Directory</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">General</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">About this Documentation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="pdf-src/admin-reference.html">Administration Reference</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../copyright.html">Copyright</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="adrefprf.html">Preface</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-0_cmds.html">DirX Directory Commands</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-1_dirxadm.html">dirxadm</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_abbr_dirxcp_dirxadm">abbr (dirxcp, dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_attr_dirxadm">attr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_audit_dirxadm">audit (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_db_dirxadm">db (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_dse_dirxadm">dse (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_ldap_dirxadm">ldap (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_lob_dirxadm">lob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_nmi_dirxadm">nmi (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_progsvr_dirxadm">progsvr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sob_dirxadm">sob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sys_dirxadm">sys (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_util_dirxadm">util (dirxadm)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-2_dirxcp.html">dirxcp</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_abbr_dirxadm_dirxcp">abbr (dirxadm, dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_args_dirxcp">args (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_ldapargs_dirxcp">ldapargs (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_obj_dirxcp">obj (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_util_dirxcp">util (dirxcp)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-3_dirxauddecode.html">dirxauddecode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-4_dirxaudstatistics.html">dirxaudstatistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-5_dirxdumplog.html">dirxdumplog</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-6_dirxbackup.html">dirxbackup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-7_dirxmodify.html">dirxmodify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-8_dirxconfig.html">dirxconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-9_dbaminit.html">dbaminit</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-10_dbamconfig.html">dbamconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-11_dbamboot.html">dbamboot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-12_dirxload.html">dirxload</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-13_dbamverify.html">dbamverify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-14_dbamdevinfo.html">dbamdevinfo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-15_dirxextop.html">dirxextop</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-16_dirxhostinfo.html">dirxhostinfo</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch2_files.html">DirX Directory Files</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirx_directory_environment_variable_ini_file">DirX Directory Environment Variable Ini File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_abbreviation_files">Abbreviation Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_configuration_file">LDAP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_http_server_configuration_file">HTTP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_directory_client_configuration_file">Directory Client Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_key_material">LDAP Server Key Material</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ssltls_certificate_database">SSL/TLS Certificate Database</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_key_database_used_for_client_authentication">Key Database Used for Client Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_idms_configuration_and_key_material_files">IDMS Configuration and Key Material Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_snmpv2_trap_configuration_file">SNMPv2 Trap Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirxauddecode_configuration_file">dirxauddecode Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_syslog_configuration_file">syslog Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_logging_configuration_files">Logging Configuration Files</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch3_schema.html">DirX Directory Default DSA Schema</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_table">Attribute Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_object_classes_table">Object Classes Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_syntax_table">Attribute Syntax Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_matching_rule_table">Matching Rule Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_schema_check">Schema Check</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html">Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#_setting_environment_variables">Setting Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#_using_the_dirx_directory_ini_file">Using the DirX Directory ini File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#_windows_systems">Windows Systems</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#_linux_systems">Linux Systems</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#_dirx_directory_environment_variables">DirX Directory Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#_operating_system_environment_variables">Operating System Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#_system_directories_for_temporary_files">System Directories for Temporary Files</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#_enabling_keepalive_timeinterval">Enabling KEEPALIVE Time/Interval</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch5_ipports.html">IP Port Numbers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_general_information">General Information</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_environment_variables">Port Numbers Specified in Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_attributes_of_ldap_server_configuration_subentry">Port Numbers Specified in Attributes of LDAP Server Configuration Subentry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_configuration_files">Port Numbers Specified in Configuration Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_and_the_firewall">Port Numbers and the Firewall</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ch6_fileloc.html">File Locations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appa_ldapmibs.html">LDAP MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_static_table">LDAP MIB Static Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_total_table">LDAP MIB Total Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_current_table">LDAP MIB Current Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_association_table">LDAP MIB Association Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_environment_table">LDAP MIB Environment Table</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appb_exitcodes.html">Exit Codes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_http_server_exit_codes">HTTP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_progsvr_exit_codes">Progsvr Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_dsa_exit_codes">DSA Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_ldap_server_exit_codes">LDAP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_exit_codes_and_the_dirx_directory_watchdog_process">Exit Codes and the DirX Directory Watchdog Process</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appc_dbammibs.html">DBAM MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_transaction_statistics">DBAM Transaction Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_statistics">DBAM Buffer Cache Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_io_statistics">DBAM Buffer Cache I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_translog_device_io_statistics">DBAM Translog Device I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_checkpoint_statistics">DBAM Checkpoint Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_interval_statistics">DBAM Interval Statistics</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">DirX Directory</span>
+    <span class="version">9.1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">DirX Directory</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">9.1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dirx-identity-docs/latest/index.html">9.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">DirX Directory</a></li>
+    <li><a href="pdf-src/admin-reference.html">Administration Reference</a></li>
+    <li><a href="ch4_envvars.html">Environment Variables</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Environment Variables</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This chapter provides information about DirX Directory and system environment variables.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setting_environment_variables"><a class="anchor" href="#_setting_environment_variables"></a>Setting Environment Variables</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section provides information on how to set environment variables on Windows and Linux systems.</p>
+</div>
+<div class="sect2">
+<h3 id="_using_the_dirx_directory_ini_file"><a class="anchor" href="#_using_the_dirx_directory_ini_file"></a>Using the DirX Directory ini File</h3>
+<div class="paragraph">
+<p>In DirX Directory, it is possible to specify all environment variables in the file <em>install_path</em>*/conf/dirxenv.ini*.(See section <strong>ini-File for Setting of Environment Variables</strong> in chapter <strong>DirX</strong> <strong>Directory Files</strong> for details.) At start-up time, all DirX Directory processes read this ini file.All environment variables specified in this file overwrite a previously-set value.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_windows_systems"><a class="anchor" href="#_windows_systems"></a>Windows Systems</h3>
+<div class="paragraph">
+<p>On Windows systems, do the following to set environment variables:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click <strong>Start</strong>.</p>
+</li>
+<li>
+<p>Search for <strong>Edit the system environment variables</strong>, and then click it.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>After modifying the environment variables you must re-start the DirX Directory Service that the modifications take affect.Depending on the operating system version, you must reboot your computer for the modifications to take effect.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_linux_systems"><a class="anchor" href="#_linux_systems"></a>Linux Systems</h3>
+<div class="paragraph">
+<p>All environment variables used by the server must be defined in the file <strong>.dirxrc</strong>.</p>
+</div>
+<div class="paragraph">
+<p>To set environment variables, perform the following steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Edit the file <em>install_path</em><strong>/.dirxrc</strong> and insert the lines that specify the values of the environment variable and export it in the following format:<br></p>
+<div class="paragraph">
+<p><em>environment_variable_name</em>=<em>value1</em>[:_value2_:_…<em>]<br>
+<strong>export</strong> _environment_variable_name</em><br></p>
+</div>
+<div class="paragraph">
+<p>Example<br></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>DIRX_TMP=/var/tmp
+export DIRX_TMP</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Re-start the DirX Directory Service so that the modifications take effect.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dirx_directory_environment_variables"><a class="anchor" href="#_dirx_directory_environment_variables"></a>DirX Directory Environment Variables</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section is a table that describes the DirX Directory environment variables.The table includes the variable name and description, the DirX Directory commands and processes that use the variable, and the variable default value, which is used if the variable is not set.</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 99%;">
+<colgroup>
+<col style="width: 28%;">
+<col style="width: 30%;">
+<col style="width: 16%;">
+<col style="width: 26%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Name</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Used by&#8230;&#8203;</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Default</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_ABBR_FILE</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Supplies the name of the attribute abbreviation file in the format:</p>
+</div>
+<div class="paragraph">
+<p><em>file1</em>[:<em>file2</em>:…] (on Linux systems)</p>
+</div>
+<div class="paragraph">
+<p><em>file1</em>[;<em>file2</em>;…] (on Windows systems)</p>
+</div>
+<div class="paragraph">
+<p>If more than one abbreviation file is specified, the colon (<strong>:</strong>) is used as separator between different filenames on Linux systems. On Windows systems, the semicolon (<strong>;</strong>) is used as separator.</p>
+</div>
+<div class="paragraph">
+<p>Example:<br>
+<code>dirxabbr:dirxabbr-ext-meta (Linux systems)</code></p>
+</div>
+<div class="paragraph">
+<p><code>dirxabbr;dirxabbr-ext-meta (Windows systems)</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxadm</strong>, <strong>dirxcp</strong> and <strong>dirxauddecode</strong> commands</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>$DIRX_INST_PATH/<br>
+client/conf/dirxabbr</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_ADDITIONAL_LDAP_SERVERS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies the common name(s) of LDAP configuration subentries and RPC port number(s) for additional LDAP servers to be started, in the format <em>subentry_name</em>+<em>RPC_port_number</em>[:…]. (If you are starting more than one additional LDAP server, use the colon as a separator between subentry+RPC port pairs.)<br>
+Example:<br>
+<code>ldapconf2+6998:ldapconf3+6997</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DirX Directory processes starting the Directory Service (<strong>dirxadm sys start</strong> operation).</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_BLACKBOX_SIZE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the number of last recently incoming correct LDAP PDUs representing client requests that are stored in the LDAP server’s black box. This black box can be used to analyze the history of the LDAP server operations.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The LDAP server</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0</strong> (PDUs)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_CLCFG_FILE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies the name of the DirX Directory client configuration file and the LDAP server configuration file.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxcp</strong> command and the LDAP server</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For the <strong>dirxcp</strong> command:*<br>
+$DIRX_INST_PATH/<br>
+client/conf/dirxcl.cfg*.<br>
+<br>
+For LDAP server processes:<br>
+<strong>$DIR_INST_PATH/<br>
+ldap/conf/dirxldap.cfg</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_CONLIMIT</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies the maximum number of connections supported by the server processes. The maximum value for this environment variable is <strong>4000</strong>.</p>
+</div>
+<div class="paragraph">
+<p>(For OSI communication, the maximum and default value is <strong>128</strong>.)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process and the LDAP server</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>4000</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_CTX_LIMIT</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies the maximum memory size of the DirX Directory processes in MB.</p>
+</div>
+<div class="paragraph">
+<p>This value does not contain the size of the DBAM database buffer cache. (See <strong>DIRX_DSA_CACHE_SIZE</strong> for details.)</p>
+</div>
+<div class="paragraph">
+<p>Due to platform restrictions, large search results may exceed this limit. In this case, DAP/LDAP clients should make use of simple page search operations to reduce memory usage in the DSA process.</p>
+</div>
+<div class="paragraph">
+<p>For <strong>dirxload</strong> and the DSA process:</p>
+</div>
+<div class="paragraph">
+<p>For 32 bit: On Windows, <strong>DIRX_CTX_LIMIT</strong> + <strong>DIRX_DSA_CACHE_SIZE</strong> must be lower or equal 1638; on Linux, lower or equal 3276.</p>
+</div>
+<div class="paragraph">
+<p>On 64 bit platforms, the restriction of 2 or 4 GB is no longer valid. The memory limit assigned to the DirX Directory processes depends on the main memory that is physically available and on the number of applications that need to share this memory.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All DirX Directory processes</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>For the <strong>dirxload</strong> command and the DSA process:<br>
+On Windows 32 bit:<br>
+<strong>1638 - DIRX_DSA_CACHE_SIZE</strong><br>
+(if the result is greater than <strong>0</strong>)<br>
+On Linux 32 bit:<br>
+<strong>3276 - DIRX_DSA_CACHE_SIZE</strong><br>
+(if the result is greater than <strong>0</strong>)</p>
+</div>
+<div class="paragraph">
+<p>For the LDAP server: <strong>1600</strong></p>
+</div>
+<div class="paragraph">
+<p>For the <strong>dirxcp</strong>, <strong>dirxadm</strong> and other commands: unlimited.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_CTX_LIMIT_SINGLE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the maximum size of a single memory CTX in MB. Increase the default value if huge operations are expected, for example an add operation containing a big number of huge attributes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All DirX Directory processes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The default maximum single CTX size is 50 % of DIRX_CTX_LIMIT or DIRX_LDAP_CTX_LIMIT respectively</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_CTX_MAX_SINGLE_ALLOC_MEMSIZE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the maximum single allocation size within a memory context in MB. Increase this value if operations containing a real huge attribute value is expected, for example adding one huge certificate-revocation-list. Consider adjusting DIRX_CTX_LIMIT, DIRX_LDAP_CTX_LIMIT and DIRX_CTX_LIMIT_SINGLE in the event that the maximum size for a single allocation is increased.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All DirX Directory processes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>256 MB</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_DEFAULT_LDAP_SERVER</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Supplies the common name of the LDAP configuration subentry of the first / default LDAP server to be started if not the default LDAP configuration subentry with the name <strong>ldapConfiguration</strong> should be used.</p>
+</div>
+<div class="paragraph">
+<p>Example: <code>ldapServerConfig</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DirX Directory processes starting the Directory Service (<strong>dirxadm sys start</strong> operation).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ldapConfiguration</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_DEL_TIME</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the time threshold (in hours) for trace and exception message file deletion. Any temporary file, for example the schema dump file, and any trace or exception file (<strong>LOG<strong>, </strong>USR<strong>, </strong>EXC</strong>* in the trace file directories), that was created more than <strong>DIRX_DEL_TIME</strong> before DirX Directory process startup will be deleted.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All DirX Directory processes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No trace file is deleted.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_DIRSTR_CHOICE</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies the string representation for attribute values with Directory String syntax for DAP binds.</p>
+</div>
+<div class="paragraph">
+<p>Valid values are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>T61</strong> - Attribute values with Directory String syntax are represented in <strong>T61</strong> format</p>
+</li>
+<li>
+<p><strong>BMP</strong> - Attribute values with Directory String syntax are represented in <strong>BMP</strong> format</p>
+</li>
+<li>
+<p><strong>UTF8</strong> - Attribute values with Directory String syntax are represented in <strong>UTF-8</strong> format</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxcp</strong>, the <strong>dirxadm</strong> command, and the LDAP server</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attribute values are represented in <strong>UTF8</strong> format.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_DONT_CHECK_DN_IN_CERT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">By setting this environment to any value, the syntax check of the Distinguished Names contained in certificates is skipped. This may be useful if the DNs contain attribute types for the naming attributes that are not in the DirX Directory schema. This may occur because certificates are created and encoded by external applications, for example, Certification Authorities.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxload</strong> command and the DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not set. (Do not omit the syntax checks of DNs contained in certificates)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_DSA_CACHE_DISABLED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Disables (TRUE) or enables (FALSE) the DBAM database buffer cache.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxload</strong> command and the DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DBAM cache is enabled (FALSE).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_DSA_CACHE_SIZE</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies the size of the DBAM database buffer cache in megabytes (MB), from 256 to 2048 (1 TB on 64-bit platforms).</p>
+</div>
+<div class="paragraph">
+<p>On Windows 32 bit, <strong>DIRX_CTX_LIMIT</strong> + <strong>DIRX_DSA_CACHE_SIZE</strong> must be lower or equal 1638; on Linux, lower or equal 3276.</p>
+</div>
+<div class="paragraph">
+<p>On 64-bit platforms, the restriction of 2 or 4 GB is no longer valid. The memory limit assigned to the DirX Directory processes depends on the main memory that is physically available and on the number of applications that need to share this memory.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxload</strong> command and the DSA process</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>256</strong></p>
+</div>
+<div class="paragraph">
+<p>Note that this value is too low for large databases (greater than 2 million entries). It is recommended to use at least 512 MB.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_DSA_CHECKPOINT_SIZE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the number of transactions per DBAM buffer cache checkpoint, from 1 to 100000. The higher this number, the more main memory is required.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxload</strong> command and the DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>10000</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_DSA_DISP_TUBM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the behavior of DSA in case of shadowing agreements with total update by media. The value <strong>0</strong> disables generation of the backup signature. The value <strong>1</strong> enables it.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1</strong> (Enables generation of the backup signature.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_DSA_EXTOP_ADM_BIND</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies the <strong>dse bind</strong> operation in string format. (See <strong>dse bind</strong> operation for details.)</p>
+</div>
+<div class="paragraph">
+<p>Example:<br>
+<code><strong>bind -user /o=My-company/cn=admin -pass dirx -auth simple</strong></code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_DSA_NAME</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies the DSA’s distinguished name in LDAP format. (See section titled <strong>Distinguished Names</strong> in chapter <strong>DirX</strong> <strong>Directory String Representation for LDAP Binds</strong> in <em>DirX</em> <em>Directory Syntaxes and Attributes</em> for details.)</p>
+</div>
+<div class="paragraph">
+<p>Incorrect administration of this environment variable will result in a DIRX_DSA_NAME conflict and the DSA will not be able to run.</p>
+</div>
+<div class="paragraph">
+<p>Example:<br>
+<code><strong>cn=DSA1,o=My-Company</strong></code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>cn=DirX-DSA-<em>hostname</em></strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_DSA_OB_SHOW_DISPLAY_DEF_VALUES</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies whether the <strong>dirxadm sob show</strong> operation displays the default values for the <em>sob_initiator_policies</em>. (See section <strong>SOB-Policies</strong> in chapter <strong>DirX Directory String Representation for DAP Binds</strong> in <em>the DirX Directory Syntaxes and Attributes</em> for details.) Specify one of the following values:<br>
+<br>
+<strong>0</strong>—do not display default values<br>
+<strong>1</strong>—display default values</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1</strong> (Display default values.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_DSA_OUTSOURCED_ATTR_MIN_LENGTH</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the minimum size of all values of an outsourced attribute at which the values are stored in extra DBAM blocks.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxload</strong> command and the DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>64980</strong> bytes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_DSA_REPLACE_INTERVAL</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies the page replace check interval of the DBAM cache, in seconds. Specify a value between 1 and 60 (seconds).</p>
+</div>
+<div class="paragraph">
+<p>The environment variable <strong>DIRX_DSA_REPLACE_MODE</strong> specifies the DBAM cache filling degree.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxload</strong> command and the DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>10</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_DSA_REPLACE_MODE</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies the percentage of used DBAM cache space at which the DSA or <strong>dirxload</strong> command starts to replace pages in the DBAM cache.</p>
+</div>
+<div class="paragraph">
+<p>Specify a value between <strong>0</strong> % and <strong>100</strong> %.</p>
+</div>
+<div class="paragraph">
+<p>A value of <strong>0</strong> disables the effect of the filling degree. Replacing pages in the DBAM cache is controlled only by <strong>DIRX_DSA_REPLACE_INTERVAL</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Values between <strong>90</strong> and <strong>100</strong> disable the time triggered page replace mechanism. In this case pages are replaced only in the event of a buffer cache shortage.</p>
+</div>
+<div class="paragraph">
+<p>When specifying values between <strong>1</strong> and <strong>89</strong> replacing pages in the DBAM cache is controlled by <strong>DIRX_DSA_REPLACE_INTERVAL</strong> and <strong>DIRX_DSA_REPLACE_MODE</strong>.</p>
+</div>
+<div class="paragraph">
+<p>For best performance values lower than <strong>70</strong> are not recommended.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxload</strong> command and the DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>85</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_DSA_STATISTIC_INTERVAL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the interval (in number of operations) at which statistics and/or performance data should be written to the trace file <em>install_path</em>*/Server/log/dsasap*<em>process_id</em>*.txt*, from 1 to 2<sup>32</sup>-1. This variable is only evaluated when <strong>DIRX_DSA_STATISTIC_MODE</strong> is set to a value.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxload</strong> command and the DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>100000</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_DSA_STATISTIC_MODE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies whether statistics and/or performance data is collected. Specify one of the following values:<br>
+<br>
+<strong>1</strong>—collect statistical data<br>
+<strong>2</strong>—collect performance data<br>
+<strong>3</strong>—collect both statistical and performance data</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxload</strong> command and the DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unspecified.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_DSA_STATISTIC_RESET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies whether the statistics counters are reset after writing statistic data to the trace file. (See also <strong>DIRX_DSA_STATISTIC_INTERVAL</strong>) Specify one of the following values:<br>
+<br>
+<strong>0</strong>—don’t reset counters<br>
+<strong>1</strong>—reset counters</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxload</strong> command and the DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_DSA_SYNC_TIMEOUT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the maximum time in seconds that a master DSA waits for an incremental update result from a synchronous consumer DSA.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>5</strong> seconds</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_FORCE_SYNC_CONSUMER</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Forces a master DSA to accept update operations only if at least one synchronous consumer DSA is online and its data synchronicity status is set to TRUE. If this condition is not met, the master DSA is to reject update operations with the error code “unwilling to perform the operation”.</p>
+</div>
+<div class="paragraph">
+<p>Example:<br>
+<strong>DIRX_FORCE_SYNC_CONSUMER=1</strong></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_GLOBAL_PPO_STATES</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies whether password policy-related state changes are effective only on the DSA where the bind operation occurred or whether the state changes are distributed and replicated to all DSAs within a floating master scenario (See also the section “Password Policies in a Shadow Configuration” in the <em>DirX</em> <em>Directory Administration Guide</em>) Specify one of the following values:<br>
+<br>
+<strong>0</strong>—local password policy states<br>
+<strong>1</strong>—global password policy states</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_HOST_NAME</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the host name of the system. In the event that there are multiple host names for a system you must specify this environment variable. The value is used to retrieve the IP address of the host.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_INST_PATH</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies the pathname of the base directory in which DirX Directory is installed.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All DirX Directory processes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>/opt/dirx</strong> or the user&#8217;s home directory<strong><br>
+</strong>(on Linux systems)<br>
+<br>
+*C:\Program Files\<br>
+DirX\Directory<br>
+*(on Windows systems)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_IP_STACK</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies the IP version of incoming traffic for which the DirX Directory servers listen. Specify one of the following values:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>4</strong> - IP version is IPv4 (default)</p>
+</li>
+<li>
+<p><strong>6</strong> - IP version is IPv6</p>
+</li>
+<li>
+<p><strong>ALL</strong> - IP version is IPv4 and IPv6 (only for dual-stack machines)</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process and the LDAP server</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>4</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_KEY3DB_FILE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the full pathname of the file that contains the Private Key used for SASL binds with the mechanism EXTERNAL. (See section <strong>Key Database</strong> for details.)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxcp obj bind</strong> command</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When this environment variable is not set, the file <strong>$DIRX_INST_PATH/<br>
+client/conf/key3.db</strong><br>
+is used.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_LAMEVENT</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies the number of entries after that an event message is written reporting the progess of writing a total LDIF content file.</p>
+</div>
+<div class="paragraph">
+<p>The value must be greater than or equal to <strong>1000</strong>. If a value lower than <strong>1000</strong> is specified, an event message is written after writing 1000 entries to the LDIF file.</p>
+</div>
+<div class="paragraph">
+<p>The DSA always writes an event message when starting and completing writing a total LDIF content file.</p>
+</div>
+<div class="paragraph">
+<p>Example: <code><strong>DIRX_LAMEVENT=5000</strong></code><br>
+The DSA writes an event message each time it has written 5000 entries to the LDIF file.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No processing event messages are written.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_LDAP_AUTO_DISABLE_FAILING_DSA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the number of seconds for which the LDAP server will temporarily disable a failing DSA from its active contact DSA table.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The LDAP server</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>60</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_LDAP_CACHE_ALLOWED_USER</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies DNs of users that must perform the search operation in order to store the search result in the LDAP cache.</p>
+</div>
+<div class="paragraph">
+<p>Multiple DNs must be separated by a colon <strong>:</strong>.</p>
+</div>
+<div class="paragraph">
+<p>The specified DNs must not contain non-ASCII characters or the colon <strong>:</strong> character.</p>
+</div>
+<div class="paragraph">
+<p>The LDAP server ignores the case for all RDNs.</p>
+</div>
+<div class="paragraph">
+<p>The full user DN must be listed in the environment variable.</p>
+</div>
+<div class="paragraph">
+<p>Search results of requests performed by a user whose DN does not match any of the DNs listed in the environment variable are not stored in the LDAP cache.</p>
+</div>
+<div class="paragraph">
+<p>Example:<br>
+<code><strong>DIRX_LDAP_CACHE_ALLOWED_USER=cn=wf-1,o=my-company:cn=wf-3,o=my-company</strong></code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The LDAP server</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Absent</p>
+</div>
+<div class="paragraph">
+<p>The LDAP server stores search results of all users in the cache.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_LDAP_CACHE_BANNED_BASE_OBJ</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies DNs that direct the LDAP server not to store a search result in the cache if the DN matches the base object in the corresponding search request.</p>
+</div>
+<div class="paragraph">
+<p>Multiple DNs must be separated by a colon <strong>:</strong>.</p>
+</div>
+<div class="paragraph">
+<p>The specified DNs must not contain non-ASCII characters or the colon <strong>:</strong> character.</p>
+</div>
+<div class="paragraph">
+<p>The LDAP server ignores the case for all RDNs.</p>
+</div>
+<div class="paragraph">
+<p>The full base object DN must be listed in the environment variable.</p>
+</div>
+<div class="paragraph">
+<p>Example:<br>
+<code><strong>DIRX_LDAP_CACHE_BANNED_BASE_OBJ=OU=conf,O=my-company:CN=process,OU=conf,O=my-company</strong></code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The LDAP server</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Absent</p>
+</div>
+<div class="paragraph">
+<p>The LDAP server stores search results of all users in the cache.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_LDAP_CACHE_BANNED_REQ_ATTR</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies the attribute types that direct the LDAP server not to store a search result in the cache if the attribute type is listed in the requested attributes of the corresponding search request.</p>
+</div>
+<div class="paragraph">
+<p>Multiple attribute types must be separated by a colon <strong>:</strong>.</p>
+</div>
+<div class="paragraph">
+<p>The shortcuts <strong><strong>, *+</strong> and <strong>@</strong> cannot be specified and are not evaluated when they are contained in the request; that is, if, for example, the attribute <strong>cn</strong> is contained in the list of banned attribute types and in a search result that was generated by a search request with </strong>* as the requested attribute, the LDAP server stores this search result in the cache.</p>
+</div>
+<div class="paragraph">
+<p>Example:<br>
+<code><strong>DIRX_LDAP_CACHE_BANNED_REQ_ATTR=dxrRole:title</strong></code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The LDAP server</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Absent</p>
+</div>
+<div class="paragraph">
+<p>The LDAP server stores search results of all users in the cache.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_LDAP_CTX_LIMIT</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies the maximum memory size of the LDAP server (dirxldapv3) process in MB. The LDAP server uses this memory for the operation threads and the LDAP cache.</p>
+</div>
+<div class="paragraph">
+<p>By specifying this environment variable, a CTX limit setting different from the one of the DSA process is established.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The LDAP server</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of <strong>DIRX_CTX_LIMIT</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_LDAP_HOST_NAME</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the host name of the system. If there are multiple host names for a system, you must specify this environment variable. The value is used to retrieve the IP address of the host. It can be used to assign one specific of multiple IP addresses for the LDAP server RPC.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The LDAP server process</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Empty</p>
+</div>
+<div class="paragraph">
+<p>The LDAP server establishes its RPC ports for the IP address that belongs to the host named in the function hostname.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_LDAP_LISTEN_IP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies exactly one IP address over which clients can bind to the LDAP server. It has the same effect as the configuration attribute ldapListenIPList.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The LDAP server process</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>all</strong></p>
+</div>
+<div class="paragraph">
+<p>The LDAP server establishes its ports (plain and SSL) for any available IP address of the host.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_LDAP_IGNORE_CACHEABLE_FLAG</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies whether results of chained searches are stored in the LDAP cache. Valid values are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>1</strong> - Store results of chained searches in the LDAP cache.</p>
+</li>
+<li>
+<p><strong>0</strong> - Do not store results of chained searches in the LDAP cache.</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The LDAP server process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0</strong> (Do not store results of chained searches.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_LDAP_PMAP_PORT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies the port number of the portmapper for the RPC connection between LDAP server and <strong>dirxadm</strong>. You should use <strong>DIRX_LDAP_PMAP_PORT</strong> only if there is a conflict for the default port number on your system.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The LDAP server process and <strong>dirxadm</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>6999</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_LDAP_RPC_START_PORT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies the port number of the LDAP server&#8217;s RPC interface.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The LDAP server process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>6200</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_LDAP_SERVER_DN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies the Common Name (CN) attribute value of the LDAP server. The LDAP server uses this name to perform the initial DSA bind.</p>
+<p class="tableblock">Example:<br>
+<code><strong>DIRX_LDAP_SERVER_DN=LDAPServer</strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The LDAP server process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>DirX-LdapServerV3</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_LDAP_SSL_EXPIRY_WARN_TIME</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the time in number of days that the LDAP server starts sending out warnings if its own certificate is due to expire. A value of <strong>0</strong> switches off the warnings. The LDAP server writes the warnings to the LDAP server exception log up to 10 times. Expiry is checked at every SSL handshake (LDAP SSL-Bind).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The LDAP server process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>30</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_LDIF_SPLIT</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Controls the size of the LDIF file(s) that a DSA writes when processing an LDIF agreement:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>YES</strong> – the file is split into one or more files of (approximately) 1GB. This is the default behavior.</p>
+</li>
+<li>
+<p><strong>NO</strong> – the LDIF file is not split.</p>
+</li>
+<li>
+<p><em>Number</em> (between <strong>10</strong> and <strong>1500</strong>) – the file is split in one or more files of (approximately) <em>Number</em> MB. If <em>Number</em> is outside the range of <strong>10</strong> through <strong>1500</strong> the file is spilt to files of (approximately) 1 GB.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The DSA appends a consecutive number (in the format *.*<em>n</em>) to the filename starting with the value 1 for the second file.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>YES</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_LICENSE_CHECK_INTERVAL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the interval at which DirX Directory license checking is to be regularly performed, in seconds. By default, license checking is performed once a day (86400 seconds) after DSA startup. Use this environment variable to increase the frequency of this operation. The permitted intervals permitted range from 300 seconds to 86400 seconds.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>86400</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_LOG_DATASIZE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies the maximum length of data to be logged in a log record, in 16-byte units.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All DirX Directory processes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>64</strong><br>
+(64 * 16 bytes = 1024 bytes)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_LOGCFG_FILE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies the name of the log configuration file.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All DirX Directory processes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For the <strong>dirxadm</strong> and <strong>dirxcp</strong> commands: <strong>$DIRX_INST_PATH/<br>
+client/conf/dirxlog.cfg<br>
+<br>
+</strong>For DSA processes: <strong>$DIRX_INST_PATH/<br>
+server/conf/dirxlog.cfg<br>
+<br>
+</strong>For LDAP server processes:<br>
+<strong>$DIRX_INST_PATH/<br>
+ldap/conf/dirxlog.cfg</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_MAP_CERT_ALTNAME_ATTR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the OID of the attribute used to map an entry that performed a SASL bind if the attribute <strong>LDAP SASL Authz Id Mapping</strong> is set to <strong>Certificate.extensions.altName.email</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.2.840.113549.1.9.1</strong> (the OID of the “email” attribute)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_MAX_AUD_FILE_SIZE</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies the maximum file size of the binary DSA audit log file in MB. A value of <strong>0</strong> specifies an unlimited file size. Note that this behavior may lead to errors due to the 32-bit I/O mechanism used by the <strong>dirxauddecode</strong> command when files exceed 2 GB. The default file size is <strong>256</strong> MB.</p>
+</div>
+<div class="paragraph">
+<p>In addition to the maximum file size in MB, the maximum number of records specified in the <strong>–size</strong> option of the <strong>dirxadm audit modify</strong> operation also limits the size of the DSA audit log file.</p>
+</div>
+<div class="paragraph">
+<p>If either the maximum number of audit records or the maximum size in MB of the audit file is exceeded the <strong>-overflow</strong> option of the <strong>dirxadm audit modify</strong> operation specifies the action to take.</p>
+</div>
+<div class="paragraph">
+<p>It is recommended not to specify limits that are too small because wrapping or moving the audit log file is more expensive than writing an audit record.</p>
+</div>
+<div class="paragraph">
+<p>The <strong>dirxauddecode</strong> command evaluates the binary audit log file and generates an ASCII output file. Due to 32-bit code and internal data representation, the <strong>dirxauddecode</strong> command cannot handle files greater than 2GB. Unfortunately, it is not possible to determine the size of the generated ASCII output file from the binary audit log file. However, the generated ASCII output file is usually five to ten times larger than the binary audit log file. Therefore, it is necessary to limit the maximum file size.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>265 MB</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_MAX_THREADS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the maximum number of parallel threads. The maximum value is <strong>512</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process and the LDAP server process</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>256</strong></p>
+</div>
+<div class="paragraph">
+<p>Note that this value must be adapted to your system configuration.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_MIN_SCHEDULE_WAITERS</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Controls the scheduling of shared waiters of shared resource users. It specifies the minimum number of scheduled shared waiters that get access to the shared resource after the exclusive user has released it.</p>
+</div>
+<div class="paragraph">
+<p>Specify a value between <strong>0</strong> and <strong>128</strong>. This value specifies the total number of waiters. It does not specify the number of waiters per processor.</p>
+</div>
+<div class="paragraph">
+<p>A value of <strong>0</strong> specifies that all shared waiters get access to the resource.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxload</strong> command, the DSA and the LDAP server process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2</strong> per processor</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_OWN_PSAP</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies the DSA’s own PSAP address. If this environment variable is not specified, the server exits during initialization.</p>
+</div>
+<div class="paragraph">
+<p>The value of this environment variable specifies whether the OSI stack or the IDM stack is used by the DSA. It also controls whether or not the secure IDM stack (IDMS) is initialized and a listener is started on the secure IDM port.</p>
+</div>
+<div class="paragraph">
+<p>It is also used for replication purposes: The PSAP addresses of the DSAs are maintained in the cooperating DSA table (CDT). In order to get working shadowing and LDIF agreements the PSAP address specified in this environment variable must match the PSAP address of all agreements affected.</p>
+</div>
+<div class="paragraph">
+<p>The value must be specified in the following format:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>OSI stack:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>TS=</strong><em>t_selector</em><strong>,NA='TCP/IP!internet=</strong><em>ip_address</em><strong>+port=</strong><em>port_number</em>'</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>IDM stack:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>TS=</strong><em>t_selector</em><strong>,NA='TCP/IP_IDM!internet=</strong><em>ip_address</em><strong>+port=</strong><em>port_number</em>'[<strong>,DNS=</strong><em>DNS_String</em>]</p>
+</div>
+<div class="paragraph">
+<p>where</p>
+</div>
+<div class="paragraph">
+<p><em>t_selector</em> is a string of maximal 10 characters,<br>
+<em>ip_address</em> is the DSA’s IP-address in dotted notation,<br>
+<em>port_number</em> is the DSA’s port number,<br>
+<em>DNS_Name</em> is the DNS name, and<br>
+<em>ip_version</em> the IP protocol version. (See section <strong>Presentation-Address</strong> in chapter <strong>DirX</strong> <strong>Directory String Representation for DAP Binds</strong> in <em>DirX</em> <em>Directory Syntaxes and Attributes</em> for details on the PSAP address and the use of the <strong>DNS</strong> subcomponent.)</p>
+</div>
+<div class="paragraph">
+<p>For example:<br>
+<code><strong>DIRX_OWN_PSAP=TS=DSA1,NA='TCP/IP_IDM!internet=123.4.5.6+port=21200',DNS='(HOST=myServer,PLAINPORT=21200,SSLPORT=21201)'</strong></code></p>
+</div>
+<div class="paragraph">
+<p>The values in the Directory Client and the LDAP server configuration files must be administered accordingly.</p>
+</div>
+<div class="paragraph">
+<p>The local loopback address (<strong>127.0.0.1</strong>) is only allowed for test scenarios with standalone DSAs.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>The installation specifies the IP address for IDM:</p>
+</div>
+<div class="paragraph">
+<p><strong>TS=DSA1,NA='TCP/IP_IDM!internet=<em>ip_address</em>+port=21200'</strong></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_PMAP_PORT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies the port number of the portmapper for the RPC connection between DSA and <strong>dirxadm</strong>. You should use <strong>DIRX_PMAP_PORT</strong> only if there is a conflict for the default port number on your system.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process and <strong>dirxadm</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>5999</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_PROGSVR_NUMBER_OF_WORKERS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the number of worker threads that are used in the <strong>dirxprogsvr</strong> process to execute procedures specified in LDIF policies in LDIF agreements on generated LDIF files.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxprogsvr</strong> process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>4</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_PROGSVR_PMAP_PORT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies the port number of the portmapper for the RPC connection between the Progsvr and DSA. You should use <strong>DIRX_PROGSVR_PMAP_PORT</strong> only if there is a conflict for the default port number on your system.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxprogsvr</strong> process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>7999</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_PROGSVR_RPC_START_PORT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies the initial port number of the Progsvr’s RPC interfaces. The Progsvr uses a single port for its RPC interface in the range <strong>6000</strong> to <strong>6199</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxprogsvr</strong> process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>6000</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_RPC_CONNECT_ADDR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies exactly one IP address over that the DSA process can connect the Progsvr.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>127.0.0.1</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_RPC_LISTEN_ADDR</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies exactly one IP address over which RPC clients (<strong>dirxadm</strong> and DirX Directory Manager) can bind to the server.</p>
+</div>
+<div class="paragraph">
+<p>If an invalid IP address is specified, the respective server process does not start.</p>
+</div>
+<div class="paragraph">
+<p>If the local loopback address <strong>127.0.0.1</strong> is specified, only local clients can access the respective server. This setting may be useful for administrative tasks.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process and the LDAP server process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DirX Directory server processes establish their RPC ports for any available address of the host.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_RPC_START_PORT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies the initial port number of the DSA’s RPC interfaces. The DSA uses five subsequent port numbers for its five RPC interfaces.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>6000</strong> (The DSA uses the port numbers 6000 through 6004.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_SHPEVENT</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies the types of shadowing operations that should write notice messages. The messages comprise events for starting and completing incremental updates (or the creation of change files in the case of LDIF agreements. The following values are supported:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>0</strong>—Write events for asynchronous scheduled agreements</p>
+</li>
+<li>
+<p><strong>1</strong>— Write events only for asynchronous on-change and scheduled agreements</p>
+</li>
+<li>
+<p><strong>2</strong>—Write events for asynchronous on-change, scheduled and LDIF agreements</p>
+</li>
+<li>
+<p><strong>3</strong>—Same as <strong>2</strong></p>
+</li>
+<li>
+<p><strong>4</strong>—Write events for all types of agreements: synchronous, asynchronous on-change, asynchronous scheduled, and LDIF agreements</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Note that starting and completing total updates and a potential clean-up of the journal causes a notice message to be written independent of the value of <strong>DIRX_SHPEVENT</strong>.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No processing event messages are written.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_SNMP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies whether sending SNMPv2-traps is enabled (value <strong>1</strong>) or not.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process, the LDAP server process, and the watchdog (<strong>dirxdsas</strong> / <strong>dirxsrv</strong>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sending SNMPv2-traps is disabled.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_SNMPTRAPS_CFG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the full qualified filename of the SNMPv2-trap configuration file.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process, the LDAP server process and the watchdog (<strong>dirxdsas</strong> / <strong>dirxsrv</strong>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>$DIRX_INST_PATH/<br>
+conf/snmptraps.cfg</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_SSL_HOSTS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the IP Address of the LDAP server’s host that is trusted to initiate the special DAP bind onto which LDAP SASL EXTERNAL binds are mapped. The specification of substrings is possible; for example, <strong>DIRX_SSL_HOSTS=1</strong> means that every LDAP server running on a machine with an IP address starting with <strong>1</strong> is accepted as special DAP bind initiator.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>127.0.0.1</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_SYSLOG</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies whether the DirX Directory syslog feature is enabled (set to <strong>1</strong>) or not (not set).</p>
+</div>
+<div class="paragraph">
+<p>When enabled, the process performs the syslog operation on Linux systems. (See your operating system documentation for details of <strong>syslog ()</strong>.)</p>
+</div>
+<div class="paragraph">
+<p>Before this environment variable can take effect, you must configure the DirX Directory syslog feature in the corresponding configuration files <strong>dirxlogflt.cfg</strong>. (See section <strong>syslog Configuration File</strong> in chapter <strong>DirX</strong> <strong>Directory Files</strong> for details.)</p>
+</div>
+<div class="paragraph">
+<p>You must also configure the system log daemon on Linux in the file <strong>/etc/syslog.conf</strong>. (See your operating system documentation for details.)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All DirX Directory processes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No messages are passed to the Linux syslog daemon (syslogd).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_TMP</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Specifies the full pathname of the directory where temporary files are stored when performing post-indexing, the <strong>dirxload</strong> command, or a backup verification with the <strong>dirxbackup</strong> or the <strong>dbamverify</strong> command.</p>
+</div>
+<div class="paragraph">
+<p>You must use a file system type that supports the full range of 64-bit offsets.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxadm db attrconfig</strong> operation, the <strong>dirxload</strong>, the <strong>dirxbackup</strong>, and the <strong>dbamverify</strong> commands</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>$DIR_INST_PATH/tmp</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_TRUSTED_CA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the full pathname of the file that contains the server certificates or CA certificates used for SSL binds and SASL binds with the mechanism EXTERNAL. (See the section <strong>SSL/TLS Certificate Database</strong> for details.)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>dirxcp obj bind</strong> operation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When this environment variable is not set the file <strong>$DIRX_INST_PATH/<br>
+client/conf/cert8.db</strong><br>
+is used.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_USE_HTTP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies whether (value <strong>1</strong>) or not (value <strong>0</strong>) the <strong>dirxhttp</strong> process is started automatically by the watchdog.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The watchdog (<strong>dirxdsas</strong> / <strong>dirxsrv</strong>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_USE_PROGSVR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies whether (value <strong>1</strong>) or not (value <strong>0</strong>) the <strong>dirxprogsvr</strong> process is used to execute procedures specified in LDIF policies in LDIF agreements on generated LDIF files.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The DSA process and the watchdog (<strong>dirxdsas</strong> / <strong>dirxsrv</strong>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_WDOG_RESTART_LDAP_ON_DSA_RESTART</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies whether (value <strong>1</strong>) or not (value <strong>0</strong>) the DirX Directory watchdog process automatically re-starts an LDAP server when its corresponding DSA fails. This mode of operation results in unconditional loss of all existing LDAP connections at the failing DSA.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The watchdog process (<strong>dirxsrv</strong> on Windows, <strong>dirxdsas</strong> on Linux)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1</strong> (Watchdog automatically re-starts the LDAP server on a DSA failure.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIRX_X500_MODIFY</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>You must specify any value for this environment variable for X.500 interworking. Keep in mind that X.500 interworking may restrict the use some features for example of password policy.</p>
+</div>
+<div class="paragraph">
+<p>If this environment variable exists, the LDAP server does not send the DirX Directory proprietary extension <strong>-replaceattr</strong> in <strong>obj modify</strong> operations to the DSA. Instead of performing one <strong>obj modify -replaceattr</strong> operation, the LDAP server performs a corresponding sequence of an <strong>obj read</strong> operation followed by an <strong>obj modify</strong> operation using only the X.500 standard compliant options <strong>-addattr</strong>,<br>
+<strong>-changeattr</strong>, and <strong>-removeattr</strong>.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The LDAP server process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When this environment variable is not set, the LDAP server sends the DirX Directory proprietary extension <strong>-replaceattr</strong> in <strong>obj modify</strong> operations to the DSA.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_operating_system_environment_variables"><a class="anchor" href="#_operating_system_environment_variables"></a>Operating System Environment Variables</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section provides information on how to use operating system environment variables that affect the DirX Directory Service.</p>
+</div>
+<div class="sect2">
+<h3 id="_system_directories_for_temporary_files"><a class="anchor" href="#_system_directories_for_temporary_files"></a>System Directories for Temporary Files</h3>
+<div class="paragraph">
+<p>When performing huge search operations, the DSA stores PDUs temporarily in the system directory for temporary files.On Windows, this directory is specified by the environment variable <strong>TMP</strong>, on Linux by the environment variable <strong>TMPDIR</strong>.The administrator must take care that there is enough disk space available for this directory.If this variable is not specified, the DSA stores the temporary files to the directory <em>install_path</em>*/tmp*.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_enabling_keepalive_timeinterval"><a class="anchor" href="#_enabling_keepalive_timeinterval"></a>Enabling KEEPALIVE Time/Interval</h3>
+<div class="paragraph">
+<p>It is recommended to set the timer/interval for the socket option KEEPALIVE to close connections that are no longer in use and are not closed properly by a remote client.This timer is enabled by specifying the environment variable <strong>CMXSOCKET</strong>.Set <strong>CMXSOCKET</strong> in the following way:</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>CMXSOCKET="-K<em>kk</em>"</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>where <em>kk</em> can be any value greater than 0. This value enables the keepalive functionality in the operating system with the associated timer values configured with system tools.If there is no data flow during the period determined by the KEEPALIVE timer, it is checked whether the partner of a TCP connection still exists.</p>
+</div>
+<div class="paragraph">
+<p>The following sections provide information on how to specify the timer value on the different operating systems.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_specifying_keepalive_time_on_windows"><a class="anchor" href="#_specifying_keepalive_time_on_windows"></a>Specifying KEEPALIVE Time on Windows</h3>
+<div class="paragraph">
+<p>The parameter <strong>KeepAliveTime</strong> must be created/modified in the registry with <strong>regedit</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Registry path:</p>
+</div>
+<div class="paragraph">
+<p>&#160; &#160; HKEY_LOCAL_MACHINE\System<br>
+&#160; &#160; &#160; &#160; \CurrentControlSet<br>
+&#160; &#160; &#160; &#160; &#160; &#160; \Services<br>
+&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; \Tcpip<br>
+&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; \ <strong><em>ParameterName</em></strong></p>
+</div>
+<div class="paragraph">
+<p>where <em>ParameterName</em> is <strong>KeepAliveTime &#160; &#160; REG_DWORD</strong>. Specify a value between<br>
+<strong>1</strong> through <strong>0xFFFFFFFF</strong> milliseconds. The default value is <strong>7200000</strong> milliseconds (two hours).</p>
+</div>
+<div class="paragraph">
+<p><strong>KeepAliveTime</strong> specifies how often TCP attempts to verify that an idle connection is still intact by sending a keep-alive packet. If the remote system is still reachable and working, it will acknowledge the keep-alive transmission.</p>
+</div>
+<div class="paragraph">
+<p>Keep-alive packets are not sent by default. If they not yet enabled by an application, enable sending of keep-alive packets by specifying the parameter <strong>KeepAliveInterval REG_DWORD</strong> under the same registry path as the parameter <strong>KeepAliveTime</strong>. Specify a value between<br>
+<strong>1</strong> through <strong>0xFFFFFFFF</strong> milliseconds. The default value is <strong>1000</strong> milliseconds (1 second).</p>
+</div>
+<div class="paragraph">
+<p><strong>KeepAliveInterval</strong> specifies the interval between keep-alive retransmissions until a response is received and, once a response is received, specifies the delay until the next keep-alive transmission.</p>
+</div>
+<div class="paragraph">
+<p>The connection will be aborted after the number of retransmissions specified by the parameter <strong>TcpMaxDataRetransmissions REG_DWORD</strong> remain unanswered. The default value for this parameter is <strong>5</strong>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_specifying_keepalive_time_on_linux"><a class="anchor" href="#_specifying_keepalive_time_on_linux"></a>Specifying KEEPALIVE Time on Linux</h3>
+<div class="paragraph">
+<p>Use the command <strong>sysctl</strong> to specify the parameter <strong>net.ipv4.tcp_keepalive_interval</strong> in seconds. The default value is <strong>7200</strong> seconds (two hours). Perform the following command:</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>/sbin/sysctl -w net.ipv4.tcp_keepalive_time=<strong><em>timer_value_in_seconds</em></strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Instead of performing this command specify the timer value in the file <strong>/etc/sysctl.conf</strong>. Insert the following lines:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre># Set tcp_keepalive_time to &lt;seconds&gt; (used by DirX)
+net.ipv4.tcp_keepalive_time = timer_value_in_seconds</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To display the current active value, perform the command:</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>/sbin/sysctl net.ipv4.tcp_keepalive_time</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>DirX is a registered trademark © Copyright 2024, Eviden SAS – All rights reserved.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license.
+    Several icons used are provided by Google and are licensed under the
+    <a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License Version 2.0</a>.
+  </p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>

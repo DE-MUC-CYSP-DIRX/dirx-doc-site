@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>dirxaudstatistics :: Documentation</title>
+    <link rel="canonical" href="https://docs.dirx.solutions/dirx-directory-docs/latest/admin-reference/ch1-4_dirxaudstatistics.html">
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.dirx.solutions">
+        <div class="navbar-item logo"></div>
+        Documentation
+      </a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="./">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">DirX Access</a>
+            <a class="navbar-item" href="#">DirX Audit</a>
+            <a class="navbar-item" href="../index.html">DirX Directory</a>
+            <a class="navbar-item" href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dirx-directory-docs" data-version="9.1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">DirX Directory</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">General</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">About this Documentation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="pdf-src/admin-reference.html">Administration Reference</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../copyright.html">Copyright</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="adrefprf.html">Preface</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-0_cmds.html">DirX Directory Commands</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-1_dirxadm.html">dirxadm</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_abbr_dirxcp_dirxadm">abbr (dirxcp, dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_attr_dirxadm">attr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_audit_dirxadm">audit (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_db_dirxadm">db (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_dse_dirxadm">dse (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_ldap_dirxadm">ldap (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_lob_dirxadm">lob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_nmi_dirxadm">nmi (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_progsvr_dirxadm">progsvr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sob_dirxadm">sob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sys_dirxadm">sys (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_util_dirxadm">util (dirxadm)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-2_dirxcp.html">dirxcp</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_abbr_dirxadm_dirxcp">abbr (dirxadm, dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_args_dirxcp">args (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_ldapargs_dirxcp">ldapargs (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_obj_dirxcp">obj (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_util_dirxcp">util (dirxcp)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-3_dirxauddecode.html">dirxauddecode</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="ch1-4_dirxaudstatistics.html">dirxaudstatistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-5_dirxdumplog.html">dirxdumplog</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-6_dirxbackup.html">dirxbackup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-7_dirxmodify.html">dirxmodify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-8_dirxconfig.html">dirxconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-9_dbaminit.html">dbaminit</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-10_dbamconfig.html">dbamconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-11_dbamboot.html">dbamboot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-12_dirxload.html">dirxload</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-13_dbamverify.html">dbamverify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-14_dbamdevinfo.html">dbamdevinfo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-15_dirxextop.html">dirxextop</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-16_dirxhostinfo.html">dirxhostinfo</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch2_files.html">DirX Directory Files</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirx_directory_environment_variable_ini_file">DirX Directory Environment Variable Ini File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_abbreviation_files">Abbreviation Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_configuration_file">LDAP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_http_server_configuration_file">HTTP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_directory_client_configuration_file">Directory Client Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_key_material">LDAP Server Key Material</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ssltls_certificate_database">SSL/TLS Certificate Database</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_key_database_used_for_client_authentication">Key Database Used for Client Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_idms_configuration_and_key_material_files">IDMS Configuration and Key Material Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_snmpv2_trap_configuration_file">SNMPv2 Trap Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirxauddecode_configuration_file">dirxauddecode Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_syslog_configuration_file">syslog Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_logging_configuration_files">Logging Configuration Files</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch3_schema.html">DirX Directory Default DSA Schema</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_table">Attribute Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_object_classes_table">Object Classes Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_syntax_table">Attribute Syntax Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_matching_rule_table">Matching Rule Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_schema_check">Schema Check</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html">Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_setting_environment_variables">Setting Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_using_the_dirx_directory_ini_file">Using the DirX Directory ini File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_windows_systems">Windows Systems</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_linux_systems">Linux Systems</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch4_envvars.html#_dirx_directory_environment_variables">DirX Directory Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_operating_system_environment_variables">Operating System Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_system_directories_for_temporary_files">System Directories for Temporary Files</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_enabling_keepalive_timeinterval">Enabling KEEPALIVE Time/Interval</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch5_ipports.html">IP Port Numbers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_general_information">General Information</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_environment_variables">Port Numbers Specified in Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_attributes_of_ldap_server_configuration_subentry">Port Numbers Specified in Attributes of LDAP Server Configuration Subentry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_configuration_files">Port Numbers Specified in Configuration Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_and_the_firewall">Port Numbers and the Firewall</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ch6_fileloc.html">File Locations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appa_ldapmibs.html">LDAP MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_static_table">LDAP MIB Static Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_total_table">LDAP MIB Total Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_current_table">LDAP MIB Current Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_association_table">LDAP MIB Association Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_environment_table">LDAP MIB Environment Table</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appb_exitcodes.html">Exit Codes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_http_server_exit_codes">HTTP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_progsvr_exit_codes">Progsvr Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_dsa_exit_codes">DSA Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_ldap_server_exit_codes">LDAP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_exit_codes_and_the_dirx_directory_watchdog_process">Exit Codes and the DirX Directory Watchdog Process</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appc_dbammibs.html">DBAM MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_transaction_statistics">DBAM Transaction Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_statistics">DBAM Buffer Cache Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_io_statistics">DBAM Buffer Cache I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_translog_device_io_statistics">DBAM Translog Device I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_checkpoint_statistics">DBAM Checkpoint Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_interval_statistics">DBAM Interval Statistics</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">DirX Directory</span>
+    <span class="version">9.1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">DirX Directory</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">9.1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dirx-identity-docs/latest/index.html">9.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">DirX Directory</a></li>
+    <li><a href="pdf-src/admin-reference.html">Administration Reference</a></li>
+    <li><a href="ch1-0_cmds.html">DirX Directory Commands</a></li>
+    <li><a href="ch1-4_dirxaudstatistics.html">dirxaudstatistics</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">dirxaudstatistics</h1>
+<div class="sect1">
+<h2 id="_synopsis"><a class="anchor" href="#_synopsis"></a>Synopsis</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>dirxaudstatistics</strong><br>
+&#160; &#160; {<strong>-S</strong> <em>audit_log_files_list</em> | <strong>-i</strong> <em>audit_log_file_1</em>[,<em>audit_log_file_2</em>,…,<em>audit_log_file_n</em>]}<br>
+&#160; &#160; [<strong>-a</strong> <em>path_to_folder_for_output_files</em>]<br>
+&#160; &#160; [<strong>-e</strong>]<br>
+&#160; &#160; [<strong>-o</strong> <em>operation</em> …]<br>
+&#160; &#160; [<strong>-G</strong> <em>operation_group</em> …]<br>
+&#160; &#160; [<strong>-d</strong> <em>number</em>]<br>
+&#160; &#160; [<strong>-A</strong> <em>number</em>]<br>
+&#160; &#160; [<strong>-O</strong> <em>output_format</em>]<br>
+&#160; &#160; [<strong>-Ld</strong> <em>duration</em>]<br>
+&#160; &#160; [<strong>-Lc</strong> <em>concurrency</em>]<br>
+&#160; &#160; [<strong>-Ls</strong> <em>CTX_memory</em>]<br>
+&#160; &#160; [<strong>-p</strong> <em>protocol</em> …]<br>
+&#160; &#160; [<strong>-C</strong> <em>string</em>]<br>
+&#160; &#160; [<strong>-B</strong> <em>begin_time</em>]<br>
+&#160; &#160; [<strong>-E</strong> <em>end_time</em>]<br>
+&#160; &#160; [<strong>-k</strong> <em>encryption_password |</em> <strong>-K</strong> <em>encryption_password_file</em>]<br>
+&#160; &#160; [<strong>-I</strong> <em>record_count</em>]<br>
+&#160; &#160; [<strong>-N</strong> <em>ldap_dn</em>]<br>
+&#160; &#160; [<strong>-Q</strong> <em>cookie</em>]<br>
+&#160; &#160; {[<strong>-t</strong> <em>IP_address</em>[,<em>IP_address</em>] | <strong>-T</strong> <em>IP_address</em>[,<em>IP_address</em>]]}<br>
+&#160; &#160; [<strong>-u</strong> <em>user</em>]<br>
+&#160; &#160; {[<strong>-y</strong> <em>filtering_DNs_file</em> | <strong>-Y</strong> <em>ignoring_DNs_file</em>]}<br>
+&#160; &#160; [<strong>-r</strong>]<br>
+&#160; &#160; [<strong>-U</strong>]<br>
+&#160; &#160; [<strong>-Lq</strong> <em>operations_by_qtime</em>]<br>
+&#160; &#160; [<strong>-La</strong> <em>operations_by_apitime</em>]<br>
+&#160; &#160; [<strong>-Ldec</strong> <em>operations_by_apidectime</em>]<br>
+&#160; &#160; [<strong>-Ldsa</strong> <em>operations_by_dsatime</em>]<br>
+&#160; &#160; [<strong>-Lidm</strong> <em>operations_by_idmtime</em>]<br>
+&#160; &#160; [<strong>-Ti</strong> <em>active_clients</em>]<br>
+&#160; &#160; [<strong>-Ts</strong> <em>search_results</em>]<br>
+&#160; &#160; [<strong>-Tua</strong> <em>active_users_activity</em>]<br>
+&#160; &#160; [<strong>-Tui</strong> <em>active_users_bytes_in</em>]<br>
+&#160; &#160; [<strong>-Tuo</strong> <em>active_users_bytes_out</em>]<br>
+&#160; &#160; [<strong>-Tf</strong> <em>LDAP_search_filters</em>]<br>
+&#160; &#160; [<strong>-Tb</strong> <em>LDAP_search_baseobjects</em>]<br>
+&#160; &#160; [<strong>-Ta</strong> <em>LDAP_search_requested_attrs</em>]<br>
+&#160; &#160; [<strong>-v</strong>] |<br>
+&#160; &#160; [<strong>-h</strong>] |<br>
+&#160; &#160; <strong>-V</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_purpose"><a class="anchor" href="#_purpose"></a>Purpose</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Evaluates multiple binary DSA and LDAP server audit log files and provides statistical information about all evaluated records.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_options"><a class="anchor" href="#_options"></a>Options</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>-S</strong> <em>audit_log_files_list</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the name of a file containing a list of fully-qualified binary audit log file names. Every audit log file name must be on a separate line in that file.<br></p>
+<div class="paragraph">
+<p>Example of the file content:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>c:\dirx\tmp\audit.log.20200827074045Z_001
+c:\dirx\tmp\audit.log.20200827091435Z_002
+c:\dirx\tmp\audit.log.20200827091506Z_003</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Either the <strong>-S</strong> option or the <strong>-i</strong> option can be specified.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>-<strong>i</strong> <em>audit_log_file_1</em>[,<em>audit_log_file_2</em>,<em>…,audit_log_file_n</em>]</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the names of the audit log files to evaluate. The filenames are separated by commas (,) with no space before and after the commas.<br></p>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>-i audit.log.20200827074045Z_001,audit.log.20200827091435Z_002,
+audit.log.20200827091506Z_003</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Either the <strong>-S</strong> option or the <strong>-i</strong> option can be specified.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-a</strong> <em>path_to_folder_for_output_files</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the path name of the folder where <strong>dirxaudstatistics</strong> saves the output files. If this option is not specified, the output files are written to the same location as the binary audit log files specified in the <strong>-S</strong> or <strong>-i</strong> option.<br>
+<br>
+The <strong>-O</strong> option specifies the output file format.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-e</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that <strong>dirxaudstatistics</strong> continues processing if an error occurs while the operation is in progress. This option is available only for errors specific to audit. This option does not cover errors due to memory management or disk space limits.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-o</strong> <em>operation</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Evaluates only entries of the specified operation. Specify one <strong>-o</strong> operation option for each operation that should be evaluated; for example, <strong>-o add -o modify</strong>. The following keywords apply to operation:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>all</strong> - All operations</p>
+</li>
+<li>
+<p><strong>abandon</strong> - All abandon operations</p>
+</li>
+<li>
+<p><strong>add</strong> - All add operations</p>
+</li>
+<li>
+<p><strong>bind</strong> - All bind operations</p>
+</li>
+<li>
+<p><strong>compare</strong> - All compare operations</p>
+</li>
+<li>
+<p><strong>moddn</strong> - All moddn operations</p>
+</li>
+<li>
+<p><strong>modify</strong> - All modify operations</p>
+</li>
+<li>
+<p><strong>search</strong> - All search operations</p>
+</li>
+<li>
+<p><strong>unbind</strong> - All unbind operations</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The following keywords are only relevant to the evaluation of DSA audit log files. They are ignored when evaluating LDAP server audit log files.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>abort</strong> - All abort operations</p>
+</li>
+<li>
+<p><strong>list</strong> - All list operations</p>
+</li>
+<li>
+<p><strong>read</strong> - All read operations</p>
+</li>
+<li>
+<p><strong>remove</strong> - All remove / delete operations</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The following keywords refer to shadowing protocol operations (DISP) in DSA audit log files:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>clean_up_shadow_journal</strong></p>
+</li>
+<li>
+<p><strong>consume_delete_entry</strong></p>
+</li>
+<li>
+<p><strong>coord_shadow_update</strong></p>
+</li>
+<li>
+<p><strong>incr_consume_change</strong></p>
+</li>
+<li>
+<p><strong>incr_supply_change</strong></p>
+</li>
+<li>
+<p><strong>req_shadow_update</strong></p>
+</li>
+<li>
+<p><strong>tot_consume_entry</strong></p>
+</li>
+<li>
+<p><strong>tot_supply_entry</strong></p>
+</li>
+<li>
+<p><strong>update_scheduled</strong></p>
+</li>
+<li>
+<p><strong>update_shadow</strong></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The following keywords are only relevant to the evaluation of LDAP server audit log files; they are ignored when evaluating DSA audit log files:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>delete</strong> - All delete operations.</p>
+</li>
+<li>
+<p><strong>extop</strong> - All LDAPv3 extended operations; for example, unsolicited notification or startTLS.</p>
+</li>
+<li>
+<p><strong>ldap</strong> - All LDAP server operations except other, unknown and RPC operations.</p>
+</li>
+<li>
+<p><strong>other</strong> - All unexpected client operations.</p>
+</li>
+<li>
+<p><strong>rpc</strong> - All RPC operations.</p>
+</li>
+<li>
+<p><strong>unknown</strong> - All unexpected client operations that indicate client misbehavior; for example, closing the socket layer without initiating an LDAP unbind operation.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-G</strong> <em>operation_group</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Evaluates only entries of the specified operation group. An operation group consists of multiple operations (see <strong>-o</strong>). Specify one <strong>-G</strong> operation group option for each operation group that should be evaluated; for example, <strong>-G MODIFICATION -G CONNECTION</strong>. The following keywords apply to operation groups:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>MODIFICATION</strong> - add, modify, moddn, remove, delete.</p>
+</li>
+<li>
+<p><strong>READING</strong> - read, compare, list, search.</p>
+</li>
+<li>
+<p><strong>SHADOWING</strong> - coord_shadow_update, req_shadow_update, update_shadow, update_scheduled, clean_up_shadow_journal, tot_supply_entry, tot_consume_entry, incr_supply_change, incr_consume_change, consume_delete_entry.</p>
+</li>
+<li>
+<p><strong>CONNECTION</strong> - bind, unbind, abort, abandon.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Operation groups can be used in conjunction with operations; for example, <strong>-G CONNECTION -o search.</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-d</strong> <em>number</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxaudstatistics</strong> to print only the first <em>number</em> characters of an LDAP/DAP filter in a search request. The default value is <strong>1000</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-A</strong> <em>number</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxaudstatistics</strong> to print only the first <em>number</em> requested attributes of a search request. The default value is <strong>100</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-O</strong> <em>output_format</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the output format. Specify one of the following values for <em>output_format</em>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>0</strong> directs the <strong>dirxaudstatistics</strong> command to write one single ASCII output file containing a statistical summary of all evaluated entries.</p>
+</li>
+<li>
+<p><strong>1</strong> directs the <strong>dirxaudstatistics</strong> command to write one single ASCII output file for each binary audit file with header information about this binary audit log file and one ASCII output file containing a statistical summary of all evaluated entries.</p>
+</li>
+<li>
+<p><strong>2</strong> directs the <strong>dirxaudstatistics</strong> command to write one single ASCII output file for each binary audit file with header information about this binary audit log file and then decoded records of this binary audit log file and one ASCII output file containing a statistical summary of all evaluated entries.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The names of the output files are:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>For files containing the header and decoded records: <em>name_of_input_file</em>*.txt*</p>
+</li>
+<li>
+<p>For the summary file: <strong>summary*<em>creation_time_stamp_in_UTC_format</em></strong>.txt*</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-h</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Prints a command usage message.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-v</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Increases the verbosity level of <strong>dirxaudstatistics</strong> output. There are three levels of increasing verbosity: specify <strong>-v</strong> for the first level, specify <strong>-vv</strong> or <strong>-v -v</strong> for the second level, and specify<br>
+<strong>-vvv</strong> or <strong>-v -v -v</strong> for the third level.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-V</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Displays the DirX Directory product version, in the format:</p>
+<div class="paragraph">
+<p><em>product_version build_id date time</em></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p><code>DirX Directory V9.0 9.4.428 2023:03:23 20:10 64-Bit</code></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following options control the amount of statistical output:</p>
+</div>
+<div class="paragraph">
+<p>-<strong>Ld</strong> <em>duration</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the length of the list containing <em>duration</em> number of operations with the longest durations. The default is <strong>1000</strong>, the maximum allowed value is <strong>10000</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>-<strong>Lc</strong> <em>concurrency</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the length of the list containing <em>concurrency</em> number of operations with the highest concurrency. The default is <strong>1000</strong>, the maximum allowed value is <strong>10000</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>-<strong>Ls</strong> <em>CTX_memory</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the length of the list containing <em>CTX_memory</em> number operations that require the most memory. The default is <strong>1000</strong>, the maximum allowed value is <strong>10000</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following option is only relevant to the evaluation of DSA audit log files. It is ignored when evaluating LDAP server audit log files.</p>
+</div>
+<div class="paragraph">
+<p><strong>-p</strong> <em>protocol</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Evaluates only entries of the specified <em>protocol</em> for DSA audit log files. Specify one <strong>-p</strong> <em>protocol</em> option for each protocol that should be evaluated; for example <strong>-p disp -p dsp</strong>. The following keywords (case insensitive) apply to <em>protocol</em>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>dap</strong> - All DAP operations</p>
+</li>
+<li>
+<p><strong>disp</strong> - All DISP operations</p>
+</li>
+<li>
+<p><strong>dsp</strong> - All DSP operations</p>
+</li>
+<li>
+<p><strong>rpc</strong> - All local (RPC) operations</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following options are only relevant to the evaluation of LDAP server audit log files. They are ignored when evaluating DSA server audit log files.</p>
+</div>
+<div class="paragraph">
+<p><strong>-C</strong> <em>string</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs the <strong>dirxaudstatistics</strong> command to evaluate only records that have a session-tracking control value with a SID-name component that contains the specified string. <strong>dirxadstatistics</strong> does not evaluate records without a session-tracking control value and records where the string does not occur in the SID-Name component of the session-tracking control. For example, <strong>dirxaudstatistics -C WfStatusLogHandler</strong> will result in an output file that contains only those operations that were issued by an LDAP client that added a session-tracking control with the SID-Name that contains the string “WfStatusLogHandler” to the operation.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-B</strong> <em>begin_time</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that the <strong>dirxaudstatistics</strong> command evaluates only records created after the specified time. Specify the value in the format <em>YYYYMMDDhhmmss</em>; for example, <strong>20120617123000</strong>. The value represents the local time saved as the creation time stamp of an operation in the evaluated audit log file.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-E</strong> <em>end_time</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that the <strong>dirxaudstatistics</strong> command evaluates only records created before the specified time. Specify the value in the format <em>YYYYMMDDhhmmss</em>; for example, <strong>20120618123000</strong>. The value represents the local time saved as the creation time stamp of an operation in the evaluated audit log file.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-k</strong> <em>encryption_password</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the password that is required to evaluate and decrypt encrypted audit log files. The encrypted audit log files must all have been encrypted using the same password. The <strong>dirxaudstatistics</strong> command automatically detects whether an audit log file is encrypted. If no password or an incorrect password is specified for an encrypted audit log file, the evaluation process is terminated and an error message is written to <strong>stderr</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-K</strong> <em>encryption_password_file</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the path to a file containing the password that is required to evaluate and decrypt encrypted audit log files (see the <strong>-k</strong> option). The password must be the only content of this file. When creating the file, the password must be specified in plain ASCII format. After the first successful reading by the application, the password is symmetrically encrypted and the file is rewritten to provide protected local storage.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-I</strong> <em>record_count</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>(The option is an uppercase “i”) Specifies the number of audit records processed at which <strong>dirxaudstatistics</strong> issues progress reports during LDAP server audit log file processing. The default value is <strong>5000</strong>. A value of <strong>0</strong> specifies no progress reporting.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-N</strong> <em>ldap_dn</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that the <strong>dirxaudstatistics</strong> command evaluates only records that match the specified <em>ldap_dn</em>. Whether or not a record matches the specified <em>ldap_dn</em> depends on the record type:</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 46%;">
+<col style="width: 54%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Record type</strong></th>
+<th class="tableblock halign-left valign-top"><strong>The record is evaluated if</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ADD, MODIFY, MODDN, DELETE, COMPARE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the target entry name of the operation matches the specified <em>ldap_dn</em>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SEARCH</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the base object name matches the specified <em>ldap_dn</em> and the scope of the search is <strong>baseobject</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BIND</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the bind user name matches the specified <em>ldap_dn</em>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All other</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">never matches.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Specify multiple <strong>-N</strong> options to filter the evaluated records for multiple distinguished names; for example <strong>-N</strong> <em>ldap_dn1</em> <strong>-N</strong> <em>ldap_dn2</em>. The value of ldap_dn is case-insensitive.</p>
+</div>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="paragraph">
+<p><code><strong>-N cn=myentry,o=my-company -o add -o modify -o delete</strong></code> evaluates all records with add, modify and delete operations for the object <strong>cn=myentry, o=my-company</strong>.</p>
+</div>
+<div class="paragraph">
+<p><code><strong>-N cn=myuser,o=my-company -o bind</strong></code> evaluates all records with bind operations for the user <strong>cn=myuser, o=my-company</strong>.</p>
+</div>
+<div class="paragraph">
+<p><code><strong>-N cn=myentry,o=my-company -o search</strong></code> evaluates all records with search operations for the object <strong>cn=myentry, o=my-company</strong> and the scope <strong>baseobject</strong>.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-Q</strong> <em>cookie</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that the <strong>dirxaudstatistics</strong> command evaluates only records for which the paged-result cookie is present. The <em>cookie</em> must be specified as a hex-value string like <strong>80000001</strong> (the same as in audit-output). For example, <strong>-Q 80000001</strong> evaluates all records that have a <em>cookie</em> <strong>80000001</strong>. If the cookie-string is <strong>ANY</strong>, then all records that have a cookie are evaluated no matter what the value is.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-t</strong> <em>IP_address</em>[,<em>IP_address</em>]</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that the <strong>dirxaudstatistics</strong> command evaluates only those records in the audit log file whose client IP address matches the specified IP address. Separate multiple IP addresses with a comma; for example, <strong>-t 127.0.0.1,192.10.1.20,192.10.1.30</strong>. Use the wildcard (*) to specify an IP submask; for example, <strong>-t 127.*.1,192.*.1.20,192.10.1.3</strong>. Either the <strong>-t</strong> or the <strong>-T</strong> option can be used; using both options fails.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-T</strong> <em>IP_address</em>[,<em>IP_address</em>]</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that the <strong>dirxaudstatistics</strong> command does not evaluate records in the audit log file whose client IP addresses match one or more specified IP addresses. The IP addresses specified must be Internet Protocol Version 4 (IPv4) addresses. Separate multiple IP addresses with a comma; for example, <strong>-T 127.0.0.1,192.10.1.20,192.10.1.30</strong>. Use the wildcard (*) to specify an IP submask; for example, <strong>-T 127.*.1,192.*.1.20,192.10.1.3</strong>. Either the <strong>-T</strong> or the <strong>-t</strong> option can be used; using both options fails.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-u</strong> <em>user</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that the <strong>dirxaudstatistics</strong> command evaluates only those records in the audit log file that match the specified user. Specify the distinguished name of the user in LDAP format (case sensitive). (See the section <strong>Distinguished Names</strong> in the chapter <strong>DirX Directory String Representation for LDAP Binds</strong> in <em>DirX Directory Syntaxes and Attributes</em> for details.) An empty string (<strong>""</strong>) specifies the anonymous user.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-y</strong> <em>filtering_DNs_file</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the name of a file that contains a list of DNs. The <strong>dirxaudstatistics</strong> command evaluates only those records in the audit log file that match one of the specified users. Specify the distinguished name of the users in LDAP format (case insensitive). (See the section <strong>Distinguished Names</strong> in the chapter <strong>DirX Directory String Representation for LDAP Binds</strong> in <em>DirX Directory Syntaxes and Attributes</em> for details.) The string <strong>anonymous</strong> specifies the anonymous user. You can use the wildcard (<strong>*</strong>) for RDNs.<br>
+<br>
+In the file <em>filtering_DNS_file</em>, blank lines and lines starting with the <strong>#</strong> character are ignored. Each line can contain one DN. Here is an example file:</p>
+<div class="listingblock">
+<div class="content">
+<pre># Evaluate all records containing the following users:
+cn=Schulz,ou=Sales,o=My-Company
+cn=Abele,ou=Development,o=My-Company
+
+# Evaluate all records under o=My-Company with cn Mayer or Meier:
+cn=Mayer,*,o=My-Company
+cn=Meier,*,o=My-Company
+
+# Evaluate all records of anonymous users:
+anonymous</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Either the <strong>-y</strong> or the <strong>-Y</strong> option can be used; using both options fails.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-Y</strong> <em>ignoring_DNs_file</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the name of a file that contains a list of DNs. The <strong>dirxaudstatistics</strong> command excludes all records in the audit log file from the result that match one of the specified users. The syntax of this option is the same as the syntax of the <strong>-y</strong> <em>filtering_DNs_file</em> option.<br>
+<br>
+Either the <strong>-Y</strong> or the <strong>-y</strong> option can be used; using both options fails.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-r</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that only records with a result code other than success (<strong>0</strong>), SizeLimitExceeded and TimeLimitExceeded should be evaluated.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-U</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that UTF8 code is written to the user output file. If an attribute value is not UTF8-encoded, the value is written in hexadecimal code to the user file. If this option is omitted, ASCII code is written to the user output file.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following options control the amount of statistical output for evaluated binary LDAP audit log files:</p>
+</div>
+<div class="paragraph">
+<p><strong>-Lq</strong> <em>operations_by_qtime</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the length of the list containing <em>operations_by_qtime</em> number of operations with the longest QTime. The maximum allowed value is <strong>10000</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-La</strong> <em>operations_by_apitime</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the length of the list containing <em>operations_by_apitime</em> number of operations with the longest API Time. The maximum allowed value is <strong>10000</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-Ldec</strong> <em>operations_by_apidectime</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the length of the list containing <em>operations_by_apidectime</em> number of operations with the longest API-Dec Time (API result decoding). The maximum allowed value is <strong>10000</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-Ldsa</strong> <em>operations_by_dsatime</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the length of the list containing <em>operations_by_dsatime</em> number of operations with the longest DSA Time. The maximum allowed value is <strong>10000</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-Lidm</strong> <em>operations_by_idmtime</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the length of the list containing <em>operations_by_idmtime</em> number of operations with the longest IDM Time. The maximum allowed value is <strong>10000</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>-<strong>Ti</strong> <em>active_clients</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the length of the list containing <em>active_clients</em> number of most active clients (IP). The default is <strong>1000</strong>, the maximum allowed value is <strong>10000</strong>. This option is applicable when the <strong>-v -v</strong> option is specified.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>-<strong>Ts</strong> <em>search_results</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the length of the list containing <em>search_results</em> number of returned data in search results (IP). The default is <strong>1000</strong>, the maximum allowed value is <strong>10000</strong>. This option is applicable when the <strong>-v -v</strong> option is specified.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>-<strong>Tua</strong> <em>active_users_activity</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the length of the list containing <em>active_users_activity</em> distinguished names of the most active users. The default is <strong>1000</strong>, the maximum allowed value is <strong>10000</strong>. This option is applicable when the <strong>-v -v</strong> option is specified.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>-<strong>Tui</strong> <em>active_users_bytes_in</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the length of the list containing <em>active_users_bytes_in</em> distinguished names of the users with the highest number of incoming bytes. The default is <strong>1000</strong>, the maximum allowed value is <strong>10000</strong>. This option is applicable when the <strong>-v -v</strong> option is specified.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>-<strong>Tuo</strong> <em>active_users_bytes_out</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the length of the list containing <em>active_users_bytes_out</em> distinguished names of the users with the highest number of outgoing bytes. The default is <strong>1000</strong>, the maximum allowed value is <strong>10000</strong>. This option is applicable when the <strong>-v -v</strong> option is specified.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>-<strong>Tf</strong> <em>LDAP_search_filters</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the length of the list containing <em>LDAP_search_filters</em> number of the most frequently used LDAP search filters. The default is <strong>1000</strong>, the maximum allowed value is <strong>10000</strong>. This option is applicable when the <strong>-v -v</strong> option is specified.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>-<strong>Tb</strong> <em>LDAP_search_baseobjects</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the length of the list containing <em>LDAP_search_baseobject</em> number of the most frequently used base objects in LDAP search requests. The default is <strong>1000</strong>, the maximum allowed value is <strong>10000</strong>. This option is applicable when the <strong>-v -v</strong> option is specified.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>-<strong>Ta</strong> <em>LDAP_search_requested_attrs</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the length of the list containing <em>LDAP_search_requested_attrs</em> number of the most frequently requested attributes in LDAP search requests. The default is <strong>1000</strong>, the maximum allowed value is <strong>10000</strong>. This option is applicable when the <strong>-v -v</strong> option is specified.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Like the <strong>dirxauddecode</strong> command, the <strong>dirxaudstatistics</strong> command evaluates DSA and LDAP server audit log files and generates customized output in human-readable ASCII-formatted files. (see the <strong>-O</strong> option) The generated output identifies all incoming protocol requests, their detailed operation parameters and the result code for each operation. The output also contains operational information such as durations, threading information and error messages that can be used to diagnose the running system or tune DirX Directory. The output does not contain any entry information that read and search operations return; for example, attribute values or distinguished names of entries that satisfy the search filter. (See the <strong>dirxauddecode</strong> reference page for details.)</p>
+</div>
+<div class="paragraph">
+<p>Unlike the <strong>dirxauddecode</strong> command, the <strong>dirxaudstatistics</strong> command can evaluate multiple audit log files. It provides a lot of options to control statistical information. Either a set of DSA audit log files or a set of LDAP audit log files can be evaluated at one time. The type of first file in the list specifies whether <strong>dirxaudstatistics</strong> evaluates DSA or LDAP audit log files. The files from the list are evaluated in exactly the order they are given in the list.</p>
+</div>
+<div class="paragraph">
+<p>If an error occurs while the operation is in progress, <strong>dirxaudstatistics</strong> stops evaluating audit log files if the <strong>-e</strong> option is not specified.</p>
+</div>
+<div class="paragraph">
+<p><strong>dirxaudstatistics</strong> tracks the changes in the header data from the first evaluated file in the list to the current one and marks changed values in the output file. (See the <strong>-O</strong> option for details.) The following information is written:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Changes tracked for LDAP audit files: OpSelection, OpErrors, Audit Level, Server-PID, Total Phys Memory, HTM CTX Size, CTX ULimit, CPUs, Max Open Files soft, Max Open Files hard, PID, HostName, Host IP, Server Version, Backend Sharing, Ldap Port, SSL Port, Max Conn, Client Idle Time, Thread Pool Size, Search Size Limit, Search Service Controls, Cache.</p>
+</li>
+<li>
+<p>Changes tracked for DSA audit files: Server-PID, PID, Server-Version, HostName, HWM CTX Size, CTX ULimit.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>dirxaudstatistics</strong> can evaluate only files generated with the same audit version.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example"><a class="anchor" href="#_example"></a>Example</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In the following example, the LDAP server <strong>dirxaudstatistics</strong> evaluates LDAP server audit log files. Only a summary log file is provided (<strong>-O 0</strong>). This summary file is located under the folder <strong>C:\Output\OutputBulkAuditFilesLDAP</strong> (<strong>-a</strong> option). The list of audit log files to be evaluated is stored in the file <strong>C:\Input\InputBulkAuditFilesLDAP\ldap_audit_log_files.txt</strong> (<strong>-S</strong> option). In the event of errors, <strong>dirxaudstatistics</strong> continues processing (<strong>-e</strong> option). The three operations with the longest duration (<strong>-Ld 3</strong>), the distinguished names of the three most active users (<strong>-Tua 3</strong>), the distinguished names of five users with the most incoming bytes (<strong>-Tui 5</strong>), and the distinguished names of six users with the most outgoing bytes (<strong>-Tuo 6</strong>) are written to the summary file. The level of verbosity is 2 (<strong>-v –v</strong>):</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxaudstatistics -Tua 3 -Tui 5 -Tuo 6 -Ti 3 -e -S C:\Input\InputBulkAuditFilesLDAP\ldap_audit_log_files.txt -a C:\Output\OutputBulkAuditFilesLDAP -O 0 -Ld 3 -v –v</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The following example is the same as the example above. However, <strong>dirxaudstatistics</strong> is directed to write the summary file and a file containing a header for each audit log file evaluated (<strong>-O 1</strong>):</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxaudstatistics -Tua 3 -Tui 5 -Tuo 6 -Ti 3 -e -S C:\Input\InputBulkAuditFilesLDAP\ldap_audit_log_files.txt -a C:\Output\OutputBulkAuditFilesLDAP -O 1 -Ld 3 -v –v</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The following example is the same as the example above. <strong>dirxaudstatistics</strong> is now directed to write the summary file and a file containing a header and all operations for each audit log file evaluated (<strong>-O 2</strong>):</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxaudstatistics -Tua 3 -Tui 5 -Tuo 6 -Ti 3 -e -S C:\Input\InputBulkAuditFilesLDAP\ldap_audit_log_files.txt -a C:\Output\OutputBulkAuditFilesLDAP -O 2 -Ld 3 -v –v</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The following examples provide examples for evaluating DSA audit log files:</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxaudstatistics -e -S C:\Input\InputBulkAuditFilesDSA\dsa_audit_log_files.txt -a C:\Output\OutputBulkAuditFilesDSA -O 2 -Ld 3 -v –v
+dirxaudstatistics -e -S C:\Input\InputBulkAuditFilesDSA\dsa_audit_log_files.txt -a C:\Output\OutputBulkAuditFilesDSA -O 1 -Ld 3 -v -v
+dirxaudstatistics -e -S C:\Input\InputBulkAuditFilesDSA\dsa_audit_log_files.txt -a C:\Output\OutputBulkAuditFilesDSA -O 3 -Ld 3 -v –v</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The following example illustrates the output. <strong>dirxaudstatistics</strong> evaluates several (48) DSA audit log files and provides one summary output file (option <strong>–O 0</strong>). The file <strong>flist</strong> provides the list of DSA audit log files to be evaluated (<strong>-S</strong> option):</p>
+<div class="listingblock">
+<div class="content">
+<pre>*dirxaudstatistics -S flist -O 0 -Ld 10 -Lc 3 -Ls 5*</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The output file of the sample command is as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>#################  DIR.X AUDIT TRAIL (c) Eviden  ################################
+Cmd-Line: -S flist -O 0 -Ld 10 -Lc 3 -Ls 5
+=================================================================================
+  DSA Audit Summary     :
+    File(s) Processed   : 48. OK: 48, FAILED: 0
+    Records Processed   : 82350
+    Time spent          : 22.031521
+  Log Time              : 9112 sec
+  Concurrency Max       : 19 (2 times) (Op# 057383)
+  CtxSize Min/Max       : 12 / 238 MB
+  CtxSize HWM Min/Max   : 12 / 238 MB
+  Protocol Ops          :
+    DAP Ops             : 82320
+      Read              : 360
+      Compare           : 5789
+      List              : 14
+      Search            : 38324
+      Add               : 21495
+      Delete            : 281
+      Modify            : 4506
+      Bind              : 7318 (0 Init, 7318 Resp)
+      Unbind            : 3297
+      ModDN             : 111
+      ExtendedOp        : 154
+      Abort             : 665
+    DSP Ops             : 0
+    DISP Ops            : 8
+      UpdScheduled      : 8
+    DOP Ops             : 0
+    LOCAL Ops           : 0
+    RPC Ops             : 22
+    PagingCookieExpired : 6
+    UNKNOWN Ops         : 0
+
+  DAP Op Statistics      :     tot |    err |     %
+    Read                 :     360 |     50 |   0.4
+    Compare              :    5789 |    179 |   7.0
+    List                 :      14 |      4 |   0.0
+    Search               :   38324 |     22 |  46.5
+    Add                  :   21495 |     12 |  26.1
+    Remove               :     281 |     14 |   0.3
+    Modify               :    4506 |    784 |   5.5
+    Bind                 :    7318 |   3104 |   8.9
+    Unbind               :    3297 |      0 |   4.0
+    ModDN                :     111 |      6 |   0.1
+    Abort                :     665 |      0 |   0.8
+    Extended             :     154 |      0 |   0.2
+    PagingCookieExpired  :       6 |      0 |   0.0
+
+  DSP Op Statistics      :     tot |    err |     %
+
+  DISP Op Statistics     :     tot |    err |     %
+    CleanupShadJournal   :       8 |      0 |   0.0
+
+  RPC Op Statistics      :     tot |    err |     %
+    RpcOp                :      22 |      0 |   0.0
+
+
+    Top 10 Durations:
+      Duration    StartTime         EndTime           Op#     CC   CTXSize  Prot   Type/Info        Audit File
+      63.485130 | 08:24:37.051667 | 08:25:40.536797 | 81014 | 1  | 238    | DAP  | ADD        n/a | audit.log.20150424064530Z_001
+      20.656600 | 07:25:58.946352 | 07:26:19.602952 | 5013  | 1  | 138    | DAP  | REMOVE     n/a | audit.log.20150424052810Z_002
+      6.323987  | 08:25:41.372828 | 08:25:47.696815 | 81027 | 1  | 97     | DAP  | ADD        n/a | audit.log.20150424064530Z_001
+      4.987632  | 07:25:49.143265 | 07:25:54.130897 | 5010  | 1  | 47     | DAP  | MODIFY     n/a | audit.log.20150424052810Z_002
+      4.467597  | 07:25:54.170162 | 07:25:58.637759 | 5011  | 1  | 50     | DAP  | MODIFY     n/a | audit.log.20150424052810Z_002
+      4.381933  | 07:25:44.723937 | 07:25:49.105870 | 5009  | 1  | 45     | DAP  | MODIFY     n/a | audit.log.20150424052810Z_002
+      3.638514  | 07:25:37.618782 | 07:25:41.257296 | 5007  | 1  | 40     | DAP  | MODIFY     n/a | audit.log.20150424052810Z_002
+      3.391898  | 07:25:41.295458 | 07:25:44.687356 | 5008  | 1  | 42     | DAP  | MODIFY     n/a | audit.log.20150424052810Z_002
+      3.169521  | 07:25:34.405540 | 07:25:37.575061 | 5006  | 1  | 37     | DAP  | MODIFY     n/a | audit.log.20150424052810Z_002
+      2.646268  | 07:25:31.720979 | 07:25:34.367247 | 5005  | 1  | 33     | DAP  | MODIFY     n/a | audit.log.20150424052810Z_002
+
+
+    Top 3 Con    Top 3 Concurrencies:
+      CC        Duration   StartTime         EndTime           Op#     CTXSize  Prot   Type/Info    Audit File
+      19 |      0.068732 | 08:05:08.578469 | 08:05:08.647201 | 57383 | 14     | DAP  | BIND   n/a | audit.log.20150424060552Z_003
+      19 |      0.064744 | 08:05:08.584033 | 08:05:08.648777 | 57384 | 14     | DAP  | BIND   n/a | audit.log.20150424060552Z_003
+      18 |      0.070556 | 08:05:08.570394 | 08:05:08.640950 | 57380 | 14     | DAP  | BIND   n/a | audit.log.20150424060552Z_003
+
+
+    Top 5 Biggest Operations:
+      CTXSize    Duration     StartTime         EndTime           Op#     CC   Prot   Type/Info          Audit File
+      238 |      63.485130  | 08:24:37.051667 | 08:25:40.536797 | 81014 | 1  | DAP  | ADD        (n/a) | audit.log.20150424064530Z_001
+      233 |      1.204796   | 08:25:48.541388 | 08:25:49.746184 | 81201 | 1  | DAP  | SEARCH     (n/a) | audit.log.20150424064530Z_001
+      219 |      1.171034   | 08:25:52.777736 | 08:25:53.948770 | 81218 | 1  | DAP  | SEARCH     (n/a) | audit.log.20150424064530Z_001
+      138 |      20.656600  | 07:25:58.946352 | 07:26:19.602952 | 5013  | 1  | DAP  | REMOVE     (n/a) | audit.log.20150424052810Z_002
+      129 |      0.676265   | 08:26:00.702433 | 08:26:01.378698 | 81304 | 1  | DAP  | SEARCH     (n/a) | audit.log.20150424064530Z_001
+
+
+
+##########################  END of TRAIL  #######################################</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exit_codes"><a class="anchor" href="#_exit_codes"></a>Exit Codes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>dirxaudstatistics</strong> command returns an exit code of <strong>0</strong> on success or a non-negative error code if it encounters an error. The text of the error message is displayed on <strong>stderr</strong>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_see_also"><a class="anchor" href="#_see_also"></a>See Also</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>dirxadm</strong> (Chapter 1), <strong>audit</strong> (Chapter 1), <strong>Abbreviation Files</strong> (Chapter 2), <strong>dirxauddecode</strong> (Chapter 1)</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>DirX is a registered trademark © Copyright 2024, Eviden SAS – All rights reserved.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license.
+    Several icons used are provided by Google and are licensed under the
+    <a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License Version 2.0</a>.
+  </p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>

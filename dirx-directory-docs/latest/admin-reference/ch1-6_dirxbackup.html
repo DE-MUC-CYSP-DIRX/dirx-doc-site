@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>dirxbackup :: Documentation</title>
+    <link rel="canonical" href="https://docs.dirx.solutions/dirx-directory-docs/latest/admin-reference/ch1-6_dirxbackup.html">
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.dirx.solutions">
+        <div class="navbar-item logo"></div>
+        Documentation
+      </a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="./">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">DirX Access</a>
+            <a class="navbar-item" href="#">DirX Audit</a>
+            <a class="navbar-item" href="../index.html">DirX Directory</a>
+            <a class="navbar-item" href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dirx-directory-docs" data-version="9.1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">DirX Directory</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">General</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">About this Documentation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="pdf-src/admin-reference.html">Administration Reference</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../copyright.html">Copyright</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="adrefprf.html">Preface</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-0_cmds.html">DirX Directory Commands</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-1_dirxadm.html">dirxadm</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_abbr_dirxcp_dirxadm">abbr (dirxcp, dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_attr_dirxadm">attr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_audit_dirxadm">audit (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_db_dirxadm">db (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_dse_dirxadm">dse (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_ldap_dirxadm">ldap (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_lob_dirxadm">lob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_nmi_dirxadm">nmi (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_progsvr_dirxadm">progsvr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sob_dirxadm">sob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sys_dirxadm">sys (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_util_dirxadm">util (dirxadm)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-2_dirxcp.html">dirxcp</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_abbr_dirxadm_dirxcp">abbr (dirxadm, dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_args_dirxcp">args (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_ldapargs_dirxcp">ldapargs (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_obj_dirxcp">obj (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_util_dirxcp">util (dirxcp)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-3_dirxauddecode.html">dirxauddecode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-4_dirxaudstatistics.html">dirxaudstatistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-5_dirxdumplog.html">dirxdumplog</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="ch1-6_dirxbackup.html">dirxbackup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-7_dirxmodify.html">dirxmodify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-8_dirxconfig.html">dirxconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-9_dbaminit.html">dbaminit</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-10_dbamconfig.html">dbamconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-11_dbamboot.html">dbamboot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-12_dirxload.html">dirxload</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-13_dbamverify.html">dbamverify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-14_dbamdevinfo.html">dbamdevinfo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-15_dirxextop.html">dirxextop</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-16_dirxhostinfo.html">dirxhostinfo</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch2_files.html">DirX Directory Files</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirx_directory_environment_variable_ini_file">DirX Directory Environment Variable Ini File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_abbreviation_files">Abbreviation Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_configuration_file">LDAP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_http_server_configuration_file">HTTP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_directory_client_configuration_file">Directory Client Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_key_material">LDAP Server Key Material</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ssltls_certificate_database">SSL/TLS Certificate Database</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_key_database_used_for_client_authentication">Key Database Used for Client Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_idms_configuration_and_key_material_files">IDMS Configuration and Key Material Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_snmpv2_trap_configuration_file">SNMPv2 Trap Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirxauddecode_configuration_file">dirxauddecode Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_syslog_configuration_file">syslog Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_logging_configuration_files">Logging Configuration Files</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch3_schema.html">DirX Directory Default DSA Schema</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_table">Attribute Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_object_classes_table">Object Classes Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_syntax_table">Attribute Syntax Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_matching_rule_table">Matching Rule Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_schema_check">Schema Check</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html">Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_setting_environment_variables">Setting Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_using_the_dirx_directory_ini_file">Using the DirX Directory ini File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_windows_systems">Windows Systems</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_linux_systems">Linux Systems</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch4_envvars.html#_dirx_directory_environment_variables">DirX Directory Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_operating_system_environment_variables">Operating System Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_system_directories_for_temporary_files">System Directories for Temporary Files</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_enabling_keepalive_timeinterval">Enabling KEEPALIVE Time/Interval</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch5_ipports.html">IP Port Numbers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_general_information">General Information</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_environment_variables">Port Numbers Specified in Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_attributes_of_ldap_server_configuration_subentry">Port Numbers Specified in Attributes of LDAP Server Configuration Subentry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_configuration_files">Port Numbers Specified in Configuration Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_and_the_firewall">Port Numbers and the Firewall</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ch6_fileloc.html">File Locations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appa_ldapmibs.html">LDAP MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_static_table">LDAP MIB Static Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_total_table">LDAP MIB Total Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_current_table">LDAP MIB Current Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_association_table">LDAP MIB Association Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_environment_table">LDAP MIB Environment Table</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appb_exitcodes.html">Exit Codes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_http_server_exit_codes">HTTP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_progsvr_exit_codes">Progsvr Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_dsa_exit_codes">DSA Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_ldap_server_exit_codes">LDAP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_exit_codes_and_the_dirx_directory_watchdog_process">Exit Codes and the DirX Directory Watchdog Process</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appc_dbammibs.html">DBAM MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_transaction_statistics">DBAM Transaction Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_statistics">DBAM Buffer Cache Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_io_statistics">DBAM Buffer Cache I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_translog_device_io_statistics">DBAM Translog Device I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_checkpoint_statistics">DBAM Checkpoint Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_interval_statistics">DBAM Interval Statistics</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">DirX Directory</span>
+    <span class="version">9.1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">DirX Directory</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">9.1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dirx-identity-docs/latest/index.html">9.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">DirX Directory</a></li>
+    <li><a href="pdf-src/admin-reference.html">Administration Reference</a></li>
+    <li><a href="ch1-0_cmds.html">DirX Directory Commands</a></li>
+    <li><a href="ch1-6_dirxbackup.html">dirxbackup</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">dirxbackup</h1>
+<div class="sect1">
+<h2 id="_synopsis"><a class="anchor" href="#_synopsis"></a>Synopsis</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>dirxbackup</strong><br>
+&#160; &#160; <strong>-S</strong> [<strong>-c</strong>] [<strong>-d</strong>] [<strong>-e</strong>] [<strong>-f</strong>] [<strong>-n</strong>] [<strong>-v</strong>] [<strong>-Z</strong>] [<em>archive_name</em>] |<br>
+&#160; &#160; <strong>-R</strong> [<strong>-a</strong> <em>additional_indexed_attributes</em>] [<strong>-c</strong>] [<strong>-e</strong>] [<strong>-v</strong>] [<strong>-u</strong>] [<strong>-U</strong>] [<em>archive_name</em>] |<br>
+&#160; &#160; <strong>-I</strong> [<strong>-i</strong>] [<em>archive_name</em>] |<br>
+&#160; &#160; <strong>-L</strong> [<strong>-o</strong>] [<strong>-s</strong>] [<strong>-U</strong>] <em>archive_name(s)</em> |<br>
+&#160; &#160; <strong>-h</strong> |<br>
+&#160; &#160; <strong>-V</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_purpose"><a class="anchor" href="#_purpose"></a>Purpose</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Saves and restores a database or verifies an archive.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_arguments"><a class="anchor" href="#_arguments"></a>Arguments</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>archive_name</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the name of the archive file that the database is written to or read from; for example, <strong>Archive_0602</strong> or <strong>D:\Archives\Archive1</strong>. If you do not specify an <em>archive_name</em> as an argument, <strong>dirxbackup</strong> writes the database to standard output or reads a database from standard input. This function enables you to run <strong>dirxbackup</strong> in conjunction with another tool or with a second <strong>dirxbackup</strong> call.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_options"><a class="anchor" href="#_options"></a>Options</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>-S</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Saves the active database into an archive or to standard output if an archive name is not specified. After the database is saved, it runs a full database verification on the generated full backup unless the <strong>-n</strong> option is specified.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-R</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Restores into the active database from an archive or from standard input if an archive name is not specified.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-I</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>(Upper case i.) Provides the following information about the archive:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Full Backup time stamp</strong>—Time of the full backup of the database.</p>
+</li>
+<li>
+<p><strong>Archive version</strong>—Version describing the format of the archive.</p>
+</li>
+<li>
+<p><strong>Backup file type</strong>—Whether the archive contains a full backup or a delta backup.</p>
+</li>
+<li>
+<p><strong>Delta backup version</strong>—Consecutive number for delta backups. This number starts with the value 0 and is incremented with every delta backup.</p>
+</li>
+<li>
+<p><strong>Max. indexed attributes types</strong>—Maximum number of attributes that can be indexed.</p>
+</li>
+<li>
+<p><strong>Number of AVIDX cluster</strong>—Number of attribute index clusters.</p>
+</li>
+<li>
+<p><strong>AVIDX cluster size</strong>—Size of one attribute index cluster.</p>
+</li>
+<li>
+<p><strong>Real object block size</strong>—Size of one real object block.</p>
+</li>
+<li>
+<p><strong>Verified at</strong>—Timestamp of the last verification run on the backup.</p>
+</li>
+<li>
+<p><strong>Verified with version</strong>—Version of the tool that last verified the backup.</p>
+</li>
+<li>
+<p><strong>Verified components</strong>—Components that were verified in the last verification.</p>
+</li>
+<li>
+<p><strong>Number of errors</strong>—Number of errors found during the last verification.</p>
+</li>
+<li>
+<p><strong>Number of warnings</strong>—Number of warnings found during the last verification.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The archive information is read from standard input if no archive name is specified.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-L</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxbackup</strong> to create an LDIF content file from an archive or a list of archives, including one full and one or more delta backups. If one full and multiple delta backups are specified, the full backup must be the first one in the list and the delta backups should follow in the order of their creation. The delta backups must belong to the full backup specified as the first element of the list.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-a</strong> <em>additional_indexed_attributes</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the number of additional attribute types for which indexes can be created when post-indexing is performed on the database. The minimum is <strong>1</strong> and the maximum is <strong>800</strong>. This option is valid for the <strong>-R</strong> option.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-c</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the cache size in MB. The default cache size is <strong>512</strong> MB. This option is valid for the<br>
+<strong>-S</strong> and <strong>-R</strong> options.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-d</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that a delta backup should be performed. This option is valid for the <strong>-S</strong> option.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-e</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Enables expert mode. This mode is intended for support. This option is valid for the <strong>-S</strong> and <strong>-R</strong> options.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-f</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Prevents <strong>dirxbackup</strong> from recording changes to the database made during a full backup save operation and appending them to the resulting archive. This option is valid for the <strong>-S</strong> option.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-i</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Displays archive profile information. This option is valid for the <strong>-I</strong> option. It is not supported for delta backups.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-n</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Controls automatic backup verification. This option is valid for the <strong>-S</strong> and <strong>-R</strong> options. When used with the <strong>-S</strong> option, it disables automatic verification for specific components of the created backup or for the entire backup. To disable verification for a specific component, specify the component identifier as an argument to the option on the command line. Possible component identifiers are <strong>A</strong>, <strong>X</strong>, <strong>D</strong>, <strong>S</strong>, and <strong>T</strong> and correspond to the consistency checking options to the <strong>dbamverify</strong> command. See the <strong>dbamverify</strong> command for details. If no components are specified, complete checking is disabled.<br>
+<br>
+When used with the <strong>-R</strong> option, it loads a backup with unverified components. Only the <strong>A</strong> and <strong>X</strong> components can be selected. All other verifications are mandatory to be able to restore the backup.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-o</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the path of the generated LDIF file when the <strong>-L</strong> option is used. This option is valid for the <strong>-L</strong> option. As the LDIF splitting feature is enabled by default, the specified path is used as a base path and the file name is extended with a suffix that contains the sequence number of the generated LDIF file(s).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-s</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the subtree to be dumped from an archive to LDIF format when the <strong>-L</strong> option is used. This option is valid for the <strong>-L</strong> option. Specify the subtree as an LDAP distinguished name. If the <strong>-s</strong> option is not specified, the entire DIT is dumped, starting from root (/).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-u</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Enables loading a backup that was verified but which contains warnings.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-U</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxbackup</strong> to uncompress the archive while performing a restore, information, LDIF dump, or verification operation. This option is valid for the <strong>-R</strong> and <strong>-L</strong> options. When specifying the <strong>-U</strong> option, the <em>archive_name</em> is required.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-v</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Displays information about the progress of a save, restore, or verify operation.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-Z</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxbackup</strong> to compress the archive while performing the save operation. This option is valid for the <strong>-S</strong> option. When specifying the <strong>-Z</strong> option the <em>archive_name</em> is required.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-h</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Prints a command usage message.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>**-V__</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Displays the DirX Directory product version, in the format:</p>
+<div class="paragraph">
+<p><em>product_version build_id date time</em></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p><code>DirX Directory V9.0 9.4.428 2023:03:23 20:10 64-Bit</code></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>dirxbackup</strong> command saves or restores a database or verifies the consistency of a database archive. Do not use a non-DirX backup tool to save DBAM database files or devices. It can produce inconsistencies in the database and / or in the dirxbackup archive file.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-S</strong> and <strong>-R</strong> options to save and restore a database. If you do not specify an archive name as an argument to these options, <strong>dirxbackup</strong> writes the database to standard output or reads a database from standard input.</p>
+</div>
+<div class="paragraph">
+<p>You can use this function to run the command in conjunction with a file compress/uncompress tool such as <strong>gzip</strong>. For example, you can use the <strong>dirxbackup</strong> command in a “pipe” with a compress tool to take database backup and then compress it for storage. Keep in mind that not all compress tools support files larger than 2 GB. Note that the limitations of compress tools may be different for different operating systems.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-S</strong> and <strong>-Z</strong> options to direct <strong>dirxbackup</strong> to compress the saved database with the <strong>gzip</strong> tool under the specified <em>archive_name</em>. If the <em>archive_name</em> does not end with the suffix <strong>.gz</strong>, the save operation appends this suffix automatically.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-R</strong> and <strong>-U</strong> options to direct <strong>dirxbackup</strong> to uncompress an archive containing the database. The <em>archive_name</em> must be specified. If the specified <em>archive_name</em> ends with the suffix <strong>.gz</strong>, you can omit the <strong>-U</strong> option. <strong>dirxbackup</strong> tries to uncompress the archive automatically.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-R</strong> and <strong>-n</strong> options to direct <strong>dirxbackup</strong> to restore unverified attribute value index blocks (<strong>A</strong>) or bit strings (<strong>X</strong>). Note that restoring a backup with disabled verification components is faster but is not recommended. If a partially verified backup is restored, it is recommended to perform the omitted verification with the <strong>dbamverify</strong> command after restoration is complete.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-S</strong> and <strong>-d</strong> options to save only the updates performed after the last recent backup.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-S</strong> and <strong>-n</strong> options to suppress automatic backup verification for specific components or the entire backup.</p>
+</div>
+<div class="paragraph">
+<p>By default, <strong>dirxbackup</strong> records changes made to the database during a full backup save operation and appends them to the resulting archive. During this process, it may switch the DSA to read-only mode if a high number of modifications occur. Use the <strong>-f</strong> option with the <strong>-S</strong> option to disable this default behavior. The resulting archive will then contain the database state at the <em>start</em> of the save operation instead of the end of the operation.</p>
+</div>
+<div class="paragraph">
+<p>It is strongly recommended to stop the DirX Directory service before restoring a database. While restoring a database, the DSA rejects all update operations. It is not possible to start the DBAM tools <strong>dbamverify</strong> and <strong>dbamdevinfo</strong>.</p>
+</div>
+<div class="paragraph">
+<p>A database can only be restored on the same platform where the save command has been performed.</p>
+</div>
+<div class="paragraph">
+<p>A database can only be restored if all components of all the backups, including the full and all delta backups, have been verified with a tool with the same or later major and minor version as <strong>dirxbackup</strong>. Full backup verification is automatically performed when a full backup is saved using the <strong>-S</strong> option. Use the <strong>-n</strong> option to preserve the original saving behavior. As delta backups contain only partial information about the database, they cannot be verified automatically. So, when delta backups are used, they must be verified by <strong>dbamverify</strong> together with the full backup before they are loaded.</p>
+</div>
+<div class="paragraph">
+<p>When restoring a database, the configuration must fit the configuration of the saved database. Perform a <strong>dirxbackup -I -i</strong> <em>archive_name_of_the_saved_database</em> operation to display the profile information of the saved database. The values of the profile to which the database is restored must be equal to or greater than the values of the saved database profile.</p>
+</div>
+<div class="paragraph">
+<p>Perform a <strong>dbamconfig -s -l -P*<em>profile_name</em> operation to display the profile info of the profile to which the database should be restored. (See the *dbamconfig</strong> command for details on how to create a database profile and the <strong>dbamboot</strong> command for details on how to initialize a database.)</p>
+</div>
+<div class="paragraph">
+<p>When restoring the database into an enlarged configuration, use the <strong>-a</strong> option to specify how many additional attribute type indexes may be created. If the size of the attribute value index (<strong>AVIDX</strong>) blocks configured by <strong>dbamconfig</strong> is not big enough to save all possible attribute type index data, <strong>dirxbackup</strong> reduces the specified number of attribute type indexes and displays a message. See also the <strong>dbamboot</strong> command.</p>
+</div>
+<div class="paragraph">
+<p>When restoring a database, you must restore the initial complete backup and all subsequent delta backups in the correct order. If the sequence of the archives is incorrect, the restore operation fails and an error message is displayed.</p>
+</div>
+<div class="paragraph">
+<p>If you overwrite DirX Directory working directories, for example, by restoring a hard-disk backup, the DirX Directory service is not able to run. Thus, it is strongly recommended to use only <strong>dirxbackup</strong> to restore DirX Directory data.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-I</strong> (capital i) option to display useful information about the archive. This information can help you, for example, to determine whether you should enlarge the profile in which you want to restore the database.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-L</strong> option to generate an LDIF content file from an archive instead of from the active database. Make sure that the archive to be used for generating an LDIF content file has been verified by the <strong>dbamverify</strong> tool. Only error-free archives should be used. If <strong>dirxbackup</strong> finds any problem in the archive, it aborts the generation of the LDIF file.</p>
+</div>
+<div class="paragraph">
+<p>If there are shadowing agreements, you must perform the steps described in sections titled <strong>Building the Shadow Configuration</strong> and <strong>Using DISP to Perform a Total Update</strong> of chapter <strong>Creating a Shadow DSA</strong> in the <em>DirX Directory Administration Guide</em>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The following sample command saves the content of the active database into an archive <strong>ArchiveDB1</strong>.</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxbackup -S ArchiveDB1</pre>
+</div>
+</div>
+</li>
+<li>
+<p>In the following sample, the administrator performs an initial complete backup into an archive <strong>ArchiveDB1</strong>. Then he performs two subsequent delta backups into the archives <strong>ArchiveDB1_Delta1</strong> and <strong>ArchiveDB1_Delta2</strong>.</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxbackup -S ArchiveDB1
+dirxbackup -S -d ArchiveDB1_Delta1
+dirxbackup -S -d ArchiveDB1_Delta2</pre>
+</div>
+</div>
+</li>
+<li>
+<p>In the following sample commands, the administrator restores the initial complete backup <strong>ArchiveDB1</strong> followed by the two delta backups <strong>ArchiveDB1_Delta1</strong> and <strong>ArchiveDB1_Delta2</strong>.</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxbackup -R ArchiveDB1
+dirxbackup -R -d ArchiveDB1_Delta1
+dirxbackup -R -d ArchiveDB1_Delta2</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The following sample command saves the content of the active database to standard output, pipes it to <strong>gzip</strong>, and redirects the <strong>gzip</strong> output to an archive <strong>ArchiveDB2.gz</strong>.</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxbackup -S | gzip &gt; ArchiveDB2.gz</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Instead of using the command "in a pipe" with the <strong>gzip</strong> tool you can perform the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>dirxbackup -S -Z ArchiveDB2.gz</pre>
+</div>
+</div>
+</li>
+<li>
+<p>In the following command, the administrator restores a compressed archive:</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxbackup -R -U ArchiveDB2.gz</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can omit the <strong>-U</strong> switch because the archive name <strong>ArchiveDB.gz</strong> ends with the suffix <strong>.gz</strong>.</p>
+</div>
+</li>
+<li>
+<p>In the following command, the administrator displays the archive information to find out whether he must enlarge the profile to which he wants to restore the database:</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxbackup -I ArchiveDB2.gz</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The output of the sample command is as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Full backup time stamp       : Fri Feb 27 10:34:37 2009
+Archive version              : 3
+Backup file type             : Full backup
+Max. indexed attribute types : 400
+Number of AVIDX cluster      : 2559
+AVIDX cluster size           : 32 MB
+REAL object block size       : 1 KB
+Verified at                  : Thu 04/13/23 08:53:34
+Verified with version        : 9.6.349
+Verified components          : AXDST
+Number of errors             : 0
+Number of warnings           : 0</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The following sample command generates an LDIF content file of the archive <strong>ArchiveDB1</strong>:</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxbackup -L -o ArchiveDB1.ldif ArchiveDB1</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The following sample command generates an LDIF content file of the archive <strong>ArchiveDB1</strong> starting from the subtree <strong>/O=My-Company</strong>:</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxbackup -L -s /O=My-Company -o ArchiveDB1.ldif ArchiveDB1</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The following sample command saves the content of the active database into an archive <strong>ArchiveDB1</strong> without attribute index verification:</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxbackup -n AX -S ArchiveDB1</pre>
+</div>
+</div>
+</li>
+<li>
+<p>In the following sample command, the administrator restores the complete backup <strong>ArchiveDB1</strong> without requiring attribute index (<strong>AVIDX</strong>) component verification and then performs the verification with <strong>dbamverify</strong> on the restored active database. Restoring a backup without the component verification step makes the operation faster but verification should be performed on the unverified component after the restore operation is finished:</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxbackup -n AX -R ArchiveDB1
+dbamverify -AX</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exit_codes"><a class="anchor" href="#_exit_codes"></a>Exit Codes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>dirxbackup</strong> command returns an exit code of <strong>0</strong> on success or a <strong>1</strong> if it encountered an error. The text of the error message is displayed on <strong>stderr</strong>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_see_also"><a class="anchor" href="#_see_also"></a>See Also</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>dbamboot</strong>, <strong>dbamconfig</strong>, <strong>dbamverify</strong>, <strong>dirxload</strong>, <strong>dirxmodify</strong></p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>DirX is a registered trademark © Copyright 2024, Eviden SAS – All rights reserved.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license.
+    Several icons used are provided by Google and are licensed under the
+    <a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License Version 2.0</a>.
+  </p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>

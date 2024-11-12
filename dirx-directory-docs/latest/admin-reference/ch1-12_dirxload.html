@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>dirxload :: Documentation</title>
+    <link rel="canonical" href="https://docs.dirx.solutions/dirx-directory-docs/latest/admin-reference/ch1-12_dirxload.html">
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.dirx.solutions">
+        <div class="navbar-item logo"></div>
+        Documentation
+      </a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="./">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">DirX Access</a>
+            <a class="navbar-item" href="#">DirX Audit</a>
+            <a class="navbar-item" href="../index.html">DirX Directory</a>
+            <a class="navbar-item" href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dirx-directory-docs" data-version="9.1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">DirX Directory</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">General</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">About this Documentation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="pdf-src/admin-reference.html">Administration Reference</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../copyright.html">Copyright</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="adrefprf.html">Preface</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-0_cmds.html">DirX Directory Commands</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-1_dirxadm.html">dirxadm</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_abbr_dirxcp_dirxadm">abbr (dirxcp, dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_attr_dirxadm">attr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_audit_dirxadm">audit (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_db_dirxadm">db (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_dse_dirxadm">dse (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_ldap_dirxadm">ldap (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_lob_dirxadm">lob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_nmi_dirxadm">nmi (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_progsvr_dirxadm">progsvr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sob_dirxadm">sob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sys_dirxadm">sys (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_util_dirxadm">util (dirxadm)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-2_dirxcp.html">dirxcp</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_abbr_dirxadm_dirxcp">abbr (dirxadm, dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_args_dirxcp">args (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_ldapargs_dirxcp">ldapargs (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_obj_dirxcp">obj (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_util_dirxcp">util (dirxcp)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-3_dirxauddecode.html">dirxauddecode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-4_dirxaudstatistics.html">dirxaudstatistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-5_dirxdumplog.html">dirxdumplog</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-6_dirxbackup.html">dirxbackup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-7_dirxmodify.html">dirxmodify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-8_dirxconfig.html">dirxconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-9_dbaminit.html">dbaminit</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-10_dbamconfig.html">dbamconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-11_dbamboot.html">dbamboot</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="ch1-12_dirxload.html">dirxload</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-13_dbamverify.html">dbamverify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-14_dbamdevinfo.html">dbamdevinfo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-15_dirxextop.html">dirxextop</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-16_dirxhostinfo.html">dirxhostinfo</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch2_files.html">DirX Directory Files</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirx_directory_environment_variable_ini_file">DirX Directory Environment Variable Ini File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_abbreviation_files">Abbreviation Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_configuration_file">LDAP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_http_server_configuration_file">HTTP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_directory_client_configuration_file">Directory Client Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_key_material">LDAP Server Key Material</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ssltls_certificate_database">SSL/TLS Certificate Database</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_key_database_used_for_client_authentication">Key Database Used for Client Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_idms_configuration_and_key_material_files">IDMS Configuration and Key Material Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_snmpv2_trap_configuration_file">SNMPv2 Trap Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirxauddecode_configuration_file">dirxauddecode Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_syslog_configuration_file">syslog Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_logging_configuration_files">Logging Configuration Files</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch3_schema.html">DirX Directory Default DSA Schema</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_table">Attribute Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_object_classes_table">Object Classes Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_syntax_table">Attribute Syntax Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_matching_rule_table">Matching Rule Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_schema_check">Schema Check</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html">Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_setting_environment_variables">Setting Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_using_the_dirx_directory_ini_file">Using the DirX Directory ini File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_windows_systems">Windows Systems</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_linux_systems">Linux Systems</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch4_envvars.html#_dirx_directory_environment_variables">DirX Directory Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_operating_system_environment_variables">Operating System Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_system_directories_for_temporary_files">System Directories for Temporary Files</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_enabling_keepalive_timeinterval">Enabling KEEPALIVE Time/Interval</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch5_ipports.html">IP Port Numbers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_general_information">General Information</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_environment_variables">Port Numbers Specified in Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_attributes_of_ldap_server_configuration_subentry">Port Numbers Specified in Attributes of LDAP Server Configuration Subentry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_configuration_files">Port Numbers Specified in Configuration Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_and_the_firewall">Port Numbers and the Firewall</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ch6_fileloc.html">File Locations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appa_ldapmibs.html">LDAP MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_static_table">LDAP MIB Static Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_total_table">LDAP MIB Total Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_current_table">LDAP MIB Current Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_association_table">LDAP MIB Association Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_environment_table">LDAP MIB Environment Table</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appb_exitcodes.html">Exit Codes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_http_server_exit_codes">HTTP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_progsvr_exit_codes">Progsvr Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_dsa_exit_codes">DSA Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_ldap_server_exit_codes">LDAP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_exit_codes_and_the_dirx_directory_watchdog_process">Exit Codes and the DirX Directory Watchdog Process</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appc_dbammibs.html">DBAM MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_transaction_statistics">DBAM Transaction Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_statistics">DBAM Buffer Cache Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_io_statistics">DBAM Buffer Cache I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_translog_device_io_statistics">DBAM Translog Device I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_checkpoint_statistics">DBAM Checkpoint Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_interval_statistics">DBAM Interval Statistics</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">DirX Directory</span>
+    <span class="version">9.1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">DirX Directory</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">9.1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dirx-identity-docs/latest/index.html">9.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">DirX Directory</a></li>
+    <li><a href="pdf-src/admin-reference.html">Administration Reference</a></li>
+    <li><a href="ch1-0_cmds.html">DirX Directory Commands</a></li>
+    <li><a href="ch1-12_dirxload.html">dirxload</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">dirxload</h1>
+<div class="sect1">
+<h2 id="_synopsis"><a class="anchor" href="#_synopsis"></a>Synopsis</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>dirxload</strong><br>
+&#160; &#160; {<strong>-f</strong> <em>LDIF_file_list</em> | <strong>-F</strong> <em>LDIF_file_list_file</em>}<br>
+&#160; &#160; &#160; &#160; [<strong>-A</strong> [<strong>-a</strong> <em>db_configuration_file</em>]] [<strong>-c</strong>] [<strong>-n</strong>] [<strong>-r</strong>] [<strong>-s</strong>]<br>
+&#160; &#160; &#160; &#160; [<strong>-S</strong> <em>LDIF_schema-file</em>] [<strong>-t</strong> <em>temp_dir</em>] [<strong>-v</strong>[<strong>-I</strong> <em>interval</em>]] [<strong>-X</strong>] |<br>
+&#160; &#160; <strong>-h</strong> |<br>
+&#160; &#160; <strong>-V</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_purpose"><a class="anchor" href="#_purpose"></a>Purpose</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Loads LDIF content files into a DirX Directory database.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_options"><a class="anchor" href="#_options"></a>Options</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>-f</strong> <em>LDIF_file_list</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies a comma-separated list of LDIF content files. Specify the full pathname or the relative pathname of the LDIF content files. The list is processed from left to right.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-F</strong> <em>LDIF_file_list_file</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies a file that contains a list of LDIF content files. Specify one full pathname or one relative pathname of the LDIF content files per line. The file is processed from the top of the file downwards.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-A</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxload</strong> to perform attribute index configuration as specified in the subentry with the DN <strong>CN=DB-Configuration-Subentry</strong> in the first LDIF content file.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-a</strong> <em>db_configuration_file</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxload</strong> to apply attribute index configuration as specified in the external database configuration file <em>db_configuration_file</em>. This option can only be used with the <strong>-A</strong> option.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-c</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxload</strong> to ignore up to one thousand non-fatal errors during the load operation.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-n</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Runs <strong>dirxload</strong> in "simulation" mode: the command processes the LDIF content file(s) but does not create the entries in the DirX Directory database.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-r</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxload</strong> to save each rejected LDIF entry in a file. (See <strong>Description</strong> section below for details.)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-s</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxload</strong> to omit all shadow related entries and attributes. (See <strong>Description</strong> section below for details.)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-S</strong> <em>LDIF_schema_file</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxload</strong> to apply the schema as specified in the <strong>cn=</strong><em>schema entry</em> in the <em>LDIF_schema_file</em>. It ignores any schema definitions in the LDIF data files specified with switch <strong>-f</strong> or <strong>-F</strong>. (See the <strong>Description</strong> section for details.)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-t</strong> <em>temp_dir</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the directory that <strong>dirxload</strong> is to use to store temporary files. This directory must exist. If this option is not specified, <strong>dirxload</strong> uses the directory <em>install_path</em><strong>/tmp</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-v</strong>[<strong>-I</strong> <em>interval</em>]</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Displays progress and performance information during the load operation at each <em>interval</em> of loaded entries. If the <strong>-I</strong> option is not specified, <strong>dirxload</strong> displays progress information after each load of 100,000 entries.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-X</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Directs <strong>dirxload</strong> not to perform checking the password policy during the load operation. It is recommended to turn off checking the password policy to improve load performance and to avoid errors resulting from violating the password policy specified.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-h</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Prints a command usage message.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-V</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Displays the DirX Directory product version, in the format:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><em>product_version build_id date time</em></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p><code>DirX Directory V9.0 9.4.428 2023:03:23 20:10 64-Bit</code></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>dirxload</strong> command can load one or more large LDIF content files into the DirX Directory database. The LDIF files can contain an unlimited number of entries. You must ensure that the LDIF files are in UTF-8 format.</p>
+</div>
+<div class="paragraph">
+<p>Before you can use <strong>dirxload</strong>, you must:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Provide disk space for the database(s).</p>
+</li>
+<li>
+<p>Create the profile(s) with <strong>dbamconfig</strong>.</p>
+</li>
+<li>
+<p>Initialize the database(s) with <strong>dbamboot</strong>.</p>
+</li>
+<li>
+<p>Extend the DSA schema to include any object classes and attribute types not defined in the standard DSA schema. Then update the database configuration using <strong>dirxadm db attrconfig</strong> if additional attributes should be indexed. You can check which attributes are indexed by performing a <strong>dirxadm db show</strong> operation. Alternatively, you can specify the <strong>-A</strong> option to direct the <strong>dirxload</strong> command to configure attribute indexes.</p>
+</li>
+<li>
+<p>Stop the DirX Directory service with <strong>dirxadm</strong> <strong>sys</strong> <strong>stop</strong> or with the Administration Tool <strong>Services</strong> on Windows.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>When you use the <strong>dirxload</strong> command to update an existing database and / or perform attribute indexing during the load operation, you must stop the DSA first. Save your database before you start the <strong>dirxload</strong> command.</p>
+</div>
+<div class="paragraph">
+<p>The <strong>dirxload</strong> command uses the profile names that were specified when performing the <strong>dbamboot</strong> command.</p>
+</div>
+<div class="paragraph">
+<p>The schema must correspond to the entries that are contained in the LDIF files. The first LDIF file must contain schema modifications at the beginning of the file. Any other <strong>cn=*<em>schema entries</em> in the other LDIF data files are ignored. Use the *-S</strong> option to specify a separate LDIF file with schema information in the entry <strong>cn=*<em>schema</em>. If *-S</strong> is specified, the schema entry in the first LDIF file is ignored. Alternatively, the administrator can modify the schema before loading the LDIF files. DirX Directory Manager, for example, provides easy and convenient-to-use features for schema management and schema synchronization.</p>
+</div>
+<div class="paragraph">
+<p>The <strong>dirxload</strong> command can load entries of DSE type ENTRY and subentries with the subEntry object class. If you are planning to load entries that are not immediately below the DSE root, you must first create the superior DSEs - for example, with <strong>dirxcp</strong> - if they are not part of the LDIF files.</p>
+</div>
+<div class="paragraph">
+<p>By default, <strong>dirxload</strong> applies the attribute index configuration as specified in the database. (You can use the <strong>dirxadm db attconfig</strong> operation to administer the attribute indexes.) Use the <strong>-A</strong> option to direct <strong>dirxload</strong> to configure the attribute indexes as specified in the subentry with the DN <strong>CN=DB-Configuration-Subentry</strong>. Make sure that this subentry is located at the beginning of the first LDIF content file close to the position after the schema subentry. If <strong>dirxload</strong> does not find this entry at this location, it does not perform attribute index configuration. If you used the<br>
+<strong>dirxadm ldif_dump</strong> operation to create the LDIF file, the location of the DB configuration subentry is always correct and its contents reflects the database configuration at the time of the dump. If the settings in the subentry do not meet the required attribute index configuration, you can modify the configuration in the LDIF content file directly.</p>
+</div>
+<div class="paragraph">
+<p>Alternatively, you can specify a separate configuration file with the <strong>-a</strong> option. You can use the <strong>dirxadm export_dbconfig</strong> operation to generate a correctly formatted configuration file. (See the <strong>dirxadm export_dbconfig</strong> operation for details.) You can also provide an LDIF content file which includes only the subentry <strong>CN=DB-Configuration-Subentry</strong> with the appropriate settings. If the -a option is specified, the settings of the subentry <strong>CN=DB-Configuration-Subentry</strong> in the first LDIF content file are ignored.</p>
+</div>
+<div class="paragraph">
+<p>When changing the attribute index configuration, the rules for the <strong>dirxadm db attrconfig</strong> operation apply with the following exceptions. (See the <strong>dirxadm db attrconfig</strong> reference page for details.):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Only the following index keywords are supported: <strong>INITIAL, NO-INITIAL</strong>, <strong>FINAL</strong>, <strong>NO-FINAL</strong>, <strong>CONTAINS</strong>, <strong>NO-CONTAINS</strong>, <strong>PRESENT</strong>, <strong>NO-PRESENT</strong>, <strong>APPROXIMATE</strong>, <strong>NO-APPROXIMATE</strong>, <strong>UNIQUE</strong>, <strong>NO-UNIQUE</strong>.</p>
+</li>
+<li>
+<p>The <strong>PRESENT</strong> keyword is a synonym for the <strong>ANY</strong> keyword.</p>
+</li>
+<li>
+<p>Specifying the <strong>Any</strong> keyword is prohibited.</p>
+</li>
+<li>
+<p>A missing index-type keyword results in deleting the index-type.</p>
+</li>
+<li>
+<p>If an attribute type is not specified in the attribute index configuration, its attribute index settings remain unchanged as configured in the database.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>dirxload</strong> performs the following steps to create the attribute indexes during the load operation:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>It stores the values of each indexed attribute in a file named <em>unique_attribute_number</em>*-<strong><em>pid</em></strong>.iaf* in a temporary directory (see the <strong>-t</strong> option).</p>
+</li>
+<li>
+<p>It creates the attribute indexes from the intermediate attribute index files. Once the indexing operation completes successfully, <strong>dirxload</strong> deletes these files from the temporary directory. If the indexing operation encounters errors, <strong>dirxload</strong> preserves these files.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The size of each intermediate attribute index file depends on the content of the LDIF file(s) being loaded.</p>
+</div>
+<div class="paragraph">
+<p>By default, <strong>dirxload</strong> stops the load operation whenever it encounters errors. Use the <strong>-c</strong> option to allow <strong>dirxload</strong> to continue with the load operation when it encounters non-fatal errors.</p>
+</div>
+<div class="paragraph">
+<p>If an error occurs that causes <strong>dirxload</strong> to exit, you must delete all files named <em>unique_attribute_number</em>*-<strong><em>pid</em></strong>.iaf* in a temporary directory (see the <strong>-t</strong> option). You must restore your backup. After correcting the error(s) you must re-issue the <strong>dirxload</strong> command (the command has no automatic error recovery function).</p>
+</div>
+<div class="paragraph">
+<p>By default, <strong>dirxload</strong> does not save the LDIF entries that it rejects during the load operation. Use the <strong>-r</strong> option to override this default. When you specify this option, <strong>dirxload</strong> saves each entry it rejects in a file named <strong>rejected*<em>pid</em></strong>.ldif*, where <em>pid</em> is the process ID of the <strong>dirxload</strong> executable. These files are written to the same directory as the DSA log files; by default, this directory is <em>install_path</em>*/server/log*. Each reject file contains a comment line that identifies the reason for the rejection.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-s</strong> option to build a stand-alone DSA from the LDIF file: the Cooperating-DSAs-Subentry is omitted and all shadow-related knowledge attributes like supplierKnowledge and consumerKnowledge are omitted from all entries.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-n</strong> option to check whether <strong>dirxload</strong> can successfully process the target LDIF content files.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-v</strong> option to cause <strong>dirxload</strong> to write statistical information to standard output.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-l</strong> option to control the interval at which the command generates the statistical information during its operation.</p>
+</div>
+<div class="paragraph">
+<p>The <strong>dirxload</strong> command writes log information into the tools log directory; by default, this directory is <em>install_path</em><strong>/tools/log</strong>. The command&#8217;s logging function is controlled by the specifications contained in the file <em>install_path</em><strong>/tools/conf/dirxlog.cfg</strong>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example"><a class="anchor" href="#_example"></a>Example</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre>dirxload –cr –f topnodes.ldif,mycompany.ldif –t D:\temp\avindex</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exit_codes"><a class="anchor" href="#_exit_codes"></a>Exit Codes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>dirxload</strong> command returns an exit code of <strong>0</strong> on success or a non-negative error code if it encounters an error. The text of the error message is displayed on <strong>stderr</strong>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_see_also"><a class="anchor" href="#_see_also"></a>See Also</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>dbamboot</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>dirxadm</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>dirxcp</strong></p>
+</div>
+<div class="paragraph">
+<p>Logging Configuration Files</p>
+</div>
+<div class="paragraph">
+<p>DirX Directory Environment Variables</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>DirX is a registered trademark © Copyright 2024, Eviden SAS – All rights reserved.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license.
+    Several icons used are provided by Google and are licensed under the
+    <a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License Version 2.0</a>.
+  </p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>

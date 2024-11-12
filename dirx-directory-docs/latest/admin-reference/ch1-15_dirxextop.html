@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>dirxextop :: Documentation</title>
+    <link rel="canonical" href="https://docs.dirx.solutions/dirx-directory-docs/latest/admin-reference/ch1-15_dirxextop.html">
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.dirx.solutions">
+        <div class="navbar-item logo"></div>
+        Documentation
+      </a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="./">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">DirX Access</a>
+            <a class="navbar-item" href="#">DirX Audit</a>
+            <a class="navbar-item" href="../index.html">DirX Directory</a>
+            <a class="navbar-item" href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dirx-directory-docs" data-version="9.1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">DirX Directory</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">General</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">About this Documentation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="pdf-src/admin-reference.html">Administration Reference</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../copyright.html">Copyright</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="adrefprf.html">Preface</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-0_cmds.html">DirX Directory Commands</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-1_dirxadm.html">dirxadm</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_abbr_dirxcp_dirxadm">abbr (dirxcp, dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_attr_dirxadm">attr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_audit_dirxadm">audit (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_db_dirxadm">db (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_dse_dirxadm">dse (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_ldap_dirxadm">ldap (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_lob_dirxadm">lob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_nmi_dirxadm">nmi (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_progsvr_dirxadm">progsvr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sob_dirxadm">sob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sys_dirxadm">sys (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_util_dirxadm">util (dirxadm)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-2_dirxcp.html">dirxcp</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_abbr_dirxadm_dirxcp">abbr (dirxadm, dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_args_dirxcp">args (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_ldapargs_dirxcp">ldapargs (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_obj_dirxcp">obj (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_util_dirxcp">util (dirxcp)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-3_dirxauddecode.html">dirxauddecode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-4_dirxaudstatistics.html">dirxaudstatistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-5_dirxdumplog.html">dirxdumplog</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-6_dirxbackup.html">dirxbackup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-7_dirxmodify.html">dirxmodify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-8_dirxconfig.html">dirxconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-9_dbaminit.html">dbaminit</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-10_dbamconfig.html">dbamconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-11_dbamboot.html">dbamboot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-12_dirxload.html">dirxload</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-13_dbamverify.html">dbamverify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-14_dbamdevinfo.html">dbamdevinfo</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="ch1-15_dirxextop.html">dirxextop</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-16_dirxhostinfo.html">dirxhostinfo</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch2_files.html">DirX Directory Files</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirx_directory_environment_variable_ini_file">DirX Directory Environment Variable Ini File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_abbreviation_files">Abbreviation Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_configuration_file">LDAP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_http_server_configuration_file">HTTP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_directory_client_configuration_file">Directory Client Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_key_material">LDAP Server Key Material</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ssltls_certificate_database">SSL/TLS Certificate Database</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_key_database_used_for_client_authentication">Key Database Used for Client Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_idms_configuration_and_key_material_files">IDMS Configuration and Key Material Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_snmpv2_trap_configuration_file">SNMPv2 Trap Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirxauddecode_configuration_file">dirxauddecode Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_syslog_configuration_file">syslog Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_logging_configuration_files">Logging Configuration Files</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch3_schema.html">DirX Directory Default DSA Schema</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_table">Attribute Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_object_classes_table">Object Classes Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_syntax_table">Attribute Syntax Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_matching_rule_table">Matching Rule Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_schema_check">Schema Check</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html">Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_setting_environment_variables">Setting Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_using_the_dirx_directory_ini_file">Using the DirX Directory ini File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_windows_systems">Windows Systems</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_linux_systems">Linux Systems</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch4_envvars.html#_dirx_directory_environment_variables">DirX Directory Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_operating_system_environment_variables">Operating System Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_system_directories_for_temporary_files">System Directories for Temporary Files</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_enabling_keepalive_timeinterval">Enabling KEEPALIVE Time/Interval</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch5_ipports.html">IP Port Numbers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_general_information">General Information</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_environment_variables">Port Numbers Specified in Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_attributes_of_ldap_server_configuration_subentry">Port Numbers Specified in Attributes of LDAP Server Configuration Subentry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_configuration_files">Port Numbers Specified in Configuration Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_and_the_firewall">Port Numbers and the Firewall</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ch6_fileloc.html">File Locations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appa_ldapmibs.html">LDAP MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_static_table">LDAP MIB Static Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_total_table">LDAP MIB Total Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_current_table">LDAP MIB Current Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_association_table">LDAP MIB Association Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_environment_table">LDAP MIB Environment Table</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appb_exitcodes.html">Exit Codes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_http_server_exit_codes">HTTP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_progsvr_exit_codes">Progsvr Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_dsa_exit_codes">DSA Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_ldap_server_exit_codes">LDAP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_exit_codes_and_the_dirx_directory_watchdog_process">Exit Codes and the DirX Directory Watchdog Process</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appc_dbammibs.html">DBAM MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_transaction_statistics">DBAM Transaction Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_statistics">DBAM Buffer Cache Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_io_statistics">DBAM Buffer Cache I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_translog_device_io_statistics">DBAM Translog Device I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_checkpoint_statistics">DBAM Checkpoint Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_interval_statistics">DBAM Interval Statistics</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">DirX Directory</span>
+    <span class="version">9.1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">DirX Directory</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">9.1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dirx-identity-docs/latest/index.html">9.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">DirX Directory</a></li>
+    <li><a href="pdf-src/admin-reference.html">Administration Reference</a></li>
+    <li><a href="ch1-0_cmds.html">DirX Directory Commands</a></li>
+    <li><a href="ch1-15_dirxextop.html">dirxextop</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">dirxextop</h1>
+<div class="sect1">
+<h2 id="_synopsis"><a class="anchor" href="#_synopsis"></a>Synopsis</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>dirxextop</strong><br>
+&#160; &#160; [<strong>-h</strong> <em>host</em>]<br>
+&#160; &#160; [<strong>-p</strong> <em>port_number</em>]<br>
+&#160; &#160; [<strong>-D</strong> <em>bind_DN</em>]<br>
+&#160; &#160; [<strong>-w</strong> <em>password</em>]<br>
+&#160; &#160; [<strong>-z</strong> <em>pwdfile</em>]<br>
+&#160; &#160; [<strong>-E0</strong>]<br>
+&#160; &#160; [<strong>-E1</strong>]<br>
+&#160; &#160; [<strong>-E2</strong>]<br>
+&#160; &#160; [<strong>-C</strong> <em>certDB_path</em>]<br>
+&#160; &#160; [<strong>-b</strong>]<br>
+&#160; &#160; <strong>-t</strong> {<em>OID</em> | <em>keyword</em>}<br>
+&#160; &#160; [<strong>-TL</strong>]<br>
+&#160; &#160; [<strong>-TD</strong>]<br>
+&#160; &#160; [{<strong>-S</strong> | <strong>-H</strong>}]<br>
+&#160; &#160; [<strong>-d</strong>]<br>
+&#160; &#160; [<strong>-P</strong> <em>parameter</em>]<br>
+&#160; &#160; [<strong>-v</strong>] |<strong><br>
+&#160; &#160; </strong> <strong>-?</strong> |<br>
+&#160; &#160; <strong>-V</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_purpose"><a class="anchor" href="#_purpose"></a>Purpose</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Performs a single LDAP extended operation.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_options"><a class="anchor" href="#_options"></a>Options</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>-h</strong> <em>host</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the host name or IP address of the LDAP server. The default is <strong>localhost</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-p</strong> <em>port_number</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the port number of the LDAP server. The default is <strong>389</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-D</strong> <em>bind_DN</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the distinguished name in LDAP format that <strong>dirxextop</strong> is to use when binding to the LDAP server; for example, <strong>cn=admin,o=My-Company</strong>. If this option is not used, <strong>dirxextop</strong> binds as an anonymous user.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-w</strong> <em>password</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the password that <strong>dirxextop</strong> is to use when binding to the LDAP server.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-z</strong> <em>pwdfile</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the absolute or relative path name of the file that contains the password for the user specified in the <strong>-D</strong> option.<br>
+<br>
+The password must be the only content of this file. When creating the file, the password must be specified in plain ASCII format. When <strong>dirxextop</strong> reads the password for the first time, it encrypts it and reuses the encrypted format in subsequent starts.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-E0</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that <strong>dirxextop</strong> uses a server-authenticated SSL/TLS connection without server certificate checking.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-E1</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that <strong>dirxextop</strong> uses a server-authenticated SSL/TLS connection with server certificate checking.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-E2</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies that <strong>dirxextop</strong> uses a client-authenticated SSL/TLS connection with SASL method EXTERNAL. The certificate of the user specified in the <strong>-D</strong> option is used from <strong>cert8.db</strong>. Specify the password for accessing the private key in <strong>key3.db</strong> in the <strong>-w</strong> or <strong>-z</strong> option.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-C</strong> <em>certDB_path</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the full qualified name of the directory that contains the SSL/TLS key material, that is <strong>cert8.db</strong> and <strong>key3.db</strong>. If the <strong>-C</strong> option is absent and the <strong>-E0</strong> or <strong>-E1</strong> or <strong>-E2</strong> option is present the <em>certDB_path</em> is <strong>$DIRX_INST_PATH/client/conf</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-b</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Performs the external operation without binding to the LDAP server. The extended operation is performed as anonymous user.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-t</strong> {<em>OID</em> | <em>keyword</em>}</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>This required option specifies the object identifier (OID) or keyword of the extended operation. Use one of the following known object identifiers (OIDs) or keywords:</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33%;">
+<col style="width: 31%;">
+<col style="width: 36%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>OID</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Keyword</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_extop_info</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays a list of all supported LDAP extended operations.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_mib_static</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the LDAP MIB static table.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_mib_total</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the LDAP MIB total table.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_mib_current</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the LDAP MIB current table.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_mib_assoc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the LDAP MIB association table.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_mib_env</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the LDAP MIB environment table.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_cache_info</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays configuration information and statistical information of the LDAP cache.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_audit_info</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays current audit status and audit configuration of the LDAP server.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_audit_start</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Starts LDAP server auditing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_audit_stop</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stops LDAP server auditing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_host_ips</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the IP addresses of the host.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_cfg_defaults</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the default values for the LDAP server configuration.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_pstack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays LDAP server thread stacks.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_bt_dump</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dumps the content of the bind table of the LDAP server.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.14</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_idm_dump</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dumps the content of the IDM connection table of the LDAP server.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_cache_start</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Starts caching of LDAP search results.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_cache_stop</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stops caching of LDAP search results.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.17</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_cache_dump</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dumps configuration information, statistical information, and all saved results to the file <em>install_path</em>*/ldap/log/cache*<em>process_id</em>*.txt* where <em>process_id</em> is the process ID of the LDAP server.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.18</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_cache_clear</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Removes all saved results from the LDAP server cache.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.19</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_audit_evaluate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evaluates LDAP server audit.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.20</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_rusage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays LDAP server process specific system resource information.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.21</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_pfiles</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays LDAP server process specific file descriptor usage.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.22</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_top</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays LDAP server top process information.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.23</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays LDAP server status information.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_pmap</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the LDAP server process memory-mapping table.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.26</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_ctxinfo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays LDAP server CTX usage information.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.27</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_netstat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the port numbers used by the LDAP server.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.28</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_audit_err</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evaluates and displays erroneous operations from LDAP server auditing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.29</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_exceptions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays LDAP server exceptions.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_op_history</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the LDAP server operation statistics of the last recent 24 hours.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.31</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_ssl_ciphernames</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the SSL cipher names supported.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_mib_total_tevd</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays internal data of the LDAP MIB total table.<br>
+For DirX Directory Nagios plugins.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.33</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_mib_current_tevd</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays internal data of the LDAP MIB current table.<br>
+For DirX Directory Nagios plugins.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.34</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_no_of_fds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the number of file descriptors or handles used by the LDAP server.<br>
+For DirX Directory Nagios plugins.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.35</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_show_op_priv</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays required privileges for LDAP extended operations.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.36</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_show_priv_users</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the users allowed to perform LDAP extended operations.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.37</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_mib_dump</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Writes the information in all MIB tables except the MIB association table to the file <strong>mib*<em>pid</em></strong>.txt* where <em>pid</em> is the process ID of the LDAP server. This file is written to the same directory as the usual log files, by default to the directory <em>install_path</em>*/ldap/log*.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.39</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_ssl_ctx_update</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Triggers the renewal of the CRLs that the LDAP server uses to check user certificates in the context of ldap sasl binds. The CRLs are updated with the content of the files configured in the attribute LDAP SSL CRL Filenames (ldapSslCrlFileNames).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.47</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_cfg_upd</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activates one or more changes to an LDAP server’s configuration subentry without having to re-start the server. (See the <strong>ldap_cfg_upd</strong> reference page in <em>DirX</em> <em>Directory LDAP Extended Operations</em> for details.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.48</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_show_cfg_general</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the current settings for attributes of an LDAP server’s configuration subentry. (See the <strong>ldap_show_cfg_general</strong> reference page in <em>DirX</em> <em>Directory LDAP Extended Operations</em> for details.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.49</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_show_cfg_ssl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the current settings for attributes of an LDAP server’s SSL configuration subentry. (See the <strong>ldap_show_cfg_ssl</strong> reference page in <em>DirX</em> <em>Directory LDAP Extended Operations</em> for details.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_show_cfg_audit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the current settings for attributes of an LDAP server’s audit configuration subentry. (See the <strong>ldap_show_cfg_audit</strong> reference page in <em>DirX</em> <em>Directory LDAP Extended Operations</em> for details.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.51</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_show_cfg_upd_history</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the details of the last 25 updates to an LDAP server’s configuration subentry. (See the <strong>ldap_show_cfg_upd_history</strong> reference page in <em>DirX</em> <em>Directory LDAP Extended Operations</em> for details.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.52</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_show_cfg_upd_attr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the list of LDAP server configuration subentry attributes that can be dynamically updated. (See the <strong>ldap_show_cfg_upd_attr</strong> reference page in <em>DirX</em> <em>Directory LDAP Extended Operations</em> for details.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.53</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_enable_config_dsa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enables the specified contact DSA. (See the <strong>ldap_enable_config_dsa</strong> reference page in <em>DirX</em> <em>Directory LDAP Extended Operations</em> for details.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.54</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_disable_config_dsa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Disables the specified contact DSA. (See the <strong>ldap_disable_config_dsa</strong> reference page in <em>DirX</em> <em>Directory LDAP Extended Operations</em> for details.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.55</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_show_config_dsas</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the currently active contact DSA table. (See the <strong>ldap_show_config_dsas</strong> reference page in <em>DirX</em> <em>Directory LDAP Extended Operations</em> for details.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.56</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_show_policy_rules</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the all policies in effect. (See the <strong>ldap_show_policy_rules</strong> reference page in <em>DirX</em> <em>Directory LDAP Extended Operations</em> for details.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.57</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_show_policy_users</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays all users for whom policies are in effect. (See the <strong>ldap_show_policy_users</strong> reference page in <em>DirX</em> <em>Directory LDAP Extended Operations</em> for details.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.11.58</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ldap_show_single_user_policy_rules</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays all policies in effect for a specific user. (See the <strong>ldap_show_single_user_policy_rules</strong> reference page in <em>DirX</em> <em>Directory LDAP Extended Operations</em> for details.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_nmi_show</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the application and DSA MIBs.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_dbam_mib_show</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the DSA DBAM MIB.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_entry_info_get</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the entry information.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_dbam_mib_enable</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enables the DSA DBAM MIB.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_dbam_mib_disable</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Disables the DSA DBAM MIB.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_nmi_show_dap</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the DSA MIB of DAP connections.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_nmi_show_dsp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the DSA MIB of DSP connections.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_nmi_show_disp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the DSA MIB of DISP connections.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_pstack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the DSA thread stacks.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_bt_dump</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dumps the content of the bind table of the DSA.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_idm_dump</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dumps the content of the IDM connection table of the DSA.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_disp_flow_counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the DSA DISP flow counters.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_rusage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays DSA process specific system resource information.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.14</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_pfiles</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays DSA process specific file descriptor usage.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_top</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays DSA top process specific information.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays DSA process status information.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.17</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_smaps</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays DSA smaps.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.18</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_pmap</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays DSA process memory-mapping table.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.19</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_dbam_devinfo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays information about the capacity of the logical and the attribute index specific devices of the database.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.20</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_iostat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays DSA I/O traffic information.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.21</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_ctxinfo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays DSA CTX usage information.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.22</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_audit_evaluate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evaluates the DSA auditing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.23</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_audit_enable</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enables DSA auditing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_audit_disable</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Disables DSA auditing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_audit_info</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the configuration parameters of DSA auditing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.26</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_dbam_config</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the properties of the database profiles.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.27</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_netstat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the port numbers used by the DSA.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.28</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_exceptions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays DSA exceptions. On Windows, this operation is not available.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.29</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_history_dap</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays 24 hours DAP performance counters.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_history_dsp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays 24 hours DSP performance counters.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.31</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_history_disp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays 24 hours DISP performance counters.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_index_info</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the current attribute index configuration.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.33</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_dbam_backup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invokes writing a DBAM backup.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.34</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_disp_monitor</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays internal data related to the DSA’s replication component.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.35</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_server_files</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the number of files located under <em>install_path</em>*/server.*<br>
+For DirX Directory Nagios plugins.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.36</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_dbam_preload_status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the status of the DBAM buffer cache preloader.<br>
+For DirX Directory Nagios plugins.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.37</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_get_opmode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the current operation mode of the DSA.<br>
+For DirX Directory Nagios plugins.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.38</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_backup_status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays information about the last backup operations.<br>
+For DirX Directory Nagios plugins.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.39</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_no_of_fds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the number of file descriptors or handles used by the DSA.<br>
+For DirX Directory Nagios plugins.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.40</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_paging_info</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Returns information about paged search operations; for example, the maximum number of paged search operations and the current number of paged search operations.<br>
+For DirX Directory Nagios plugins.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.42</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_dbam_preload_on</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Starts the DBAM buffer cache preloader.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.43</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_dbam_preload_off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stops the DBAM buffer cache preloader.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_disp_role</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Returns a string indicating the current shadowing role of the DSA. Possible roles are <strong>STANDALONE</strong>, <strong>CONSUMER</strong>, <strong>SUPPLIER</strong> or <strong>SUPPLIER+CONSUMER</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.46</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_dbam_aac</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Manages the DBAM AVIDX access counter (AAC) statistic histories. (See the <strong>dsa_dbam_aac</strong> reference page in <em>DirX</em> <em>Directory LDAP Extended Operations</em> for details.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.47</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_ac_log_on</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enables access control (AC) logging. (See the <strong>dsa_ac_log_on</strong> reference page in <em>DirX</em> <em>Directory LDAP Extended Operations</em> for details.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.48</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_ac_log_off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Disables access control (AC) logging. (See the <strong>dsa_ac_log_off</strong> reference page in <em>DirX</em> <em>Directory LDAP Extended Operations</em> for details.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.49</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_dirxadm_cmd</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Performs a <strong>dirxadm</strong> command with a directory server that can only be accessed via LDAP protocol. This extended operation is available only on Linux systems. (See the <strong>dsa_dirxadm_cmd</strong> reference page in <em>DirX</em> <em>Directory LDAP Extended Operations</em> for details.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_license_info</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays the current license information used by the DSA.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.51</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_license_check</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reads the license file *dirx.lic*<em>,</em> checks it and updates the license information used by the DSA with the file’s content.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3.12.2.1107.1.3.2.13.52</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dsa_relevant_aci</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Searches for access control subentries that include the specified entry in the user classes. (See the <strong>dsa_relevant_aci</strong> reference page in <em>DirX</em> <em>Directory LDAP Extended Operations</em> for details.)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>-TL</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Displays an OID / keyword list of supported extended operations performed by the LDAP server.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-TD</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Displays an OID / keyword list of supported extended operations performed by the DSA.</p>
+<div class="paragraph">
+<p>The LDAP server receives this operation request and passes the operation to the DSA. The DSA performs the operation and returns the result to the LDAP server. The LDAP server returns the (DSA) result to the requestor.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-S</strong> | <strong>-H</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies the output format of the result. Specify either <strong>-S</strong> for string format output, or <strong>-H</strong> for hexdump format output. The default is string format output for known OIDs and hexdump format output for unknown OIDs.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-d</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Displays the working profile.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-P</strong> <em>parameter</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Specifies a parameter for the following LDAP extended operations:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>dsa_ac_log_on</strong>—(optional) Restricts the logging output to the information that is relevant to a particular type of operation. (See the <strong>dsa_ac_log_on</strong> reference page in <em>DirX</em> <em>Directory LDAP Extended Operations</em> for details.)</p>
+</li>
+<li>
+<p><strong>dsa_dbam_backup</strong>—(mandatory) Specifies the name of the archive file to which the database is written, for example <strong>archive01</strong>; the resulting database archive is written to <em>install_path</em>*/server/log* as <em>install_path</em>*/server/log/archive01.gz*. If a full path name is specified, for example <strong>D:\dirxArchives\archive01</strong>, the resulting database archive is located there, for example, <strong>D:\dirxArchives\archive01.gz</strong>.</p>
+</li>
+<li>
+<p><strong>dsa_dirxadm_cmd</strong>—(mandatory) Specifies the <strong>dirxadm</strong> operation as a simple unencoded string enclosed in double quotes (<strong>"*<em>dirxadm_command</em></strong>"*).</p>
+</li>
+<li>
+<p><strong>dsa_relevant_aci</strong>—(optional) Specifies the distinguished name of the entry in LDAP format; for example, <strong>cn=admin,o=my-company</strong>. (For details about distinguished names in LDAP format, see the section <strong>Distinguished Names</strong> in the chapter <strong>DirX</strong> <strong>Directory String Representation for LDAP Binds</strong> in <em>DirX</em> <em>Directory Syntaxes and Attributes</em>.)</p>
+</li>
+<li>
+<p><strong>ldap_enable_config_dsa</strong> and <strong>ldap_disable_config_dsa</strong>—(mandatory) Specifies the DSA name of the contact DSA which should be enabled or disabled, for example <strong>/CN=sslDSA2</strong>.</p>
+</li>
+<li>
+<p><strong>ldap_mib_total_tevd</strong> and <strong>ldap_mib_current_tevd</strong>—(optional) Specifies the name of the delta counter to be updated; for example, <strong>SearchesDelta</strong>. (See the <strong>check_dirx_ldap_totals</strong> and <strong>check_dirx_ldap_current</strong> DirX Directory Nagios plugin reference pages in <em>DirX</em> <em>Directory Plugins for Nagios</em> for a list of valid delta counter names.) If not specified, all delta counters are updated.</p>
+</li>
+<li>
+<p><strong>ldap_show_single_user_policy_rules</strong>—(mandatory) Specifies the full qualified user’s distinguished name in LDAP format; for example, <strong>cn=admin,o=my-company</strong>. (For details about distinguished names in LDAP format, see the section <strong>Distinguished Names</strong> in the chapter <strong>DirX</strong> <strong>Directory String Representation for LDAP Binds</strong> in <em>DirX</em> <em>Directory Syntaxes and Attributes</em>.)</p>
+</li>
+<li>
+<p><strong>ldap_ssl_ciphernames</strong>—(optional) Specifies a cipher shortcut name, for example, <strong>RSA</strong>, <strong>MEDIUM</strong> or <strong>HIGH</strong>. (See parameter <strong>idm_ssl_ciphers_list</strong> and <strong>idm_ssl_ciphers_suites</strong> in <strong>IDMS Configuration and Key Material Files</strong> in the chapter <strong>DirX</strong> <strong>Directory Files</strong> for details.) If omitted, all supported cipher names are displayed.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-v</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Enables verbose mode.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-?</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Prints a command usage message.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-V</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Displays the DirX Directory product version of this tool, in the format:</p>
+<div class="paragraph">
+<p><em>product_version build_id date time</em></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p><code>DirX Directory V9.0 9.4.428 2023:03:23 20:10 64-Bit</code></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>dirxextop</strong> command performs a single LDAP extended operation. (See section 4.12 <strong>Extended Operation</strong> in the <em>Lightweight Directory Access Protocol (v3)</em>, RFC 2251, December 1997 for details on extended operations.) The extended operations provided by DirX Directory are designed mainly for support purposes. They provide management information base (MIB) table data and other diagnostic data of the DirX Directory server processes.</p>
+</div>
+<div class="paragraph">
+<p>Some of the extended operations may also be performed via <strong>dirxadm</strong>, a DirX Directory command, or a system command; for example <strong>dirxadm ldap audit info</strong>. The advantage of using <strong>dirxextop</strong> is that the client performs the operation as a typical LDAP client via LDAP protocol, while the other commands use specific RPC ports and protocols.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-h</strong> and the <strong>-p</strong> option to specify the IP address and port number of the LDAP server.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-D</strong> and <strong>-w</strong> or <strong>-z</strong> option to provide bind information. Use the <strong>-b</strong> option to omit the bind operation and perform the extended operation as anonymous user. If an anonymous bind is performed or the operation is performed as anonymous user, the extended operation must not be restricted to any administrators.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-t</strong> option to specify the extended operation to be performed. Specify either the object identifier (OID) or the keyword of the extended operation.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-TL</strong> or the <strong>-TD</strong> option to display a list of supported extended operations.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-S</strong> (string) or <strong>-H</strong> (hexadecimal) option to specify the output format.</p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-d</strong> option to display the working profile. The working profile provides information about:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>LDAP server</p>
+</li>
+<li>
+<p>bind information</p>
+</li>
+<li>
+<p>extended operation performed</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Use the <strong>-v</strong> option to display detailed information about the operation.</p>
+</div>
+<div class="paragraph">
+<p>The extended operations <strong>ldap_cfg_defaults</strong>, <strong>ldap_ext_info</strong>, <strong>ldap_show_config_dsas</strong>, <strong>ldap_ssl_ciphernames</strong> and <strong>startTLS</strong> are performed without any restriction or authentication. The <strong>LDAP Extended Operations Admins</strong> (ldapExtOpAdmins) attribute and the <strong>LDAP Extended Operations Admin Groups</strong> (ldapExtOpAdminGroups) attribute of the LDAP server configuration subentry controls the accessibility of all other extended operations; that is, the distinguished name specified in the <strong>-D</strong> option must be one of the values of the <strong>LDAP Extended Operations Admins</strong> attribute or the <strong>LDAP Extended Operations Admin Groups</strong> attribute to be allowed to perform an extended operation. For information about attributes for specifying more fine-grained access rights to LDAP extended operations, see the section <strong>Attributes Controlling LDAP Extended Operations</strong> in the chapter <strong>DirX</strong> <strong>Directory Attributes</strong> in <em>DirX</em> <em>Directory Syntaxes and Attributes</em>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>In the following example, the administrator requests the current audit status and configuration of the LDAP server (OID: 1.3.12.2.1107.1.3.2.11.7). He performs an anonymous bind to the local LDAP server and displays the working profile and detailed information about the operation.</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxextop -t 1.3.12.2.1107.1.3.2.11.7 -v -d</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The output of the sample command is as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>dirxextop working profile:
+LDAP server   : localhost:389
+Bind DN       : anonymous
+Password      : anonymous
+ExtOp         : 1.3.12.2.1107.1.3.2.11.7
+Omit Bind     : no
+Show Time     : no
+Verbosity     : 1
+Start-Time: Wed Jan 09 09:01:07 2008V
+Binding to master LDAP server (localhost:389) as 'anonymous'...OK.
+Result of ExtOp :1.3.12.2.1107.1.3.2.11.7
+
+==================== LDAP Audit Info  ===========================
+Server            : DirX Directory V8.0 C 8.2.165 2008:01:04 20:10 (strong SSL)
+32-Bit
+Hostname          : baum.mch.my-company.de
+Current Local Time: Wed Jan 09 09:01:07 2008
+Status            : ON
+Audit Version     : 8.2
+Destination File  : C:\Program Files\DirX\Directory\ldap\audit\ldapConfiguration\audit.log
+Audited Bytes     : 4526368
+Record Limit      : 10000 records
+Max File Size     : 256 MB
+Records in File   : 32 records
+Overall Records   : 32 records
+Overflow Policy   : wraparound
+Wrap Count        : 0
+Move Count        : 0
+Detail Level      : max
+Value Limit       : 256
+Op Selection      : all  (errors included)
+Buffer Size       : 0
+Start Time        : none
+Stop Time         : none
+Cron Job          : no
+unlink() errors   : 0
+rename() errors   : 0
+Encryption        : none
+SessTracking      : on
+SessTrackingLen   : 64</pre>
+</div>
+</div>
+</li>
+<li>
+<p>In the following command, the administrator requests the DSA MIB.</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxextop -h localhost -p 389 -D cn=admin,o=pqr -w dirx -t dsa_nmi_show</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The output of the sample command is as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Result of ExtOp :1.3.12.2.1107.1.3.2.13.1
+Entries table of the DSA MIB
+  Master entries                 : 1560
+  Copy entries                   : 0
+  Cache entries                  : 0
+  Cache hits                     : 0
+  Slave hits                     : 0
+Operations table of the DSA MIB
+  DSA
+    AnonymousBinds               : 6
+    UnauthBinds                  : 0
+    SimpleAuthBinds              : 0
+    StrongAuthBinds              : 1
+    BindSecErrs                  : 0
+    InOps                        : 0
+    ReadOps                      : 3
+    CompOps                      : 0
+    AddEntryOps                  : 0
+    RemEntryOps                  : 0
+    ModEntryOps                  : 0
+    ModRDNOps                    : 0
+    ListOps                      : 0
+    SearchOps                    : 79
+    OneLevelSearchOps            : 0
+    WholeTreeSearchOps           : 77
+    Referrals                    : 0
+    Chs                          : 0
+    SecErrs                      : 0
+    Errs                         : 0
+Application table of the DSA MIB
+  Index                   : 0
+  Name                    : DirX Directory
+  DirName                 : cn=dirxdsa,o=my-company
+  Version                 : 8.2.165 2008:01:04 20:10
+  Uptime                  : Thu Jan 01 01:00:01 1970
+  Operational status      : UP
+  Inbound associations    : 6
+  Outbound associations   : 0
+  Total in-associations   : 7
+  Total out-associations  : 1
+  Rejected inbound assocs : 0
+  Failed outbound assocs  : 0</pre>
+</div>
+</div>
+</li>
+<li>
+<p>In the following command, the administrator uses a plain connection to display the application and DSA MIBs:</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxextop -h localhost -p 389 -D cn=admin,o=pqr -w dirx -t 1.3.12.2.1107.1.3.2.13.1</pre>
+</div>
+</div>
+</li>
+<li>
+<p>In the following command, the administrator uses a server-authenticated SSL/TLS connection without server certificate checking to display the LDAP MIB static table:</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxextop -h localhost -p 636 -D cn=admin,o=pqr -w dirx -t ldap_mib_static -E0 -C C:\Program Files\DirX\Directory\Client\Conf</pre>
+</div>
+</div>
+</li>
+<li>
+<p>In the following command, the user uses a client-authenticated SSL/TLS connection with SASL EXTERNAL to display the current settings for attributes of an LDAP server’s configuration subentry:</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxextop -h localhost -p 636 -D mayer -w dirxdirx -t ldab_show_cfg_general -E2 -C C:\Program Files\DirX\Directory\Client\Conf</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exit_codes"><a class="anchor" href="#_exit_codes"></a>Exit Codes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>dirxextop</strong> command returns an exit code of <strong>0</strong> on success. It writes errors to <strong>stderr</strong>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_see_also"><a class="anchor" href="#_see_also"></a>See Also</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>audit (dirxadm)</strong>, <strong>ldap (dirxadm)</strong>, <strong>nmi (dirxadm)</strong>, <strong>LDAP MIB Tables,</strong> <em>DirX</em> <em>Directory LDAP Extended Operations</em></p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>DirX is a registered trademark © Copyright 2024, Eviden SAS – All rights reserved.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license.
+    Several icons used are provided by Google and are licensed under the
+    <a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License Version 2.0</a>.
+  </p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>

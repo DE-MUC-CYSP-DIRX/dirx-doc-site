@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>dirxdumplog :: Documentation</title>
+    <link rel="canonical" href="https://docs.dirx.solutions/dirx-directory-docs/latest/admin-reference/ch1-5_dirxdumplog.html">
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.dirx.solutions">
+        <div class="navbar-item logo"></div>
+        Documentation
+      </a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="./">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">DirX Access</a>
+            <a class="navbar-item" href="#">DirX Audit</a>
+            <a class="navbar-item" href="../index.html">DirX Directory</a>
+            <a class="navbar-item" href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dirx-directory-docs" data-version="9.1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">DirX Directory</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">General</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">About this Documentation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="pdf-src/admin-reference.html">Administration Reference</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../copyright.html">Copyright</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="adrefprf.html">Preface</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-0_cmds.html">DirX Directory Commands</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-1_dirxadm.html">dirxadm</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_abbr_dirxcp_dirxadm">abbr (dirxcp, dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_attr_dirxadm">attr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_audit_dirxadm">audit (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_db_dirxadm">db (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_dse_dirxadm">dse (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_ldap_dirxadm">ldap (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_lob_dirxadm">lob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_nmi_dirxadm">nmi (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_progsvr_dirxadm">progsvr (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sob_dirxadm">sob (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_sys_dirxadm">sys (dirxadm)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-1_dirxadm.html#_ch1_util_dirxadm">util (dirxadm)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1-2_dirxcp.html">dirxcp</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_abbr_dirxadm_dirxcp">abbr (dirxadm, dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_args_dirxcp">args (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_ldapargs_dirxcp">ldapargs (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_obj_dirxcp">obj (dirxcp)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch1-2_dirxcp.html#_ch1_util_dirxcp">util (dirxcp)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-3_dirxauddecode.html">dirxauddecode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-4_dirxaudstatistics.html">dirxaudstatistics</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="ch1-5_dirxdumplog.html">dirxdumplog</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-6_dirxbackup.html">dirxbackup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-7_dirxmodify.html">dirxmodify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-8_dirxconfig.html">dirxconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-9_dbaminit.html">dbaminit</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-10_dbamconfig.html">dbamconfig</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-11_dbamboot.html">dbamboot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-12_dirxload.html">dirxload</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-13_dbamverify.html">dbamverify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-14_dbamdevinfo.html">dbamdevinfo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-15_dirxextop.html">dirxextop</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1-16_dirxhostinfo.html">dirxhostinfo</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch2_files.html">DirX Directory Files</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirx_directory_environment_variable_ini_file">DirX Directory Environment Variable Ini File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_abbreviation_files">Abbreviation Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_configuration_file">LDAP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_http_server_configuration_file">HTTP Server Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_directory_client_configuration_file">Directory Client Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ldap_server_key_material">LDAP Server Key Material</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_ssltls_certificate_database">SSL/TLS Certificate Database</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_key_database_used_for_client_authentication">Key Database Used for Client Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_idms_configuration_and_key_material_files">IDMS Configuration and Key Material Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_snmpv2_trap_configuration_file">SNMPv2 Trap Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_dirxauddecode_configuration_file">dirxauddecode Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_syslog_configuration_file">syslog Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_files.html#_logging_configuration_files">Logging Configuration Files</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch3_schema.html">DirX Directory Default DSA Schema</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_table">Attribute Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_object_classes_table">Object Classes Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_attribute_syntax_table">Attribute Syntax Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_matching_rule_table">Matching Rule Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch3_schema.html#_schema_check">Schema Check</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html">Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_setting_environment_variables">Setting Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_using_the_dirx_directory_ini_file">Using the DirX Directory ini File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_windows_systems">Windows Systems</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_linux_systems">Linux Systems</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch4_envvars.html#_dirx_directory_environment_variables">DirX Directory Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch4_envvars.html#_operating_system_environment_variables">Operating System Environment Variables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_system_directories_for_temporary_files">System Directories for Temporary Files</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ch4_envvars.html#_enabling_keepalive_timeinterval">Enabling KEEPALIVE Time/Interval</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch5_ipports.html">IP Port Numbers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_general_information">General Information</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_environment_variables">Port Numbers Specified in Environment Variables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_attributes_of_ldap_server_configuration_subentry">Port Numbers Specified in Attributes of LDAP Server Configuration Subentry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_specified_in_configuration_files">Port Numbers Specified in Configuration Files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch5_ipports.html#_port_numbers_and_the_firewall">Port Numbers and the Firewall</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ch6_fileloc.html">File Locations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appa_ldapmibs.html">LDAP MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_static_table">LDAP MIB Static Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_total_table">LDAP MIB Total Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_current_table">LDAP MIB Current Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_association_table">LDAP MIB Association Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appa_ldapmibs.html#_ldap_mib_environment_table">LDAP MIB Environment Table</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appb_exitcodes.html">Exit Codes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_http_server_exit_codes">HTTP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_progsvr_exit_codes">Progsvr Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_dsa_exit_codes">DSA Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_ldap_server_exit_codes">LDAP Server Exit Codes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appb_exitcodes.html#_exit_codes_and_the_dirx_directory_watchdog_process">Exit Codes and the DirX Directory Watchdog Process</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appc_dbammibs.html">DBAM MIB Tables</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_transaction_statistics">DBAM Transaction Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_statistics">DBAM Buffer Cache Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_buffer_cache_io_statistics">DBAM Buffer Cache I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_translog_device_io_statistics">DBAM Translog Device I/O Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_checkpoint_statistics">DBAM Checkpoint Statistics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appc_dbammibs.html#_dbam_interval_statistics">DBAM Interval Statistics</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">DirX Directory</span>
+    <span class="version">9.1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">DirX Directory</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">9.1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../dirx-identity-docs/latest/index.html">DirX Identity</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dirx-identity-docs/latest/index.html">9.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">DirX Directory</a></li>
+    <li><a href="pdf-src/admin-reference.html">Administration Reference</a></li>
+    <li><a href="ch1-0_cmds.html">DirX Directory Commands</a></li>
+    <li><a href="ch1-5_dirxdumplog.html">dirxdumplog</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">dirxdumplog</h1>
+<div class="sect1">
+<h2 id="_synopsis"><a class="anchor" href="#_synopsis"></a>Synopsis</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>dirxdumplog</strong> [ <strong>-a</strong> ]<br>
+&#160; &#160; [ <strong>-c</strong> [<strong>!</strong>] <em>ComponentNameList</em> ]<br>
+&#160; &#160; [ <strong>-h</strong>]<br>
+&#160; &#160; [ <strong>-l</strong> <em>NoOfLookAheadEntries</em> ]<br>
+&#160; &#160; [ <strong>-m</strong> ]<br>
+&#160; &#160; [ <strong>-p</strong> ]<br>
+&#160; &#160; [ <strong>-s</strong> [<strong>!</strong>] <em>SubComponentNameList</em> ]<br>
+&#160; &#160; [ <strong>-t</strong> [<strong>!</strong>] <em>ThreadIdentificationList</em> ]<br>
+&#160; &#160; <em>DirectoryLogFileName</em> [&#8230;&#8203;]</p>
+</div>
+<div class="paragraph">
+<p><strong>dirxdumplog -T</strong> [*-*<em>TransportInterfaceLoggingOptions</em> ]<br>
+&#160; &#160; <em>TransportInterfaceLogFileName</em> [&#8230;&#8203;]</p>
+</div>
+<div class="paragraph">
+<p><strong>dirxdumplog -V</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_purpose"><a class="anchor" href="#_purpose"></a>Purpose</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Displays the contents of a binary directory trace log file or a binary transport interface log file.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_arguments"><a class="anchor" href="#_arguments"></a>Arguments</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>DirectoryLogFileName</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>A string that represents the name of a serviceability log file on which to operate.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><em>TransportInterfaceLogFile</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>A string that represents the name of a transport interface log file name on which to operate.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_options"><a class="anchor" href="#_options"></a>Options</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>-a</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Suppresses display of additional information available in a directory log file entry, for example, the contents of structured function arguments. (To enable the logging of additional information, set debug level 9 for one or more components in the routing specification file.)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-c</strong> [<strong>!</strong>] <em>ComponentNameList</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>If the ! character is specified, displays the directory log file entries that are not associated with the components specified in <em>ComponentNameList</em>, otherwise, displays the directory log file entries associated with the components in <em>ComponentNameList</em>. <em>ComponentNameList</em> is a string that contains one or more component names associated with the log file entries. There are the following component names:</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Keyword</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Meaning</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dba</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data Base Access</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dir</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Directory</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-h</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Prints a command usage message.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-l</strong> <em>NoOfLookAheadEntries</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Is an integer that represents the number of log file entries to look ahead when searching for function entry/exit log file pairs. Merging between a function entry/exit log file entry is not performed if the corresponding entry cannot be found in the specified range. If this option is not specified, <strong>dirxdumplog</strong> uses the value 512 as its search range.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-m</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Suppresses merging of function entry log file entries and function exit log file entries. Invalid or non-existent function input/output and result parameters of a log file entry are represented as a <strong>???</strong> sequence. If this option is specified, <strong>dirxdumplog</strong> ignores the <strong>-l</strong> option.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-p</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Suppresses display of the prolog information for each log file entry.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-s</strong> [<strong>!</strong>] <em>SubComponentNameList</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>If the <strong>!</strong> character is specified, displays the directory log file entries that are not associated with the subcomponents specified in <em>SubComponentNameList</em>, otherwise, displays the log file entries associated with the subcomponents in <em>SubComponentNameList. SubComponentNameList</em> is a string that contains a single subcomponent name or a comma-separated list of subcomponent names associated with the log file entries.</p>
+<div class="paragraph">
+<p>The <strong>dirxdumplog</strong> command recognizes the following subcomponent names for the component <strong>dir</strong>:</p>
+</div>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Keyword</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Meaning</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>aci</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Access control</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>adm</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Administration</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>api</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Application interface</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>asn1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ASN1 encoder/decoder interface</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>attr</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attribute service</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>audit</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Auditing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>bth</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bind table handling</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>conf</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>cref</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Continuation references</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ctx</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Context-specific memory interface</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>daspp</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DAP/DSP processor</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>disp</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DISP initiator and responder</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dopi</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operational binding protocol initiator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>drv</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deriving - DN creation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>frm</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Formatting - DN creation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>glsch</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DSA schema handling</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>hash</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hashing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>icom</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Internal thread communication interface</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>idb</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interface to the database</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>idbe</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interface to the database (external, for further use)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>idbl</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interface to the database (load)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>idbm</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interface to the database in memory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>idbn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interface to the database (native)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>idbnl</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interface to the database (native lower)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>idbr</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interface to the database (rpc)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>init</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initialization</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ldap_aud</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP audit preparation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ldap_cache</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP cache operation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ldap_cfg</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration of the LDAP server</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ldap_conn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP connection handling</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ldap_op</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP operation handling</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ldap_req</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDAP request handling</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ldap_ssl</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SSL processing in the LDAP server</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ldif_ut</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LDIF utility functions</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>load</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database loading with dirxload</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>match</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Matching</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>nms</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name service</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>norm</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Normalization</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>opb</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operational binding</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>opr</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DSA operation handling</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>osi</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OSI communication</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>que3</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DirXQue3 search engine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>reorg</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database reorganization</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ros</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Remote operation service</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>rpc</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RPC interface</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>sch</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Schema handling</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>sec</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Security</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>shr</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shared resources interface</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>snmp</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SNMP functions</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>sock</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Socket interface</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>sth</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Subtree handling</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>stx</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Syntax handling</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>sys</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">System call interface</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>sysadm</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DSA administration</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>tjh</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Timed job handler</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>util</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utility functions</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>vthr</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Virtual thread interface</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The <strong>dirxdumplog</strong> command recognizes the following subcomponent names for the component <strong>dba</strong>:</p>
+</div>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Keyword</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Meaning</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dbam</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database kernel interface</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dbambc</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Internal database kernel (buffer cache) interface</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dsync</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Process synchronization interface</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-t</strong> [<strong>!</strong>] <em>ThreadIdentificationList</em></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>If the <strong>!</strong> character is specified, displays the log file entries not associated with the threads specified in <em>ThreadIdentificationList</em>. Otherwise, displays log file entries associated with the threads specified in <em>ThreadIdentificationList. ThreadIdentificationList</em> is a single integer or a comma-separated list of integers that represent one or more thread Ids. Alternately, it is a single keyword or a comma-separated list of keywords representing thread types. The <strong>dirxdumplog</strong> command recognizes the following thread types:</p>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 34%;">
+<col style="width: 66%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Keyword</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Meaning</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>"abort thread"</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Handles aborted connections</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>MainThread</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initial (main) thread</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>OperationThread</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DAP, DSP, DISP, or DOP operation handling thread</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>OsiThread</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OSI communication handling thread</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>OsiIComThread</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OSI communication handling thread (supports the primary OSI thread during internal event handling)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>RpcComThread</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RPC communication handling thread</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>TimedJobThread</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Timed job handling thread</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-T</strong> [-<em>TransportInterfaceLoggingOptions</em>]</p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Displays contents of specified binary transport interface log files instead of directory log files. <em>TransportInterfaceLoggingOptions</em> is a string of one or more alphanumeric characters that represent types of logging information to be output. The <strong>dirxdumplog</strong> command recognizes the following logging options:</p>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 23%;">
+<col style="width: 77%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Character</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Meaning</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>c</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays only transport interface calls associated with attachment, detachment, connection establishment, redirection of connections and disconnection.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>d</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays only transport interface calls associated with data transfer and flow control.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>e</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays only transport interface calls associated with event handling.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>t</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays additional information about error values returned through t_error().</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>v</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays transport interface calls with all options and user data.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>x</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays transport interface calls without options and user data.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>D</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Displays additional information about internal system calls.</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>-V</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>Displays the DirX Directory product version, in the format:</p>
+<div class="paragraph">
+<p><em>product_version build_id date time</em></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p>DirX Directory V9.0 9.4.428 2023:03:23 20:10 64-Bit</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The directory service subcomponents log important information about their activities and state through an internal serviceability interface or, in the case of the transport interface component, through a local logging interface. You specify how directory trace log messages are to be routed with the file <strong>dirxlog.cfg</strong>. Each log entry is written as a machine-independent binary record of data defined as the contents of a serviceability prolog structure. The <strong>dirxdumplog</strong> command displays the contents of this binary file in readable text format.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example"><a class="anchor" href="#_example"></a>Example</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following examples are based on a DirX Directory DSA log file <strong>LOG20861.01</strong>. The logging level has been set to <strong>1-5</strong> for the subcomponents <strong>sec</strong>, <strong>idb</strong>, <strong>idbn</strong>, and <strong>icom</strong>. The DSA has rejected the bind. The examples reduce the content of the output till it focused on the error.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create a readable log file <strong>log.all</strong> of the whole content:</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxdumplog LOG20861.01 &gt; log.all</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following output is written to the file <strong>log.all</strong>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>--------------------------------------------------------------------------------
+RpcComAuxThread      0x00000011 dirxdsa          dir      Fri 02/11/00 09:48:53
+--------------------------------------------------------------------------------
+                     -- DEBUG1   sysadm   dirxsysadm_svc.c 220         48:53:738
+ 0 dirx_svc_set_dbg_route (Request: ???, Result: ???)
+                     -- DEBUG1   sec      svc_auth_x511.c  154         48:53:743
+ 1 auth_check_clt_verifier (verifier: 0xee9d15b4, idx: 8) = SUCCESSFUL
+                     -- DEBUG1   sec      svc_auth_x511.c  158         48:53:745
+ 1 auth_setup_new_verifier (idx: 8, new_verifier: 0xee9d15ac)
+                     -- DEBUG1   sysadm   dirxsysadm_svc.c 220    48:53:746[001]
+ 0 dirx_svc_set_route (Request: 0xee9d1674, Result: 0xee9d1658)
+                     -- DEBUG1   sec      svc_auth_x511.c  154         48:53:752
+ 1 auth_check_clt_verifier (verifier: 0xee9d15b4, idx: 8) = SUCCESSFUL
+                     -- DEBUG1   sec      svc_auth_x511.c  158    48:53:753[001]
+ 1 auth_setup_new_verifier (idx: 8, new_verifier: 0xee9d15ac)
+--------------------------------------------------------------------------------
+OsiThread            0x0000000a dirxdsa          dir      Fri 02/11/00 09:50:09
+--------------------------------------------------------------------------------
+                     -- DEBUG1   icom     NetEvent.c       183    50:09:342[018]
+ 0 IComSend (MessageType: ICOM_CLASS_MSG, ReceiverId: ICOM_OPR_CLASS_ID,
+             MessagePriority: ICOM_NORMAL_PRIORITY, MessageSize: 44,
+             MessageRef: 0xee9913dc, DeliveryCount: NULL&lt;-1&gt;) = SUCCESSFUL
+--------------------------------------------------------------------------------
+OperationThread      0x0000000f dirxdsa          dir      Fri 02/11/00 09:50:09
+--------------------------------------------------------------------------------
+                     -- DEBUG1   icom     starto.c         298         50:09:362
+ 0 IComReceive (MessageType: ???,
+                SenderId: ???&lt;Classid: ICOM_OSI_CLASS_ID, EntityId: 10&gt;,
+                MessageSize: ???&lt;OUT: 44&gt;, MessageRef: ???,
+                TimeoutMode: ???,
+                MessagePriority: ???&lt;-1&gt;) = SUCCESSFUL
+--------------------------------------------------------------------------------
+OperationThread      0x00000012 dirxdsa          dir      Fri 02/11/00 09:50:09
+--------------------------------------------------------------------------------
+                     -- DEBUG1   icom     starto.c         125    50:09:366[002]
+ 0 IComAttach (SubscriberId: 0xee951d38 &lt;ClassId: ICOM_OPR_CLASS_ID,
+               EntityId: 18&gt;) = SUCCESSFUL
+                     -- DEBUG1   icom     starto.c         298         50:09:369
+ 1 IComReceive (MessageType: ICOM_CLASS_MSG,
+                SenderId: 0xee951cb0&lt;Classid: ???, EntityId: ???&gt;,
+                MessageSize: 0xee951bec&lt;IN: 64&gt;, MessageRef: 0xee951c84,
+                TimeoutMode: ICOM_WAIT,
+                MessagePriority: NULL&lt;???&gt;) = ???
+--------------------------------------------------------------------------------
+OperationThread      0x0000000f dirxdsa          dir      Fri 02/11/00 09:50:09
+--------------------------------------------------------------------------------
+                     -- DEBUG1   sec      proto.c          151    50:09:372[189]
+ 1 auth_dispatch (op_arg: 0xee931c88, op_res: 0xee931ac8)
+
+                     -- DEBUG1   sec      auth_dispatch.c  183    50:09:378[181]
+ 2 auth_rec_bind_arg (binding: 0x469528, bind_ctx: 0xee930a98
+,               auth_world: 0xee9312d8, bind_arg: 0x469728,
+                bind_res: 0x4698d4, bind_err: 0x46bbc8) = SUCCESSFUL
+                     -- DEBUG2   sec      auth_dispatch.c  445    50:09:380[173]
+ 3 auth_process_bind (incoming_creds: 0x46972c, binding: 0x469528,
+                memctx: 0xee9308fc, auth_world: 0xee9312d8,
+                cred_kind: AUTH_CRED_SP1, initiator_name: 0x4697d4,
+                return_creds: NULL, dsapolicies: NULL) = AUTH_INVALID_CREDS
+                     -- DEBUG4   sec      dirxauth_s.c     192         50:09:392
+ 4 DN "Initiator_id.dn for bindtable" at address 004697d8 = "
+         RDN (0): 2.5.4.6 = (PRI) &lt;re&gt;
+         RDN (1): 2.5.4.10 = (DirStr-PRT) &lt;sni&gt;
+         RDN (2): 2.5.4.11 = (DirStr-PRT) &lt;asw&gt;
+         RDN (3): 2.5.4.3 = (DirStr-PRT) &lt;hinz und kunz&gt;"
+                     -- DEBUG3   sec      dirxauth_s.c     346    50:09:393[159]
+ 4 auth_get_policy_simple (mem_ctx: 0x4694a0, cred_kind: AUTH_CRED_SP1,
+                initiator_name: 0x469734, protocol: DACC_ACTX,
+                role: BT_RESPONDER, auth_world: 0xee9312d8, PwList: 0x4699cc,
+                my_name: 0x4699a4, pol_info: 0xee930234, dsaPolicies: NULL) = AUTH_INVALID_CREDS
+                     -- DEBUG1   idb      auth_policy.c    262    50:09:395[079]
+ 5 idb_open (open_request: 0xee92fe04, DbHandle: 0xee92fe00 &lt;0x4c1b58&gt;)
+             = SUCCESSFUL
+        request:
+        STRUCT IdbOpenRequest {
+          access_mode = IDB_READ_ONLY ;
+          call = IDB_INTERNAL_CALL ;
+        }
+                     -- DEBUG1   idbn     idb.c            321    50:09:432[041]
+ 6 idbn_open (DbAccessMode: IDB_READ_ONLY, DbHandle: 0x4c1b58) = SUCCESSFUL
+                     -- DEBUG5   sec      auth_policy.c    384    50:09:475[005]
+ 5 auth_check_user_level (db_hd: 0xee92fe00, cred_kind: AUTH_CRED_SP1,
+                mem_ctx: 0x4694a0. initiator: 0x469734,
+                pol_info: 0xee930234) = SUCCESSFUL
+                     -- DEBUG5   sec      auth_policy.c    871    50:09:476[002]
+ 6 auth_get_user_policy_data (idb_hd: 0xee92fe00, mem_ctx: 0x4694a0,
+                initiator: 0x469734, pol_info: 0xee930234) = SUCCESSFUL
+                     -- DEBUG1   idb      auth_policy.c    2202   50:09:477[001]
+ 7 idb_read_dse (Request: 0xee92fb44, Result: 0xee92fb40) = SUCCESSFUL
+                     -- DEBUG5   sec      auth_policy.c    394    50:09:481[051]
+ 5 auth_get_user_entry (db_hd: 0xee92fe00, cred_kind: AUTH_CRED_SP1,
+                mem_ctx: 0x4694a0, initiator: 0x469734,
+                pw_attrtype: 307390, pw_list: 0x4699cc) = AUTH_INVALID_CREDS
+                     -- DEBUG1   idb      auth_policy.c    1075   50:09:482[049]
+ 6 idb_read_dse_dn (Request: 0xee92fc28, rdn count: 4,
+  7 idb_read_dse (Request: 0xee92f9a0, Result: 0xee92f984) = SUCCESSFUL
+                     -- DEBUG1   idb      idb.c            2372   50:09:485[004]
+ 7 idb_read_dse (Request: 0xee92f9a0, Result: 0xee92f984) = SUCCESSFUL
+                     -- DEBUG1   idb      idb.c            2372   50:09:490[017]
+ 7 idb_read_dse (Request: 0xee92f9a0, Result: 0xee92f984) = SUCCESSFUL
+                     -- DEBUG1   idbn     idb.c            519    50:09:496[009]
+ 8 idbn_read_dse (Request: 0xee92f9a0, Result: 0xee92f984) = SUCCESSFUL
+                     -- DEBUG1   idb      idb.c            2372   50:09:508[012]
+ 7 idb_read_dse (Request: 0xee92f9a0, Result: 0xee92f984) = SUCCESSFUL
+                     -- DEBUG1   idbn     idb.c            519    50:09:510[009]
+ 8 idbn_read_dse (Request: 0xee92f9a0, Result: 0xee92f984) = SUCCESSFUL
+                     -- DEBUG1   idb      idb.c            2372   50:09:521[007]
+ 7 idb_read_dse (Request: 0xee92f9a0, Result: 0xee92f984) = IDB_NOT_FOUND
+                     -- DEBUG1   idbn     idb.c            519    50:09:524[003]
+ 8 idbn_read_dse (Request: 0xee92f9a0, Result: 0xee92f984) = IDB_NOT_FOUND
+                     -- DEBUG1   idb      auth_policy.c    435    50:09:533[018]
+ 5 idb_close (DbHandle: 0x4c1b58) = SUCCESSFUL
+                     -- DEBUG1   idbn     idb.c            402    50:09:534[016]
+ 6 idbn_close (DbHandle: 0x4c1b58) = SUCCESSFUL
+                     -- DEBUG3   sec      auth_dispatch.c  453    50:09:555[001]
+ 3 auth_gen_bind_err (memctx: 0x4694a0, status: AUTH_INVALID_CREDS,
+                bind_err: 0x46bbc8) = SUCCESSFUL
+                     -- DEBUG4   sec      auth_audit.c     277         50:09:557
+ 4 "DN for audit" : "/re/sni/asw/hinz und kunz"
+                     -- DEBUG1   icom     proto.c          157    50:09:562[030]
+ 1 IComSend (MessageType: ICOM_CLASS_MSG, ReceiverId: ICOM_OSI_CLASS_ID,
+             MessagePriority: ICOM_NORMAL_PRIORITY, MessageSize: 44,
+             MessageRef: 0xee931ac4, DeliveryCount: NULL&lt;-1&gt;) = SUCCESSFUL
+--------------------------------------------------------------------------------
+OsiIComThread        0x0000000b dirxdsa          dir      Fri 02/11/00 09:50:09
+--------------------------------------------------------------------------------
+                     -- DEBUG1   icom     IComEvent.c      101         50:09:564
+ 0 IComReceive (MessageType: ???,
+                SenderId: ???&lt;Classid: ICOM_OPR_CLASS_ID, EntityId: 15&gt;,
+                MessageSize: ???&lt;OUT: 44&gt;, MessageRef: ???,
+                TimeoutMode: ???,
+                MessagePriority: ???&lt;-1&gt;) = SUCCESSFUL
+                     -- DEBUG1   icom     IComEvent.c      101         50:09:581
+ 0 IComReceive (MessageType: ICOM_ENTITY_MSG | ICOM_CLASS_MSG,
+                SenderId: 0xee971d34&lt;Classid: ???, EntityId: ???&gt;,
+                MessageSize: 0xee971d30&lt;IN: 44&gt;, MessageRef: 0x3cf28c,
+                TimeoutMode: ICOM_WAIT,
+                MessagePriority: NULL&lt;???&gt;) = ???
+--------------------------------------------------------------------------------
+OperationThread      0x0000000f dirxdsa          dir      Fri 02/11/00 09:50:09
+--------------------------------------------------------------------------------
+                     -- DEBUG1   icom     starto.c         298  50:09:594[4:417]
+ 0 IComReceive (MessageType: ICOM_ENTITY_MSG | ICOM_CLASS_MSG,
+                SenderId: 0xee931cb0&lt;Classid: -1, EntityId: -1&gt;,
+                MessageSize: 0xee931bec&lt;IN: 64 OUT: 64&gt;, MessageRef: 0xee931c84,
+                TimeoutMode: 5000,
+                MessagePriority: NULL&lt;-1&gt;) = ICOM_EMPTY
+                     -- DEBUG1   icom     starto.c         497         50:14:012
+ 1 IComDetach () = SUCCESSFUL</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Create a readable log file <strong>log.sec</strong> and restrict the content to the subcomponent <strong>sec</strong>:</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxdumplog –s sec LOG20861.01 &gt; log.sec</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following output is written to the file <strong>log.sec</strong>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>--------------------------------------------------------------------------------
+RpcComAuxThread      0x00000011 dirxdsa          dir      Fri 02/11/00 09:48:53
+--------------------------------------------------------------------------------
+                     -- DEBUG1   sec      svc_auth_x511.c  154         48:53:743
+ 0 auth_check_clt_verifier (verifier: 0xee9d15b4, idx: 8) = SUCCESSFUL
+                     -- DEBUG1   sec      svc_auth_x511.c  158         48:53:745
+ 0 auth_setup_new_verifier (idx: 8, new_verifier: 0xee9d15ac)
+                     -- DEBUG1   sec      svc_auth_x511.c  154         48:53:752
+ 0 auth_check_clt_verifier (verifier: 0xee9d15b4, idx: 8) = SUCCESSFUL
+                     -- DEBUG1   sec      svc_auth_x511.c  158    48:53:753[001]
+ 0 auth_setup_new_verifier (idx: 8, new_verifier: 0xee9d15ac)
+                     -- DEBUG1   sec      svc_auth_x511.c  154         48:53:761
+ 0 auth_check_clt_verifier (verifier: 0xee9d15b4, idx: 8) = SUCCESSFUL
+                     -- DEBUG1   sec      svc_auth_x511.c  158         48:53:763
+ 0 auth_setup_new_verifier (idx: 8, new_verifier: 0xee9d15ac)
+                     -- DEBUG1   sec      svc_auth_x511.c  154         48:53:770
+ 0 auth_check_clt_verifier (verifier: 0xee9d15b4, idx: 8) = SUCCESSFUL
+                     -- DEBUG1   sec      svc_auth_x511.c  158         48:53:772
+ 0 auth_setup_new_verifier (idx: 8, new_verifier: 0xee9d15ac)
+                     -- DEBUG1   sec      svc_auth_x511.c  154         48:53:778
+ 0 auth_check_clt_verifier (verifier: 0xee9d15b4, idx: 8) = SUCCESSFUL
+                     -- DEBUG1   sec      svc_auth_x511.c  158         48:53:781
+ 0 auth_setup_new_verifier (idx: 8, new_verifier: 0xee9d15ac)
+--------------------------------------------------------------------------------
+OperationThread      0x0000000f dirxdsa          dir      Fri 02/11/00 09:50:09
+--------------------------------------------------------------------------------
+                     -- DEBUG1   sec      proto.c          151    50:09:372[189]
+ 0 auth_dispatch (op_arg: 0xee931c88, op_res: 0xee931ac8)
+
+                     -- DEBUG1   sec      auth_dispatch.c  183    50:09:378[181]
+ 1 auth_rec_bind_arg (binding: 0x469528, bind_ctx: 0xee930a98
+,               auth_world: 0xee9312d8, bind_arg: 0x469728,
+                bind_res: 0x4698d4, bind_err: 0x46bbc8) = SUCCESSFUL
+                     -- DEBUG2   sec      auth_dispatch.c  445    50:09:380[173]
+ 2 auth_process_bind (incoming_creds: 0x46972c, binding: 0x469528,
+                memctx: 0xee9308fc, auth_world: 0xee9312d8,
+                cred_kind: AUTH_CRED_SP1, initiator_name: 0x4697d4,
+                return_creds: NULL, dsapolicies: NULL) = AUTH_INVALID_CREDS
+                     -- DEBUG4   sec      dirxauth_s.c     192         50:09:392
+ 3 DN "Initiator_id.dn for bindtable" at address 004697d8 = "
+         RDN (0): 2.5.4.6 = (PRI) &lt;re&gt;
+         RDN (1): 2.5.4.10 = (DirStr-PRT) &lt;sni&gt;
+         RDN (2): 2.5.4.11 = (DirStr-PRT) &lt;asw&gt;
+         RDN (3): 2.5.4.3 = (DirStr-PRT) &lt;hinz und kunz&gt;"
+                     -- DEBUG3   sec      dirxauth_s.c     346    50:09:393[159]
+ 3 auth_get_policy_simple (mem_ctx: 0x4694a0, cred_kind: AUTH_CRED_SP1,
+                initiator_name: 0x469734, protocol: DACC_ACTX,
+                role: BT_RESPONDER, auth_world: 0xee9312d8, PwList: 0x4699cc,
+                my_name: 0x4699a4, pol_info: 0xee930234, dsaPolicies: NULL) = AUTH_INVALID_CREDS
+                     -- DEBUG5   sec      auth_policy.c    384    50:09:475[005]
+ 4 auth_check_user_level (db_hd: 0xee92fe00, cred_kind: AUTH_CRED_SP1,
+                mem_ctx: 0x4694a0. initiator: 0x469734,
+                pol_info: 0xee930234) = SUCCESSFUL
+                     -- DEBUG5   sec      auth_policy.c    871    50:09:476[002]
+ 5 auth_get_user_policy_data (idb_hd: 0xee92fe00, mem_ctx: 0x4694a0,
+                initiator: 0x469734, pol_info: 0xee930234) = SUCCESSFUL
+                     -- DEBUG5   sec      auth_policy.c    394    50:09:481[051]
+ 4 auth_get_user_entry (db_hd: 0xee92fe00, cred_kind: AUTH_CRED_SP1,
+                mem_ctx: 0x4694a0, initiator: 0x469734,
+                pw_attrtype: 307390, pw_list: 0x4699cc) = AUTH_INVALID_CREDS
+                     -- DEBUG3   sec      auth_dispatch.c  453    50:09:555[001]
+ 2 auth_gen_bind_err (memctx: 0x4694a0, status: AUTH_INVALID_CREDS,
+                bind_err: 0x46bbc8) = SUCCESSFUL
+                     -- DEBUG4   sec      auth_audit.c     277         50:09:55</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Create a readable log file <strong>log_thread15.sec</strong> and restrict the content to the subcomponent <strong>sec</strong> and the thread with threadID <strong>15</strong>:</p>
+<div class="listingblock">
+<div class="content">
+<pre>dirxdumplog –s sec -t 0x0f LOG20861.01 &gt; log_thread15.sec</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following output is written to the file <strong>log_thread15.sec</strong>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>--------------------------------------------------------------------------------
+OperationThread      0x0000000f dirxdsa          dir      Fri 02/11/00 09:50:09
+--------------------------------------------------------------------------------
+                     -- DEBUG1   sec      proto.c          151    50:09:372[189]
+ 0 auth_dispatch (op_arg: 0xee931c88, op_res: 0xee931ac8)
+
+                     -- DEBUG1   sec      auth_dispatch.c  183    50:09:378[181]
+ 1 auth_rec_bind_arg (binding: 0x469528, bind_ctx: 0xee930a98
+,               auth_world: 0xee9312d8, bind_arg: 0x469728,
+                bind_res: 0x4698d4, bind_err: 0x46bbc8) = SUCCESSFUL
+                     -- DEBUG2   sec      auth_dispatch.c  445    50:09:380[173]
+ 2 auth_process_bind (incoming_creds: 0x46972c, binding: 0x469528,
+                memctx: 0xee9308fc, auth_world: 0xee9312d8,
+                cred_kind: AUTH_CRED_SP1, initiator_name: 0x4697d4,
+                return_creds: NULL, dsapolicies: NULL) = AUTH_INVALID_CREDS
+                     -- DEBUG4   sec      dirxauth_s.c     192         50:09:392
+ 3 DN "Initiator_id.dn for bindtable" at address 004697d8 = "
+         RDN (0): 2.5.4.6 = (PRI) &lt;re&gt;
+         RDN (1): 2.5.4.10 = (DirStr-PRT) &lt;sni&gt;
+         RDN (2): 2.5.4.11 = (DirStr-PRT) &lt;asw&gt;
+         RDN (3): 2.5.4.3 = (DirStr-PRT) &lt;hinz und kunz&gt;"
+                     -- DEBUG3   sec      dirxauth_s.c     346    50:09:393[159]
+ 3 auth_get_policy_simple (mem_ctx: 0x4694a0, cred_kind: AUTH_CRED_SP1,
+                initiator_name: 0x469734, protocol: DACC_ACTX,
+                role: BT_RESPONDER, auth_world: 0xee9312d8, PwList: 0x4699cc,
+                my_name: 0x4699a4, pol_info: 0xee930234, dsaPolicies: NULL) = AUTH_INVALID_CREDS
+                     -- DEBUG5   sec      auth_policy.c    384    50:09:475[005]
+ 4 auth_check_user_level (db_hd: 0xee92fe00, cred_kind: AUTH_CRED_SP1,
+                mem_ctx: 0x4694a0. initiator: 0x469734,
+                pol_info: 0xee930234) = SUCCESSFUL
+                     -- DEBUG5   sec      auth_policy.c    871    50:09:476[002]
+ 5 auth_get_user_policy_data (idb_hd: 0xee92fe00, mem_ctx: 0x4694a0,
+                initiator: 0x469734, pol_info: 0xee930234) = SUCCESSFUL
+                     -- DEBUG5   sec      auth_policy.c    394    50:09:481[051]
+ 4 auth_get_user_entry (db_hd: 0xee92fe00, cred_kind: AUTH_CRED_SP1,
+                mem_ctx: 0x4694a0, initiator: 0x469734,
+                pw_attrtype: 307390, pw_list: 0x4699cc) = AUTH_INVALID_CREDS
+                     -- DEBUG3   sec      auth_dispatch.c  453    50:09:555[001]
+ 2 auth_gen_bind_err (memctx: 0x4694a0, status: AUTH_INVALID_CREDS,
+                bind_err: 0x46bbc8) = SUCCESSFUL
+                     -- DEBUG4   sec      auth_audit.c     277         50:09:557
+ 3 "DN for audit" : "/re/sni/asw/hinz und kunz"</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exit_codes"><a class="anchor" href="#_exit_codes"></a>Exit Codes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>dirxdumplog</strong> command returns an exit code of <strong>0</strong> on success or a <strong>1</strong> if it encountered an error. The text of the error message is displayed on <strong>stderr</strong>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_see_also"><a class="anchor" href="#_see_also"></a>See Also</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>dirxadm</strong> (Chapter 1), <strong>dirxlog.cfg</strong> (Chapter 2), <strong>sys</strong> (Chapter 1)</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>DirX is a registered trademark © Copyright 2024, Eviden SAS – All rights reserved.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license.
+    Several icons used are provided by Google and are licensed under the
+    <a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License Version 2.0</a>.
+  </p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>
